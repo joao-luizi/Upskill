@@ -1,140 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercicio 3 - tinyWiky</title>
     <style>
-      @font-face {
-        font-family: "LinBiolinum";
-        src: url("fonts/LinBiolinum_K.woff") format("woff");
-      }
-      @font-face {
-        font-family: "LinBiolinum";
-        src: url("fonts/LinBiolinum_R.woff") format("woff");
-      }
-      @font-face {
-        font-family: "LinBiolinum";
-        src: url("fonts/LinBiolinum_RB.woff") format("woff");
-      }
+        @font-face {
+            font-family: "LinBiolinum";
+            src: url("fonts/LinBiolinum_K.woff") format("woff");
+        }
 
-      @font-face {
-        font-family: "LinBiolinum";
-        src: url("fonts/LinBiolinum_RI.woff") format("woff");
-      }
+        @font-face {
+            font-family: "LinBiolinum";
+            src: url("fonts/LinBiolinum_R.woff") format("woff");
+        }
 
-      @font-face {
-        font-family: "LinLibertine";
-        src: url("fonts/LinLibertine_DR.woff") format("woff");
-      }
+        @font-face {
+            font-family: "LinBiolinum";
+            src: url("fonts/LinBiolinum_RB.woff") format("woff");
+        }
 
-      @font-face {
-        font-family: "LinLibertine";
-        src: url("fonts/LinLibertine_I.woff") format("woff");
-      }
+        @font-face {
+            font-family: "LinBiolinum";
+            src: url("fonts/LinBiolinum_RI.woff") format("woff");
+        }
 
-      @font-face {
-        font-family: "LinLibertine";
-        src: url("fonts/LinLibertine_M.woff") format("woff");
-      }
+        @font-face {
+            font-family: "LinLibertine";
+            src: url("fonts/LinLibertine_DR.woff") format("woff");
+        }
 
-      @font-face {
-        font-family: "LinLibertine";
-        src: url("fonts/LinLibertine_R.woff") format("woff");
-      }
+        @font-face {
+            font-family: "LinLibertine";
+            src: url("fonts/LinLibertine_I.woff") format("woff");
+        }
 
-      @font-face {
-        font-family: "LinLibertine";
-        src: url("fonts/LinLibertine_RB.woff") format("woff");
-      }
+        @font-face {
+            font-family: "LinLibertine";
+            src: url("fonts/LinLibertine_M.woff") format("woff");
+        }
 
-      @font-face {
-        font-family: "LinLibertine";
-        src: url("fonts/LinLibertine_RBI.woff") format("woff");
-      }
+        @font-face {
+            font-family: "LinLibertine";
+            src: url("fonts/LinLibertine_R.woff") format("woff");
+        }
 
-      @font-face {
-        font-family: "LinLibertine";
-        src: url("fonts/LinLibertine_RI.woff") format("woff");
-      }
+        @font-face {
+            font-family: "LinLibertine";
+            src: url("fonts/LinLibertine_RB.woff") format("woff");
+        }
 
-      @font-face {
-        font-family: "LinLibertine";
-        src: url("fonts/LinLibertine_RZ.woff") format("woff");
-      }
-      .debug {
-        border: 1px solid red;
-      }
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-      .top-friso{
-        float: right;
-        margin: 5px;
-      }
-      a {
-        text-decoration: none;
-      }
-      .myfont-normal {
-        font-style: normal;
-        font-family: LinLibertine;
-        font-size: 12px;
-      }
-      .sidebar {
-        display: flex;
-        flex-direction: column;
-        width: 25%;
-        height: 100%;
-      }
-      .main {
-        display: flex;
-        flex-direction: row;
-        min-height: 100vh;
-      }
-      .logo {
-        height: 25%;
-        width: 100%;
-      }
-      img {
-        max-width: 100%;
-        max-height: 100%;
-        display: block;
-        margin: auto;
-      }
+        @font-face {
+            font-family: "LinLibertine";
+            src: url("fonts/LinLibertine_RBI.woff") format("woff");
+        }
+
+        @font-face {
+            font-family: "LinLibertine";
+            src: url("fonts/LinLibertine_RI.woff") format("woff");
+        }
+
+        @font-face {
+            font-family: "LinLibertine";
+            src: url("fonts/LinLibertine_RZ.woff") format("woff");
+        }
+
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .debug {
+            border: 1px solid red;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 15px;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .top-friso {
+            float: right;
+            margin-left: 10px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            background-color: rgb(248, 247, 247);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .myfont-normal {
+            font-style: normal;
+            font-family: LinLibertine;
+            font-size: 12px;
+        }
+
+        .sidebar-right {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            height: 100%;
+            border-right: 1px solid grey;
+            background-color: rgb(248, 247, 247);
+
+        }
+
+        .sidebar-left {
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            height: 100%;
+            background-color: white;
+        }
+
+        .main {
+            width: 99vw;
+            height: 99vh;
+            background-color: rgb(246, 246, 246);
+        }
+
+        .logo {
+            height: 25%;
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            margin: auto;
+
+        }
     </style>
-  </head>
-  <body>
-    <main class="main">
-      <div class="sidebar">
-        <!--Image container-->
-        <div class="logo"><img src="images/logo.png" alt="" /></div>
-        <!--Image container-->
-        <!--Right sidebar-->
-        <div class="debug">
-          <ul>
-            <li style="display: block"><a href="">Main page</a></li>
-            <li style="display: block"><a href="">Contents</a></li>
-            <li style="display: block"><a href="">Featured content</a></li>
-          </ul>
-          <p>Interaction</p>
-          <hr style="border-top: 3px solid #bbb" />
+</head>
+
+<body>
+    <main class="main" style="display: flex; flex-direction: row;">
+        <div style=" width: 15%; margin: 0px; padding: 0px; display: flex; flex-direction: column;">
+            <div class="logo" style="height: 25%; object-fit: fill;"><img src="images/logo.png" alt=""></div>
+            <div class="myfont-normal" style="height: 75%; font-size: 14px;">
+                <ul style="margin-top: 55px;">
+                    <li style="display: block"><a href="">Main page</a></li>
+                    <li style="display: block"><a href="">Contents</a></li>
+                    <li style="display: block"><a href="">Featured content</a></li>
+                </ul>
+                <p style="margin-left: 15px; margin-bottom: 0px;">Interaction</p>
+                <hr style="border-top: 1px solid #bbb; margin-left: 15px; margin-right: 15px;" />
+                <ul>
+                    <li style="display: block"><a href="">Main page</a></li>
+                    <li style="display: block"><a href="">Contents</a></li>
+                    <li style="display: block"><a href="">Featured content</a></li>
+                </ul>
+                <p style="margin-left: 15px; margin-bottom: 0px;">Interaction</p>
+                <hr style="border-top: 1px solid #bbb; margin-left: 15px; margin-right: 15px;" />
+                <ul>
+                    <li style="display: block"><a href="">Main page</a></li>
+                    <li style="display: block"><a href="">Contents</a></li>
+                    <li style="display: block"><a href="">Featured content</a></li>
+                </ul>
+                <p style="margin-left: 15px; margin-bottom: 0px;">Interaction</p>
+                <hr style="border-top: 1px solid #bbb; margin-left: 15px; margin-right: 15px;" />
+
+            </div>
         </div>
-        <!--Right sidebar-->
-      </div>
-      <!--Top level friso-->
-      <div class="myfont-normal" style="width: 100%">
-        <ul>
-          <li class="top-friso"><a href="">Login</a></li>
-          <li class="top-friso"><a href="">Create acount</a></li>
-          <li class="top-friso"><a href="">Contributions</a></li>
-          <li class="top-friso"><a href="">Talk</a></li>
-          <li class="top-friso" style="color: grey">Not logged in</li>
-          <li class="top-friso"><img src="images/user-ico.png" alt="" /></li>
-        </ul>
-      </div>
+        <div style="flex: 1;  width: 85%; margin: 0px; padding: 0px; display: flex; flex-direction: column;">
+            <div class="myfont-normal" style="width: 100%">
+                <ul>
+                    <li class="top-friso"><a href="">Login</a></li>
+                    <li class="top-friso"><a href="">Create acount</a></li>
+                    <li class="top-friso"><a href="">Contributions</a></li>
+                    <li class="top-friso"><a href="">Talk</a></li>
+                    <li class="top-friso" style="color: grey">Not logged in</li>
+                    <li class="top-friso"><img src="images/user-ico.png" alt="" /></li>
+                </ul>
+            </div>
+            <div
+                style="flex: 1; background-color: white; border-left: 1px solid lightblue; border-bottom: 1px solid lightblue; border-right: 1px solid lightblue;">
+                <div style="display: flex; width: 100%;">
+                    <div>
+                        <div class="myfont-normal "
+                            style="padding: 5px; margin: 0px; float: left; background-color: white; border-right: 1px solid lightblue;">
+                            <a href="">Article</a>
+                        </div>
+                        <div class="myfont-normal "
+                            style="padding: 5px; margin: 0px; float: left; background: linear-gradient(to top, rgba(209, 237, 247, 0.671), white); border-right: 1px solid lightblue; border-bottom: 2px solid lightblue;">
+                            <a href="">Talk</a>
+                        </div>
+                    </div>
+                    <div style="flex: 1; background-color: rgb(246, 246, 246); ; border-bottom: 1px solid lightblue;">
+                    </div>
+                    <div>
+                        <div class="myfont-normal "
+                            style="padding: 5px; margin: 0px; float: right; background-color:white;">
+                            <input class="myfont-normal " style="font-size:10px;" type="text"
+                                placeholder="Search wikipedia" id="">
+                        </div>
+                        <div class="myfont-normal "
+                            style="padding: 5px; margin: 0px; float: right;background: linear-gradient(to top, rgba(209, 237, 247, 0.671), white); border-right: 1px solid lightblue; border-bottom: 2px solid lightblue;">
+                            <a href="">View history</a>
+                        </div>
+                        <div class="myfont-normal "
+                            style="padding: 5px; margin: 0px; float: right; background: linear-gradient(to top, rgba(209, 237, 247, 0.671), white); border-right: 1px solid lightblue; border-bottom: 2px solid lightblue;">
+                            <a href="">View source</a>
+                        </div>
+                        <div class="myfont-normal "
+                            style="padding: 5px; margin: 0px; float: right; background-color: white; border-right: 1px solid lightblue; border-left: 1px solid lightblue;">
+                            <a href="">Read</a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="debug" style="width: 100%; ">Colocar text</div>
+                <div class="debug" style="width: 100%; ">Colocar tabelas</div>
+
+            </div>
+            <div class="myfont-normal">
+                <p style="margin-left: 20px;">This page was last edited on 29.07.2017 | Template by <a href="">HTML5 Templates</a></p>
+            </div>
+            <div class="myfont-normal" style="display: inline;">
+                <a style="margin-left: 20px;" href="">Privacy policy</a>
+                <a style="margin-left: 5px;" href="">About</a>
+                <a style="margin-left: 5px;" href="">Terms and conditions</a>
+                <a style="margin-left: 5px;" href="">Cookie statement</a>
+                <a style="margin-left: 5px;" href="">Developers</a>
+            </div>
+        </div>
+
     </main>
-  </body>
+</body>
+
 </html>
