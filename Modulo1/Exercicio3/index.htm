@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 3 - tinyWiky</title>
+    <style>
+      @font-face {
+        font-family: "LinBiolinum";
+        src: url("fonts/LinBiolinum_K.woff") format("woff");
+      }
+      @font-face {
+        font-family: "LinBiolinum";
+        src: url("fonts/LinBiolinum_R.woff") format("woff");
+      }
+      @font-face {
+        font-family: "LinBiolinum";
+        src: url("fonts/LinBiolinum_RB.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "LinBiolinum";
+        src: url("fonts/LinBiolinum_RI.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_DR.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_I.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_M.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_R.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_RB.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_RBI.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_RI.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_RZ.woff") format("woff");
+      }
+      .debug {
+        border: 1px solid red;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      .top-friso{
+        float: right;
+        margin: 5px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .myfont-normal {
+        font-style: normal;
+        font-family: LinLibertine;
+        font-size: 12px;
+      }
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        height: 100%;
+      }
+      .main {
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+      }
+      .logo {
+        height: 25%;
+        width: 100%;
+      }
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <div class="sidebar">
+        <!--Image container-->
+        <div class="logo"><img src="images/logo.png" alt="" /></div>
+        <!--Image container-->
+        <!--Right sidebar-->
+        <div class="debug">
+          <ul>
+            <li style="display: block"><a href="">Main page</a></li>
+            <li style="display: block"><a href="">Contents</a></li>
+            <li style="display: block"><a href="">Featured content</a></li>
+          </ul>
+          <p>Interaction</p>
+          <hr style="border-top: 3px solid #bbb" />
+        </div>
+        <!--Right sidebar-->
+      </div>
+      <!--Top level friso-->
+      <div class="myfont-normal" style="width: 100%">
+        <ul>
+          <li class="top-friso"><a href="">Login</a></li>
+          <li class="top-friso"><a href="">Create acount</a></li>
+          <li class="top-friso"><a href="">Contributions</a></li>
+          <li class="top-friso"><a href="">Talk</a></li>
+          <li class="top-friso" style="color: grey">Not logged in</li>
+          <li class="top-friso"><img src="images/user-ico.png" alt="" /></li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
