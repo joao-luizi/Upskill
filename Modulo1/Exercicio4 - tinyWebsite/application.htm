@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application Form</title>
+  </head>
+
+  <body>
+    <p align="center">
+      <a href="index.htm">Homepage</a> | <a href="blog.htm">Blog</a> |
+      <a href="gallery.htm">Gallery</a> |
+      <a href="report.htm">Students Data</a> |
+      <a href="application.htm">Application Form</a> |
+      <a href="contact.htm">Contact</a> |
+      <a href="resources.htm">Resources</a>
+    </p>
+
+    <h1 align="center">Application Form</h1>
+
+    <main>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input
+          style="margin-top: 15px; margin-bottom: 15px"
+          type="text"
+          id="name"
+          name="name"
+        />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          style="margin-top: 15px; margin-bottom: 15px"
+          type="text"
+          id="email"
+          name="email"
+        />
+        <br />
+        <label for="degree">Skype ID:</label>
+        <input
+          style="margin-top: 15px; margin-bottom: 15px"
+          type="text"
+          id="degree"
+          name="degree"
+        />
+        <br />
+        <label for="degree">Education/Degree?</label>
+        <input
+          style="margin-top: 15px; margin-bottom: 15px"
+          type="text"
+          id="degree"
+          name="degree"
+        />
+      </fieldset>
+
+      <fieldset style="margin-top: 15px">
+        <legend>Freelancing Information?</legend>
+        <p>Which platforms do you use for freelancing</p>
+        <label for="upwork">Upwork</label>
+        <input type="checkbox" name="upwork" id="upwork" />
+        <label for="freelancer">Freelancer</label>
+        <input type="checkbox" name="freelancer" id="freelancer" />
+        <label for="elancer">Elancer</label>
+        <input type="checkbox" name="elancer" id="elancer" />
+        <label for="reference">Reference based work</label>
+        <input type="checkbox" name="reference" id="reference" />
+        <label for="other">Other?</label>
+        <input type="text" name="other" id="other" />
+        <br />
+        <p>Which clients do you serve?</p>
+        <label for="foreign">Foreign</label>
+        <input type="checkbox" name="foreign" id="foreign" />
+        <label for="local">Local</label>
+        <input type="checkbox" name="local" id="local" />
+        <br />
+        <p>What is your core area??</p>
+        <label for="writer">Writer</label>
+        <input type="radio" name="writer" id="writer" />
+        <label for="developer">Developer</label>
+        <input type="radio" name="developer" id="developer" />
+        <label for="designer">Designer</label>
+        <input type="radio" name="designer" id="designer" />
+        <label for="sdeveloper">Software Developer</label>
+        <input type="radio" name="sdeveloper" id="sdeveloper" />
+        <label for="mdeveloper">Mobile Developer</label>
+        <input type="radio" name="mdeveloper" id="mdeveloper" />
+        <label for="other-area">Other?</label>
+        <input type="radio" name="other-area" id="other-area" />
+        <input type="text" name="other-area" id="other-area" />
+      </fieldset>
+      <p>What kind of training are you interested? (if required)</p>
+      <select name="training" id="training">
+        <option value="remote">Remote Training</option>
+        <option value="inperson">In-person Training</option>
+      </select>
+	  <br>
+	  <p>Do you want to say anything about this website?</p>
+	  <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+	  <button type="button" name="submit" id="submit">Submit this Form</button>
+	  <button type="button"  name="reset" id="reset">Reset</button>
+    </main>
+    <hr />
+    <p align="center">&copy; Copyright 2020. www.&ltabc&gt.com</p>
+  </body>
+</html>
