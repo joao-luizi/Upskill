@@ -1,261 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercicio 3 - tinyWiky</title>
     <style>
-        @font-face {
-            font-family: "LinBiolinum";
-            src: url("fonts/LinBiolinum_K.woff") format("woff");
-        }
+      @font-face {
+        font-family: "LinBiolinum";
+        src: url("fonts/LinBiolinum_K.woff") format("woff");
+      }
 
-        @font-face {
-            font-family: "LinBiolinum";
-            src: url("fonts/LinBiolinum_R.woff") format("woff");
-        }
+      @font-face {
+        font-family: "LinBiolinum";
+        src: url("fonts/LinBiolinum_R.woff") format("woff");
+      }
 
-        @font-face {
-            font-family: "LinBiolinum";
-            src: url("fonts/LinBiolinum_RB.woff") format("woff");
-        }
+      @font-face {
+        font-family: "LinBiolinum";
+        src: url("fonts/LinBiolinum_RB.woff") format("woff");
+      }
 
-        @font-face {
-            font-family: "LinBiolinum";
-            src: url("fonts/LinBiolinum_RI.woff") format("woff");
-        }
+      @font-face {
+        font-family: "LinBiolinum";
+        src: url("fonts/LinBiolinum_RI.woff") format("woff");
+      }
 
-        @font-face {
-            font-family: "LinLibertine";
-            src: url("fonts/LinLibertine_DR.woff") format("woff");
-        }
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_DR.woff") format("woff");
+      }
 
-        @font-face {
-            font-family: "LinLibertine";
-            src: url("fonts/LinLibertine_I.woff") format("woff");
-        }
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_I.woff") format("woff");
+      }
 
-        @font-face {
-            font-family: "LinLibertine";
-            src: url("fonts/LinLibertine_M.woff") format("woff");
-        }
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_M.woff") format("woff");
+      }
 
-        @font-face {
-            font-family: "LinLibertine";
-            src: url("fonts/LinLibertine_R.woff") format("woff");
-        }
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_R.woff") format("woff");
+      }
 
-        @font-face {
-            font-family: "LinLibertine";
-            src: url("fonts/LinLibertine_RB.woff") format("woff");
-        }
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_RB.woff") format("woff");
+      }
 
-        @font-face {
-            font-family: "LinLibertine";
-            src: url("fonts/LinLibertine_RBI.woff") format("woff");
-        }
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_RBI.woff") format("woff");
+      }
 
-        @font-face {
-            font-family: "LinLibertine";
-            src: url("fonts/LinLibertine_RI.woff") format("woff");
-        }
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_RI.woff") format("woff");
+      }
 
-        @font-face {
-            font-family: "LinLibertine";
-            src: url("fonts/LinLibertine_RZ.woff") format("woff");
-        }
+      @font-face {
+        font-family: "LinLibertine";
+        src: url("fonts/LinLibertine_RZ.woff") format("woff");
+      }
 
-        html,
-        body {
-            margin: 0px;
-            padding: 0px;
-        }
+      html,
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
 
-        .debug {
-            border: 1px solid red;
-        }
+      .debug {
+        border: 1px solid red;
+      }
 
-        ul {
-            list-style-type: none;
-            margin: 15px;
-            padding: 0;
-            overflow: hidden;
-        }
+      ul {
+        list-style-type: none;
+        margin: 15px;
+        padding: 0;
+        overflow: hidden;
+      }
 
-        .top-friso {
-            float: right;
-            margin-left: 10px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            background-color: rgb(248, 247, 247);
-        }
+      .top-friso {
+        float: right;
+        margin-left: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color: rgb(248, 247, 247);
+      }
 
-        a {
-            text-decoration: none;
-        }
+      a {
+        text-decoration: none;
+      }
 
-        .myfont-normal {
-            font-style: normal;
-            font-family: LinLibertine;
-            font-size: 12px;
-        }
+      .myfont-normal {
+        font-style: normal;
+        font-family: LinLibertine;
+        font-size: 12px;
+      }
 
-        .sidebar-right {
-            display: flex;
-            flex-direction: column;
-            width: 25%;
-            height: 100%;
-            border-right: 1px solid grey;
-            background-color: rgb(248, 247, 247);
+      .sidebar-right {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        height: 100%;
+        border-right: 1px solid grey;
+        background-color: rgb(248, 247, 247);
+      }
 
-        }
+      .sidebar-left {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        height: 100%;
+        background-color: white;
+      }
 
-        .sidebar-left {
-            display: flex;
-            flex-direction: column;
-            width: 75%;
-            height: 100%;
-            background-color: white;
-        }
+      .main {
+        width: 99vw;
+        height: 99vh;
+        background-color: rgb(246, 246, 246);
+      }
 
-        .main {
-            width: 99vw;
-            height: 99vh;
-            background-color: rgb(246, 246, 246);
-        }
+      .logo {
+        height: 25%;
+        width: 100%;
+      }
 
-        .logo {
-            height: 25%;
-            width: 100%;
-        }
-
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            display: block;
-            margin: auto;
-
-        }
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: auto;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <main class="main" style="display: flex; flex-direction: row;">
-        <div style=" width: 15%; margin: 0px; padding: 0px; display: flex; flex-direction: column;">
-            <div class="logo" style="height: 25%; object-fit: fill;"><img src="images/logo.png" alt=""></div>
-            <div class="myfont-normal" style="height: 75%; font-size: 14px;">
-                <ul style="margin-top: 55px;">
-                    <li style="display: block"><a href="">Main page</a></li>
-                    <li style="display: block"><a href="">Contents</a></li>
-                    <li style="display: block"><a href="">Featured content</a></li>
-                </ul>
-                <p style="margin-left: 15px; margin-bottom: 0px;">Interaction</p>
-                <hr style="border-top: 1px solid #bbb; margin-left: 15px; margin-right: 15px;" />
-                <ul>
-                    <li style="display: block"><a href="">Main page</a></li>
-                    <li style="display: block"><a href="">Contents</a></li>
-                    <li style="display: block"><a href="">Featured content</a></li>
-                </ul>
-                <p style="margin-left: 15px; margin-bottom: 0px;">Interaction</p>
-                <hr style="border-top: 1px solid #bbb; margin-left: 15px; margin-right: 15px;" />
-                <ul>
-                    <li style="display: block"><a href="">Main page</a></li>
-                    <li style="display: block"><a href="">Contents</a></li>
-                    <li style="display: block"><a href="">Featured content</a></li>
-                </ul>
-                <p style="margin-left: 15px; margin-bottom: 0px;">Interaction</p>
-                <hr style="border-top: 1px solid #bbb; margin-left: 15px; margin-right: 15px;" />
-
-            </div>
+  <body>
+    <main class="main" style="display: flex; flex-direction: row">
+      <div
+        style="
+          width: 15%;
+          margin: 0px;
+          padding: 0px;
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        <div class="logo" style="height: 25%; object-fit: fill">
+          <img src="images/logo.png" alt="" />
         </div>
-        <div style="flex: 1;  width: 85%; margin: 0px; padding: 0px; display: flex; flex-direction: column;">
-            <div class="myfont-normal" style="width: 100%">
-                <ul>
-                    <li class="top-friso"><a href="">Login</a></li>
-                    <li class="top-friso"><a href="">Create acount</a></li>
-                    <li class="top-friso"><a href="">Contributions</a></li>
-                    <li class="top-friso"><a href="">Talk</a></li>
-                    <li class="top-friso" style="color: grey">Not logged in</li>
-                    <li class="top-friso"><img src="images/user-ico.png" alt="" /></li>
-                </ul>
+        <div class="myfont-normal" style="height: 75%; font-size: 14px">
+          <ul style="margin-top: 55px">
+            <li style="display: block"><a href="">Main page</a></li>
+            <li style="display: block"><a href="">Contents</a></li>
+            <li style="display: block"><a href="">Featured content</a></li>
+          </ul>
+          <p style="margin-left: 15px; margin-bottom: 0px">Interaction</p>
+          <hr
+            style="
+              border-top: 1px solid #bbb;
+              margin-left: 15px;
+              margin-right: 15px;
+            "
+          />
+          <ul>
+            <li style="display: block"><a href="">Main page</a></li>
+            <li style="display: block"><a href="">Contents</a></li>
+            <li style="display: block"><a href="">Featured content</a></li>
+          </ul>
+          <p style="margin-left: 15px; margin-bottom: 0px">Interaction</p>
+          <hr
+            style="
+              border-top: 1px solid #bbb;
+              margin-left: 15px;
+              margin-right: 15px;
+            "
+          />
+          <ul>
+            <li style="display: block"><a href="">Main page</a></li>
+            <li style="display: block"><a href="">Contents</a></li>
+            <li style="display: block"><a href="">Featured content</a></li>
+          </ul>
+          <p style="margin-left: 15px; margin-bottom: 0px">Interaction</p>
+          <hr
+            style="
+              border-top: 1px solid #bbb;
+              margin-left: 15px;
+              margin-right: 15px;
+            "
+          />
+        </div>
+      </div>
+      <div
+        style="
+          flex: 1;
+          width: 85%;
+          margin: 0px;
+          padding: 0px;
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        <div class="myfont-normal" style="width: 100%">
+          <ul>
+            <li class="top-friso"><a href="">Login</a></li>
+            <li class="top-friso"><a href="">Create acount</a></li>
+            <li class="top-friso"><a href="">Contributions</a></li>
+            <li class="top-friso"><a href="">Talk</a></li>
+            <li class="top-friso" style="color: grey">Not logged in</li>
+            <li class="top-friso"><img src="images/user-ico.png" alt="" /></li>
+          </ul>
+        </div>
+        <div
+          style="
+            flex: 1;
+            background-color: white;
+            border-left: 1px solid lightblue;
+            border-bottom: 1px solid lightblue;
+            border-right: 1px solid lightblue;
+          "
+        >
+          <div style="display: flex; width: 100%">
+            <div>
+              <div
+                class="myfont-normal"
+                style="
+                  padding: 5px;
+                  margin: 0px;
+                  float: left;
+                  background-color: white;
+                  border-right: 1px solid lightblue;
+                "
+              >
+                <a href="">Article</a>
+              </div>
+              <div
+                class="myfont-normal"
+                style="
+                  padding: 5px;
+                  margin: 0px;
+                  float: left;
+                  background: linear-gradient(
+                    to top,
+                    rgba(209, 237, 247, 0.671),
+                    white
+                  );
+                  border-right: 1px solid lightblue;
+                  border-bottom: 2px solid lightblue;
+                "
+              >
+                <a href="">Talk</a>
+              </div>
             </div>
             <div
-                style="flex: 1; background-color: white; border-left: 1px solid lightblue; border-bottom: 1px solid lightblue; border-right: 1px solid lightblue;">
-                <div style="display: flex; width: 100%;">
-                    <div>
-                        <div class="myfont-normal "
-                            style="padding: 5px; margin: 0px; float: left; background-color: white; border-right: 1px solid lightblue;">
-                            <a href="">Article</a>
-                        </div>
-                        <div class="myfont-normal "
-                            style="padding: 5px; margin: 0px; float: left; background: linear-gradient(to top, rgba(209, 237, 247, 0.671), white); border-right: 1px solid lightblue; border-bottom: 2px solid lightblue;">
-                            <a href="">Talk</a>
-                        </div>
-                    </div>
-                    <div style="flex: 1; background-color: rgb(246, 246, 246); ; border-bottom: 1px solid lightblue;">
-                    </div>
-                    <div>
-                        <div class="myfont-normal "
-                            style="padding: 5px; margin: 0px; float: right; background-color:white;">
-                            <input class="myfont-normal " style="font-size:10px;" type="text"
-                                placeholder="Search wikipedia" id="">
-                        </div>
-                        <div class="myfont-normal "
-                            style="padding: 5px; margin: 0px; float: right;background: linear-gradient(to top, rgba(209, 237, 247, 0.671), white); border-right: 1px solid lightblue; border-bottom: 2px solid lightblue;">
-                            <a href="">View history</a>
-                        </div>
-                        <div class="myfont-normal "
-                            style="padding: 5px; margin: 0px; float: right; background: linear-gradient(to top, rgba(209, 237, 247, 0.671), white); border-right: 1px solid lightblue; border-bottom: 2px solid lightblue;">
-                            <a href="">View source</a>
-                        </div>
-                        <div class="myfont-normal "
-                            style="padding: 5px; margin: 0px; float: right; background-color: white; border-right: 1px solid lightblue; border-left: 1px solid lightblue;">
-                            <a href="">Read</a>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="" style="width: 97%; padding-left: 10px; padding-right: 15px;">
-                    <h1>Simple Wikepedia Website Template</h1>
-                    <hr style="border-top: 1px solid black; " />
-                    <p style="margin-top: 0px; font-size: 12px">From wikipedia the free encyclopedia</p>
-                </div>
-                <div style="display: flex; flex-direction: row;">
-
-                    <div style="width: 70%; margin-left: 20px; margin-top: 20px; font-size: 12px;">
-                        <p style="font-style: italic;">This article is about the writing implement. For other uses, see Pencil (disambiguation).</p>
-                        <p>Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing elit. Commodi ea temporibus doloremque placeat vel tempora dolores ullam perferendis iste? Necessitatibus quaerat repudiandae animi voluptates dignissimos? Omnis ipsum illum id eveniet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit corporis exercitationem vero minus. Deleniti quam modi odio soluta! Sunt voluptates ullam laboriosam quasi officia? Vitae delectus odit a ex voluptatem!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta totam sequi ipsa possimus dignissimos quidem doloribus qui dolores similique soluta itaque cum odit magni, quam corrupti esse numquam. Atque.</p>
-                    </div>
-                    <div  style="flex: 1">
-                        <figure style="padding: 2px; border: 1px solid grey; font-size: 12px;">
-                            <img style=" border: 1px solid grey;" src="images/pencil.jpg" alt="">
-                            <caption >This is a blue <a href="">pencil</a></caption>
-                        </figure>
-                    </div>
-                </div>
-                <div></div>
-
-                <div class="debug" style="width: 100%; ">Colocar tabelas</div>
-
+              style="
+                flex: 1;
+                background-color: rgb(246, 246, 246);
+                border-bottom: 1px solid lightblue;
+              "
+            ></div>
+            <div>
+              <div
+                class="myfont-normal"
+                style="
+                  padding: 5px;
+                  margin: 0px;
+                  float: right;
+                  background-color: white;
+                "
+              >
+                <input
+                  class="myfont-normal"
+                  style="font-size: 10px"
+                  type="text"
+                  placeholder="Search wikipedia"
+                  id=""
+                />
+              </div>
+              <div
+                class="myfont-normal"
+                style="
+                  padding: 5px;
+                  margin: 0px;
+                  float: right;
+                  background: linear-gradient(
+                    to top,
+                    rgba(209, 237, 247, 0.671),
+                    white
+                  );
+                  border-right: 1px solid lightblue;
+                  border-bottom: 2px solid lightblue;
+                "
+              >
+                <a href="">View history</a>
+              </div>
+              <div
+                class="myfont-normal"
+                style="
+                  padding: 5px;
+                  margin: 0px;
+                  float: right;
+                  background: linear-gradient(
+                    to top,
+                    rgba(209, 237, 247, 0.671),
+                    white
+                  );
+                  border-right: 1px solid lightblue;
+                  border-bottom: 2px solid lightblue;
+                "
+              >
+                <a href="">View source</a>
+              </div>
+              <div
+                class="myfont-normal"
+                style="
+                  padding: 5px;
+                  margin: 0px;
+                  float: right;
+                  background-color: white;
+                  border-right: 1px solid lightblue;
+                  border-left: 1px solid lightblue;
+                "
+              >
+                <a href="">Read</a>
+              </div>
             </div>
-            <div class="myfont-normal">
-                <p style="margin-left: 20px;">This page was last edited on 29.07.2017 | Template by <a href="">HTML5 Templates</a></p>
+          </div>
+          <div
+            class=""
+            style="width: 97%; padding-left: 10px; padding-right: 15px"
+          >
+            <h1>Simple Wikepedia Website Template</h1>
+            <hr style="border-top: 1px solid black" />
+            <p style="margin-top: 0px; font-size: 12px">
+              From wikipedia the free encyclopedia
+            </p>
+          </div>
+          <div style="display: flex; flex-direction: row">
+            <div
+              style="
+                width: 70%;
+                margin-left: 20px;
+                margin-top: 20px;
+                font-size: 12px;
+              "
+            >
+              <p style="font-style: italic">
+                This article is about the writing implement. For other uses, see
+                Pencil (disambiguation).
+              </p>
+              <p>
+                Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing elit.
+                Commodi ea temporibus doloremque placeat vel tempora dolores
+                ullam perferendis iste? Necessitatibus quaerat repudiandae animi
+                voluptates dignissimos? Omnis ipsum illum id eveniet.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                corporis exercitationem vero minus. Deleniti quam modi odio
+                soluta! Sunt voluptates ullam laboriosam quasi officia? Vitae
+                delectus odit a ex voluptatem!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                dicta totam sequi ipsa possimus dignissimos quidem doloribus qui
+                dolores similique soluta itaque cum odit magni, quam corrupti
+                esse numquam. Atque.
+              </p>
             </div>
-            <div class="myfont-normal" style="display: inline;">
-                <a style="margin-left: 20px;" href="">Privacy policy</a>
-                <a style="margin-left: 5px;" href="">About</a>
-                <a style="margin-left: 5px;" href="">Terms and conditions</a>
-                <a style="margin-left: 5px;" href="">Cookie statement</a>
-                <a style="margin-left: 5px;" href="">Developers</a>
+            <div style="flex: 1">
+              <figure
+                style="padding: 2px; border: 1px solid grey; font-size: 12px"
+              >
+                <img
+                  style="border: 1px solid grey"
+                  src="images/pencil.jpg"
+                  alt=""
+                />
+                <caption>
+                  This is a blue
+                  <a href="">pencil</a>
+                </caption>
+              </figure>
             </div>
+          </div>
+
+          <div
+            class="myfont-normal"
+            style="
+              width: 25%;
+              background-color: lightgrey;
+              border: 1px solid black;
+              font-size: 10px;
+            "
+          >
+            <div style="display: flex; flex-direction: row; width: 100%">
+              <div class="" style="width: 75%">
+                <p
+                  style="
+                    margin-left: 50%;
+                    margin-right: 50%;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                  "
+                >
+                  <b>Contents</b>
+                </p>
+              </div>
+              <div class="" style="width: 25%"><a href="">[Hide]</a></div>
+            </div>
+            <div>
+              <ol>
+                <li>
+                  <a href="">History</a>
+                  <ol>
+                    <li><a href="">Camel's hair pencil</a></li>
+                    <li><a href="">Discovery of grafite deposit</a></li>
+                    <li><a href="">Wood holders added</a></li>
+                    <li><a href="">The pencil in america</a></li>
+                    <li><a href="">Eraser attached</a></li>
+                    <li><a href="">Marking material</a></li>
+                    <li><a href="">Pencil extender</a></li>
+                  </ol>
+                </li>
+                <li><a href="">Health</a></li>
+                <li><a href="">Manufacture</a></li>
+                <li><a href="">Grading and classification</a></li>
+              </ol>
+            </div>
+          </div>
+          <div
+            class=""
+            style="width: 97%; padding-left: 10px; padding-right: 15px"
+          >
+            <h3>Paulo eirmod intellegam</h3>
+            <hr style="border-top: 1px solid black" />
+            <p style="margin-top: 0px; font-size: 12px">
+              <b>Percipit maiestasis sea eu</b>
+            </p>
+            <p style="font-size: 14px">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              quam ipsa nam corporis, repellat, fugit eos omnis dolorem ea
+              quidem quae nihil debitis odit aperiam! At quisquam ad nobis
+              inventore.
+            </p>
+            <p style="margin-top: 0px; font-size: 12px">
+              <b>Nam option recusabo</b>
+            </p>
+            <p style="font-size: 14px">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              quam ipsa nam corporis, repellat, fugit eos omnis dolorem ea
+              quidem quae nihil debitis odit aperiam! At quisquam ad nobis
+              inventore.
+            </p>
+            <p style="margin-top: 0px; font-size: 14px"><b>Sed rebum regioni suscipit</b></p>
+            <hr style="border-top: 1px solid black" />
+            <p style="margin-top: 0px; font-size: 14px">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              quam ipsa nam corporis, repellat, fugit eos omnis dolorem ea
+              quidem quae nihil debitis odit aperiam! At quisquam ad nobis
+              inventore.
+            </p>
+            <table style="border: 1px solid grey; width: 100%;">
+                <tr style="background-color: rgb(160, 211, 228);">
+                    <th>Panel title</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; font-size: 12px; background-color: rgb(187, 221, 233);">Lorem  &middot Ipsum  &middot Dolorestitas</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;  font-size: 12px;">Lorem &middot ipsum &middot dolor sit &middot amet &middot consectetur &middot adipisicing elit &middot Nam molestias &middot itaque &middot eos minima &middot consectetur &middot adipisicing elit</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;  font-size: 12px; background-color: rgb(187, 221, 233);">Subtitle</td>
+                </tr>
+            </table>
+            <br>
+            <table style="border: 1px solid grey; width: 100%;">
+                <tr>
+                    <td style="color: blue; font-size: 14px;">Minimun currumpit | Regione suscipit | Has et parten</td>
+                </tr>
+            </table>
+            
+            
+          </div>
         </div>
-
+        <div class="myfont-normal">
+          <p style="margin-left: 20px">
+            This page was last edited on 29.07.2017 | Template by
+            <a href="">HTML5 Templates</a>
+          </p>
+        </div>
+        <div class="myfont-normal" style="display: inline">
+          <a style="margin-left: 20px" href="">Privacy policy</a>
+          <a style="margin-left: 5px" href="">About</a>
+          <a style="margin-left: 5px" href="">Terms and conditions</a>
+          <a style="margin-left: 5px" href="">Cookie statement</a>
+          <a style="margin-left: 5px" href="">Developers</a>
+        </div>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>
