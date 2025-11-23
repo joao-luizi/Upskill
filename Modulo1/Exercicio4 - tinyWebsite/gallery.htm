@@ -1,29 +1,81 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Homepage</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tiny Website</title>
+	<style>
+		.tborder {
+			border-bottom: 1px solid black;
+			padding-bottom: 5px;
+			margin-bottom: 5px;
+
+		}
+
+		.bborder {
+			border-top: 1px solid black;
+			padding-top: 5px;
+			margin-top: 5px;
+			border-collapse: collapse;
+
+		}
+
+		.align {
+			text-align: center;
+		}
+
+		.image {
+			width: 150px;
+			height: 150px;
+			object-fit: fill;
+		}
+
+		td {
+			width: 250px;
+			height: 150px;
+		}
+	</style>
 </head>
 
 <body>
+	<header style="text-align: center; letter-spacing: 1px;"><small>
+			<a href="index.htm">Homepage</a> |
+			<a href="blog.htm">Blog</a> |
+			<a href="gallery.htm">Gallery</a> |
+			<a href="report.htm">Students Data</a> |
+			<a href="application.htm">Application Form</a> |
+			<a href="contact.htm">Contact</a> |
+			<a href="resources.htm">Resources</a>
+		</small><br><br>
+		<p>
+			<large><b><span style="font-size: 35px;">My Gallery</span></b></large>
+		</p>
+		<p><span style="font-size: 25px;"><b>Ipsum</b></span></p>
+		</b>
+	</header>
+	<table vertical-align="middle"
+		style="margin-left: auto; margin-right: auto; border-collapse: collapse; width: 600px; height:auto; table-layout: fixed;">
 
-<p align="center">
-<a href="index.htm" >Homepage</a> | 
-<a href="blog.htm">Blog</a> | 
-<a href="gallery.htm">Gallery</a> |
-<a href="report.htm">Students Data</a> |
-<a href="application.htm">Application Form</a> |
-<a href="contact.htm">Contact</a> |
-<a href="resources.htm">Resources</a>
-</p>
+		<tr style="width:100%">
+			<td class="align image td" style="vertical-align: middle; width: 33%;"><img
+					style="object-fit: cover; overflow: hidden; width:100%; height:100%" src="img/image1.jpg"
+					alt="imagem1"></td>
+			<td class="align image td" style="vertical-align: middle; width: 33%;"><img
+					style="object-fit: cover; overflow: hidden; width:100%; height:100%" src="img/image2.jpg"
+					alt="imagem2"></td>
+			<td class="align image td" style="vertical-align: middle; width: 33%;"><img
+					style="object-fit: cover; overflow: hidden; width:100%; height:100%" src="img/image3.jpg"
+					alt="imagem3"></td>
+		</tr>
+	</table>
 
-<h1 align="center">Welcome to My Website</h1>
 
 
-<main></main>
-<hr>
-<p align="center">&copy; Copyright 2020. www.&ltabc&gt.com</p>
+	<hr>
+	<p align="center">&copy; Copyright 2020. www.&ltabc&gt.com</p>
+
 
 </body>
-</html>
 
+</html>
