@@ -4,14 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script>
+      "use strict";
+      function f(x) {
+        return x* x
+      }
+      function MostrarResultado(){
+        
+        let x = "-----------\nO resultado é: " + f(5) + "\n------------\n"
+        alert(x)
+        x = f(5);
+        alert(x);
+      }
+    </script>
   </head>
   <body>
-    <h1>Este é o meu teste</h1>
-    <p>Olá Malta!!!!</p>
-    <p>Isto é outro paragrafo</p>
-    <ul>
-        <li>ponto 1</li>
-        <li>ponto 2</li>
-    </ul>
+    <button type="button" onclick="MostrarResultado()">
+      Calcular f(x)
+    </button>
   </body>
 </html>
