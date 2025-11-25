@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function GetInput() {
+            let txt = prompt("Escolher um Numero:");
+            return txt;
+        }
+        function Begin() {
+            let input = "";
+            let numbers = "";
+            let sum = 0;
+            let count = 0;
+            while (input != "0") {
+                let input = GetInput();
+                if (input != null) 
+                {
+                    if (input == "0") {
+                        break;
+                    }
+                    numbers += input + ";"
+                    sum += parseInt(input);
+                    count++;
+                    console.log("Sum:" + sum + " Count:" + count);
+                }
+            }
+            let average = sum / count;
+            let result = "You entered the following " + count + " numbers:\n" + numbers + "\nThe average is: " + average + " (" + sum + " / " + count + ")";
+            alert(result);
+        } 
+    </script>
+</head>
+
+<body>
+    <button type="button" onclick="Begin()">Begin</button>
+</body>
+
+</html>
