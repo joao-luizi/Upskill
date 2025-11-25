@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabuada</title>
+    <script>
+      function calc(x, y) {
+        return x * y;
+      }
+      function TabuadaLine(x, y) {
+        let txt = "";
+        txt = x + " X " + y + " = " + calc(x, y) + "\n";
+        return txt;
+      }
+      function TabuadaTable(x, ti, tf) {
+        let result = "";
+        let i = ti;
+        while (ti <= tf) {
+          result += TabuadaLine(x, ti);
+          ti++;
+        }
+
+        return result;
+      }
+      /*
+        Funcao comentada
+        */
+      function ButtonPress() {
+        let element = document.getElementById("result");
+        element.innerText = "";
+        let input = prompt("What is your prompt?");
+        if (!input || isNaN(input)) 
+            return;
+        let result = "";
+        result += TabuadaTable(input,1, 9) + "\n";
+        alert(result);
+        element.innerText = result;
+      }
+    </script>
+  </head>
+  <body>
+    <button type="button" onclick="ButtonPress()">Calcular</button>
+    <div id="result"></div>
+  </body>
+</html>
