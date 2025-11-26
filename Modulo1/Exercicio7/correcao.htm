@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function mediaVetor(v) {
+        "use strict"
+        let sum = 0;
+        for (let i = 0; i < v.length; i++){
+            sum += v[i]
+        }
+        /* let i = 0;
+        while (i < v.length) {
+          sum += v[i];
+          i++;
+        } */
+        return sum / v.length;
+      }
+      function media() {
+        let v = [];
+        while (true) {
+          let s = prompt("Qual é o numero?");
+          if (s.trim() == "0") break;
+          let v1 = parseInt(s);
+          v[v.length] = v1;
+        }
+        alert(mediaVetor(v));
+      }
+    </script>
+  </head>
+  <body>
+    <button type="button" onclick="media()">Begin</button>
+  </body>
+</html>

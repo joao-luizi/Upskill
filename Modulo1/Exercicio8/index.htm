@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function FirstDigit(x) {
+        if (x < 0)
+            x *= -1;
+        while (x > 10) {
+          x /= 10;
+        }
+        if (x == 10) return 1;
+        else return parseInt(x);
+      }
+      function Begin(x)
+      {
+        alert(FirstDigit(x));
+      }
+      function test1()
+      {
+        Begin(5434534);
+      }
+      function test2()
+      {
+        Begin(-10);
+      }
+      function test3()
+      {
+        Begin(767);
+      }
+    </script>
+    <style>
+        button{
+            width: 20%; 
+            margin-bottom: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; flex-direction: column;">
+        <button type="button"  onclick="Begin(69998980809)">Calcular</button>
+        <button type="button"  onclick="test1()">Test1 - (5434534)</button>
+        <button type="button"  onclick="test2()">Test2 - (-10)</button>
+        <button type="button"  onclick="test3()">Test3 - (767)</button>
+    </div>
+  </body>
+</html>
