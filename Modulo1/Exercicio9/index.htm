@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getInput() {
+            let numbers = -1;
+            while (numbers < 0){
+                let input = prompt("Quantos numeros?")
+                if (input != null)
+                    numbers = parseInt(input)
+            }
+            return numbers
+        }
+        function getRandomInts(x){
+            let vec = [];
+            let counter = x;
+            while (counter > 0){
+                let number = Math.floor(Math.random() * 100) + 1;
+                vec[vec.length] = number
+                counter--;
+            }
+            return vec
+        }
+        function displayRandoms(){
+            let amount = getInput();
+            let randoms = getRandomInts(amount);
+            alert(randoms.toString());
+        }
+        function teste1(){
+            let amount = 5;
+            let randoms = getRandomInts(amount);
+            alert(randoms.toString());
+        }
+
+        function teste2(){
+            let amount = 500;
+            let randoms = getRandomInts(amount);
+            alert(randoms.toString());
+        }
+    </script>
+</head>
+
+<body>
+    <button type="button" onclick="displayRandoms()">Obters Numeros Aleatorios</button>
+    <button type="button" onclick="teste1()">Obters 5 Numeros Aleatorios</button>
+    <button type="button" onclick="teste2()">Obters 500 Numeros Aleatorios</button>
+</body>
+
+</html>
