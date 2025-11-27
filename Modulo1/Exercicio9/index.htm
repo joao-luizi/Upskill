@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        function randomNumber(min,max){
+            return Math.floor(Math.random() * ((max -min)+ 1)) + min
+        }
         function getInput() {
             let numbers = -1;
             while (numbers < 0){
@@ -19,7 +22,7 @@
             let vec = [];
             let counter = x;
             while (counter > 0){
-                let number = Math.floor(Math.random() * 100) + 1;
+                let number = randomNumber(1, 100)
                 vec[vec.length] = number
                 counter--;
             }
