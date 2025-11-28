@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function init(){
+            foo()      
+        }
+        function foo()
+        {
+            let ref = document.getElementById("p1")
+            ref.outerHTML = "<h1>Teste</h1>"
+
+            let refP = document.getElementsByTagName("p")
+            refP[1].innerHTML = "999"
+            
+        }
+    </script>
+</head>
+<body onload="foo()">
+    <button type="button" onclick="foo()">Teste</button>
+    <p id="p1">abc</p>
+    <p></p>
+</body>
+</html>

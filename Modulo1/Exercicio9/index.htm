@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="utils/util.js"></script>
+    <script src="utils/vectores.js"></script>
     <script>
-        function randomNumber(min,max){
-            return Math.floor(Math.random() * ((max -min)+ 1)) + min
-        }
+        
         function getInput() {
             let numbers = -1;
             while (numbers < 0){
@@ -18,30 +18,21 @@
             }
             return numbers
         }
-        function getRandomInts(x){
-            let vec = [];
-            let counter = x;
-            while (counter > 0){
-                let number = randomNumber(1, 100)
-                vec[vec.length] = number
-                counter--;
-            }
-            return vec
-        }
+
         function displayRandoms(){
             let amount = getInput();
-            let randoms = getRandomInts(amount);
+            let randoms = getRandomInts(amount, 1, 100);
             alert(randoms.toString());
         }
         function teste1(){
             let amount = 5;
-            let randoms = getRandomInts(amount);
+            let randoms = getRandomInts(amount, 1, 100);
             alert(randoms.toString());
         }
 
         function teste2(){
             let amount = 500;
-            let randoms = getRandomInts(amount);
+            let randoms = getRandomInts(amount, 1, 100);
             alert(randoms.toString());
         }
     </script>
