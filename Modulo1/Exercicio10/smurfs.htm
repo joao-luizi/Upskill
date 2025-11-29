@@ -1,50 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercicio 1 - Correçao</title>
-    <style>
-      .contorno {
-        border: 1px solid black;
-      }
-      .centrar {
-        text-align: center;
-      }
-      .image-fill{
-        
-        object-fit: cover;
-      }
-    </style>
-  </head>
-  <body>
-    <p style="text-align: center">Smurfs</p>
-    <table class="contorno centrar" style=" width: 100%; border-spacing: 0px; border-collapse: collapse;">
-      <tr>
-        <td class="contorno centrar">
-          <img class="image-fill" src="images/cat1.jfif"  alt="" />
-        </td>
-        <td class="contorno centrar"  ></td>
-        <td class="contorno centrar " >
-          <img class="image-fill" src="images/cat2.jfif"  alt="" />
-        </td>
-      </tr>
-      <tr>
-        <td class="contorno centrar" ></td>
-        <td class="contorno centrar" >
-          <img class="image-fill" src="images/cat3.jfif" alt="" />
-        </td>
-        <td class="contorno centrar"></td>
-      </tr>
-      <tr>
-        <td class="contorno centrar"  >
-          <img class="image-fill" src="images/cat4.jfif" alt="" />
-        </td>
-        <td class="contorno centrar" ></td>
-        <td class="contorno centrar" >
-          <img class="image-fill" src="images/cat5.jfif" alt="" />
-        </td>
-      </tr>
-    </table>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercicio 10</title>
+  <style>
+    .contorno {
+      border: 1px solid black;
+    }
+
+    .centrar {
+      text-align: center;
+    }
+
+    .image-fill {
+
+      object-fit: cover;
+    }
+  </style>
+  <script>
+    var tid = -1;
+    function roleFiguresForever() {
+      // do some stuff...
+
+      tid = setInterval(roleFigures, 1000); // repeat myself
+      let button = document.getElementById("rollForever")
+      button.outerHTML = '<button id="rollForever" type="button" style="margin-left: auto; margin-right: auto;" onclick="abortTimer()">Stop Rolling</button>'
+    }
+    function abortTimer() { // to be called when you want to stop the timer
+      clearInterval(tid);
+      tid = -1;
+      let button = document.getElementById("rollForever")
+      button.outerHTML = '<button id="rollForever" type="button" style="margin-left: auto; margin-right: auto;" onclick="roleFiguresForever()">Roll Figures</button>'
+    }
+    function roleFigures() {
+      let fig1 = document.getElementById("fig1")
+      let fig2 = document.getElementById("fig2")
+      let fig3 = document.getElementById("fig3")
+      let fig4 = document.getElementById("fig4")
+      let fig5 = document.getElementById("fig5")
+      let temp = fig5.innerHTML;
+      fig5.innerHTML = fig4.innerHTML
+      fig4.innerHTML = fig3.innerHTML
+      fig3.innerHTML = fig2.innerHTML
+      fig2.innerHTML = fig1.innerHTML
+      fig1.innerHTML = temp;
+    }
+  </script>
+</head>
+
+<body>
+  <p style="text-align: center">Smurfs</p>
+  <div style="display:flex; width: 100%; align-items: center;">
+    <button type="button" style="margin-left: auto; margin-right: auto;" onclick="roleFigures()">Roll Figures</button>
+    <button id="rollForever" type="button" style="margin-left: auto; margin-right: auto;"
+      onclick="roleFiguresForever()">Roll Forever</button>
+  </div>
+  <table class="contorno centrar" style=" width: 100%; border-spacing: 0px; border-collapse: collapse;">
+    <tr>
+      <td id="fig1" class="contorno centrar">
+        <img class="image-fill" src="images/cat1.jfif" alt="" />
+      </td>
+      <td class="contorno centrar"></td>
+      <td id="fig2" class="contorno centrar ">
+        <img class="image-fill" src="images/cat2.jfif" alt="" />
+      </td>
+    </tr>
+    <tr>
+      <td class="contorno centrar"></td>
+      <td id="fig3" class="contorno centrar">
+        <img class="image-fill" src="images/cat3.jfif" alt="" />
+      </td>
+      <td class="contorno centrar"></td>
+    </tr>
+    <tr>
+      <td id="fig4" class="contorno centrar">
+        <img class="image-fill" src="images/cat4.jfif" alt="" />
+      </td>
+      <td class="contorno centrar"></td>
+      <td id="fig5" class="contorno centrar">
+        <img class="image-fill" src="images/cat5.jfif" alt="" />
+      </td>
+    </tr>
+  </table>
+</body>
+
 </html>

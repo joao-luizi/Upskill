@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercicio 11 - Euromilhoes</title>
+  <style>
+    body {
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .center-horizontal {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+
+    .image-div {
+      width: 60%;
+      max-width: 500px;
+      height: 200px;
+      background-image: url(images/background.png);
+      background-size: cover;
+    }
+
+    .ballsResult {
+
+      margin-top: 120px;
+      margin-left: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .borderGreen {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25px;
+      height: 25px;
+      border: 4px solid green;
+      border-radius: 50%;
+    }
+
+    .borderRed {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25px;
+      height: 25px;
+      border: 4px solid red;
+      border-radius: 50%;
+    }
+
+    .borderBlue {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25px;
+      height: 25px;
+      border: 4px solid blue;
+      border-radius: 50%;
+    }
+
+    .borderGold {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25px;
+      height: 25px;
+      border: 4px solid gold;
+      border-radius: 50%;
+    }
+
+    .borderNone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25px;
+      height: 25px;
+      border: none;
+    }
+  </style>
+  <script>
+    var setNumbers;
+    var setStars;
+
+    function getColorClass(n) {
+      const colors = ["borderRed", "borderGreen", "borderBlue"];
+      return colors[(n - 1) % 3];
+    }
+    function fillResults() {
+      let resultsDiv = document.getElementById("resultsContainer");
+      resultsDiv.innerHTML = "";
+      for (const value of setNumbers) {
+        let elementDiv = document.createElement("div")
+        let colorClass = getColorClass(value)
+        elementDiv.innerHTML = value;
+        elementDiv.classList.add(colorClass)
+        resultsDiv.appendChild(elementDiv);
+      }
+      let elementDiv = document.createElement("div")
+      elementDiv.innerHTML = " + ";
+      elementDiv.classList.add("borderNone")
+      resultsDiv.appendChild(elementDiv);
+
+      for (const value of setStars) {
+        let elementDiv = document.createElement("div")
+        elementDiv.innerHTML = value;
+        elementDiv.classList.add("borderGold")
+        resultsDiv.appendChild(elementDiv);
+      }
+    }
+    function sortear() {
+      let button = document.getElementsByTagName("button")[0];
+      setNumbers = randomNumberExcept(1, 50, 5)
+      setStars = randomNumberExcept(1, 10, 2)
+      fillResults();
+      button.outerHTML = '<button type="button" onclick="sortNumbers()">Ordenar</button>'
+    }
+
+    function sortNumbers() {
+      let button = document.getElementsByTagName("button")[0];
+      setNumbers = new Set([...setNumbers].sort((a, b) => a - b));
+      setStars = new Set([...setStars].sort((a, b) => a - b));
+      fillResults();
+      button.outerHTML = '<button type="button" onclick="sortear()">Sortear</button>'
+    }
+    function randomNumber(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function randomNumberExcept(min, max, amount) {
+      let set = new Set()
+      while (set.size < amount) {
+        set.add(randomNumber(min, max))
+      }
+      return set;
+    }
+  </script>
+</head>
+
+<body>
+  <main>
+    <div class="center-horizontal">
+      <h1>Euromilhoes</h1>
+      <button type="button" onclick="sortear()">Sortear</button>
+      <div class="image-div">
+        <div id="resultsContainer" class="ballsResult">
+
+
+        </div>
+      </div>
+  </main>
+</body>
+
+</html>
