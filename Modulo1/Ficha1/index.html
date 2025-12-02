@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Ficha 1 - 1
+        function MediaDeDois(x, y){
+            return (x + y) / 2
+        }
+        //Ficha 1 - 2
+        function Arredondar(x){
+            return (x - parseInt(x) >= 0.5) ?  parseInt(x) + 1 : parseInt(x)   
+        }
+        //Ficha 1 - 3
+        function isNegative(x){
+            return (x < 0)? true : false
+        }
+        //Ficha 1 - 4
+        function isDigit(x){
+            (x >= 0 && x <= 9) ? true : false 
+        }
+        //Ficha 1 - 5
+        function isEven(x){
+            return (x % 2 == 0) ? true : false
+        }
+        //Ficha 1 - 6
+        function isOdd(x){
+            return (x % 2 == 0) ? false : true
+        }
+        //Ficha 1 - 7
+        function abs(x){
+            return (x < 0) ? x * -1 : x
+        }
+        //Ficha 1 - 8
+        function min(x , y){
+            return (x < y) ? x : y
+        }
+        //Ficha 1 - 9
+        function somaN(n){
+            return (n * (n + 1)) / 2
+        }
+        //Ficha 1 - 10
+        function isVowel(x){
+            let vec = ['a', 'e', 'i', 'o', 'u']
+            let result = false
+            for (let i = 0; i < vec.length; i++){
+                if (vec[i] == x){
+                    result = true
+                    break
+                }
+            }
+            return result
+        }
+        //Ficha 1 - 11
+        function isSorted(x, y, z){
+            return (x < y) ? (y < z) ? true: false: false
+        }
+        //Ficha 1 - 12
+        function isInRange(x, min, max){
+            return (x >= min)? (x <=max) ? true : false: false 
+        }
+        //Ficha 1 - 13
+        function isNotInRange(x, min, max){
+            return (x < min) ? true : (x > max) ? true : false
+        }
+        //Ficha 1 - 14
+        function xor(x, y){
+            if ((x == false && y == true) || (x == true && y == false))
+                return true
+            else
+                return false
+        }
+        //Ficha 1 - 15
+        function sameSignal(x, y){
+            if (x == 0 || y == 0)
+                return false
+            if ((x < 0 && y < 0) || (x > 0 && y > 0))
+                return true
+            return false
+        }
+        //Ficha 1 - 16
+        function onlyOnePositive(x, y){
+            return (x < 0 && y > 0) ? true : (x > 0 && y < 0) ? true : false
+        }
+    </script>
+</head>
+<body>
+    <button onclick="console.log(onlyOnePositive(-1, 2))"></button>
+</body>
+</html>
