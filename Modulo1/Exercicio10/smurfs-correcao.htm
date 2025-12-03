@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercicio 10</title>
+  <style>
+    .contorno {
+      border: 1px solid black;
+    }
+
+    .centrar {
+      text-align: center;
+    }
+
+    .image-fill {
+
+      object-fit: cover;
+    }
+  </style>
+  <script>
+    let grd = [
+        ["cat1.jfif", "", "cat2.jfif"],
+        ["", "cat3.jfif", ""],
+        ["cat4.jfif", "", "cat5.jfif"]
+    ]
+    function matrix2Vector(matrix){
+        let result = []
+        for (let i = 0; i < matrix.length; i++){
+            for (let j = 0; j < matrix[i].length; j++){
+                result.push (matrix[i][j])   
+            }
+        }
+        return result
+    }
+    function mostrarSmurfs(){
+        let v = matrix2Vector(grd);
+        for (let i = 0; i < v.length; i++){
+            let p = document.getElementById("c" + i)
+            p.innerHTML = '<img src="images/' + v[i] + '"/>' 
+        }
+    }
+  </script>
+</head>
+
+<body onload="mostrarSmurfs()">
+  <p style="text-align: center">Smurfs</p>
+  <div style="display:flex; width: 100%; align-items: center;">
+    <button type="button" style="margin-left: auto; margin-right: auto;" onclick="roleFigures()">Roll Figures</button>
+    <button id="rollForever" type="button" style="margin-left: auto; margin-right: auto;"
+      onclick="roleFiguresForever()">Roll Forever</button>
+  </div>
+  <table class="contorno centrar" style=" width: 100%; border-spacing: 0px; border-collapse: collapse;">
+    <tr>
+      <td id="c0" class="contorno centrar">
+        <!--<img class="image-fill" src="images/cat1.jfif" alt="" />-->
+      </td>
+      <td id="c1" class="contorno centrar"></td>
+      <td id="c2" class="contorno centrar ">
+        <!--<img class="image-fill" src="images/cat2.jfif" alt="" />-->
+      </td>
+    </tr>
+    <tr>
+      <td id ="c3" class="contorno centrar"></td>
+      <td id="c4" class="contorno centrar">
+        <!--<img class="image-fill" src="images/cat3.jfif" alt="" />-->
+      </td>
+      <td id="c5" class="contorno centrar"></td>
+    </tr>
+    <tr>
+      <td id="c6" class="contorno centrar">
+        <!--<img class="image-fill" src="images/cat4.jfif" alt="" />-->
+      </td>
+      <td id="c7" class="contorno centrar"></td>
+      <td id="c8" class="contorno centrar">
+        <!--<img class="image-fill" src="images/cat5.jfif" alt="" />-->
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

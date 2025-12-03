@@ -22,13 +22,11 @@
   <script>
     var tid = -1;
     function roleFiguresForever() {
-      // do some stuff...
-
-      tid = setInterval(roleFigures, 1000); // repeat myself
+      tid = setInterval(roleFigures, 1000);
       let button = document.getElementById("rollForever")
       button.outerHTML = '<button id="rollForever" type="button" style="margin-left: auto; margin-right: auto;" onclick="abortTimer()">Stop Rolling</button>'
     }
-    function abortTimer() { // to be called when you want to stop the timer
+    function abortTimer() {
       clearInterval(tid);
       tid = -1;
       let button = document.getElementById("rollForever")
