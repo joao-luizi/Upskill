@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ficha 1</title>
     <script>
         //Ficha 1 - 1
         function MediaDeDois(x, y){
             return (x + y) / 2
         }
-        //Ficha 1 - 2
+        //Ficha 1 - 2 - É suposto ter 2 funções a simular o ceiling e o floor da biblioteca Math ou 
+        //podemos ter um argumento booleano a ser passado para a função que determina o tip ode arredondamento a ralizar
         function Arredondar(x){
             return (x - parseInt(x) >= 0.5) ?  parseInt(x) + 1 : parseInt(x)   
         }
@@ -19,7 +20,7 @@
         }
         //Ficha 1 - 4
         function isDigit(x){
-            (x >= 0 && x <= 9) ? true : false 
+            return (x >= 0 && x <= 9) ? true : false 
         }
         //Ficha 1 - 5
         function isEven(x){
@@ -44,14 +45,7 @@
         //Ficha 1 - 10
         function isVowel(x){
             let vec = ['a', 'e', 'i', 'o', 'u']
-            let result = false
-            for (let i = 0; i < vec.length; i++){
-                if (vec[i] == x){
-                    result = true
-                    break
-                }
-            }
-            return result
+            return x.includes(x)
         }
         //Ficha 1 - 11
         function isSorted(x, y, z){
@@ -67,18 +61,11 @@
         }
         //Ficha 1 - 14
         function xor(x, y){
-            if ((x == false && y == true) || (x == true && y == false))
-                return true
-            else
-                return false
+            return ((x == false && y == true) || (x == true && y == false)) ? true : false
         }
         //Ficha 1 - 15
         function sameSignal(x, y){
-            if (x == 0 || y == 0)
-                return false
-            if ((x < 0 && y < 0) || (x > 0 && y > 0))
-                return true
-            return false
+            return (x == 0 || y == 0) ? false: ((x < 0 && y < 0) || (x > 0 && y > 0)) ? true: false
         }
         //Ficha 1 - 16
         function onlyOnePositive(x, y){
@@ -87,6 +74,6 @@
     </script>
 </head>
 <body>
-    <button onclick="console.log(onlyOnePositive(-1, 2))"></button>
+    <button onclick="console.log(sameSignal(1, 1))"></button>
 </body>
 </html>
