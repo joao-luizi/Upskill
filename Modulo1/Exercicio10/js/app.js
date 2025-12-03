@@ -8,6 +8,7 @@ function mostrarSmurfs() {
   let v = matrix2Vector(grd);
   for (let i = 0; i < v.length; i++) {
     let p = document.getElementById("c" + i);
-    p.innerHTML = '<img src="images/' + v[i] + '"/>';
+    if (v[i] != "")
+        p.innerHTML = '<img src="images/' + v[i] + '"/>';
   }
 }
