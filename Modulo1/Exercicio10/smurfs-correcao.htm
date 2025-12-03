@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exercicio 10</title>
+  <title>Exercicio 10 - Correcao</title>
+  <script src="js/app.js"></script>
+  <script src="../Libs/algebra.js"></script>
   <style>
     .contorno {
       border: 1px solid black;
@@ -19,29 +21,7 @@
       object-fit: cover;
     }
   </style>
-  <script>
-    let grd = [
-        ["cat1.jfif", "", "cat2.jfif"],
-        ["", "cat3.jfif", ""],
-        ["cat4.jfif", "", "cat5.jfif"]
-    ]
-    function matrix2Vector(matrix){
-        let result = []
-        for (let i = 0; i < matrix.length; i++){
-            for (let j = 0; j < matrix[i].length; j++){
-                result.push (matrix[i][j])   
-            }
-        }
-        return result
-    }
-    function mostrarSmurfs(){
-        let v = matrix2Vector(grd);
-        for (let i = 0; i < v.length; i++){
-            let p = document.getElementById("c" + i)
-            p.innerHTML = '<img src="images/' + v[i] + '"/>' 
-        }
-    }
-  </script>
+
 </head>
 
 <body onload="mostrarSmurfs()">
