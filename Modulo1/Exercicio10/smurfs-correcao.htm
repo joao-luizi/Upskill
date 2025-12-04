@@ -24,39 +24,14 @@
 
 </head>
 
-<body onload="mostrarSmurfs()">
+<body onload="fazerTabela(); mostrarSmurfs()">
   <p style="text-align: center">Smurfs</p>
   <div style="display:flex; width: 100%; align-items: center;">
     <button type="button" style="margin-left: auto; margin-right: auto;" onclick="rodarSmurfs(); mostrarSmurfs()">Roll Figures</button>
     <button id="rollForever" type="button" style="margin-left: auto; margin-right: auto;"
       onclick="roleFiguresForever()">Roll Forever</button>
   </div>
-  <table class="contorno centrar" style=" width: 100%; border-spacing: 0px; border-collapse: collapse;">
-    <tr>
-      <td id="c0" class="contorno centrar">
-        <!--<img class="image-fill" src="images/cat1.jfif" alt="" />-->
-      </td>
-      <td id="c1" class="contorno centrar"></td>
-      <td id="c2" class="contorno centrar ">
-        <!--<img class="image-fill" src="images/cat2.jfif" alt="" />-->
-      </td>
-    </tr>
-    <tr>
-      <td id ="c3" class="contorno centrar"></td>
-      <td id="c4" class="contorno centrar">
-        <!--<img class="image-fill" src="images/cat3.jfif" alt="" />-->
-      </td>
-      <td id="c5" class="contorno centrar"></td>
-    </tr>
-    <tr>
-      <td id="c6" class="contorno centrar">
-        <!--<img class="image-fill" src="images/cat4.jfif" alt="" />-->
-      </td>
-      <td id="c7" class="contorno centrar"></td>
-      <td id="c8" class="contorno centrar">
-        <!--<img class="image-fill" src="images/cat5.jfif" alt="" />-->
-      </td>
-    </tr>
+  <table id="table-img" class="contorno centrar" style=" width: 100%; border-spacing: 0px; border-collapse: collapse;">
   </table>
 </body>
 
