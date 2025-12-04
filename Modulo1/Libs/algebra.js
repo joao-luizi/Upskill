@@ -1,3 +1,5 @@
+
+
 function matrix2Vector(matrix) {
   let result = [];
   for (let i = 0; i < matrix.length; i++) {
