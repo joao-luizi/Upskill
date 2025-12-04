@@ -12,3 +12,11 @@ function mostrarSmurfs() {
         p.innerHTML = '<img src="images/' + v[i] + '"/>';
   }
 }
+
+function rodarSmurfs(){
+  let v = matrix2Vector(grd)
+  let v1 = shiftVector(v, 2)
+  v1[0] = v[v.length-1];
+  v1[1] = "";
+  grd = vector2Matrix(v1, grd.length, grd[0].length);
+}
