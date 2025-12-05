@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ficha 3</title>
+    <script>
+      function randomUntil(x) {
+        let result = x + 1;
+        while (result > x) result = Math.random() * x;
+        return result;
+      }
+      function randomWithin(min, max) {
+        let result = max + 1;
+        while (result < min || result > max) {
+          result = Math.random() * (max - min + 1) + min;
+        }
+        return result;
+      }
+      function randomEven(max) {
+        result = max + 1;
+        while (result > max || result % 2 != 0) {
+          result = Math.floor(randomUntil(max));
+        }
+        result = result.toFixed(1);
+        return parseFloat(result);
+      }
+      function randomOdd(max) {
+        result = max + 1;
+        while (result > max || result % 2 == 0) {
+          result = Math.floor(randomUntil(max));
+        }
+        result = result.toFixed(1);
+        return parseFloat(result);
+      }
+      function sqrt(x) {
+        let result = Math.sqrt(x);
+        return result == Math.floor(result) ? true : false;
+      }
+      class ex4 {
+        countDivisors(x) {
+          let i = 0;
+          let count = 0;
+          while (i <= x) {
+            if (x % i == 0) count++;
+            i++;
+          }
+          return count;
+        }
+        sumProperDivisors(x) {
+          let i = 0;
+          let sum = 0;
+          while (i < x) {
+            if (x % i == 0) sum += i;
+            i++;
+          }
+          return sum;
+        }
+        isPrime(x) {
+          let i = 2;
+          let count = 0;
+          while (i < x / 2) {
+            if (x % i == 0){
+              count++
+            }
+            i++;
+          }
+          return count > 0 ? false : true
+        }
+      }
+
+      function testEx4() {
+        let a = new ex4();
+        console.log(a.isPrime(7));
+      }
+    </script>
+  </head>
+  <body>
+    <button type="button" onclick="(testEx4())">Teste</button>
+  </body>
+</html>

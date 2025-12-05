@@ -58,7 +58,7 @@ function rodarSmurfs() {
 
 
 function fazerTabela() {
-  let table_element = document.getElementById("table-img");
+  let table_element = document.createElement("table");
   table_element.innerHTML = "";
   let cellId = 0;
   for (let i = 0; i < grd.length; i++) {
@@ -74,3 +74,5 @@ function fazerTabela() {
     table_element.appendChild(tablerow);
   }
 }
+
+

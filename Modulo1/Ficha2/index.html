@@ -166,7 +166,15 @@
         else return alpha[i + 1];
       }
       //Ficha 2 - Exercicio 14: TODO
-
+      function euclides(x, y){
+        let tempy
+        while (y > 0){
+          tempy = x % y
+          x = y;
+          y = tempy
+        }
+        return x
+      }
       function invertNumber(x) {
         let result = 0;
         while (x > 0) {
@@ -193,6 +201,6 @@
     </script>
   </head>
   <body>
-    <button type="button" onclick="(console.log(fib(0)))">Teste</button>
+    <button type="button" onclick="(console.log(euclides(252,105)))">Teste</button>
   </body>
 </html>
