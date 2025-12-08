@@ -1,0 +1,54 @@
+function getBlog(){
+    return `<p><span style="font-size: 25px;"><b>Ipsum</b></span></p>
+		</b>
+		<div>
+			<p style="text-align: justify;">
+
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus turpis vel convallis commodo. Nulla
+				quis mattis est. Pellentesque feugiat sit amet nisl ac volutpat. Ut sagittis eleifend ipsum a ultrices.
+				Fusce imperdiet lectus mi, in tempor magna dapibus nec. Sed tristique nibh arcu, nec finibus sem
+				interdum ut. Pellentesque nisi risus, tempus non felis a, laoreet mattis velit. Nullam ultricies vel
+				diam sit amet interdum. Vivamus malesuada consectetur imperdiet. Vivamus viverra sollicitudin tincidunt.
+				<br>
+				<br>
+				Curabitur vulputate arcu lorem, a feugiat metus mollis id. Vestibulum quam nunc, porttitor sit amet ante
+				eget, varius elementum libero. Mauris a urna in ante vestibulum efficitur. In vel commodo odio. Quisque
+				iaculis turpis sed laoreet pulvinar. Etiam placerat euismod metus ut porta. Sed ligula diam, congue sed
+				convallis vel, finibus sit amet neque. Ut nec aliquet nunc, sed ornare nisi. Maecenas id iaculis tellus,
+				ut suscipit tellus. Sed laoreet auctor faucibus. Fusce pellentesque ligula vel pharetra tempor. Orci
+				varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				<br>
+				<br>
+				Sed dictum placerat lectus vel elementum. Duis ornare odio vel gravida elementum. Pellentesque non leo
+				diam. Etiam in felis cursus dolor pharetra commodo. Sed mattis turpis odio. Maecenas pulvinar
+				scelerisque convallis. Cras et ultricies nisl, ultricies posuere nisi. Quisque egestas rutrum ante.
+				Pellentesque ac orci mattis ligula sodales tristique. Curabitur accumsan tellus sit amet pellentesque
+				tempor. Curabitur ullamcorper justo in ullamcorper posuere.
+				<br>
+				<br>
+				Etiam imperdiet lectus eget leo malesuada, ultrices sodales ligula pellentesque. Cras porttitor feugiat
+				consequat. Aenean pretium id urna faucibus fermentum. Vestibulum vestibulum urna et massa rutrum mattis.
+				Etiam leo nisi, pretium id purus ut, cursus imperdiet augue. Donec libero lectus, tempus eget auctor eu,
+				dignissim at nulla. Donec imperdiet facilisis dolor, vehicula scelerisque diam dignissim et. Quisque
+				rhoncus, quam non sodales ullamcorper, neque erat rutrum metus, vitae lacinia arcu est a diam. Integer
+				mattis congue sem. Vestibulum ac nunc volutpat, mollis nibh non, vestibulum justo. Lorem ipsum dolor sit
+				amet, consectetur adipiscing elit. Maecenas interdum lectus a vehicula maximus. Nunc malesuada dictum
+				ultricies. Sed fringilla, eros sit amet eleifend rhoncus, dolor justo sagittis quam, non accumsan ipsum
+				libero lobortis dolor. Phasellus fermentum, purus at porttitor vehicula, purus lectus feugiat felis, ac
+				varius elit augue sed tellus.
+				<br>
+				<br>
+				Nulla sed dapibus mi, non ullamcorper mi. Morbi blandit nec odio nec maximus. Mauris eu velit
+				vestibulum, porttitor neque viverra, hendrerit augue. Phasellus quis vehicula lectus. Aenean lorem
+				metus, laoreet in facilisis vel, maximus sit amet risus. In varius orci at orci efficitur, eu
+				consectetur nisi mattis. Duis vitae ante in sapien sodales malesuada non non tortor. Integer non
+				venenatis tortor, sed congue est. Nunc id metus felis.
+				<br>
+				<br>
+				<b>Generated 5 paragraphs, 430 words, 2969 bytes of Lorem Ipsum</b>
+			</p>
+		</div>
+		<hr>
+		<a href="">help@lipsum.com</a>
+		<a href="#Top">Topo</a>`
+}
