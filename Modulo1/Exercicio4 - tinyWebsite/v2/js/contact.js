@@ -1,0 +1,39 @@
+function getContacts()
+{
+    return `<fieldset style=" border: 5px dotted;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 25px;">
+		<label for="Nome">Nome:</label>
+		<input type="text" ; name="Nome" id="Nome">
+		<br>
+		<label for="Email">Email:</label>
+		<input type="text" ; name="Email" id="Email">
+		<br>
+		<label for="Assunto">Assunto:</label>
+		<input type="text" ; name="Assunto" id="Assunto">
+		<br>
+		<label for="Comentários">Comentários (opcional):</label>
+		<textarea name="Comentários" id="Comentários" cols="30" rows="10"></textarea>
+
+		<input type="button" value="Submit Query">
+		<input type="button" value="Reset">
+
+	</fieldset>
+	<div  style="margin-left: 30%; margin-right: auto;">
+
+		<p>Our postal address in Lisbon is:</p>
+		
+		<h2 style="margin-left: auto; margin-right: auto; color: blue;">BC2 A1, Broadcast center <br> Rua das Flores <br>
+			Lisboa
+			</h2>
+		<p>Email:<a href="">editorial.policy.adviser@bbc.co.uk</a></p>
+	</div>
+
+	<div align="center" style="margin-left: auto; margin-right: auto; width: 50%">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12446.764838509644!2d-9.163731424406128!3d38.74784764809946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933046595ef1f%3A0x6807b334c9579477!2sIscte%20-%20Instituto%20Universit%C3%A1rio%20de%20Lisboa!5e0!3m2!1spt-PT!2spt!4v1763727722116!5m2!1spt-PT!2spt"
+			width="80%" height="600px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>`
+}

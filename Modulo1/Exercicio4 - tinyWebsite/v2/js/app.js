@@ -28,9 +28,18 @@ function loadPage(pageIndex) {
       case 2:
         main[0].innerHTML = getGallery();
         break;
-        case 3:
-          main[0].innerHTML = getApplication();
-        break
+      case 3:
+        main[0].innerHTML = getReport();
+        break;
+      case 4:
+        main[0].innerHTML = getApplication();
+        break;
+      case 5:
+        main[0].innerHTML = getContacts();
+        break;
+      case 6:
+        main[0].innerHTML = getResources();
+        break;
       default:
         break;
     }
