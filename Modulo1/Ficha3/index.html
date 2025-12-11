@@ -57,25 +57,78 @@
           return sum;
         }
         isPrime(x) {
+          if (x <= 1) return false;
           let i = 2;
           let count = 0;
-          while (i < x / 2) {
-            if (x % i == 0){
-              count++
+          while (i < x) {
+            if (x % i == 0) {
+              count++;
             }
             i++;
           }
-          return count > 0 ? false : true
+          return count > 0 ? false : true;
         }
       }
-
+      class ex5 {
+        countPrimes(x) {
+          let sum = 0;
+          for (let i = 2; i <= x; i++) {
+            let ex = new ex4();
+            if (ex.isPrime(i)) sum++;
+          }
+          return sum;
+        }
+        existsPrimeBetween(x, y) {
+          let found = false;
+          let ex = new ex4();
+          while (!found && x <= y) {
+            if (ex.isPrime(x)) found = true;
+            x++;
+          }
+          return found;
+        }
+      }
+      
+      class ex6{
+        isPerfect(x){
+          let sum = 0;
+          let i = 0;
+          while (i < x){
+            if (x % i == 0)
+              sum += i
+            i++
+          }
+          return (x == sum) ? true : false
+        }
+        countPerfectNumbers(x){
+          let i = 2
+          let sum = 0;
+          while (i < x){
+            if (this.isPerfect(i))
+              sum++
+            i++
+          }
+          return sum
+        }
+      }
+      function largestPrimeDiff(){
+        
+      }
       function testEx4() {
         let a = new ex4();
         console.log(a.isPrime(7));
       }
+      function testEx5() {
+        let a = new ex5();
+        console.log(a.existsPrimeBetween(0, 1));
+      }
+      function testEx6() {
+        let a = new ex6();
+        console.log(a.countPerfectNumbers(30));
+      }
     </script>
   </head>
   <body>
-    <button type="button" onclick="(testEx4())">Teste</button>
+    <button type="button" onclick="(testEx6())">Teste</button>
   </body>
 </html>

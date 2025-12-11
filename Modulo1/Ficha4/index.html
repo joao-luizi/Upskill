@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ficha 4</title>
+    <script>
+      function ex01() {
+        let numbers = [4, 3, 2, 1];
+        let sum = numbers.reduce((acc, num) => {
+          const last = acc.length ? acc[acc.length - 1] : 0;
+          acc.push(last + num);
+          return acc;
+        }, []);
+        return sum
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="console.log(ex01())">Teste !</button>
+  </body>
+</html>
