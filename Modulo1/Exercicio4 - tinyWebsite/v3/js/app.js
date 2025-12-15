@@ -17,6 +17,7 @@ function menuLinks() {
 		//console.log(links[i].attributes["data-page"].value)
         links[i].addEventListener("click", (e) => {
             e.preventDefault();
+			//links[i].getAttribute("data-page")
             loadPage(links[i].attributes["data-page"].value);
         });
     }
