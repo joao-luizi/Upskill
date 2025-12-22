@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function copyObj(obj1, obj2){
+            for (let chave in obj2){
+                obj1[chave] = obj2[chave]
+            }
+        }
+        const pessoa1 = {
+            nome: "Ana",
+            idade: [30, 31, 32],
+            ativa: undefined
+        };
+        let pessoa2 = {}
+
+        copyObj(pessoa2, pessoa1);
+
+        function Pessoa(nome, idade){
+            //this.nome = nome;
+            this.idade = idade;
+        }
+
+        const Ana = new Pessoa("Ana", 25);
+
+        const a ={ nome: "Ana", idade: 40 }
+        const b ={ idade: 25 }
+        const pessoa = {...a, ...b};
+    
+        console.log(pessoa)
+        
+    </script>
+</body>
+
+</html>

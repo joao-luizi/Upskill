@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const tv = {
+        canal: 0,
+        ligado: false,
+        volume: 0,
+        ligar() {
+          if (!this.ligado) {
+            console.log("   📺Televisão liga");
+            this.ligado = true;
+          }
+        },
+        desligar() {
+          if (this.ligado) {
+            console.log("   📺Televisão desliga");
+            this.ligado = false;
+          }
+        },
+        aumentarVolume() {
+          if (this.ligado && this.volume < 100) {
+            console.log("   📺Televisão aumenta volume");
+            this.volume++;
+          }
+        },
+        diminuirVolume() {
+          if (this.ligado && this.volume > 0) {
+            console.log("   📺Televisão diminui volume");
+            this.volume--;
+          }
+        },
+        mudardeCanal() {
+          if (this.ligado) {
+            console.log("   📺Tv muda de canal");
+            if (this.canal < 100) this.canal++;
+            else this.canal = 1;
+          }
+        },
+      };
+      console.log(tv);
+      const control = {
+        myTv: tv,
+
+        ligar() {
+          if (!this.myTv.ligado) {
+            console.log("📲Control liga tv");
+            this.myTv.ligar();
+          }
+        },
+        desligar() {
+          if (this.myTv.ligado) {
+            console.log("📲Control desliga tv");
+            this.myTv.desligar();
+          }
+        },
+        aumentarVolume() {
+          console.log("📲Control aumenta volume");
+          this.myTv.aumentarVolume();
+        },
+        diminuirVolume() {
+          console.log("📲Control diminui volume");
+          this.myTv.diminuirVolume();
+        },
+        mudardeCanal() {
+          console.log("📲Control muda de canal");
+          this.myTv.mudardeCanal();
+        },
+      };
+
+      control.ligar()
+      
+      while (control.myTv.volume < 8 && control.myTv.ligado){
+        control.aumentarVolume()
+      }
+
+      control.mudardeCanal()
+      control.mudardeCanal()
+      control.desligar()
+    </script>
+  </body>
+</html>
