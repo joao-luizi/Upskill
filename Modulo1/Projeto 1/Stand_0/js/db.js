@@ -71,7 +71,7 @@ const db = [
   },
 ];
 
-let veiculos = []
+let veiculos = [];
 /**
  *
  * @param {*} i
@@ -89,23 +89,38 @@ function editar(i) {
 /**
  *
  */
-function guardar() {
-  localStorage.setItem("veiculos", JSON.stringify(veiculos));
+function guardar(storageKey, dataObj) {
+  localStorage.setItem(storageKey, JSON.stringify(dataObj));
 }
 
 /**
  *
  */
 function carregar() {
-  let storageVehicles = localStorage.getItem("veiculos")
-  if (storageVehicles)
-    veiculos = JSON.parse(storageVehicles);  
-  else
-    //copy db to veiculos
-  {
-    let i = 0;
-    for (key in db){
-      veiculos.push[db[key]];
+  let veiculosDB = localStorage.getItem("veiculos");
+  let dataObj;
+  if (veiculosDB && veiculosDB != "") {
+    try {
+      dataObj = JSON.parse(veiculosDB);
+      veiculos = dataObj.map((item) => {
+        return item;
+      });
+    } catch {
+      reInicializar(
+        "Ocorreu um erro ao aceder à base de dados local.\nPretende (re)inicializar?"
+      );
     }
-  }  
+  }
+}
+
+function reInicializar(
+  msg = "Tem a certeza que pretende (re)inicializar todos os veiculos?"
+) {
+  let input = confirm(msg);
+  if (input) {
+    veiculos = db.map((d) => {
+      return d;
+    });
+    guardar("veiculos", veiculos);
+  }
 }
