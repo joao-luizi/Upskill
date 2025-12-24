@@ -22,7 +22,16 @@ function preencherFiltrosAno() {
   preencherFiltros(fAno, "Todos os anos", fAnoOptions)
 }
 
+function setOldValue(parentElement, oldValue){
+  for (let i = 0; i < parentElement.options.length; i++){
+    if (parentElement.options[i].value == oldValue){
+      parentElement.selectedIndex = i
+    }
+  }
+}
+
 function preencherFiltros(parentElement, strAll, sortedOptions) {
+  let oldValue = parentElement.selectedOptions[0].value;
   parentElement.innerHTML = ""
   let all = document.createElement("option")
   all.value = ""
@@ -34,6 +43,7 @@ function preencherFiltros(parentElement, strAll, sortedOptions) {
     node.innerText = a
     parentElement.appendChild(node)
   });
+  setOldValue(parentElement, oldValue)
 }
 
 
@@ -49,8 +59,6 @@ function render(){
       return item;
     }
   );
-  console.log("Filterred Data:")
-  console.log(filteredData)
   fillTable(tabela, filteredData);
 }
 
@@ -60,13 +68,11 @@ function Init() {
     toggleSortOrder(sortOrders, "marca")
     updateSortElement(this, sortOrders["marca"])
     preencherFiltrosMarca();
-    render();
   })
   fAnoSortOrder.addEventListener("click", function(){
     toggleSortOrder(sortOrders, "ano")
     updateSortElement(this, sortOrders["ano"])
     preencherFiltrosAno();
-    render();
   })
   carregarLS.addEventListener("click", () => {reInicializar(); render()})
   preencherFiltrosAno()

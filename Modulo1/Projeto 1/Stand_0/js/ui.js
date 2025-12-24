@@ -14,6 +14,7 @@ function inspecaoEstado(data) {
 //    vendido: false,
 function fillTable(parentElement, arr){
   let i = 0;
+  parentElement.innerHTML = "";
   arr.forEach(element => {
     let tr = document.createElement("tr");
     let td1 = document.createElement("td")
@@ -27,8 +28,8 @@ function fillTable(parentElement, arr){
     td1.innerText = element["marca"]
     td2.innerText = element["modelo"]
     td3.innerText = element["ano"]
-    console.log(typeof element["ultimaInspecao"])
-    console.log(toInputDateLocal(new Date(element["ultimaInspecao"])))
+    //console.log(typeof element["ultimaInspecao"])
+    //console.log(toInputDateLocal(new Date(element["ultimaInspecao"])))
     let date = new Date(element["ultimaInspecao"]);
     td4.innerHTML = `${toInputDateLocal(date)} (${inspecaoEstado(date)})`
     td5.innerText = (element["vendido"] == true) ? "Vendido" : "Disponivel"
