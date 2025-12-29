@@ -1,18 +1,16 @@
 const fMarca = document.getElementById("fMarca");
 const fAno = document.getElementById("fAno");
 const fVendido = document.getElementById("fVendido");
-//const fMarcaSortOrder = document.getElementById("fMarcaSortOrder");
-//const fAnoSortOrder = document.getElementById("fAnoSortOrder");
 const sortController = {
   marca: {
-    selectEl:  document.getElementById("fMarca"),
+    selectEl:  fMarca,
     sortEl: document.getElementById("fMarcaSortOrder"),
     sortAsc: true,
     sortf: sortStringArray,
     stringAll: "Todas as marcas",
   },
   ano: {
-    selectEl:  document.getElementById("fAno"),
+    selectEl:  fAno,
     sortEl: document.getElementById("fAnoSortOrder"),
     sortAsc: true,
     sortf: sortNumberArray,
@@ -70,19 +68,15 @@ function Init() {
     preencherFiltros(veiculos, "ano");
     render();
   })
+
   form.addEventListener("submit", (e) => {
     e.preventDefault()
-    const form = e.target;
-    let vIndex = form.editIndex.value;
-    veiculos[vIndex].marca = form.marca.value
-    veiculos[vIndex].modelo = form.modelo.value
-    veiculos[vIndex].ano = form.ano.value
-    veiculos[vIndex].ultimaInspecao = new Date(form.inspecao.value);
-    veiculos[vIndex].vendido = form.vendido.checked ? true : false
-    guardar("veiculos", veiculos);
-    render()
+    updateInsert(e);
   } )
   carregarLS.addEventListener("click", () => {reInicializar(); render()})
+
+ 
+  resetForm()
   carregar()
   preencherFiltros(veiculos, "marca")
   preencherFiltros(veiculos, "ano")

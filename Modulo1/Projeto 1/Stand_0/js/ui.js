@@ -8,6 +8,14 @@ function inspecaoEstado(data) {
   return '<span class="ok">Válida</span>';
 }
 
+function resetForm(){
+  form.editIndex.value = -1;
+  form.marca.value = "";
+  form.modelo.value = "";
+  form.ano.value = "";
+  form.inspecao.value = ""; // sem fusos horários envolvidos
+  form.vendido.checked = false;
+}
 function fillTable(parentElement, arr){
   let i = 0;
   parentElement.innerHTML = "";
@@ -34,11 +42,12 @@ function fillTable(parentElement, arr){
     bt1.innerText = "Editar"
     bt1.setAttribute("data-index", element["data-index"])
     bt1.addEventListener("click", (e) => {
-      console.log(e.target.getAttribute("data-index"));
-      editar(e.target.getAttribute("data-index") - 1)
-
+      editar(e.target.getAttribute("data-index"))
     } )
     bt2.innerText = "Remover"
+    bt2.addEventListener("click", (e) => {
+      deleteRecord(e.target.getAttribute("data-index"))
+    })
     td6.appendChild(bt1)
     td6.appendChild(bt2)
     tr.appendChild(td1)

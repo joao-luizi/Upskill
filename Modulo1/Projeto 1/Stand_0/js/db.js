@@ -72,14 +72,11 @@ const db = [
 ];
 
 let veiculos = [];
-/**
- *
- * @param {*} i
- */
+
 function editar(i) {
   const v = veiculos[i];
   const form = document.getElementById("formVeiculo")
-form.editIndex.value = i;
+  form.editIndex.value = i;
   form.marca.value = v.marca;
   form.modelo.value = v.modelo;
   form.ano.value = v.ano;
@@ -87,16 +84,53 @@ form.editIndex.value = i;
   form.vendido.checked = v.vendido;
 }
 
+function updateInsert(e){
+  const form = e.target;
+    let vIndex = form.editIndex.value;
+    const dataObj = { 
+      marca: form.marca.value,
+      modelo: form.modelo.value,
+      ano: form.ano.value * 1, //make it qualified number type
+      ultimaInspecao: new Date(form.inspecao.value), //
+      vendido:  form.vendido.checked ? true : false,
+     }
+    if (vIndex >= 0){
+      dataObj["data-index"] = vIndex;
+      veiculos[vIndex] = dataObj;
+    }
+    else{
+      dataObj["data-index"] = veiculos.length;
+      veiculos.push(dataObj)
+    }
+    guardar("veiculos", veiculos);
+      preencherFiltros(veiculos, "marca")
+  preencherFiltros(veiculos, "ano")
+    render()
+    resetForm()
+}
+
+function deleteRecord(i){
+  let input = confirm("Tem a certeza que pretende remover o item selecionado?");
+  if (input) {
+    veiculos.splice(i, 1);
+    getDataWithIndex(veiculos);
+    guardar("veiculos", veiculos);
+      preencherFiltros(veiculos, "marca")
+  preencherFiltros(veiculos, "ano")
+    render()
+  }
+}
+
 /**
  *
  */
 function guardar(storageKey, source) {
   let dataObj = source.map((item) => {
-    delete item["data-index"];
-    return item;
+    const copy = { ...item };
+    delete copy["data-index"];
+    return copy;
   })
-  console.log("Save")
-  console.log(dataObj)
+
   localStorage.setItem(storageKey, JSON.stringify(dataObj));
 }
 
@@ -126,11 +160,12 @@ function reInicializar(
   if (input) {
     getDataWithIndex(db);
     guardar("veiculos", veiculos);
+    carregar()
   }
 }
 
 function getDataWithIndex(source){
-  let id = 1;
+  let id = 0;
   veiculos = source.map((item)=>{
     item["data-index"] = id++;
     return item;

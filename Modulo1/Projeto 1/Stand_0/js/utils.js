@@ -1,6 +1,26 @@
 
 
 
+function isEqual(obj1, obj2){
+  let keys1 = obj1.keys();
+  let keys2 = obj2.keys();
+  let areSame = true;
+
+  if (keys1.length != keys2.length)
+      areSame = false
+
+  if (areSame){
+    keys1 = sortStringArray(keys1)
+    keys2 = sortStringArray(keys2)
+    let i = 0;
+    while (areSame && i < keys1.length){
+      if ((keys1[i] != keys2[i]) || (obj1[keys1[i]] != obj2[keys2[i]]))
+        areSame = false;
+      i++;
+    }
+  }
+  return areSame;
+}
 function getUniquesAlt(arr, key) {
   return [...new Set(arr.map((e) => e[key]))];
 }
