@@ -1,49 +1,35 @@
 
 
 
-function getOptionsAlt(arr, key) {
+function getUniquesAlt(arr, key) {
   return [...new Set(arr.map((e) => e[key]))];
 }
 
-function getOptions(arr, key) {
+function getUniques(arr, key) {
   let result = [];
-  for (let i = 0; i < db.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     let exists = false;
     let j = 0;
     while (!exists && j < result.length) {
-      if (result[j] == db[i][key]) exists = true;
+      if (result[j] == arr[i][key]) exists = true;
       j++;
     }
-    if (!exists) result.push(db[i][key]);
+    if (!exists) result.push(arr[i][key]);
   }
   return result;
 }
 
 
-/**
- * 
- * @param {HTMLElement} element 
- * @param {boolean} IsAscending 
- */
-function toggleSortOrder(sortOrders, sortKey){
-    sortOrders[sortKey] = !sortOrders[sortKey];
+
+
+function setOldValue(parentElement, oldValue){
+  for (let i = 0; i < parentElement.options.length; i++){
+    if (parentElement.options[i].value == oldValue){
+      parentElement.selectedIndex = i
+    }
+  }
 }
 
-function getAllStr(sortKey){
-  let result = "";
-  switch (sortKey)
-  {
-    case "ano":
-      result = "Todos os anos"
-      break;
-    case "marca":
-      result = "Todas as marcas"
-      break;
-    default:
-        result = "Todos os registos"
-  }
-  return result;
-}
 function setDate(y, m, d) {
   let tmp = new Date(y, m, d);
   tmp.setMonth(tmp.getMonth() - 1);

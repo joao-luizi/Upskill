@@ -78,18 +78,25 @@ let veiculos = [];
  */
 function editar(i) {
   const v = veiculos[i];
-  document.getElementById("editIndex").value = i;
-  marca.value = v.marca;
-  modelo.value = v.modelo;
-  ano.value = v.ano;
-  inspecao.value = toInputDateLocal(v.ultimaInspecao); // sem fusos horários envolvidos
-  vendido.checked = v.vendido;
+  const form = document.getElementById("formVeiculo")
+form.editIndex.value = i;
+  form.marca.value = v.marca;
+  form.modelo.value = v.modelo;
+  form.ano.value = v.ano;
+  form.inspecao.value = toInputDateLocal(new Date(v.ultimaInspecao)); // sem fusos horários envolvidos
+  form.vendido.checked = v.vendido;
 }
 
 /**
  *
  */
-function guardar(storageKey, dataObj) {
+function guardar(storageKey, source) {
+  let dataObj = source.map((item) => {
+    delete item["data-index"];
+    return item;
+  })
+  console.log("Save")
+  console.log(dataObj)
   localStorage.setItem(storageKey, JSON.stringify(dataObj));
 }
 
@@ -102,15 +109,14 @@ function carregar() {
   if (veiculosDB && veiculosDB != "") {
     try {
       dataObj = JSON.parse(veiculosDB);
-      veiculos = dataObj.map((item) => {
-        return item;
-      });
+      getDataWithIndex(dataObj);
     } catch {
       reInicializar(
         "Ocorreu um erro ao aceder à base de dados local.\nPretende (re)inicializar?"
       );
     }
   }
+  
 }
 
 function reInicializar(
@@ -118,9 +124,15 @@ function reInicializar(
 ) {
   let input = confirm(msg);
   if (input) {
-    veiculos = db.map((d) => {
-      return d;
-    });
+    getDataWithIndex(db);
     guardar("veiculos", veiculos);
   }
+}
+
+function getDataWithIndex(source){
+  let id = 1;
+  veiculos = source.map((item)=>{
+    item["data-index"] = id++;
+    return item;
+  })
 }

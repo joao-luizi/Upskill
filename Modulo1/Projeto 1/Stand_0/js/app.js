@@ -1,50 +1,42 @@
 const fMarca = document.getElementById("fMarca");
 const fAno = document.getElementById("fAno");
 const fVendido = document.getElementById("fVendido");
-const fMarcaSortOrder = document.getElementById("fMarcaSortOrder");
-const fAnoSortOrder = document.getElementById("fAnoSortOrder");
-const sortOrders = { marca: true, ano: true };
+//const fMarcaSortOrder = document.getElementById("fMarcaSortOrder");
+//const fAnoSortOrder = document.getElementById("fAnoSortOrder");
+const sortController = {
+  marca: {
+    selectEl:  document.getElementById("fMarca"),
+    sortEl: document.getElementById("fMarcaSortOrder"),
+    sortAsc: true,
+    sortf: sortStringArray,
+    stringAll: "Todas as marcas",
+  },
+  ano: {
+    selectEl:  document.getElementById("fAno"),
+    sortEl: document.getElementById("fAnoSortOrder"),
+    sortAsc: true,
+    sortf: sortNumberArray,
+    stringAll: "Todos os anos",
+  },
+};
+const form = document.getElementById("formVeiculo");
 const carregarLS = document.getElementById("carregarLS");
 const limparLs = document.getElementById("limparLS");
 const tabela = document.getElementById("tabela");
 
 
-function preencherFiltrosMarca() {
-  let fMarcaOptions = getOptions(db, "marca")
-  fMarcaOptions = sortStringArray(fMarcaOptions, sortOrders["marca"])
-  preencherFiltros(fMarca, "Todas as marcas", fMarcaOptions)
+function preencherFiltros(dbObj, sortCtlName){
+  let sortObj = sortController[sortCtlName];
+  let fOptions = getUniques(dbObj, sortCtlName);
+  let oldValue = sortObj.selectEl.selectedOptions[0].value;
+  fOptions = sortObj.sortf(fOptions, sortObj.sortAsc);
+  createNewOptions(sortObj, fOptions);
+  setOldValue(sortObj.selectEl, oldValue);
 }
 
 
-function preencherFiltrosAno() {
-  let fAnoOptions = getOptions(db, "ano")
-  fAnoOptions = sortNumberArray(fAnoOptions, sortOrders["ano"])
-  preencherFiltros(fAno, "Todos os anos", fAnoOptions)
-}
 
-function setOldValue(parentElement, oldValue){
-  for (let i = 0; i < parentElement.options.length; i++){
-    if (parentElement.options[i].value == oldValue){
-      parentElement.selectedIndex = i
-    }
-  }
-}
 
-function preencherFiltros(parentElement, strAll, sortedOptions) {
-  let oldValue = parentElement.selectedOptions[0].value;
-  parentElement.innerHTML = ""
-  let all = document.createElement("option")
-  all.value = ""
-  all.innerText = strAll
-  parentElement.appendChild(all)
-  sortedOptions.forEach(function (a) {
-    let node = document.createElement("option")
-    node.value = a
-    node.innerText = a
-    parentElement.appendChild(node)
-  });
-  setOldValue(parentElement, oldValue)
-}
 
 
 function render(){
@@ -65,18 +57,34 @@ function render(){
 function Init() {
   [fMarca, fAno, fVendido].forEach((f) => f.addEventListener("change", render));
   fMarcaSortOrder.addEventListener("click", function(){
-    toggleSortOrder(sortOrders, "marca")
-    updateSortElement(this, sortOrders["marca"])
-    preencherFiltrosMarca();
+    let sortObj = sortController["marca"]
+    sortObj.sortAsc = !sortObj.sortAsc
+    updateSortElement(this, sortObj.sortAsc);
+    preencherFiltros(veiculos, "marca");
+    render();
   })
   fAnoSortOrder.addEventListener("click", function(){
-    toggleSortOrder(sortOrders, "ano")
-    updateSortElement(this, sortOrders["ano"])
-    preencherFiltrosAno();
+    let sortObj = sortController["ano"]
+    sortObj.sortAsc = !sortObj.sortAsc
+    updateSortElement(this, sortObj.sortAsc);
+    preencherFiltros(veiculos, "ano");
+    render();
   })
+  form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    const form = e.target;
+    let vIndex = form.editIndex.value;
+    veiculos[vIndex].marca = form.marca.value
+    veiculos[vIndex].modelo = form.modelo.value
+    veiculos[vIndex].ano = form.ano.value
+    veiculos[vIndex].ultimaInspecao = new Date(form.inspecao.value);
+    veiculos[vIndex].vendido = form.vendido.checked ? true : false
+    guardar("veiculos", veiculos);
+    render()
+  } )
   carregarLS.addEventListener("click", () => {reInicializar(); render()})
-  preencherFiltrosAno()
-  preencherFiltrosMarca()
   carregar()
+  preencherFiltros(veiculos, "marca")
+  preencherFiltros(veiculos, "ano")
   render()
 }

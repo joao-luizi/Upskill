@@ -7,15 +7,12 @@ function inspecaoEstado(data) {
   if (diffMeses > 10) return '<span class="aviso">A expirar</span>';
   return '<span class="ok">Válida</span>';
 }
-//marca: "Toyota",
-//    modelo: "Corolla",
-//    ano: 2020,
-//    ultimaInspecao: new Date(2025, 2, 10),
-//    vendido: false,
+
 function fillTable(parentElement, arr){
   let i = 0;
   parentElement.innerHTML = "";
   arr.forEach(element => {
+   
     let tr = document.createElement("tr");
     let td1 = document.createElement("td")
     let td2 = document.createElement("td")
@@ -35,6 +32,12 @@ function fillTable(parentElement, arr){
     td5.innerText = (element["vendido"] == true) ? "Vendido" : "Disponivel"
     td5.classList = (element["vendido"] == true) ? "vendido" : "ok"
     bt1.innerText = "Editar"
+    bt1.setAttribute("data-index", element["data-index"])
+    bt1.addEventListener("click", (e) => {
+      console.log(e.target.getAttribute("data-index"));
+      editar(e.target.getAttribute("data-index") - 1)
+
+    } )
     bt2.innerText = "Remover"
     td6.appendChild(bt1)
     td6.appendChild(bt2)
@@ -44,8 +47,22 @@ function fillTable(parentElement, arr){
     tr.appendChild(td4)
     tr.appendChild(td5)
     tr.appendChild(td6)
-    tr.id = i++;
     parentElement.appendChild(tr);
+  });
+}
+
+function createNewOptions(sortObj, sortedOptions){
+  
+  let all = document.createElement("option");
+  all.value = "";
+  all.innerText = sortObj.stringAll;
+  sortObj.selectEl.innerHTML = ""
+  sortObj.selectEl.appendChild(all);
+    sortedOptions.forEach(function (a) {
+    let node = document.createElement("option");
+    node.value = a;
+    node.innerText = a;
+    sortObj.selectEl.appendChild(node);
   });
 }
 
@@ -53,14 +70,14 @@ function updateSortElement(element, IsAscending)
 {
     if (IsAscending)
     {
-      element.innerHTML = '&#x25b4'
-      element.title = "Ordered by Descending"
+      element.innerHTML = '↑'
+      element.title = "Ordered by Ascending"
 
     }
     else
     {
-      element.title = "Ordered by Ascending"
-      element.innerHTML = '&#x25be'
+      element.title = "Ordered by Descending"
+      element.innerHTML = '↓'
     }
 
 }
