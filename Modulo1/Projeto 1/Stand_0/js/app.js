@@ -73,7 +73,12 @@ function Init() {
     e.preventDefault()
     updateInsert(e);
   } )
-  carregarLS.addEventListener("click", () => {reInicializar(); render()})
+  carregarLS.addEventListener("click", () => {
+    reInicializar()
+    preencherFiltros(veiculos, "marca")
+  preencherFiltros(veiculos, "ano")
+    render()
+  })
 
  
   resetForm()
