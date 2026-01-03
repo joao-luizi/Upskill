@@ -1,4 +1,0 @@
-1. Alterado entrada na db: marca: "Mercedes", modelo: "A180", ano: 2020, ultimaInspecao: new Date(2024, 0, 15), vendido: false
-devido a erro na data. que foi alterada para 2024, 1, 15 para ficar  igual ao Demo.
-2. Alterado todas as entradas na db para reduzir o mes em 1 para aproximação com a Demo
-

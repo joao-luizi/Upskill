@@ -7,14 +7,14 @@ const limparLS = document.getElementById("limparLS");
 const tabela = document.getElementById("tabela");
 const sortController = {
   marca: {
-    selectEl:  fMarca,
+    selectEl: fMarca,
     sortEl: document.getElementById("fMarcaSortOrder"),
     sortAsc: true,
     sortf: sortStringArray,
     stringAll: "Todas as marcas",
   },
   ano: {
-    selectEl:  fAno,
+    selectEl: fAno,
     sortEl: document.getElementById("fAnoSortOrder"),
     sortAsc: true,
     sortf: sortNumberArray,
@@ -34,7 +34,7 @@ const sortController = {
  * @param {Object[]} dbObj - Array de objetos que representa a base de dados em memória.
  * @param {string} sortCtlName - Nome da chave no sortController ("marca" ou "ano").
  */
-function preencherFiltros(dbObj, sortCtlName){
+function preencherFiltros(dbObj, sortCtlName) {
   const sortObj = sortController[sortCtlName];
   const oldValue = sortObj.selectEl.selectedOptions[0].value;
   let fOptions = getUniques(dbObj, sortCtlName);
@@ -50,18 +50,18 @@ function preencherFiltros(dbObj, sortCtlName){
  * selecionados nos filtros (marca, ano e vendido) e delega a
  * renderização da tabela à função de UI correspondente.
  */
-function render(){
+function render() {
   let filterMarca = fMarca.value;
   let filterAno = fAno.value;
   let filterVendido = fVendido.value;
-  let filteredData = veiculos.filter(
-    (item) => {
-      if ((filterMarca === "" || item["marca"] === filterMarca)
-      && (filterAno === "" || item["ano"] === filterAno)
-    && (filterVendido === "" || item["vendido"] === JSON.parse(filterVendido)))
+  let filteredData = veiculos.filter((item) => {
+    if (
+      (filterMarca === "" || item["marca"] === filterMarca) &&
+      (filterAno === "" || item["ano"] == filterAno) &&
+      (filterVendido === "" || item["vendido"] === JSON.parse(filterVendido))
+    )
       return item;
-    }
-  );
+  });
   fillTable(tabela, filteredData);
 }
 
@@ -86,46 +86,44 @@ function refreshUI() {
  * Atua como ponto de entrada, sendo responsável por:
  * - associar event listeners aos elementos da interface,
  * - inicializar o estado da aplicação,
- * - carregar dados persistidos,
+ * - carregar dados de local storage,
  * - e realizar o primeiro render da UI.
  */
 function Init() {
   [fMarca, fAno, fVendido].forEach((f) => f.addEventListener("change", render));
-  sortController.marca.sortEl.addEventListener("click", function(){
-    let sortObj = sortController["marca"]
-    sortObj.sortAsc = !sortObj.sortAsc
+  sortController.marca.sortEl.addEventListener("click", function () {
+    let sortObj = sortController["marca"];
+    sortObj.sortAsc = !sortObj.sortAsc;
     updateSortElement(this, sortObj.sortAsc);
     preencherFiltros(veiculos, "marca");
     render();
-  })
-  sortController.ano.sortEl.addEventListener("click", function(){
-    let sortObj = sortController["ano"]
-    sortObj.sortAsc = !sortObj.sortAsc
+  });
+  sortController.ano.sortEl.addEventListener("click", function () {
+    let sortObj = sortController["ano"];
+    sortObj.sortAsc = !sortObj.sortAsc;
     updateSortElement(this, sortObj.sortAsc);
     preencherFiltros(veiculos, "ano");
     render();
-  })
+  });
 
   form.addEventListener("submit", (e) => {
-    e.preventDefault()
+    e.preventDefault();
     updateInsert(e);
     refreshUI();
     resetForm();
-  } )
+  });
   carregarLS.addEventListener("click", () => {
     reInicializar();
     carregar();
-refreshUI();
-  })
+    refreshUI();
+  });
 
   limparLS.addEventListener("click", () => {
-    cleanLS("veiculos")
-    carregar()
-    preencherFiltros(veiculos, "marca")
-    preencherFiltros(veiculos, "ano")
-    render()
-  })
-  resetForm()
-  carregar()
-  refreshUI()
+    cleanLS("veiculos");
+    carregar();
+    refreshUI();
+  });
+  resetForm();
+  carregar();
+  refreshUI();
 }

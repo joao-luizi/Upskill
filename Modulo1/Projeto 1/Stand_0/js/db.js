@@ -90,22 +90,28 @@ let veiculos = [];
  */
 function updateInsert(e) {
   const form = e.target;
+  let needsSaving = false
   let vIndex = Number(form.editIndex.value);
   const dataObj = {
     marca: form.marca.value,
     modelo: form.modelo.value,
     ano: form.ano.value * 1, //make it qualified number type
-    ultimaInspecao: new Date(form.inspecao.value), //
+    ultimaInspecao: new Date(form.inspecao.value).toISOString(),
     vendido: form.vendido.checked,
   };
   if (vIndex >= 0) {
     dataObj["data-index"] = vIndex;
-    veiculos[vIndex] = dataObj;
+    if (!isEqual(dataObj, veiculos[vIndex])){
+      needsSaving = true;
+      veiculos[vIndex] = dataObj;
+    }
   } else {
+    needsSaving = true;
     dataObj["data-index"] = veiculos.length;
     veiculos.push(dataObj);
   }
-  guardar("veiculos", veiculos);
+  if (needsSaving)
+    guardar("veiculos", veiculos);
 }
 
 /**
@@ -117,7 +123,6 @@ function deleteRecord(i) {
   let input = confirm("Remover veículo?");
   if (input) {
     veiculos.splice(i, 1);
-
     getDataWithIndex(veiculos);
   }
 }
@@ -144,8 +149,11 @@ function guardar(storageKey, source) {
  * @param {string} storageKey - Chave a remover do localStorage.
  */
 function cleanLS(storageKey) {
-  localStorage.removeItem(storageKey);
-  veiculos = [];
+  let input = confirm("Remover base de dados?");
+  if (input){
+    localStorage.removeItem(storageKey);
+    veiculos = [];
+  }
 }
 
 /**
