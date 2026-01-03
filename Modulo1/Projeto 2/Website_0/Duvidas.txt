@@ -1,0 +1,13 @@
+. Que tipo de autenticação temos de implementar.
+. "Base de dados" local para utilizadores?
+. Temos de implementar hash para as passwords?
+Base de dados pode ser local
+Password deve ser do tipo que o input deixa
+Fazer simples o mais possivel.
+
+
+"Uma opção que permita visualizar a lista de produtos por categoria"
+Filtro ou organiza por categoria?
+Filtro. 
+
+

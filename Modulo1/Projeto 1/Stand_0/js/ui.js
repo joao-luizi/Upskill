@@ -1,6 +1,21 @@
+/**
+ * Carrega os dados de um veículo no formulário de edição.
+ *
+ * @param {number} i - Índice do veículo no array global `veiculos`.
+ */
+function editar(i) {
+  const v = veiculos[i];
+  const form = document.getElementById("formVeiculo");
+  form.editIndex.value = i;
+  form.marca.value = v.marca;
+  form.modelo.value = v.modelo;
+  form.ano.value = v.ano;
+  form.inspecao.value = toUnifiedDate(new Date(v.ultimaInspecao), false); // sem fusos horários envolvidos
+  form.vendido.checked = v.vendido;
+}
 
 /**
- * @brief Determina o estado da inspeção com base na data fornecida.
+ *  Determina o estado da inspeção com base na data fornecida.
  *
  * Calcula a diferença aproximada em meses entre a data atual
  * e a data da última inspeção, retornando o HTML correspondente
@@ -10,7 +25,7 @@
  * @returns {string} HTML a inserir na célula da tabela,
  *                   contendo o estado da inspeção.
  *
- * @note O cálculo de meses é aproximado (30 dias por mês)  
+ * @note O cálculo de meses é aproximado (30 dias por mês)
  */
 function inspecaoEstado(data) {
   const agora = new Date();
@@ -24,7 +39,7 @@ function inspecaoEstado(data) {
 }
 
 /**
- * @brief Reinicia o formulário de edição/criação de veículos.
+ *  Reinicia o formulário de edição/criação de veículos.
  *
  * Limpa todos os campos do formulário e redefine o índice de edição,
  * indicando que nenhum elemento está atualmente selecionado para edição.
@@ -32,7 +47,7 @@ function inspecaoEstado(data) {
  *
  * @returns {void}
  */
-function resetForm(){
+function resetForm() {
   form.editIndex.value = -1;
   form.marca.value = "";
   form.modelo.value = "";
@@ -42,84 +57,87 @@ function resetForm(){
 }
 
 /**
- * @brief Cria uma linha de tabela a partir de um conjunto de células.
+ *  Cria uma linha de tabela a partir de um conjunto de células.
  *
  * @param {HTMLTableCellElement[]} cellArr - Array de elementos <td>.
  * @returns {HTMLTableRowElement} Linha de tabela criada.
  */
-function getRow(cellArr){
+function getRow(cellArr) {
   let tr = document.createElement("tr");
-  cellArr.forEach(cell => tr.appendChild(cell))
-  return tr
+  cellArr.forEach((cell) => tr.appendChild(cell));
+  return tr;
 }
 
 /**
- * @brief Cria uma célula de tabela com conteúdo textual.
+ *  Cria uma célula de tabela com conteúdo textual.
  *
  * @param {string|number} value - Valor a inserir na célula.
  * @returns {HTMLTableCellElement} Célula criada.
  */
-function getCellString(value){
-   let td = document.createElement("td")
-   td.innerText = value
-   return td
+function getCellString(value) {
+  let td = document.createElement("td");
+  td.innerText = value;
+  return td;
 }
 
 /**
- * @brief Cria uma célula de tabela para datas de inspeção.
+ *  Cria uma célula de tabela para datas de inspeção.
  *
- * Inclui a data formatada e o estado da inspeção
+ *  Inclui a data formatada e o estado da inspeção
  *
  * @param {string|Date} value - Data da última inspeção.
  * @returns {HTMLTableCellElement} Célula criada.
  */
-function getCellDate(value){
-   let td = document.createElement("td")
-    let date = new Date(value);
-    td.innerHTML = `${toUnifiedDate(date, true)} (${inspecaoEstado(date)})`
-   return td
+function getCellDate(value) {
+  let td = document.createElement("td");
+  let date = new Date(value);
+  td.innerHTML = `${toUnifiedDate(date, true)} (${inspecaoEstado(date)})`;
+  return td;
 }
 
 /**
- * @brief Cria uma célula indicando o estado de venda do item.
+ *  Cria uma célula indicando o estado de venda do item.
  *
  * @param {boolean} value - Indica se o item está vendido.
  * @returns {HTMLTableCellElement} Célula criada.
  */
-function getCellCustom(value){
-   let td = document.createElement("td")
-    td.innerText = (value == true) ? "Vendido" : "Disponivel"
-    td.className  = (value == true) ? "vendido" : "ok"
-   return td
+function getCellCustom(value) {
+  let td = document.createElement("td");
+  td.innerText = value == true ? "Vendido" : "Disponivel";
+  td.className = value == true ? "vendido" : "ok";
+  return td;
 }
 
 /**
- * @brief Cria uma célula com botões de ação (editar e remover).
+ *  Cria uma célula com botões de ação (editar e remover).
  *
  * @param {number} value - Índice do elemento associado.
  * @returns {HTMLTableCellElement} Célula criada.
  */
-function getCellButtons(value){
-  let td = document.createElement("td")
-   let bt1 = document.createElement("button")
-    let bt2 = document.createElement("button")
-    bt1.innerText = "Editar"
-    bt1.setAttribute("data-index", value)
-    bt1.addEventListener("click", (e) => {
-      editar(e.target.getAttribute("data-index"))
-    } )
-    bt2.innerText = "Remover"
-    bt2.setAttribute("data-index", value)
-    bt2.addEventListener("click", (e) => {
-      deleteRecord(e.target.getAttribute("data-index"))
-    })
-    td.appendChild(bt1)
-    td.appendChild(bt2)
-    return td
+function getCellButtons(value) {
+  let td = document.createElement("td");
+  let bt1 = document.createElement("button");
+  let bt2 = document.createElement("button");
+  bt1.innerText = "Editar";
+  bt1.setAttribute("data-index", value);
+  bt1.addEventListener("click", (e) => {
+    editar(e.target.getAttribute("data-index"));
+  });
+  bt2.innerText = "Remover";
+  bt2.setAttribute("data-index", value);
+  bt2.addEventListener("click", (e) => {
+    deleteRecord(e.target.getAttribute("data-index"));
+    guardar("veiculos", veiculos);
+    refreshUI();
+    resetForm();
+  });
+  td.appendChild(bt1);
+  td.appendChild(bt2);
+  return td;
 }
 
 /**
- * @brief Preenche uma tabela HTML com os dados fornecidos.
+ *  Preenche uma tabela HTML com os dados fornecidos.
  *
  * Limpa o conteúdo atual do elemento pai e cria uma linha
  * por cada item do array.
@@ -128,23 +146,23 @@ function getCellButtons(value){
  * @param {Object[]} arr - Array de objetos a apresentar.
  * @returns {void}
  */
-function fillTable(parentElement, arr){
+function fillTable(parentElement, arr) {
   parentElement.innerHTML = "";
-  arr.forEach(element => {
-    let cellArr = []
-    cellArr.push(getCellString(element["marca"]))
-    cellArr.push(getCellString(element["modelo"]))
-    cellArr.push(getCellString(element["ano"]))
-    cellArr.push(getCellDate(element["ultimaInspecao"]))
-    cellArr.push(getCellCustom(element["vendido"]))
-    cellArr.push(getCellButtons(element["data-index"]))
-    let tr = getRow(cellArr)
+  arr.forEach((element) => {
+    let cellArr = [];
+    cellArr.push(getCellString(element["marca"]));
+    cellArr.push(getCellString(element["modelo"]));
+    cellArr.push(getCellString(element["ano"]));
+    cellArr.push(getCellDate(element["ultimaInspecao"]));
+    cellArr.push(getCellCustom(element["vendido"]));
+    cellArr.push(getCellButtons(element["data-index"]));
+    let tr = getRow(cellArr);
     parentElement.appendChild(tr);
   });
 }
 
 /**
- * @brief Recria as opções de um elemento <select>.
+ * Recria as opções de um elemento <select>.
  *
  * Remove todas as opções existentes e cria novamente a opção genérica
  * (ex: "Todas") seguida das opções dinâmicas fornecidas.
@@ -154,24 +172,23 @@ function fillTable(parentElement, arr){
  *
  * @returns {void}
  */
-function createNewOptions(sortObj, sortedOptions){
-  
+function createNewOptions(sortObj, sortedOptions) {
   const select = sortObj.selectEl;
   let all = document.createElement("option");
   all.value = "";
   all.innerText = sortObj.stringAll;
-  select.innerHTML = ""
+  select.innerHTML = "";
   select.appendChild(all);
-    sortedOptions.forEach(a => {
+  sortedOptions.forEach((a) => {
     let option = document.createElement("option");
     option.value = a;
     option.innerText = a;
-   select.appendChild(option);
+    select.appendChild(option);
   });
 }
 
 /**
- * @brief Atualiza o indicador visual da ordem de ordenação.
+ *  Atualiza o indicador visual da ordem de ordenação.
  *
  * Altera o símbolo e o texto de ajuda (title) de um elemento
  * da interface gráfica consoante a ordem selecionada.
@@ -181,20 +198,18 @@ function createNewOptions(sortObj, sortedOptions){
  *
  * @returns {void}
  */
-function updateSortElement(element, isAscending)
-{
-    if (isAscending){
-      element.innerHTML = '↑'
-      element.title = "Ordenado por ordem crescente"
-    }else{
-      element.title = "Ordenado por ordem decrescente"
-      element.innerHTML = '↓'
-    }
-
+function updateSortElement(element, isAscending) {
+  if (isAscending) {
+    element.innerHTML = "↑";
+    element.title = "Ordenado por ordem crescente";
+  } else {
+    element.title = "Ordenado por ordem decrescente";
+    element.innerHTML = "↓";
+  }
 }
 
 /**
- * @brief Seleciona no elemento <select> a opção cujo valor corresponde ao valor anterior.
+ *  Seleciona no elemento <select> a opção cujo valor corresponde ao valor anterior.
  *
  * A função percorre todas as opções de um elemento select e define como selecionada
  * aquela cujo atributo `value` seja igual a `oldValue`.
@@ -205,10 +220,10 @@ function updateSortElement(element, isAscending)
  * @param {HTMLSelectElement} parentElement - Elemento select a ser atualizado.
  * @param {string} oldValue - Valor previamente selecionado.
  */
-function setOldValue(parentElement, oldValue){
-  for (let i = 0; i < parentElement.options.length; i++){
-    if (parentElement.options[i].value == oldValue){
-      parentElement.selectedIndex = i
+function setOldValue(parentElement, oldValue) {
+  for (let i = 0; i < parentElement.options.length; i++) {
+    if (parentElement.options[i].value == oldValue) {
+      parentElement.selectedIndex = i;
     }
   }
 }

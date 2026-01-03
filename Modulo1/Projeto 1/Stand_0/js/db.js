@@ -83,70 +83,74 @@ const db = [
 
 let veiculos = [];
 
-function editar(i) {
-  const v = veiculos[i];
-  const form = document.getElementById("formVeiculo")
-  form.editIndex.value = i;
-  form.marca.value = v.marca;
-  form.modelo.value = v.modelo;
-  form.ano.value = v.ano;
-  form.inspecao.value = toUnifiedDate(new Date(v.ultimaInspecao), false); // sem fusos horários envolvidos
-  form.vendido.checked = v.vendido;
-}
-
-function updateInsert(e){
+/**
+ * Insere um novo veículo ou atualiza um existente com base no formulário.
+ *
+ * @param {Event} e - Evento de submissão do formulário.
+ */
+function updateInsert(e) {
   const form = e.target;
-    let vIndex = form.editIndex.value;
-    const dataObj = { 
-      marca: form.marca.value,
-      modelo: form.modelo.value,
-      ano: form.ano.value * 1, //make it qualified number type
-      ultimaInspecao: new Date(form.inspecao.value), //
-      vendido:  form.vendido.checked ? true : false,
-     }
-    if (vIndex >= 0){
-      dataObj["data-index"] = vIndex;
-      veiculos[vIndex] = dataObj;
-    }
-    else{
-      dataObj["data-index"] = veiculos.length;
-      veiculos.push(dataObj)
-    }
-    guardar("veiculos", veiculos);
-      preencherFiltros(veiculos, "marca")
-  preencherFiltros(veiculos, "ano")
-    render()
-    resetForm()
+  let vIndex = Number(form.editIndex.value);
+  const dataObj = {
+    marca: form.marca.value,
+    modelo: form.modelo.value,
+    ano: form.ano.value * 1, //make it qualified number type
+    ultimaInspecao: new Date(form.inspecao.value), //
+    vendido: form.vendido.checked,
+  };
+  if (vIndex >= 0) {
+    dataObj["data-index"] = vIndex;
+    veiculos[vIndex] = dataObj;
+  } else {
+    dataObj["data-index"] = veiculos.length;
+    veiculos.push(dataObj);
+  }
+  guardar("veiculos", veiculos);
 }
 
-function deleteRecord(i){
-  let input = confirm("Tem a certeza que pretende remover o item selecionado?");
+/**
+ * Remove um veículo do array e atualiza a base de dados local.
+ *
+ * @param {number} i - Índice do veículo a remover.
+ */
+function deleteRecord(i) {
+  let input = confirm("Remover veículo?");
   if (input) {
-    let exit = veiculos.splice(i, 1);
- 
+    veiculos.splice(i, 1);
+
     getDataWithIndex(veiculos);
-    guardar("veiculos", veiculos);
-      preencherFiltros(veiculos, "marca")
-  preencherFiltros(veiculos, "ano")
-    render()
   }
 }
 
 /**
+ * Guarda dados no localStorage removendo propriedades internas.
  *
+ * @param {string} storageKey - Chave do localStorage.
+ * @param {Array<Object>} source - Array de objetos a guardar.
  */
 function guardar(storageKey, source) {
   let dataObj = source.map((item) => {
     const copy = { ...item };
     delete copy["data-index"];
     return copy;
-  })
+  });
 
   localStorage.setItem(storageKey, JSON.stringify(dataObj));
 }
 
 /**
+ * Remove os dados persistidos no localStorage e limpa o array local.
  *
+ * @param {string} storageKey - Chave a remover do localStorage.
+ */
+function cleanLS(storageKey) {
+  localStorage.removeItem(storageKey);
+  veiculos = [];
+}
+
+/**
+ * Carrega os dados dos veículos a partir do localStorage.
+ * Em caso de erro, solicita reinicialização.
  */
 function carregar() {
   let veiculosDB = localStorage.getItem("veiculos");
@@ -161,9 +165,13 @@ function carregar() {
       );
     }
   }
-  
 }
 
+/**
+ * Reinicializa a base de dados local com os dados padrão.
+ *
+ * @param {string} [msg] - Mensagem de confirmação.
+ */
 function reInicializar(
   msg = "Tem a certeza que deseja (re)inicializar todos os veiculos?"
 ) {
@@ -171,14 +179,19 @@ function reInicializar(
   if (input) {
     getDataWithIndex(db);
     guardar("veiculos", veiculos);
-    carregar()
   }
 }
 
-function getDataWithIndex(source){
+/**
+ * Atribui um índice interno a cada veículo e atualiza o array global.
+ *
+ * @param {Array<Object>} source - Array de veículos sem índice interno.
+ */
+function getDataWithIndex(source) {
   let id = 0;
-  veiculos = source.map((item)=>{
-    item["data-index"] = id++;
-    return item;
-  })
+  veiculos = source.map((item) => {
+    const copy = { ...item };
+    copy["data-index"] = id++;
+    return copy;
+  });
 }
