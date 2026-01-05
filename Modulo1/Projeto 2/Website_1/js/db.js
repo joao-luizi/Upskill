@@ -9,6 +9,7 @@ const db = [
     { "ISBN": "0005", "titulo": "Decoração com produtos artesanais", "autor": "Zé dos Anzóis", "categoria": "Artes", "preco": 200, "promocao": true, "rating": 4, "imagem": "curso5.jpg" },
 ];
 
+let bookDb = {}
 /*This will simulate a user database where we keep new users and the user favorites. It will also store the username and password for authentication porpuses for 5) Operação de conclusão da compra, mediante autenticação
 Example UserObject 
 {
@@ -24,14 +25,14 @@ function getLocalUsers(){
     let localUsers = localStorage.getItem("users");
     let dbUsers = [];
     
-    if (localUsers && localUsers != "") {
+    if (localUsers && localUsers !== "") {
     try {
       dbUsers = JSON.parse(localUsers);
     } catch {
       console.log("Unable to parse user data");
     }
   }
-  if (dbUsers == "")
+  if (dbUsers === "")
     dbUsers = []  
   return dbUsers;
 }
@@ -49,40 +50,37 @@ function saveNewUser(username, password){
     localUsers.push(newUser);
     saveLocalUsers(localUsers);
 }
-function getUser(username, password){
-    let localUsers = getLocalUsers();
-    let userObj = localUsers.filter((item) => { 
-        if (item.username === username && item.userpass === password)
-            return item
-    });
-    return userObj[0];
-}
-
-function getUserName(username){
-    let localUsers = getLocalUsers();
-    let userObj = localUsers.filter((item) => { 
-        if (item.username === username)
-            return item
+function getUser(username, password, localUsers){
+    let userObj = localUsers.find((user) => { 
+        user.username === username && user.userpass === password
     });
     return userObj;
 }
 
-function checkUserLogin(username, password){
-    const currUser = getUser(username, password);
-    const currUserName = getUserName(username);
+function getUserNameCount(username, localUsers){
+    let userObj = localUsers.filter(user => user.username === username);
+    return userObj.length;
+}
 
-    if (!currUser && currUserName.length === 0){
-        let input = confirm("Utilizador não existe. Pretende criar este utilizador?")
-        if (input){
-            saveNewUser(username, password);
-            checkUserLogin(username, password);
-        }
-    }
-    else if (!currUser && currUserName.length > 0){
-        alert("Wrong Password!")
-    }
-    else{
+function checkUserLogin(username, password) {
+    let localUsers = getLocalUsers();
+    const currUser = getUser(username, password, localUsers);
+
+    if (currUser) {
         currentUser = currUser;
+    } else{
+        const userExists = getUserNameCount(username, localUsers) > 0;
+    
+        if (!userExists) {
+            const create = confirm("Utilizador não existe. Pretende criar este utilizador?");
+            if (create) {
+                saveNewUser(username, password);
+                localUsers = getLocalUsers();
+                currentUser = getUser(username, password, localUsers);
+            }
+        } else {
+            alert("Wrong Password!");
+        }
     }
 
 }
