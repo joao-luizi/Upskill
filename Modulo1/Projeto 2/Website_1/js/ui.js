@@ -23,6 +23,16 @@ function showLogin(){
 
 }
 
+function hideAddCurso(){
+      containerAddCurso.style.display = "none"
+       loginBackDrop.style.display = "none";
+}
+function showAddCurso(){
+     //Formreset
+     containerAddCurso.style.display = "block"
+      loginBackDrop.style.display = "block";
+}
+
 function toggleLoginStatus(){
     const targetImg = loginBtn.querySelector('img');
     if (currentUser){
@@ -76,7 +86,7 @@ function renderizarCursos() {
      let row;
 
      // Loop through the database (db) and create HTML for each course
-     db.forEach((curso, index) => {
+     bookDb.forEach((curso, index) => {
           // For every 3 items, create a new row
           if (index % 3 === 0) {
                row = document.createElement('div');
@@ -89,8 +99,12 @@ function renderizarCursos() {
           courseCard.classList.add('four', 'columns');
 
           // Build the inner HTML for the course card using template literals
+          
           courseCard.innerHTML = `
-        <div class="card">
+          <div class="card">
+          <div class="login-row">
+            <a href="#" class="apagar-curso-card" data-id="${curso.ISBN}">Apagar Curso</a>
+              </div>
             <img src="img/${curso.imagem}" class="imagen-curso u-full-width">
             <div class="info-card">
                 <h4>${curso.titulo}</h4>

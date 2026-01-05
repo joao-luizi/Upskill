@@ -2,14 +2,14 @@
 //    >", "preco": <preco>, "promocao": <promocao>, "rating": <rating>, "imagem": 
 //    "<ficheiro>" }
 const db = [
-    { "ISBN": "0001", "titulo": "HTML5, CSS3, JavaScript para Principiantes", "autor": "Zé dos Anzóis", "categoria": "Front End", "preco": 300, "promocao": true, "rating": 5, "imagem": "curso1.jpg" },
-    { "ISBN": "0002", "titulo": "Curso de Comida Vegetariana", "autor": "Zé dos Anzóis", "categoria": "Culinária", "preco": 200, "promocao": true, "rating": 4, "imagem": "curso2.jpg" },
-    { "ISBN": "0003", "titulo": "Guitarra para Principiantes", "autor": "Zé dos Anzóis", "categoria": "Música", "preco": 200, "promocao": true, "rating": 4, "imagem": "curso3.jpg" },
-    { "ISBN": "0004", "titulo": "A horta em casa", "autor": "Zé dos Anzóis", "categoria": "Jardinagem", "preco": 200, "promocao": true, "rating": 4, "imagem": "curso4.jpg" },
-    { "ISBN": "0005", "titulo": "Decoração com produtos artesanais", "autor": "Zé dos Anzóis", "categoria": "Artes", "preco": 200, "promocao": true, "rating": 4, "imagem": "curso5.jpg" },
+    { "ISBN": "0001", "titulo": "HTML5, CSS3, JavaScript para Principiantes", "autor": "Zé dos Anzóis", "categoria": "Front End", "preco": 300, "promocao": true, "rating": 5, "imagem": "curso1.jpg", "info": "" },
+    { "ISBN": "0002", "titulo": "Curso de Comida Vegetariana", "autor": "Zé dos Anzóis", "categoria": "Culinária", "preco": 200, "promocao": true, "rating": 4, "imagem": "curso2.jpg", "info": ""  },
+    { "ISBN": "0003", "titulo": "Guitarra para Principiantes", "autor": "Zé dos Anzóis", "categoria": "Música", "preco": 200, "promocao": true, "rating": 4, "imagem": "curso3.jpg", "info": ""  },
+    { "ISBN": "0004", "titulo": "A horta em casa", "autor": "Zé dos Anzóis", "categoria": "Jardinagem", "preco": 200, "promocao": true, "rating": 4, "imagem": "curso4.jpg", "info": ""  },
+    { "ISBN": "0005", "titulo": "Decoração com produtos artesanais", "autor": "Zé dos Anzóis", "categoria": "Artes", "preco": 200, "promocao": true, "rating": 4, "imagem": "curso5.jpg", "info": ""  },
 ];
 
-let bookDb = {}
+let bookDb = []
 /*This will simulate a user database where we keep new users and the user favorites. It will also store the username and password for authentication porpuses for 5) Operação de conclusão da compra, mediante autenticação
 Example UserObject 
 {
@@ -20,9 +20,35 @@ userfavs: [] // a list of ISBN that represent the favorites
 */
 let currentUser = undefined;
 
+function saveLocalItem(key, obj){
+    localStorage.setItem(key, JSON.stringify(obj));
+}
+function getLocalItem(key){
+    return localStorage.getItem(key)
+}
+function getLocalBookDb(){
+    let localBooks = getLocalItem("books")
+    let dbBooks = [];
+    
+    if (localBooks && localBooks !== "") {
+    try {
+      dbBooks = JSON.parse(localBooks);
+    } catch {
+      console.log("Unable to parse book data");
+      dbBooks = [...db];
+    }
+  }
+  if (dbBooks === "" || dbBooks.length === 0){
+    const init = confirm("A base de dados de livros está vazia. Pretende (re)inicializar?");
+    if (init)
+        dbBooks = [...db]; 
+  }
+  bookDb = dbBooks;
+  saveLocalItem("books", bookDb);
+}
 //#region dbUsersFunctions
 function getLocalUsers(){
-    let localUsers = localStorage.getItem("users");
+    let localUsers = getLocalItem("users")
     let dbUsers = [];
     
     if (localUsers && localUsers !== "") {
@@ -37,9 +63,7 @@ function getLocalUsers(){
   return dbUsers;
 }
 
-function saveLocalUsers(arrUsers){
-    localStorage.setItem("users", JSON.stringify(arrUsers));
-}
+
 function saveNewUser(username, password){
     let localUsers = getLocalUsers();
     const newUser = {
@@ -48,12 +72,12 @@ function saveNewUser(username, password){
         userfavs: []
     }
     localUsers.push(newUser);
-    saveLocalUsers(localUsers);
+    saveLocalItem("users", localUsers);
 }
 function getUser(username, password, localUsers){
-    let userObj = localUsers.find((user) => { 
+    let userObj = localUsers.find((user) => 
         user.username === username && user.userpass === password
-    });
+    );
     return userObj;
 }
 
@@ -65,7 +89,7 @@ function getUserNameCount(username, localUsers){
 function checkUserLogin(username, password) {
     let localUsers = getLocalUsers();
     const currUser = getUser(username, password, localUsers);
-
+    let loginDone = true;
     if (currUser) {
         currentUser = currUser;
     } else{
@@ -80,8 +104,10 @@ function checkUserLogin(username, password) {
             }
         } else {
             alert("Wrong Password!");
+            loginDone = false
         }
     }
+    return loginDone
 
 }
 //#endregion dbUsersFunctions

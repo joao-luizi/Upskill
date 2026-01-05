@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/curso.css">
 </head>
 
 <body>
@@ -44,6 +45,7 @@
                                 </table>
 
                                 <a href="#" id="limpar-carrinho" class="button u-full-width">Esvaziar Carrinho</a>
+                                <a href="#" id="finalizar-carrinho" class="button u-full-width">Finalizar Compra</a>
                             </div>
                         </li>
                     </ul>
@@ -55,6 +57,73 @@
     <div id="hero">
         <div class="container">
             <div class="row">
+                 <div class="curso-hidden curso-container" id="container-addcurso">
+                    <h2>Adicionar Curso</h2>
+
+                <form id="addCurso" class="curso-form" >
+                
+                    <div class="curso-body">
+                        <div style="display: flex;">
+                            <div>
+
+                                <label for="ISBN"><b>ISBN</b></label>
+                                <input id="ISBN" class="login-input" type="text" placeholder="ISBN" name="ISBN" required>
+                                
+                            </div>
+                            <div style="margin-left: 10px;">
+
+                                <label for="autor"><b>Autor</b></label>
+                                <input id="autor" class="login-input" type="text" placeholder="Autor" name="autor" required>
+                            </div>
+                        </div>
+                        
+                        <label for="titulo"><b>Titulo</b></label>
+                        <input id="titulo" class="login-input" type="text" placeholder="Titulo" name="titulo" required>
+                        <label for="categoria"><b>Categoria</b></label>
+                        <input id="categoria" class="login-input" type="text" placeholder="Categoria" name="categoria" required>
+                        <div style="display: flex;">
+                        <div>
+
+                            <label for="preco"><b>Preco</b></label>
+                            <input id="preco" class="login-input" type="number" placeholder="Preco" name="preco" required>
+                        </div>
+                            <div style="margin-left: 10px;">
+                                <label for="promocao"><b>Promocao</b></label>
+                                <select id="promocao" name="promocao" form="addCurso">
+                                    <option value="false">Não</option>
+                                    <option value="true">Sim</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <div>
+
+                                <label for="rating"><b>Rating</b></label>
+                                <select id="rating" name="rating" form="addCurso">
+                                    <option value="5">5</option>
+                                    <option value="4">4</option>
+                                    <option value="5">3</option>
+                                    <option value="3">2</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                            <div style="margin-left: 10px;">
+
+                                <label for="Imagem"><b>Imagem</b></label>
+                                <input id="Imagem"  type="text" placeholder="Imagem" name="Imagem" required>
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+                    
+                    <div class="curso-footer">
+                    <button type="button" class="login-button login-cancelbtn" id="addCurso-cancelbtn">Cancelar</button>
+                    <button class="add-button" type="submit">Adicionar</button>
+                    </div>
+                </form>
+                </div>
                  <div class="login-hidden login-container" id="container-login">
                     <h2>Login Form</h2>
 
@@ -73,7 +142,7 @@
 
                     <div class="login-container login-row" style="background-color:#f1f1f1">
                         <button id="login-cancelbtn" type="button" class="login-button login-cancelbtn" >Cancel</button>
-                        <button id="login-logout" type="button" class="login-button login-cancelbtn" >LogOut</button>
+                        <button id="login-logout" type="button" class="login-cancelbtn login-cancelbtn" >LogOut</button>
                     </div>
                 </form>
                 </div>
@@ -88,6 +157,7 @@
                                 id="buscador">
                             <input type="submit" id="submit-buscador" class="submit-buscador">
                         </form>
+                        <a href="#" id="adicionar-curso" class="button u-middle-width inserir-curso">Adicionar Curso</a>
                     </div>
                 </div>
             </div>
