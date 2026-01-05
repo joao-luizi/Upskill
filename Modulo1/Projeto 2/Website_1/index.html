@@ -15,16 +15,21 @@
 <body>
     <header id="header" class="header">
         <div class="container">
-            <div class="row">
-                <div class="four columns">
+            <div class="row" >
+                <div class="ten columns login-row">
                     <img src="img/logo.jpg" id="logo">
+                    <div id="login-welcome"></div>
+                    <button class="login-btn" aria-label="User profile" id="login-button">
+                    <img src="img/ProfileGuest.png" alt="">
+                    </button>
                 </div>
-
+                
                 <div class="two columns u-pull-right">
                     <ul>
                         <li class="submenu">
                             <img src="img/cart.png" id="img-carrinho">
                             <div id="carrinho">
+
                                 <table id="lista-carrinho" class="u-full-width">
                                     <thead>
                                         <tr>
@@ -43,17 +48,15 @@
                         </li>
                     </ul>
                 </div>
-                <div class="two columns u-pull-right">
-                    <a href="#" class="u-full-width button-primary button" id="login">Login</a>
-                </div>
             </div>
         </div>
     </header>
 
     <div id="hero">
         <div class="container">
-            <div class="login-hidden login-container" id="container-login">
-                <h2>Login Form</h2>
+            <div class="row">
+                 <div class="login-hidden login-container" id="container-login">
+                    <h2>Login Form</h2>
 
                 <form id="loginForm" class="login-form" >
                 
@@ -63,19 +66,19 @@
 
                         <label for="inputPsw"><b>Password</b></label>
                         <input id="inputPsw" class="login-input" type="password" placeholder="Password" name="psw" required>
-                        <input id="toggleShowPsw"type="checkbox">Show Password
+                        <input id="toggleShowPsw" class="login-input" type="checkbox"> Show Password
                         <button class="login-button" type="submit">Login</button>
                         
                     </div>
 
-                    <div class="login-container" style="background-color:#f1f1f1">
-                        <button type="button" class="login-button login-cancelbtn">Cancel</button>
-                        
+                    <div class="login-container login-row" style="background-color:#f1f1f1">
+                        <button id="login-cancelbtn" type="button" class="login-button login-cancelbtn" >Cancel</button>
+                        <button id="login-logout" type="button" class="login-button login-cancelbtn" >LogOut</button>
                     </div>
                 </form>
-            </div>
-            <div class="login-backdrop login-backdrop-hidden" id="login-backdrop"></div>
-            <div class="row">
+                </div>
+                <div class="login-backdrop login-backdrop-hidden" id="login-backdrop"></div>
+                
                 <div class="six columns">
                     <div class="conteudo-hero">
                         <h2>Aprende algo novo</h2>
@@ -110,7 +113,11 @@
         </div>
 
     </div>
-
+    <div class="container">
+        <select name="category" id="category-filter">
+            <option value="">Todos</option>
+        </select>
+    </div>
     <div id="lista-cursos" class="container"></div>
 
     <footer id="footer" class="footer">
@@ -138,7 +145,8 @@
 
     <script src="js/db.js"></script>
     <script src="js/app.js"></script>
-
+    <script src="js/ui.js"></script>
+    <script>Init()</script>
 </body>
 
 </html>

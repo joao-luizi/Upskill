@@ -362,9 +362,6 @@ form {
 .u-full-width {
   width: 100%;
   box-sizing: border-box; }
-.u-mid-width {
-  width: 50%;
-  box-sizing: border-box; }
 .u-max-full-width {
   max-width: 100%;
   box-sizing: border-box; }
@@ -394,11 +391,7 @@ hr {
   display: table;
   clear: both; }
 
- 
-  .login{
-    max-width: 100%;
-    height: 100%;
-  }
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*

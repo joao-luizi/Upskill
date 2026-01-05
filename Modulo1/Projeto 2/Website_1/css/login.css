@@ -1,0 +1,101 @@
+.test-div{
+    border:2px solid red
+}
+.login-container {
+  padding: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-row{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.login-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.login-btn img {
+  width: 42px;
+  height: 42px;
+}
+
+.login-hidden{
+    display: none;      
+         
+  position: fixed;            
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.login-show{
+    display: block;
+    border: 10px solid red;
+    width: 10px;
+}
+.login-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.login-backdrop-hidden {
+  display: none;
+}
+
+.login-form {border: 3px solid #f1f1f1;}
+
+input[type="text"].login-input,
+input[type="password"].login-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type="checkbox"].login-input{
+     margin: 8px 0;
+}
+button.login-button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  line-height: 0px;
+}
+
+button.login-button:hover {
+  opacity: 0.8;
+}
+
+button.login-cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+
+  button.login-cancelbtn {
+     width: 100%;
+  }
+}

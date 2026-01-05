@@ -123,6 +123,8 @@ function Init() {
     carregar();
     refreshUI();
   });
+  updateSortElement(sortController.marca.sortEl, sortController.marca.sortAsc);
+  updateSortElement(sortController.ano.sortEl, sortController.ano.sortAsc);
   resetForm();
   carregar();
   refreshUI();

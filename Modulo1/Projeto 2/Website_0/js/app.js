@@ -3,16 +3,70 @@ const listaCursos = document.querySelector('#lista-cursos');
 const divcarrinho = document.querySelector('#lista-carrinho tbody');
 const limparcarrinhoBtn = document.querySelector('#limpar-carrinho');
 
+
+//Start Login
+const loginForm = document.getElementById("loginForm")
+const loginBtn = document.getElementById("login")
+const loginContainer = document.getElementById("container-login")
+const loginBackDrop = document.getElementById("login-backdrop")
+const inputPsw = document.getElementById("inputPsw")
+const inputUname = document.getElementById("inputUname")
+
+const toggleShowPsw = document.getElementById("toggleShowPsw")
+//End Login
+const currentUser = {}
 let artigoscarrinho = [];
 
 initEventListeners();
+
 
 function initEventListeners() {
      listaCursos.addEventListener('click', adicionarCurso);
      carrinho.addEventListener('click', eliminarCurso);
      limparcarrinhoBtn.addEventListener('click', limparcarrinho);
+     loginBtn.addEventListener('click', loginUser)
+     document.addEventListener('keydown', (event) => {
+  if (event.key === "Escape") {
+    hideLogin();
+  }
+});
+     toggleShowPsw.addEventListener('change', togglePswVisible);
+     loginForm.addEventListener('submit', formSubmit)
+     console.log("here")
 }
 
+function formSubmit(e){
+     e.preventDefault()
+    //load user_storage
+    //check if user exists
+    //if it does load
+    //if it doesnt ask if it wants to be created
+    //BOnus
+}
+function loginFormReset(){
+     inputPsw.value = "";
+     inputUname.value = "";
+     toggleShowPsw.checked = false;
+}
+
+function togglePswVisible(e){
+     if (e.target.checked)
+          inputPsw.type = "text";
+     else
+          inputPsw.type = "password";
+}
+function hideLogin() {
+  loginContainer.style.display = "none";
+  loginBackDrop.style.display = "none";
+}
+
+function loginUser(e){
+     e.preventDefault();
+     loginFormReset();
+     loginContainer.style.display = "block";
+     loginBackDrop.style.display = "block";
+
+}
 function adicionarCurso(e) {
      e.preventDefault();
      if (e.target.classList.contains('adicionar-carrinho')) {
