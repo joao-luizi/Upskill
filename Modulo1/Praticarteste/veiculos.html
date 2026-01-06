@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+
+    </head>
+    <body>
+
+        <script>
+            function Veiculos(marca, modelo, ano, valor){
+                this.Marca = marca,
+                this.Nodelo = modelo,
+                this.Ano = ano,
+                this.Valor = valor
+                this.CompararPreco = function (veiculo){
+                    return this.Valor === veiculo.Valor
+                }
+                this.AtualizarPreco = function (value){
+                    this.Valor = value;
+                }
+            }
+        </script>
+    </body>
+</html>

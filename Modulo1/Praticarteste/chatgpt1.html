@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<div>
+	<input type="number" id="numbers">
+	<button id="generateBtn">Gerar</button>
+	<div>
+        <div id="container">
+
+        </div>
+<script>
+const generateBtn = document.getElementById("generateBtn");
+const inputNbr = document.getElementById("numbers")
+
+function createSquares(){
+let value = parseInt(inputNbr.value);
+if (value > 3 && value < 15){
+	const container = document.getElementById("container")
+    container.innerHTML = "";
+	const table = document.createElement("table")
+	let rows = Math.floor(value / 3);
+	if (value % 3 !== 0)
+		rows++
+	for (let i = 0; i < rows; i++){
+		const tr = document.createElement("tr");
+		for (let j = 0; j < 3; j++){
+			const td = document.createElement("td")
+			td.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)})`
+			td.width = 50
+            td.height = 50
+            tr.appendChild(td)
+			value--;
+			if (value == 0)
+				break;
+		}
+	table.appendChild(tr);
+	}
+    container.appendChild(table);
+    document.getElementsByTagName("body")[0].appendChild(container)
+	}
+
+}
+function Init(){
+	generateBtn.addEventListener('click', createSquares)
+}
+Init()
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pratica Teste</title>
+  </head>
+  <body style="text-align: center">
+    <label for="squares" style="margin-right: 5px">Nº Quadrados:</label>
+    <input
+      id="squareValue"
+      type="text"
+      name="squares"
+      style="border: 2px solid black; width: 40px"
+    />
+    <button style="width: 50px; margin-left: 10px" onclick="showSquares()">
+      OK
+    </button>
+
+    <div id="squares-container"></div>
+
+    <script>
+      function getRandomColor() {
+        return (
+          "rgb(" +
+          Math.floor(Math.random() * 255) +
+          "," +
+          Math.floor(Math.random() * 255) +
+          "," +
+          Math.floor(Math.random() * 255) +
+          ")"
+        );
+      }
+      function makeSquares(value) {
+        let parent = document.getElementById("squares-container");
+        parent.innerHTML = "";
+        let table = document.createElement("table");
+        table.style.gap = 5;
+        table.style.marginLeft = "auto";
+        table.style.marginRight = "auto";
+        let cellColor = getRandomColor();
+        for (let i = 0; i < 3; i++) {
+          let tr = document.createElement("tr");
+          for (let j = 0; j < 3; j++) {
+            let td = document.createElement("td");
+            td.style.backgroundColor = cellColor;
+            td.height = value;
+            td.width = value;
+            tr.appendChild(td);
+          }
+          table.appendChild(tr);
+        }
+        parent.appendChild(table);
+        let button = document.createElement("button");
+        button.innerHTML = "Reiniciar";
+        button.addEventListener("click", () => window.location.reload());
+        parent.appendChild(button);
+      }
+      function showSquares() {
+        let input = document.getElementById("squareValue").value * 1;
+        if (input >= 5 && input <= 20) {
+          makeSquares(input);
+        }
+      }
+    </script>
+  </body>
+</html>

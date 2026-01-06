@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+const Utils = {
+    mostrarNoEcran(msg){
+        let body = document.getElementsByTagName("body")[0];
+        let p = document.createElement("p");
+        p.innerHTML = msg;
+        body.appendChild(p)
+    }
+}
+
+function BolsaImobiliaria(){
+    this.Imovel = []
+    this.AdicionarImovel = function (imovel){
+    this.Imovel.push(imovel);
+    } 
+    this.ListBelowValue = function (value){
+        return this.Imovel.filter(imovel => imovel.Valor < value);
+    }
+}
+        function Imovel(local, tipo, valor, area){
+            this.Local = local;
+            this.Tipo = tipo;
+            this.Area = area;
+            this.Valor = valor;
+           this.temMenorAreaQue = function(obj){
+            return this.Area < obj.Area;
+           }
+           this.temValorIgualA = function(obj){
+            return this.Valor === obj.Valor;
+           }
+           this.incrementaValor = function(value){
+            this.Valor += value;
+           }
+        }
+        //Lisboa - 84000€
+
+      function main() {
+        let imovel1 = new Imovel("Lisboa", "T1", 80000, 80.5);
+        let imovel2 = new Imovel("Porto", "T0", 60000, 70.0);
+        let imovel3 = new Imovel("Sintra", "Unifamiliar", 180000, 101.5);
+        Utils.mostrarNoEcran(
+          `O imóvel ${imovel3.Local} é do tipo ${imovel3.Tipo}, tem ${imovel3.Area}m2 e custa ${imovel3.Valor} euros.`
+        );
+        Utils.mostrarNoEcran(
+          `O imóvel ${imovel3.Local} tem ${
+            imovel3.temMenorAreaQue(imovel1) ? "menor" : "maior"
+          } área do que o imóvel ${imovel1.Local}.`
+        );
+        if (imovel2.temValorIgualA(imovel3))
+          Utils.mostrarNoEcran(
+            "O imóvel " +
+              imovel2.Local +
+              " tem um valor de mercado igual ao do imóvel " +
+              imovel3.Local +
+              "."
+          );
+        Utils.mostrarNoEcran(
+          "Houve um engano no valor do imóvel " +
+            imovel1.Local +
+            "... ele vale mais 4000 euros..."
+        );
+        imovel1.incrementaValor(4000);
+        Utils.mostrarNoEcran(
+          "O valor do imovel " +
+            imovel1.Local +
+            " passou a ser de " +
+            imovel1.Valor +
+            " euros. "
+        );
+    const mobiliaria = new BolsaImobiliaria();
+        mobiliaria.AdicionarImovel(new Imovel("Lisboa", "T1", 84000, 100))
+        mobiliaria.AdicionarImovel(new Imovel("Porto", "T1", 60000, 100))
+        mobiliaria.AdicionarImovel(new Imovel("Coimbra", "T1", 35000, 100))
+        let value = 90000;
+
+        
+        Utils.mostrarNoEcran(`Imóveis com valor inferior a ${value}€:`)
+        let listValue = mobiliaria.ListBelowValue(value);
+        listValue.forEach((item) =>{
+            Utils.mostrarNoEcran(`&nbsp;&nbsp;&nbsp;&nbsp;${item.Local} - ${item.Valor}€`)
+        })
+        
+      }
+      main()
+    </script>
+  </body>
+</html>

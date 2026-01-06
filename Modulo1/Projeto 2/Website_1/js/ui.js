@@ -123,7 +123,9 @@ function renderizarCursos() {
 
 function carrinhoHTML() {
      limparcarrinho();
-
+console.log("carrinho limpo")
+console.log("Itens no carrinho")
+console.log(artigoscarrinho);
      artigoscarrinho.forEach(curso => {
           const row = document.createElement('tr');
           row.innerHTML = `

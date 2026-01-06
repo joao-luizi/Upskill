@@ -121,13 +121,14 @@ function apagarCurso(curso){
      const cursoId = curso.querySelector('a').getAttribute('data-id')
      console.log("apagar: " + cursoId)
      //remover id dos artigos carrnho
-     artigoscarrinho = artigoscarrinho.filter(curso => curso.ISBN !== cursoId);
+     artigoscarrinho = artigoscarrinho.filter(curso => curso.id !== cursoId);
      //remover id da bd
      bookDb = bookDb.filter(curso => curso.ISBN !== cursoId);
      //salvar bd
      saveLocalItem("books", bookDb);
      //recarregar
      renderizarCursos();
+     carrinhoHTML();
 }
 function lerDadosCurso(curso) {
      const infoCurso = {
