@@ -26,6 +26,8 @@ function saveLocalItem(key, obj){
 function getLocalItem(key){
     return localStorage.getItem(key)
 }
+
+
 function getLocalBookDb(){
     let localBooks = getLocalItem("books")
     let dbBooks = [];
@@ -58,8 +60,15 @@ function getLocalUsers(){
       console.log("Unable to parse user data");
     }
   }
-  if (dbUsers === "")
-    dbUsers = []  
+  if (dbUsers === "" || dbUsers.length === 0){
+
+    dbUsers = [{
+      username: "upskill",
+      userpass: "upskill1234",
+      userfavs: [],
+      userrole: "admin"}]  
+     saveLocalItem("users", dbUsers) 
+    }
   return dbUsers;
 }
 
@@ -69,7 +78,8 @@ function saveNewUser(username, password){
     const newUser = {
         username: username,
         userpass: password,
-        userfavs: []
+        userfavs: [],
+        userrole: "user"
     }
     localUsers.push(newUser);
     saveLocalItem("users", localUsers);

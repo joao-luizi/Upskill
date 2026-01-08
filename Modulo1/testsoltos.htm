@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container" style="display:none; text-align: center;">
+        <p id="altura"></p>
+        <p id="largura"></p>
+        <p id="lado"></p>
+        <button id="drawBtn" onclick="Draw()">Desenhar</button>
+    </div>
+    <table style="font-size: 12px;">
+
+    </table>
+    <script>
+        let altura = prompt("Altura")
+        let largura = prompt("Largura")
+        let lado = prompt("Lado")
+
+        const Tipos = {
+            "FolhaVelha": "Folha Velha ",
+        }
+        function Init(){
+            const paltura = document.getElementById("altura")
+            const plargura = document.getElementById("largura")
+            const plado = document.getElementById("lado")
+            paltura.innerHTML = "<strong>Altura:</strong>" + altura;
+            plargura.innerHTML = "<strong>Largura:</strong>" + largura;
+            plado.innerHTML = "<strong>Lado:</strong>" + lado;
+            const divContainter = document.getElementById("container")
+            divContainter.style.display = "block"
+        }
+
+        Init()
+
+        function Draw(){
+            const drawBtn = document.getElementById("drawBtn");
+            drawBtn.style.display = "none";
+            const table = document.createElement("table")
+            //table.style.width = "100%"
+            //table.style.border = "solid 2px black"
+            for (let i = 0; i < altura; i ++){
+                const tr = document.createElement("tr")
+                for (let j = 0; j < largura; j++){
+                    const td = document.createElement("td")
+                    td.width = lado; td.height = lado;
+                    td.style.backgroundColor = "black"
+                    tr.appendChild(td);
+                }
+                table.appendChild(tr)
+            }
+            const body = document.getElementsByTagName("body")[0]
+            body.appendChild(table)
+            const colorBT = document.createElement("button")
+            colorBT.innerText = "Colorize";
+            colorBT.addEventListener("click", colorize)
+            body.appendChild(colorBT);
+
+        }
+
+        function colorize(){
+            if (largura % 2 !== 0){
+                const tdarray = document.getElementsByTagName("td")
+                for (td in tdarray){
+                    tdarray[td].style.backgroundColor = "blue"
+                }
+            }else{
+                const tdarray = document.getElementsByTagName("td")
+                let i = 0;
+                for (td in tdarray){
+                    if (i == 0){
+                        
+                    tdarray[td].style.backgroundColor = "red"
+                    }
+                    if (i % largura == 0){
+                        tdarray[td].style.backgroundColor = "green"
+                    }
+                    i++
+                    //if (i === largura - 1)
+                    //    i = 0;
+                }            }
+        }
+    </script>
+</body>
+</html>
