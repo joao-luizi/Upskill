@@ -37,11 +37,21 @@ function toggleLoginStatus(){
     const targetImg = loginBtn.querySelector('img');
     if (currentUser){
         targetImg.src = './img/Profile.png'
-        loginWelcome.innerText = `Welcome ${currentUser.username}`
+        if (currentUser.userrole === "admin"){
+             loginWelcome.innerText = `Welcome ${currentUser.username} (admim)`
+             adicionarCurso.classList = "button u-middle-width inserir-curso"
+        }
+        else{
+          loginWelcome.innerText = `Welcome ${currentUser.username}`
+          adicionarCurso.classList = ""
+          adicionarCurso.style.display = "none"
+        }
     }
     else{
         targetImg.src = './img/ProfileGuest.png'
         loginWelcome.innerText = `Welcome Guest`
+        adicionarCurso.classList = ""
+     adicionarCurso.style.display = "none"
 
     }
         

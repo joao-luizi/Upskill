@@ -61,18 +61,25 @@ function getLocalUsers(){
     }
   }
   if (dbUsers === "" || dbUsers.length === 0){
-
-    dbUsers = [{
-      username: "upskill",
-      userpass: "upskill1234",
-      userfavs: [],
-      userrole: "admin"}]  
-     saveLocalItem("users", dbUsers) 
+    dbUsers = []  
+     
     }
-  return dbUsers;
+  return assureLocalAdmin(dbUsers);
 }
 
-
+function assureLocalAdmin(dbUsers){
+    if (!getUser("upskill","upskill1234", dbUsers))
+    {
+      dbUsers.push({
+        username: "upskill",
+      userpass: "upskill1234",
+      userfavs: [],
+      userrole: "admin"} 
+      )
+      saveLocalItem("users", dbUsers)
+    }
+    return dbUsers
+}
 function saveNewUser(username, password){
     let localUsers = getLocalUsers();
     const newUser = {

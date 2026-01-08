@@ -30,6 +30,7 @@ let artigoscarrinho = [];
 
 
 function Init(){
+     
      getLocalBookDb();
      getLocalStoreInfo();
      initEventListeners();
