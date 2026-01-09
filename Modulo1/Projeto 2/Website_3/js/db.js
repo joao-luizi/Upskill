@@ -15,15 +15,23 @@ const db = [
 ];
 
 let bookDb = []
+/*This will simulate a user database where we keep new users and the user favorites. It will also store the username and password for authentication porpuses for 5) Operação de conclusão da compra, mediante autenticação
+Example UserObject 
+{
+username: "Name"
+userpass: "Pass"
+userfavs: [] // a list of ISBN that represent the favorites
+}
+*/
 let currentUser = undefined;
 
 function saveLocalItem(key, obj){
     localStorage.setItem(key, JSON.stringify(obj));
 }
-
 function getLocalItem(key){
     return localStorage.getItem(key)
 }
+
 
 function getLocalBookDb(){
     let localBooks = getLocalItem("books")
@@ -45,11 +53,6 @@ function getLocalBookDb(){
   bookDb = dbBooks;
   saveLocalItem("books", bookDb);
 }
-
-function existsISBN(isbn){
-    return bookDb.some((item) => item.ISBN === isbn)
-}
-
 //#region dbUsersFunctions
 function getLocalUsers(){
     let localUsers = getLocalItem("users")
@@ -73,7 +76,7 @@ function assureLocalAdmin(dbUsers){
     if (!getUser("upskill","upskill1234", dbUsers))
     {
       dbUsers.push({
-      username: "upskill",
+        username: "upskill",
       userpass: "upskill1234",
       userfavs: [],
       userrole: "admin"} 
@@ -82,7 +85,6 @@ function assureLocalAdmin(dbUsers){
     }
     return dbUsers
 }
-
 function saveNewUser(username, password){
     let localUsers = getLocalUsers();
     const newUser = {
@@ -94,7 +96,6 @@ function saveNewUser(username, password){
     localUsers.push(newUser);
     saveLocalItem("users", localUsers);
 }
-
 function getUser(username, password, localUsers){
     let userObj = localUsers.find((user) => 
         user.username === username && user.userpass === password
@@ -131,9 +132,6 @@ function checkUserLogin(username, password) {
     return loginDone
 
 }
-
-
-
 //#endregion dbUsersFunctions
 /*this simulates a store database were we could put localion, adress, employees, store type (online / physical) etc for the purpose of this project it will only track sales to give us the TOP Five sales (7) Apresentação dos cinco cursos mais vendidos)
 Example StoreObject

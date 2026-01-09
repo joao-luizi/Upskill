@@ -2,103 +2,42 @@
 Contains all functions with DOM manipulation or HTML elements
 */
 
-/**
- * @brief Toggles the visibility of the password input field.
- *
- * Changes the password input type between "password" and "text"
- * based on the state of the triggering checkbox, allowing the
- * user to show or hide the password content.
- *
- * @param {Event} e Event object triggered by the checkbox interaction.
- * @returns {void}
- */
 function togglePswVisible(e) {
   if (e.target.checked) inputPsw.type = "text";
   else inputPsw.type = "password";
 }
 
 //#region ShowModals
-/**
- * @brief Displays the login form modal.
- *
- * Resets the login form state and makes both the login container
- * and the backdrop visible, displaying the login modal centered
- * on the screen.
- *
- * @returns {void}
- */
 function showLogin() {
   loginFormReset();
   loginContainer.style.display = "block";
   loginBackDrop.style.display = "block";
 }
 
-/**
- * @brief Displays the "Add Curso" form modal.
- *
- * Resets the add-curso form and shows its container along with
- * the shared backdrop, blocking interaction with the background
- * content.
- *
- * @returns {void}
- */
 function showAddCurso() {
   addCursoFormReset();
   containerAddCurso.style.display = "block";
   loginBackDrop.style.display = "block";
 }
 
-/**
- * @brief Displays the login confirmation modal.
- *
- * Resets the confirmation form and shows the confirmation
- * container together with the backdrop, ensuring user focus
- * on the confirmation step.
- *
- * @returns {void}
- */
 function showConfirmLogin() {
-  confirmFormReset();
+  confirmFormreset();
   confirmContainer.style.display = "block";
   loginBackDrop.style.display = "block";
 }
 //#endregionShowModals
 
 //#region  HideModals
-/**
- * @brief Hides the "Add Curso" form modal.
- *
- * Hides the add-curso container and removes the backdrop,
- * restoring interaction with the main page content.
- *
- * @returns {void}
- */
 function hideAddCurso() {
   containerAddCurso.style.display = "none";
   loginBackDrop.style.display = "none";
 }
 
-/**
- * @brief Hides the login form modal.
- *
- * Hides the login container and removes the backdrop,
- * returning the interface to its normal state.
- *
- * @returns {void}
- */
 function hideLogin() {
   loginContainer.style.display = "none";
   loginBackDrop.style.display = "none";
 }
 
-/**
- * @brief Hides the login confirmation modal.
- *
- * Hides the confirmation container and removes the backdrop,
- * concluding the login confirmation workflow.
- *
- * @returns {void}
- */
 function hideConfirmLogin() {
   confirmContainer.style.display = "none";
   loginBackDrop.style.display = "none";
@@ -106,15 +45,6 @@ function hideConfirmLogin() {
 //#endregion HideModals
 
 //#region ResetModals
-/**
- * @brief Resets the "Add Curso" form fields to their default values.
- *
- * Clears all text inputs, resets numeric and boolean fields
- * to their initial state, and prepares the form for a new
- * course insertion.
- *
- * @returns {void}
- */
 function addCursoFormReset() {
   const target = AddCursoForm;
   target.ISBN.value = "";
@@ -128,30 +58,12 @@ function addCursoFormReset() {
   target.info.value = "";
 }
 
-/**
- * @brief Resets the login confirmation form.
- *
- * Clears the username and password confirmation fields
- * and disables the password visibility checkbox.
- *
- * @returns {void}
- */
-function confirmFormReset() {
+function confirmFormreset() {
   const target = confirmLogInForm;
   target.confirmUname = "";
   target.confirmPsw = "";
   target.confirmShowPsw.checked = false;
 }
-
-/**
- * @brief Resets the login form to its initial state.
- *
- * Clears username and password inputs, resets the password
- * visibility toggle, and updates the visibility of the
- * logout button based on the current user state.
- *
- * @returns {void}
- */
 function loginFormReset() {
   inputPsw.value = "";
   inputUname.value = "";
@@ -162,17 +74,6 @@ function loginFormReset() {
 //#endregion ResetModals
 
 
-/**
- * @brief Updates the login-related UI elements based on the current user state.
- *
- * Adjusts profile icon, welcome message, and administrative controls
- * according to whether a user is logged in and if the user has
- * administrator privileges.
- *
- * Default state corresponds to a guest (non-authenticated, non-admin) user.
- *
- * @returns {void}
- */
 function updateLoginUI() {
   const targetImg = loginBtn.querySelector("img");
 
@@ -180,7 +81,7 @@ function updateLoginUI() {
   targetImg.src = "./img/ProfileGuest.png";
   loginWelcome.innerText = "Welcome Guest";
   adicionarCurso.style.display = "none";
-  adicionarCurso.classList.remove("button", "u-middle-width", "inserir-curso");
+  adicionarCurso.classList.remove(["button", "u-middle-width", "inserir-curso"]);
 
   if (currentUser) {
     targetImg.src = "./img/Profile.png";
@@ -188,7 +89,7 @@ function updateLoginUI() {
 
     if (currentUser.userrole === "admin") {
       loginWelcome.innerText += " (admin)"; 
-      adicionarCurso.classList.add("button", "u-middle-width", "inserir-curso");
+      adicionarCurso.classList.add(["button", "u-middle-width", "inserir-curso"]);
       adicionarCurso.style.display = "inline-block";
     }
   }
@@ -211,26 +112,12 @@ function gerarHTMLCurso(curso) {
      `;
 }
 
-
-/**
- * @brief Generates and displays pagination controls for a filtered book list.
- *
- * Dynamically creates pagination buttons based on the number of
- * filtered books and the configured page size. Each button updates
- * the current page and triggers a re-render of the course list.
- *
- * Pagination controls are not displayed when only a single page
- * is required.
- *
- * @param {Array} filteredBooks Array containing the filtered book objects.
- * @returns {void}
- */
 function paginacao(filteredBooks) {
   const paginacaoContainer = document.getElementById("paginacao");
   paginacaoContainer.innerHTML = "";
   let bookDbSize = filteredBooks.length;
   const totalPages = Math.ceil(bookDbSize / pageSize);
-  if (totalPages > 1) {
+  if (totalPages !== 1) {
     for (let i = 1; i <= totalPages; i++) {
       const btn = document.createElement("button");
       btn.textContent = i;
@@ -245,10 +132,10 @@ function paginacao(filteredBooks) {
   }
 }
 
-
 function renderizarCursos() {
   // Reference to the container where the courses will be inserted
   const listaCursos = document.querySelector("#lista-cursos");
+
   const start = (currentPage - 1) * pageSize;
   const end = start + pageSize;
   let filteredBooks = bookDb;
@@ -314,15 +201,6 @@ function renderizarCursos() {
   paginacao(filteredBooks);
 }
 
-/**
- * @brief Updates the favorites button icon based on the current favorites state.
- *
- * Displays a filled or outlined heart icon depending on the value
- * of the global `showFavorites` flag, visually indicating whether
- * the favorites filter is active.
- *
- * @returns {void}
- */
 function showHeart() {
   if (showFavorites === true) {
     favoritosBtn.innerHTML = "❤️";
@@ -331,15 +209,6 @@ function showHeart() {
   }
 }
 
-/**
- * @brief Builds and renders the shopping cart items in the DOM.
- *
- * Clears the current cart display and dynamically creates
- * table rows for each course present in the shopping cart,
- * displaying its image, title, price, quantity, and a remove action.
- *
- * @returns {void}
- */
 function carrinhoHTML() {
   limparcarrinho();
   artigoscarrinho.forEach((curso) => {
@@ -359,14 +228,6 @@ function carrinhoHTML() {
   });
 }
 
-/**
- * @brief Clears all items from the shopping cart container.
- *
- * Removes every child node from the cart DOM element,
- * effectively emptying the shopping cart display.
- *
- * @returns {void}
- */
 function limparcarrinho() {
   // divcarrinho.innerHTML = '';
   while (divcarrinho.firstChild) {

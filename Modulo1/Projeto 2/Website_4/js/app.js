@@ -66,7 +66,7 @@ function submitConfirmForm(e) {
     saveLocalItem("stores", dbStores);
     artigoscarrinho = [];
     hideConfirmLogin();
-    confirmFormReset();
+    confirmFormreset();
     alert("Obrigado pela sua preferência");
   } else {
     alert("Autenticação Inválida");
