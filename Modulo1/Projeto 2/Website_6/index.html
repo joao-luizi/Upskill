@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/curso.css">
 </head>
 
@@ -19,9 +18,10 @@
             <div class="row">
                 <div class="ten columns login-row">
                     <img src="img/logo.jpg" id="logo">
-                    <div id="login-welcome" style="margin-left: auto;"></div>
-                    <a href="#" id="favoritos" style="text-decoration: none; margin-left: auto;">❤️</a>
-                    <button class="login-btn" aria-label="User profile" id="login-button">
+                    <div id="login-welcome" class="marginL-auto"></div>
+                    <img src="img/fireGray.png" class="marginL-auto" alt="" id="btn-top5">
+                    <a href="#" id="favoritos" class="marginL-10 no-decor">❤️</a>
+                    <button class="login-btn marginL-10" aria-label="User profile" id="login-button">
                         <img src="img/ProfileGuest.png" alt="">
                     </button>
                 </div>
@@ -59,13 +59,13 @@
                     <h2>Adicionar Curso</h2>
                     <form id="addCurso" class="curso-form">
                         <div class="curso-body">
-                            <div style="display: flex;">
+                            <div>
                                 <div>
                                     <label for="ISBN"><b>ISBN</b></label>
                                     <input id="ISBN" class="login-input" type="text" placeholder="ISBN" name="ISBN"
                                         required>
                                 </div>
-                                <div style="margin-left: 10px;">
+                                <div class="marginL-10">
 
                                     <label for="autor"><b>Autor</b></label>
                                     <input id="autor" class="login-input" type="text" placeholder="Autor" name="autor"
@@ -78,13 +78,13 @@
                             <label for="categoria"><b>Categoria</b></label>
                             <input id="categoria" class="login-input" type="text" placeholder="Categoria"
                                 name="categoria" required>
-                            <div style="display: flex;">
+                            <div class="flex-display">
                                 <div>
                                     <label for="preco"><b>Preco</b></label>
                                     <input id="preco" class="login-input" type="number" placeholder="Preco" name="preco"
                                         required>
                                 </div>
-                                <div style="margin-left: 10px;">
+                                <div class="marginL-10">
                                     <label for="promocao"><b>Promocao</b></label>
                                     <select id="promocao" name="promocao" form="addCurso">
                                         <option value="false">Não</option>
@@ -92,7 +92,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div style="display: flex;">
+                            <div class="flex-display">
                                 <div>
 
                                     <label for="rating"><b>Rating</b></label>
@@ -104,7 +104,7 @@
                                         <option value="1">1</option>
                                     </select>
                                 </div>
-                                <div style="margin-left: 10px;">
+                                <div class="marginL-10">
 
                                     <label for="imagem"><b>Imagem</b></label>
                                     <input id="imagem" type="text" placeholder="Imagem" name="imagem" required>
@@ -142,7 +142,7 @@
                             <button class="login-button" type="submit">Login</button>
 
                         </div>
-                        <div class="login-container login-row" style="background-color:#f1f1f1">
+                        <div class="login-container login-row backgroundf1">
                             <button id="confirm-cancelbtn" type="button"
                                 class="login-button login-cancelbtn">Cancel</button>
                         </div>
@@ -166,7 +166,7 @@
 
                         </div>
 
-                        <div class="login-container login-row" style="background-color:#f1f1f1">
+                        <div class="login-container login-row backgroundf1">
                             <button id="login-cancelbtn" type="button"
                                 class="login-button login-cancelbtn">Cancel</button>
                             <button id="login-logout" type="button" class="login-button login-cancelbtn">LogOut</button>
@@ -215,8 +215,31 @@
             <option value="">Todos</option>
         </select>
     </div>
+    <div id="top5-container" class="container none-display marginB-50 top5-style-a">
+        <div class="top5-style-a">
+            <h2
+                class="top5-style-b">
+                <img src="img/fireRed.png" alt="" class="badge-top5"> Cursos Mais Vendidos
+            </h2>
+            <div class="top5-style-c">
+            </div>
+        </div>
+        <div id="top5-list" class="row u-cf top5-flex"></div>
+    </div>
     <div id="lista-cursos" class="container"></div>
     <div id="paginacao" class="container"></div>
+
+    <div id="modal-detalhes" class="curso-hidden">
+        <div class="curso-container">
+            <div class="curso-body">
+                <h2 id="modal-titulo"></h2>
+                <p id="modal-descricao"></p>
+            </div>
+            <div class="curso-footer">
+                <button class="button" onclick="fecharModal()">Fechar</button>
+            </div>
+        </div>
+    </div>
 
     <footer id="footer" class="footer">
         <div class="container">

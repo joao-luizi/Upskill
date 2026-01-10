@@ -7,6 +7,11 @@ let currentPage = 1;
 const pageSize = 3;
 //#endregion
 
+const modalDetalhes = document.getElementById("modal-detalhes");
+
+const btnTop5 = document.querySelector("#btn-top5");
+let modoTop5Ativo = false;
+
 const favoritosBtn = document.querySelector("#favoritos");
 const carrinho = document.querySelector("#carrinho");
 const listaCursos = document.querySelector("#lista-cursos");
@@ -38,6 +43,8 @@ function Init() {
   getLocalStoreInfo();
   initEventListeners();
   updateLoginUI();
+  preencherFiltroCategorias();
+
   // Run the function to render the courses
   renderizarCursos();
   showHeart();
@@ -57,9 +64,9 @@ function submitConfirmForm(e) {
         const existingElement = currStore.storesales.find(
           (element) => element.ISBN === item.id
         );
-        existingElement.Qtd + item.qtd;
+        existingElement.salecount + item.qtd;
       } else {
-        currStore.storesales.push({ ISBN: item.id, Qtd: item.qtd });
+        currStore.storesales.push({ ISBN: item.id, salecount: item.qtd });
       }
     });
     saveLocalItem("stores", dbStores);
@@ -109,6 +116,7 @@ function filtrarFavoritos(e) {
   } else {
     showFavorites = true;
   }
+  currentPage = 1;
   showHeart();
   renderizarCursos();
 }
@@ -127,17 +135,32 @@ function initEventListeners() {
   loginLogOutBtn.addEventListener("click", logout);
 
   favoritosBtn.addEventListener("click", filtrarFavoritos);
+  btnTop5.addEventListener("click", (e) => {
+    e.preventDefault();
+    mostrarTop5Vendas();
+  });
+  document
+    .querySelector("#category-filter")
+    .addEventListener("change", renderizarCursos);
 
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       if (loginContainer.style.display === "block") hideLogin();
       if (containerAddCurso.style.display === "block") hideAddCurso();
+      if (modalDetalhes && modalDetalhes.style.display === "block") {
+        fecharModal();
+      }
     }
   });
 }
 
 function adicionarRemoverCurso(e) {
   e.preventDefault();
+  if (e.target.classList.contains("ver-detalhes")) {
+    const cursoId = e.target.getAttribute("data-id");
+    const cursoSelecionado = bookDb.find((curso) => curso.ISBN === cursoId);
+    mostrarModalDetalhes(cursoSelecionado);
+  }
   if (e.target.classList.contains("botao-favoritos")) {
     const cursoId = e.target.getAttribute("data-id");
     gerirFavoritos(cursoId);
@@ -222,3 +245,15 @@ function gerirFavoritos(cursoId) {
   //localStorage.setItem("currentUser", JSON.stringify(currentUser));
   renderizarCursos();
 }
+
+function getListUnique(arr, prop) {
+  return [...new Set(arr.map(e => e[prop]))];
+}
+
+function verDetalhesCurso(isbn) {
+    const curso = bookDb.find(c => c.ISBN === isbn);
+    if (curso) {
+        mostrarDetalhes(curso); 
+    }
+}
+

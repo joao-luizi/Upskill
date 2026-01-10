@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="container-setup" class="container">
+        <label for="gridSize">Grid Size</label>
+        <select name="gridSize" id="gridSize">
+            <option value="20">20x20</option>
+            <option value="10">10x10</option>
+            <option value="5">5x5</option>
+        </select>
+        <button id="setGridBtn">Set Grid</button>
+    </div>
+    <div id="container-play" class="container"></div>
+    <div>
+        <button onclick="setFood()">SetFood</button>
+        <br>
+        <button>Tick Once</button>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>

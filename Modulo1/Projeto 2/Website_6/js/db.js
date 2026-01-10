@@ -11,7 +11,7 @@ const db = [
     promocao: true,
     rating: 5,
     imagem: "curso1.jpg",
-    info: "",
+    info: "Domine as fundações da web moderna. Este curso prático guia-o desde a criação da primeira página em HTML até à interatividade avançada com JavaScript, permitindo-lhe construir websites profissionais e responsivos do zero.",
   },
   {
     ISBN: "0002",
@@ -22,7 +22,7 @@ const db = [
     promocao: true,
     rating: 4,
     imagem: "curso2.jpg",
-    info: "",
+    info: "Descubra como criar pratos vibrantes, saudáveis e cheios de sabor sem utilizar carne. Aprenda técnicas de chef para trabalhar com ingredientes sazonais, proteínas vegetais e temperos que vão revolucionar a sua cozinha diária.",
   },
   {
     ISBN: "0003",
@@ -33,7 +33,7 @@ const db = [
     promocao: true,
     rating: 4,
     imagem: "curso3.jpg",
-    info: "",
+    info: "Tire a guitarra do saco e comece a tocar as suas músicas favoritas. Através de um método passo-a-passo, aprenderá os acordes fundamentais, ritmos essenciais e a postura correta para evoluir rapidamente e com confiança.",
   },
   {
     ISBN: "0004",
@@ -44,7 +44,7 @@ const db = [
     promocao: true,
     rating: 4,
     imagem: "curso4.jpg",
-    info: "",
+    info: "Não precisa de um quintal enorme para colher os seus próprios alimentos. Aprenda a cultivar legumes, hortaliças e ervas aromáticas em pequenos espaços, como varandas ou cozinhas, utilizando métodos biológicos e sustentáveis.",
   },
   {
     ISBN: "0005",
@@ -55,7 +55,7 @@ const db = [
     promocao: true,
     rating: 4,
     imagem: "curso5.jpg",
-    info: "",
+    info: "Transforme a sua casa num espaço único e acolhedor. Este curso ensina a criar peças decorativas exclusivas utilizando materiais acessíveis e técnicas artesanais, unindo o design moderno ao toque pessoal do 'feito à mão'.",
   },
   {
     ISBN: "0006",
@@ -114,6 +114,7 @@ const db = [
   },
 ];
 
+let dbStores = [];
 let bookDb = [];
 let currentUser = undefined;
 
@@ -125,6 +126,20 @@ function getLocalItem(key) {
   return localStorage.getItem(key);
 }
 
+//#region dbBooksFunctions
+
+/**
+ * @brief Loads and initializes the local book database.
+ *
+ * Retrieves the book database from local storage and attempts to parse it.
+ * If the stored data is missing, empty, or corrupted, the function falls
+ * back to the default database. When the database is empty, the user is
+ * prompted to confirm reinitialization.
+ *
+ * The function updates the global `bookDb` variable and persists the
+ * resulting database back to local storage.
+ * @return {void}
+ */
 function getLocalBookDb() {
   let localBooks = getLocalItem("books");
   let dbBooks = [];
@@ -147,11 +162,33 @@ function getLocalBookDb() {
   saveLocalItem("books", bookDb);
 }
 
+/**
+ * @brief Checks whether an ISBN already exists in the book database.
+ *
+ * Iterates over the current book database and determines if any entry
+ * matches the provided ISBN.
+ *
+ * @param {string} isbn - The ISBN to search for.
+ * @returns {boolean} True if the ISBN exists, false otherwise.
+ *
+ */
 function existsISBN(isbn) {
   return bookDb.some((item) => item.ISBN === isbn);
 }
+//#endregion dbBooksFunctions
 
 //#region dbUsersFunctions
+
+/**
+ * @brief Loads the local user database and ensures an admin user exists.
+ *
+ * Retrieves user data from local storage and attempts to parse it as JSON.
+ * If the stored data is missing, empty, or invalid, an empty user list is
+ * initialized. The function then ensures that a default administrator
+ * account exists by delegating to `assureLocalAdmin`.
+ *
+ * @return {Array<Object>} The validated list of user objects.
+ */
 function getLocalUsers() {
   let localUsers = getLocalItem("users");
   let dbUsers = [];
@@ -169,6 +206,17 @@ function getLocalUsers() {
   return assureLocalAdmin(dbUsers);
 }
 
+/**
+ * @brief Ensures that a default administrator user exists.
+ *
+ * Checks whether a predefined administrator account exists in the provided
+ * user database. If the account is missing, it is created and persisted to
+ * local storage.
+ *
+ * @param {Array<Object>} dbUsers - The current list of user objects.
+ * @returns {Array<Object>} The updated user database.
+ *
+ */
 function assureLocalAdmin(dbUsers) {
   if (!getUser("upskill", "upskill1234", dbUsers)) {
     dbUsers.push({
@@ -181,25 +229,47 @@ function assureLocalAdmin(dbUsers) {
   }
   return dbUsers;
 }
-function updateUser(user){
-  //we receive an already known user from the arguments
-  //we check the localusers stored in storage (ours should be there but there should be others)
+
+/**
+ * @brief Updates an existing user or adds a new one to the user database.
+ *
+ * Loads the current list of users from local storage and attempts to locate
+ * an existing user matching the provided credentials. If found, the user's
+ * favorites list is updated. If no match exists, the user is added to the
+ * database.
+ * The updated user list is persisted back to local storage.
+ *
+ * @param {Object} user - The user object to update or insert.
+ * @param {string} user.username - The user's username.
+ * @param {string} user.userpass - The user's password.
+ * @param {Array}  user.userfavs - The user's list of favorite items.
+ *
+ * @return {void}
+ *
+ */
+function updateUser(user) {
   let localUsers = getLocalUsers();
-  let dbUser = getUser(user.username, user.userpass, localUsers)
-  if (dbUser){
-    //this is the expected outcome. we know have a reference to our user object inside a more broad object that holds all users
-    //we now want to update this reference with our changed user. This can happen for any number of reasons but in this case we updated our usersfavs
-    //but we cant put dbUser = user; 
+  let dbUser = getUser(user.username, user.userpass, localUsers);
+  if (dbUser) {
     dbUser.userfavs = [...user.userfavs];
-    //now that localUsers (the original reference that holds all users) has been updated with our new user configuration we save the broad object again
-  }else{
-    //if dbUser is null something happened since we logged in that made the db change and our user dissapear
-    //this is whats called a sanity check - this option shouldn't exist
-    //anyway we push our users into the localusers and save
+  } else {
     localUsers.push(user);
   }
   saveLocalItem("users", localUsers);
 }
+
+/**
+ * @brief Creates and persists a new standard user.
+ *
+ * Initializes a new user object with the provided credentials and default
+ * properties, assigns a non-administrative role, and saves it to local
+ * storage.
+ *
+ * @param {string} username - The username for the new account.
+ * @param {string} password - The password for the new account.
+ *
+ * @return {void}
+ */
 function saveNewUser(username, password) {
   let localUsers = getLocalUsers();
   const newUser = {
@@ -212,6 +282,18 @@ function saveNewUser(username, password) {
   saveLocalItem("users", localUsers);
 }
 
+/**
+ * @brief Retrieves a user matching the provided credentials.
+ *
+ * Searches the provided user list for a user whose username and password
+ * match the supplied values.
+ *
+ * @param {string} username - The username to search for.
+ * @param {string} password - The password to match.
+ * @param {Array<Object>} localUsers - The list of registered users.
+ *
+ * @returns {Object|undefined} The matching user object, or undefined if not found.
+ */
 function getUser(username, password, localUsers) {
   let userObj = localUsers.find(
     (user) => user.username === username && user.userpass === password
@@ -219,12 +301,38 @@ function getUser(username, password, localUsers) {
   return userObj;
 }
 
+/**
+ * @brief Counts how many users exist with a given username.
+ *
+ * Filters the provided user list and returns the number of users whose
+ * username matches the supplied value.
+ *
+ * @param {string} username - The username to search for.
+ * @param {Array<Object>} localUsers - The list of registered users.
+ *
+ * @returns {number} The number of users with the given username.
+ */
 function getUserNameCount(username, localUsers) {
-  let userObj = localUsers.filter(
-    (user) => {user.username === username});
+  let userObj = localUsers.filter((user) => {
+     return user.username === username
+  });
   return userObj.length;
 }
 
+/**
+ * @brief Handles user authentication and optional account creation.
+ *
+ * Attempts to authenticate a user with the provided credentials. If
+ * authentication succeeds, the global `currentUser` is set. If it fails,
+ * the function determines whether the username exists and either prompts
+ * for account creation or displays an error message.
+ *
+ * @param {string} username - The username entered by the user.
+ * @param {string} password - The password entered by the user.
+ *
+ * @returns {boolean} True if the login flow completed successfully,
+ *                    false if authentication failed due to wrong credentials.
+ */
 function checkUserLogin(username, password) {
   let localUsers = getLocalUsers();
   const currUser = getUser(username, password, localUsers);
@@ -252,30 +360,28 @@ function checkUserLogin(username, password) {
 }
 
 //#endregion dbUsersFunctions
-/*this simulates a store database were we could put localion, adress, employees, store type (online / physical) etc for the purpose of this project it will only track sales to give us the TOP Five sales (7) Apresentação dos cinco cursos mais vendidos)
-Example StoreObject
-{
-storeid: 1
-storessales: [] an array of store sales each with ISBN: and salecount:
-}
-*/
-let dbStores = [];
+
+
 
 //#region dbStoresFunctions
 function resetStoreInfo() {
   dbStores = [
     {
       storeid: 1,
-      storesales: [],
+      storesales: [
+        { ISBN: "0001", salecount: 50 },
+        { ISBN: "0002", salecount: 30 },
+        { ISBN: "0003", salecount: 20 },
+        { ISBN: "0004", salecount: 15 },
+        { ISBN: "0005", salecount: 10 },
+      ],
     },
   ];
 }
 
-
 function saveLocalStoreInfo() {
   localStorage.setItem("stores", JSON.stringify(dbStores));
 }
-
 
 function getLocalStoreInfo() {
   let localStore = localStorage.getItem("stores");

@@ -2,6 +2,22 @@
 Contains all functions with DOM manipulation or HTML elements
 */
 
+function preencherFiltroCategorias() {
+  const filtroCategoria = document.querySelector("#category-filter");
+  if (!filtroCategoria) return;
+
+  filtroCategoria.innerHTML = '<option value="">Todas as categorias</option>';
+
+  getListUnique(bookDb, "categoria")
+    .sort()
+    .forEach((cat) => {
+      const opt = document.createElement("option");
+      opt.value = cat;
+      opt.textContent = cat;
+      filtroCategoria.appendChild(opt);
+    });
+}
+
 /**
  * @brief Toggles the visibility of the password input field.
  *
@@ -62,6 +78,26 @@ function showConfirmLogin() {
   confirmContainer.style.display = "block";
   loginBackDrop.style.display = "block";
 }
+
+function mostrarModalDetalhes(curso) {
+  const modal = document.getElementById("modal-detalhes");
+  const titulo = document.getElementById("modal-titulo");
+  const descricao = document.getElementById("modal-descricao");
+
+  titulo.innerText = curso.titulo;
+  descricao.innerHTML =
+    `<div>
+            <p><strong>Duração Total:</strong> 45 horas | <strong>Nível:</strong> Principiante</p>
+            <p><strong>Conteúdo:</strong> 150 aulas com acesso vitalício.</p>
+            <hr>
+            <p><strong>Descrição:</strong></p>
+            <p>${curso.info}</p>
+        </div>` ||
+    "Este curso ainda não tem uma descrição detalhada disponível.";
+  modal.style.display = "block";
+  document.getElementById("login-backdrop").style.display = "block";
+}
+
 //#endregionShowModals
 
 //#region  HideModals
@@ -257,6 +293,12 @@ function renderizarCursos() {
   }
   //se a combobox de categoria não for Todos os Cursos então queremos filtrar mais
   //assim filteredBooks = filteredBooks.filter(blah blah bla)
+  const categoriaSelecionada = document.querySelector("#category-filter").value;
+  if (categoriaSelecionada !== "") {
+    filteredBooks = filteredBooks.filter(
+      (curso) => curso.categoria === categoriaSelecionada
+    );
+  }
   booksToShow = filteredBooks.slice(start, end);
 
   // Clear any hard-coded content from the container (optional, if content should be replaced)
@@ -280,25 +322,26 @@ function renderizarCursos() {
     courseCard.classList.add("four", "columns");
 
     // Build the inner HTML for the course card using template literals
-    let adminPrefix = "";
-    if (currentUser && currentUser.userrole == "admin") {
-      adminPrefix = `<a href="#" class="apagar-curso-card" data-id=${curso.ISBN}>Apagar Curso</a>`;
-    }
-    let adminSuffix = "";
-    if (currentUser && currentUser.userrole !== "admin") {
-      adminSuffix = `<a href="#" class="u-full-width button-primary button input adicionar-carrinho" data-id='${curso.ISBN}'>Adicionar ao Carrinho</a>`;
-    }
-
     let heartToShow = "🤍";
-    if (currentUser && currentUser.userfavs.includes(curso.ISBN))
-    {
+    if (currentUser && currentUser.userfavs.includes(curso.ISBN)) {
       heartToShow = "❤️";
     }
+    let userTopHTML = "";
+    let userBottomHTML = "";
+    if (currentUser) {
+      if (currentUser.userrole === "admin") {
+        userTopHTML = `<a href="#" class="apagar-curso-card" data-id=${curso.ISBN}>Apagar Curso</a>`;
+      }
+      if (currentUser.userrole === "user") {
+        userTopHTML = `<button class="favoritosCard" data-id="${curso.ISBN}" onclick="gerirFavoritos('${curso.ISBN}')">${heartToShow}</button> `;
+        userBottomHTML = `<a href="#" class="u-full-width button-primary button input adicionar-carrinho" data-id='${curso.ISBN}'>Adicionar ao Carrinho</a>`;
+      }
+    }
+
     courseCard.innerHTML = `
           <div class="card">
           <div class="login-row">
-            ${adminPrefix}
-            <button class="favoritosCard" data-id="${curso.ISBN}" onclick="gerirFavoritos('${curso.ISBN}')">${heartToShow}</button> 
+            ${userTopHTML}
             </div>
             <img src="img/${curso.imagem}" class="imagen-curso u-full-width">
             <div class="info-card">
@@ -308,7 +351,7 @@ function renderizarCursos() {
                 <p class="preco">${curso.preco}€ <span class="u-pull-right">${
       curso.promocao ? "15€" : ""
     }</span></p>
-                ${adminSuffix}
+                ${userBottomHTML}
             </div>
         </div>
     `;
@@ -375,5 +418,67 @@ function limparcarrinho() {
   // divcarrinho.innerHTML = '';
   while (divcarrinho.firstChild) {
     divcarrinho.removeChild(divcarrinho.firstChild);
+  }
+}
+
+function mostrarTop5Vendas() {
+  const icon = document.querySelector("#btn-top5");
+  const containerTop5 = document.getElementById("top5-container");
+  const listaTop5 = document.getElementById("top5-list");
+
+  if (!containerTop5 || !listaTop5) {
+    console.error(
+      "Erro: Elementos 'top5-container' ou 'top5-list' não encontrados no HTML."
+    );
+    return;
+  }
+
+  modoTop5Ativo = !modoTop5Ativo;
+
+  if (modoTop5Ativo) {
+    icon.src = "img/fireRed.png";
+    containerTop5.style.display = "block";
+
+    const store = dbStores[0];
+    const vendas = store ? store.storesales : [];
+    const top5Data = [...vendas]
+      .sort((a, b) => b.salecount - a.salecount)
+      .slice(0, 5);
+
+    listaTop5.innerHTML = "";
+
+    top5Data.forEach((venda, index) => {
+      const curso = bookDb.find((l) => l.ISBN === venda.ISBN);
+      if (curso) {
+        const col = document.createElement("div");
+        col.style.width = "20%";
+        col.style.float = "left";
+        col.style.boxSizing = "border-box";
+        col.style.cursor = "pointer";
+        col.style.padding = "0 5px";
+
+        col.innerHTML = `
+    <div class="card-top5 card-top5-a">
+        <div class="card-top5-b">
+            <img src="img/fireWhite.png" alt="" class="badge-top5"> #${
+              index + 1
+            }
+        </div>
+        <img src="img/${curso.imagem}" class="u-full-width card-top5-c">
+       
+        <div class="card-top5-d">
+            <h6 class="card-top5-e" title="${curso.titulo}">
+                ${curso.titulo}
+            </h6>
+        </div>
+    </div>
+`;
+        col.onclick = () => verDetalhesCurso(curso.ISBN);
+        listaTop5.appendChild(col);
+      }
+    });
+  } else {
+    icon.src = "img/fireGray.png";
+    containerTop5.style.display = "none";
   }
 }
