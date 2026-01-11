@@ -213,6 +213,7 @@ function confirmFormReset() {
   const target = confirmLogInForm;
   target.confirmUname.value = "";
   target.confirmPsw.value = "";
+  
 }
 
 /**
@@ -264,6 +265,7 @@ function updateLoginUI() {
   }
 }
 
+
 /**
  * @brief Generates and displays pagination controls for a filtered book list.
  *
@@ -289,7 +291,7 @@ function paginacao(filteredBooks) {
       btn.dataset.page = i;
 
       btn.addEventListener("click", function () {
-        currentPage = Number(this.dataset.page);
+        currentPage = Number(this.dataset.page); 
         renderizarCursos();
       });
       paginacaoContainer.appendChild(btn);

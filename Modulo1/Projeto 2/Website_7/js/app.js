@@ -185,7 +185,8 @@ function filtrarFavoritos(e) {
     alert("Faz login para veres os teus favoritos!");
     return;
   }
-  if (currentUser.userrole === "user") {
+  if (currentUser.userrole === "user"){
+
     if (showFavorites === true) {
       showFavorites = false;
     } else {
@@ -233,13 +234,13 @@ function initEventListeners() {
     showHeart();
     updateLoginUI();
     hideLogin();
-    mostrarTop5Vendas();
-    renderizarCursos();
+    mostrarTop5Vendas()
+    renderizarCursos()
   });
   toggleShowPsw.addEventListener("change", togglePswVisible);
   //#endregion Login Components
 
-  confirmCancelBtn.addEventListener("click", hideConfirmLogin);
+  confirmCancelBtn.addEventListener('click', hideConfirmLogin)
   listaCursos.addEventListener("click", adicionarRemoverCurso);
   favoritosBtn.addEventListener("click", filtrarFavoritos);
   btnTop5.addEventListener("click", (e) => {
@@ -247,10 +248,12 @@ function initEventListeners() {
     modoTop5Ativo = !modoTop5Ativo;
     mostrarTop5Vendas();
   });
-  document.querySelector("#category-filter").addEventListener("change", () => {
-    currentPage = 1;
-    renderizarCursos();
-  });
+  document
+    .querySelector("#category-filter")
+    .addEventListener("change", () => {
+      currentPage = 1;
+      renderizarCursos()
+    });
 
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {

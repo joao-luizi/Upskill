@@ -8,10 +8,30 @@ body {
     margin-top: 10px;
 }
 
-.gridCell{
+.gridCellEmpty{
     background-color: grey;
-
+    width: 10px;
+    height: 10px;
 }
+
+.gridCellFood{
+    background-color: green;
+    width: 12px;
+    height: 12px;
+}
+
+.gridCellHead{
+    background-color: red;
+    width: 12px;
+    height: 12px;
+}
+
+.gridCellBody{
+    background-color: lightcoral;
+    width: 10px;
+    height: 10px;
+}
+
 
 .center {
     margin-left: auto;
