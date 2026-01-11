@@ -116,7 +116,7 @@ const db = [
 
 let dbStores = [];
 let bookDb = [];
-let currentUser = undefined;
+let artigoscarrinho = [];
 
 function saveLocalItem(key, obj) {
   localStorage.setItem(key, JSON.stringify(obj));
@@ -314,7 +314,7 @@ function getUser(username, password, localUsers) {
  */
 function getUserNameCount(username, localUsers) {
   let userObj = localUsers.filter((user) => {
-     return user.username === username
+    return user.username === username;
   });
   return userObj.length;
 }
@@ -361,9 +361,17 @@ function checkUserLogin(username, password) {
 
 //#endregion dbUsersFunctions
 
-
-
 //#region dbStoresFunctions
+/**
+ * @brief Resets the store database to its default state.
+ *
+ * Initializes the global `dbStores` variable with a predefined set of
+ * stores and sales data. This function does not persist the data and
+ * should be followed by a call to `saveLocalStoreInfo` if persistence
+ * is required.
+ * @return {void}
+ *
+ */
 function resetStoreInfo() {
   dbStores = [
     {
@@ -379,23 +387,30 @@ function resetStoreInfo() {
   ];
 }
 
-function saveLocalStoreInfo() {
-  localStorage.setItem("stores", JSON.stringify(dbStores));
-}
-
+/**
+ * @brief Loads and validates store data from local storage.
+ *
+ * Attempts to retrieve and parse the store database from local storage.
+ * If the stored data is missing, empty, or invalid, the store database
+ * is reset to its default state and persisted.
+ *
+ * @return {void}
+ *
+ * @note This function mutates global state and writes to local storage.
+ */
 function getLocalStoreInfo() {
-  let localStore = localStorage.getItem("stores");
+  let localStore = getLocalItem("stores");
   if (localStore && localStore != "") {
     try {
       dbStores = JSON.parse(localStore);
     } catch {
       console.log("Unable to parse store data");
       resetStoreInfo();
-      saveLocalStoreInfo();
+      saveLocalItem("stores", dbStores);
     }
   } else {
     resetStoreInfo();
-    saveLocalStoreInfo();
+    saveLocalItem("stores", dbStores);
   }
 }
 //#endregion dbStoresFunctions

@@ -2,13 +2,21 @@
 Contains all functions with DOM manipulation or HTML elements
 */
 
-function preencherFiltroCategorias() {
+/**
+ * @brief Populates the category filter combobox.
+ *
+ * Clears the category filter and fills it with unique, sorted category values
+ * extracted from the "categoria" property of the given book objects.
+ *
+ * @param {Array<Object>} filteredBooks
+ *        Array of book objects containing a "categoria" property.
+ */
+function preencherFiltroCategorias(filteredBooks) {
   const filtroCategoria = document.querySelector("#category-filter");
   if (!filtroCategoria) return;
-
+  const oldValue = filtroCategoria.selectedOptions[0].value;
   filtroCategoria.innerHTML = '<option value="">Todas as categorias</option>';
-
-  getListUnique(bookDb, "categoria")
+  getListUnique(filteredBooks, "categoria")
     .sort()
     .forEach((cat) => {
       const opt = document.createElement("option");
@@ -16,6 +24,11 @@ function preencherFiltroCategorias() {
       opt.textContent = cat;
       filtroCategoria.appendChild(opt);
     });
+  for (let i = 0; i < filtroCategoria.options.length; i++) {
+    if (filtroCategoria.options[i].value == oldValue) {
+      filtroCategoria.selectedIndex = i;
+    }
+  }
 }
 
 /**
@@ -79,6 +92,16 @@ function showConfirmLogin() {
   loginBackDrop.style.display = "block";
 }
 
+/**
+ * @brief Displays a modal with detailed information about a course.
+ *
+ * Populates the modal fields with the course title and description,
+ * including duration, level, content, and custom info, then makes
+ * the modal visible along with the backdrop.
+ *
+ * @param {Object} curso
+ *        The course object containing details to display in the modal.
+ */
 function mostrarModalDetalhes(curso) {
   const modal = document.getElementById("modal-detalhes");
   const titulo = document.getElementById("modal-titulo");
@@ -139,6 +162,20 @@ function hideConfirmLogin() {
   confirmContainer.style.display = "none";
   loginBackDrop.style.display = "none";
 }
+
+/**
+ * @brief Hides the Modal form.
+ *
+ * Hides the modal container and removes the backdrop,
+ * concluding the show details workflow.
+ *
+ * @returns {void}
+ */
+function fecharModal() {
+  document.getElementById("modal-detalhes").style.display = "none";
+  document.getElementById("login-backdrop").style.display = "none";
+}
+
 //#endregion HideModals
 
 //#region ResetModals
@@ -174,8 +211,8 @@ function addCursoFormReset() {
  */
 function confirmFormReset() {
   const target = confirmLogInForm;
-  target.confirmUname = "";
-  target.confirmPsw = "";
+  target.confirmUname.value = "";
+  target.confirmPsw.value = "";
   target.confirmShowPsw.checked = false;
 }
 
@@ -211,7 +248,6 @@ function loginFormReset() {
 function updateLoginUI() {
   const targetImg = loginBtn.querySelector("img");
 
-  // default (guest / non-admin)
   targetImg.src = "./img/ProfileGuest.png";
   loginWelcome.innerText = "Welcome Guest";
   adicionarCurso.style.display = "none";
@@ -229,7 +265,7 @@ function updateLoginUI() {
   }
 }
 
-function gerarHTMLCurso(curso) {
+/* function gerarHTMLCurso(curso) {
   return `
          <div class="four columns">
              <div class="card">
@@ -244,7 +280,7 @@ function gerarHTMLCurso(curso) {
              </div>
          </div>
      `;
-}
+} */
 
 /**
  * @brief Generates and displays pagination controls for a filtered book list.
@@ -279,6 +315,13 @@ function paginacao(filteredBooks) {
   }
 }
 
+/**
+ * @brief Renders the course list with current filters, pagination, and user-specific actions.
+ *
+ * Applies favorites and category filters, slices the array for the current page,
+ * builds the course cards with appropriate buttons based on user role, and updates
+ * the UI container. Also updates category filter options and pagination controls.
+ */
 function renderizarCursos() {
   // Reference to the container where the courses will be inserted
   const listaCursos = document.querySelector("#lista-cursos");
@@ -291,15 +334,15 @@ function renderizarCursos() {
       currentUser.userfavs.some((element) => element === item.ISBN)
     );
   }
-  //se a combobox de categoria não for Todos os Cursos então queremos filtrar mais
-  //assim filteredBooks = filteredBooks.filter(blah blah bla)
+
   const categoriaSelecionada = document.querySelector("#category-filter").value;
+  let finalFilter = filteredBooks;
   if (categoriaSelecionada !== "") {
-    filteredBooks = filteredBooks.filter(
+    finalFilter = filteredBooks.filter(
       (curso) => curso.categoria === categoriaSelecionada
     );
   }
-  booksToShow = filteredBooks.slice(start, end);
+  booksToShow = finalFilter.slice(start, end);
 
   // Clear any hard-coded content from the container (optional, if content should be replaced)
   listaCursos.innerHTML = `
@@ -327,14 +370,14 @@ function renderizarCursos() {
       heartToShow = "❤️";
     }
     let userTopHTML = "";
-    let userBottomHTML = "";
+    let userBottomHTML = `<a href="#" class="u-full-width button input ver-detalhes" data-id="${curso.ISBN}">Saber Mais</a>`;
     if (currentUser) {
       if (currentUser.userrole === "admin") {
         userTopHTML = `<a href="#" class="apagar-curso-card" data-id=${curso.ISBN}>Apagar Curso</a>`;
       }
       if (currentUser.userrole === "user") {
         userTopHTML = `<button class="favoritosCard" data-id="${curso.ISBN}" onclick="gerirFavoritos('${curso.ISBN}')">${heartToShow}</button> `;
-        userBottomHTML = `<a href="#" class="u-full-width button-primary button input adicionar-carrinho" data-id='${curso.ISBN}'>Adicionar ao Carrinho</a>`;
+        userBottomHTML += `<a href="#" class="u-full-width button-primary button input adicionar-carrinho" data-id='${curso.ISBN}'>Adicionar ao Carrinho</a>`;
       }
     }
 
@@ -358,7 +401,8 @@ function renderizarCursos() {
     // Append the course card to the current row
     row.appendChild(courseCard);
   });
-  paginacao(filteredBooks);
+  preencherFiltroCategorias(filteredBooks);
+  paginacao(finalFilter);
 }
 
 /**
@@ -421,6 +465,13 @@ function limparcarrinho() {
   }
 }
 
+/**
+ * @brief Displays the top 5 best-selling courses.
+ *
+ * When activated, retrieves sales data from the store, determines the top 5
+ * courses by sales count, builds their UI cards, and displays them in the
+ * top-5 container. Updates the top-5 button icon based on active state.
+ */
 function mostrarTop5Vendas() {
   const icon = document.querySelector("#btn-top5");
   const containerTop5 = document.getElementById("top5-container");
@@ -432,8 +483,6 @@ function mostrarTop5Vendas() {
     );
     return;
   }
-
-  modoTop5Ativo = !modoTop5Ativo;
 
   if (modoTop5Ativo) {
     icon.src = "img/fireRed.png";
