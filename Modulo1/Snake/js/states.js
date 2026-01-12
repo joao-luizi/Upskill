@@ -12,6 +12,7 @@ function StateSetBoard() {
   GameState.firstFood = true;
   GameState.foodEaten = 0;
   GameState.tickCount = 0;
+  intervalStartValue = 800;
   isTickRunning = false
   StateSetBoardUI();
   placeSnake();

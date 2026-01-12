@@ -34,8 +34,21 @@ function renderSnake(arrTd) {
         Number(item.dataset.y) === GameState.snakeArray[i].y
     );
     if (target) {
-      if (i === 0) target.classList.add("gridCellHead");
-      else target.classList.add("gridCellBody");
+      if (i === 0){
+        target.classList = "gridCellHead";
+        //target.style.backgroundImage = `url('./img/head.png')`
+        if ( GameState.snakeArray[i].x < 0){
+         
+        }
+      }
+      else if (i === GameState.snakeArray.length - 1){
+        target.classList = "gridCellTail";
+        //target.style.backgroundImage = `url('./img/tail.png')`
+      }
+      else{
+        target.classList = "gridCellBody";
+        //target.style.backgroundImage = `url('./img/body.png')`
+      }
     }
   }
 }
@@ -67,7 +80,7 @@ function StateSetBoardUI() {
   h2.id = "isWaitingPrompt";
 
   const grid = document.createElement("table");
-  grid.classList.add("center");
+  grid.classList.add("center", "table");
 
   for (let i = 0; i < GameState.gridSize; i++) {
     const row = document.createElement("tr");

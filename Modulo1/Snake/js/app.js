@@ -18,11 +18,12 @@ let intervalId = -1;
 let isTickRunning = false;
 
 function increaseSpeed() {
- 
+  if (GameState.foodEaten % 2){
     intervalStartValue = Math.max(80, intervalStartValue - 50);
     let newTick = setInterval(Tick, intervalStartValue);
     clearInterval(intervalId);
     intervalId = newTick;
+  }
 }
 
 function checkGrowth() {

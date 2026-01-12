@@ -9,25 +9,40 @@ display: flex;
     margin-top: 10px;
 }
 
+.table{
+    border: 2px double black;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
 .gridCellEmpty{
-    background-color: grey;
-    width: 10px;
-    height: 10px;
+    background-color: white;
+    width: 25px;
+    height: 25px;
 }
 
 .gridCellFood{
     background-color: green;
-
 }
 
 .gridCellHead{
-    background-color: red;
-
+    background-image: url(../img/head.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    /* background-color: red; */
 }
 
 .gridCellBody{
-    background-color: lightcoral;
+    background-image: url(../img/body.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    /* background-color: lightcoral; */
+}
 
+.gridCellTail{
+    background-image: url(../img/tail.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    /* background-color: lightcoral; */
 }
 
 
