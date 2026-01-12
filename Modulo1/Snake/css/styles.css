@@ -1,10 +1,11 @@
 body {
     margin: 0;
+    width: 100%;
 }
 
 .container{
-    display: block;
-    text-align: center;
+display: flex;
+    justify-content: center;
     margin-top: 10px;
 }
 
@@ -16,24 +17,52 @@ body {
 
 .gridCellFood{
     background-color: green;
-    width: 12px;
-    height: 12px;
+
 }
 
 .gridCellHead{
     background-color: red;
-    width: 12px;
-    height: 12px;
+
 }
 
 .gridCellBody{
     background-color: lightcoral;
-    width: 10px;
-    height: 10px;
+
 }
 
 
 .center {
     margin-left: auto;
     margin-right: auto;
+}
+
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;         
+  margin-top: 15px;
+  padding: 10px 15px;
+
+  background: #0b0b0b;
+  border: 2px solid #00ff88;
+  border-radius: 6px;
+
+  font-family: 'Orbitron', monospace;
+  font-size: 18px;
+  color: #00ff88;
+
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.4);
+}
+
+.hud p {
+  margin: 0;
+}
+
+/* Glow effect */
+#score,
+#time {
+  text-shadow:
+    0 0 5px #00ff88,
+    0 0 10px rgba(0, 255, 136, 0.6);
 }
