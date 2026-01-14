@@ -25,24 +25,24 @@ display: flex;
 }
 
 .gridCellHead{
-    background-image: url(../img/head.png);
+/*     background-image: url(../img/head.png);
     background-repeat: no-repeat;
-    background-size: 25px 25px;
-    /* background-color: red; */
+    background-size: 25px 25px; */
+    background-color: red;
 }
 
 .gridCellBody{
-    background-image: url(../img/body.png);
+/*     background-image: url(../img/body.png);
     background-repeat: no-repeat;
-    background-size: 25px 25px;
-    /* background-color: lightcoral; */
+    background-size: 25px 25px; */
+    background-color: lightcoral;
 }
 
 .gridCellTail{
-    background-image: url(../img/tail.png);
+/*     background-image: url(../img/tail.png);
     background-repeat: no-repeat;
-    background-size: 25px 25px;
-    /* background-color: lightcoral; */
+    background-size: 25px 25px; */
+/*     /* background-color: lightcoral; */ */
 }
 
 
