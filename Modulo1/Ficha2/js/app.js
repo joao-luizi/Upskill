@@ -176,8 +176,8 @@ function invertNumber(x) {
     result *= 10;
     result += parseInt(x % 10);
     x = parseInt(x / 10);
-    return result;
   }
+  return result;
 }
 function fib(x) {
   let f1 = 0;

@@ -125,21 +125,50 @@ function TesteintDivision() {
   if (explain){
     const arg1 = Math.floor(Math.random() * 59) + 1;
     const arg2 = Math.floor(Math.random() * 9) + 1;
-    explain.innerHTML = `O quociente da divisão ${arg1} por ${arg2}? ${intDivision(arg1, arg2)}`
+    let arr = [arg1, arg2]
+    console.log(arr)
+    arr = arr.sort((a, b) => a - b);
+    console.log(arr)
+    explain.innerHTML = `O quociente da divisão ${arr[1]} por ${arr[0]}? ${intDivision(arr[1], arr[0])}`
   }
 }
 function TestesumEvenBetween() {
   const explain = document.getElementById("sumEvenBetweenExplain");
+  if (explain){
+    const arg1 = Math.floor(Math.random() * 19) + 1;
+    const arg2 = Math.floor(Math.random() * 9) + 1;
+    let arr = [arg1, arg2]
+    arr = arr.sort((a, b) => a - b);
+    explain.innerHTML = `a soma dos números naturais pares compreendidos no intervalo [${arr[0]}, ${arr[1]}] ${sumEvenBetween(arr[0], arr[1])}`
+  }
+
 }
 function TestenextLetter() {
   const explain = document.getElementById("nextLetterExplain");
+  if (explain){
+    const arg1 =  alpha[Math.floor(Math.random() * alpha.length)]
+    explain.innerHTML = `a letra seguinte a '${arg1}' é o '${nextLetter(arg1)}'`
+  }
 }
 function Testeeuclides() {
   const explain = document.getElementById("euclidesExplain");
+  if (explain){
+    const arg1 = Math.floor(Math.random() * 19) + 1;
+    const arg2 = Math.floor(Math.random() * 19) + 1;
+    explain.innerHTML = `o máximo divisor comum de ${arg1} e ${arg2} é ${euclides(arg1, arg2)}`
+  }
 }
 function TesteinvertNumber() {
   const explain = document.getElementById("invertNumberExplain");
+  if (explain){
+    const arg1 = Math.floor(Math.random() * 1999) + 1;
+    explain.innerHTML = `o numero ${arg1} invertido é: ${invertNumber(arg1)}`
+  }
 }
 function Testefib() {
   const explain = document.getElementById("fibExplain");
+  if (explain){
+    const arg1 = Math.floor(Math.random() * 19);
+    explain.innerHTML = `o n-ésimo (n=${arg1}) número da sequência de Fibonacci é: ${fib(arg1)}`
+  }
 }
