@@ -1,15 +1,16 @@
-
-function updateTimerUI(minutes, seconds){
-  const hudTime =  document.getElementById("time");
-  if (hudTime){
-    hudTime.innerHTML = `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`
+function updateTimerUI(minutes, seconds) {
+  const hudTime = document.getElementById("time");
+  if (hudTime) {
+    hudTime.innerHTML = `${String(minutes).padStart(2, "0")}:${String(
+      seconds
+    ).padStart(2, "0")}`;
   }
 }
 
-function updateScoreUI(){
-  const hudScore =  document.getElementById("score");
-  if (hudScore){
-    hudScore.innerHTML = `${String(GameState.foodEaten).padStart(4, "0")}`
+function updateScoreUI() {
+  const hudScore = document.getElementById("score");
+  if (hudScore) {
+    hudScore.innerHTML = `${String(GameState.foodEaten).padStart(4, "0")}`;
   }
 }
 
@@ -34,20 +35,60 @@ function renderSnake(arrTd) {
         Number(item.dataset.y) === GameState.snakeArray[i].y
     );
     if (target) {
-      if (i === 0){
-        target.classList = "gridCellHead";
-        //target.style.backgroundImage = `url('./img/head.png')`
-        if ( GameState.snakeArray[i].x < 0){
-         
+      if (i === 0) {
+        if (GameState.snakeArray[i].dx > 0) {
+          target.classList = "gridCellHeadHR";
         }
-      }
-      else if (i === GameState.snakeArray.length - 1){
+        if (GameState.snakeArray[i].dx < 0) {
+          target.classList = "gridCellHeadHL";
+        }
+        if (GameState.snakeArray[i].dy < 0) {
+          target.classList = "gridCellHeadVU";
+        }
+        if (GameState.snakeArray[i].dy > 0) {
+          target.classList = "gridCellHeadVD";
+        }
+      } else if (i === GameState.snakeArray.length - 1) {
         target.classList = "gridCellTail";
-        //target.style.backgroundImage = `url('./img/tail.png')`
-      }
-      else{
-        target.classList = "gridCellBody";
-        //target.style.backgroundImage = `url('./img/body.png')`
+        if (GameState.snakeArray[i].dx > 0) {
+          target.classList = "gridCellTailHR";
+        }
+        if (GameState.snakeArray[i].dx < 0) {
+          target.classList = "gridCellTailHL";
+        }
+        if (GameState.snakeArray[i].dy < 0) {
+          target.classList = "gridCellTailVU";
+        }
+        if (GameState.snakeArray[i].dy > 0) {
+          target.classList = "gridCellTailVD";
+        }
+      } else {
+        if (GameState.snakeArray[i - 1].x === GameState.snakeArray[i + 1].x){
+          target.classList = "gridCellBodyV";
+           
+        }else if (GameState.snakeArray[i - 1].y === GameState.snakeArray[i + 1].y){
+          target.classList = "gridCellBodyH";
+        }
+        else if(GameState.snakeArray[i - 1].x < GameState.snakeArray[i + 1].x){
+          if (GameState.snakeArray[i - 1].y <  GameState.snakeArray[i + 1].y){
+            //esquerda liga com cima
+            target.classList = "gridCellBodyLU";
+          }
+          else{
+            //esquerda liga com baixo
+            target.classList = "gridCellBodyLD";
+          }
+        }
+        else{
+          if (GameState.snakeArray[i - 1].y <  GameState.snakeArray[i + 1].y){
+            //direita liga com cima
+            target.classList = "gridCellBodyRD";
+          }
+          else{
+            //direita liga com baixo
+            target.classList = "gridCellBodyRU";
+          }
+        }
       }
     }
   }
@@ -61,12 +102,12 @@ function StateRenderLoopUI() {
   renderSnake(arrTd);
 }
 
-function StateSetDeathUI(){
-  const h2 = document.getElementById("isWaitingPrompt")
-  h2.id = "isDead"
+function StateSetDeathUI() {
+  const h2 = document.getElementById("isWaitingPrompt");
+  h2.id = "isDead";
   h2.innerText = "Morreste!";
   h2.style.color = "red";
-  h2.style.display = "block"
+  h2.style.display = "block";
 }
 
 function StateSetBoardUI() {

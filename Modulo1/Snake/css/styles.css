@@ -3,6 +3,11 @@ body {
     width: 100%;
 }
 
+td {
+  padding: 0;
+  border: 0;
+}
+
 .container{
 display: flex;
     justify-content: center;
@@ -16,33 +21,113 @@ display: flex;
 }
 .gridCellEmpty{
     background-color: white;
-    width: 25px;
-    height: 25px;
+    width: 64px;
+    height: 64px;
 }
 
 .gridCellFood{
-    background-color: green;
+    background-image:url(../img/snake-graphics.png);
+    background-position: 0px -192px;
+    background-repeat: no-repeat;
 }
 
-.gridCellHead{
-/*     background-image: url(../img/head.png);
+/*      head Vertical up   -192px 0px
+        head Vertical Down   
+        head Horizontal Right -256px 0px
+        head Horizontal Left -256px -64px
+        body Horizontal -64px 0px
+        body Vertical -128px -64px;
+        body RightDown -128px 0px
+        body LeftDown 0px 0px
+        body DownRight 0px -64px
+        body DownLeft -128px -128px
+        tail right -256px -128px;
+        tail down -256px -192px;
+        tail left -192px -192px;
+        apple 0px -192px;
+        
+*/
+.gridCellHeadVU{
+    background-image:url(../img/snake-graphics.png);
+    background-position: -192px 0px;
     background-repeat: no-repeat;
-    background-size: 25px 25px; */
-    background-color: red;
 }
 
-.gridCellBody{
-/*     background-image: url(../img/body.png);
+.gridCellHeadVD{
+    background-image:url(../img/snake-graphics.png);
+    background-position: -256px -64px;
     background-repeat: no-repeat;
-    background-size: 25px 25px; */
-    background-color: lightcoral;
 }
 
-.gridCellTail{
-/*     background-image: url(../img/tail.png);
+.gridCellHeadHL{
+    background-image:url(../img/snake-graphics.png);
+    background-position: -192px -64px;
     background-repeat: no-repeat;
-    background-size: 25px 25px; */
-/*     /* background-color: lightcoral; */ */
+}
+
+.gridCellHeadHR{
+    background-image:url(../img/snake-graphics.png);
+    background-position: -256px 0px;
+    background-repeat: no-repeat;
+}
+
+.gridCellBodyV{
+    background-image:url(../img/snake-graphics.png);
+    background-position: -128px -64px;
+    background-repeat: no-repeat;
+}
+.gridCellBodyH{
+    background-image:url(../img/snake-graphics.png);
+    background-position: -64px 0px;
+    background-repeat: no-repeat;
+}
+
+.gridCellBodyLU{
+    background-image:url(../img/snake-graphics.png);
+    background-position: 0px -64px;
+    background-repeat: no-repeat;
+}
+
+.gridCellBodyLD{
+    background-image:url(../img/snake-graphics.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+.gridCellBodyRU{
+    background-image:url(../img/snake-graphics.png);
+    background-position: -128px -128px;
+    background-repeat: no-repeat;
+}
+
+.gridCellBodyRD{
+    background-image:url(../img/snake-graphics.png);
+    background-position:  -128px 0px;
+    background-repeat: no-repeat;
+}
+
+.gridCellTailVU{
+    background-image:url(../img/snake-graphics.png);
+    background-position: -192px -128px;
+    background-repeat: no-repeat;
+}
+
+.gridCellTailVD{
+    background-image:url(../img/snake-graphics.png);
+    background-position: -256px -192px;
+    background-repeat: no-repeat;
+}
+
+.gridCellTailHL{
+    background-image:url(../img/snake-graphics.png);
+    background-position: -192px -192px;
+    background-repeat: no-repeat;
+}
+
+.gridCellTailHR{
+    background-image:url(../img/snake-graphics.png);
+    background-position: -256px -128px;
+    background-repeat: no-repeat;
 }
 
 
