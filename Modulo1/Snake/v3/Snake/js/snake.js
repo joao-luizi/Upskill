@@ -53,6 +53,9 @@ function createSnake() {
   //snake[1] = { x: col + 1, y: row };
   //snake[2] = { x: col + 2, y: row};
 
+//  snake[2] = { x: 9, y: 0, dx: 0, dy: -1 };
+  //snake[1] = { x: 0, y: 0, dx: 0, dy: -1 };
+  //snake[0] = { x: 0, y: 9, dx: 0, dy: -1 };
   //Straight up
   snake[0] = { x: col, y: row, dx: 0, dy: -1 };
   snake[1] = { x: col, y: row + 1 };
@@ -118,43 +121,132 @@ function renderBody(i, target) {
   const currY = GS.snake[i].y;
   const nextX = GS.snake[i + 1].x;
   const nextY = GS.snake[i + 1].y;
-  //curr == 0 prev == 10 //prevX > currX
+ 
+  console.log({prevX: prevX, prevY: prevY, currX: currX, currY: currY, nextX: nextX, nextY: nextY})
+  if (prevY === 0 && currY == GS.gridSize - 1) {
+    console.log(prevY);
+  }
   if (prevX === currX && nextX === currX) {
     target.classList = "gridBodyVertical";
   } else if (prevY === currY && nextY === currY) {
     target.classList = "gridBodyHorizontal";
   } else if (prevX > currX && nextY > currY) {
-    if (prevX == GS.gridSize - 1 && nextX == 0)
+    //
+    if (prevX == GS.gridSize - 1 && nextX == 0){
+      if (currX === 0 && currY === 0)
+        target.classList = "gridBodyLeftUp";
+        else
       target.classList = "gridBodyLeftDown";
-    else target.classList = "gridBodyRightDown";
+    }
+    else{
+      if (currY === 0 && nextY === GS.gridSize - 1)
+      target.classList = "gridBodyRightUp";
+    else
+      target.classList = "gridBodyRightDown";
+
+    }
   } else if (prevX > currX && nextY < currY) {
+    //
     if (prevX == GS.gridSize - 1 && nextX == 0)
+    {
+      if (currX === 0 && currY === GS.gridSize - 1)
+        target.classList = "gridBodyLeftDown";
+        else
       target.classList = "gridBodyLeftUp";
-    else target.classList = "gridBodyRightUp";
+    }
+    else{
+      if (currY === GS.gridSize - 1 && nextY === 0)
+      target.classList = "gridBodyRightDown";
+    else
+      target.classList = "gridBodyRightUp";
+
+    } 
   } else if (prevX < currX && nextY > currY) {
-    if (prevX == 0 && nextX == GS.gridSize - 1)
+    //
+    if (prevX == 0 && nextX == GS.gridSize - 1){
+      if (currX === GS.gridSize - 1 && currY === 0)
+        target.classList = "gridBodyRightUp";
+        else
       target.classList = "gridBodyRightDown";
-    else target.classList = "gridBodyLeftDown";
+    }
+    else {
+      if (prevY === 0 && nextY === GS.gridSize - 1)
+        target.classList = "gridBodyLeftUp";
+      else target.classList = "gridBodyLeftDown";
+    }
   } else if (prevX < currX && nextY < currY) {
+    //
     if (prevX == 0 && nextX == GS.gridSize - 1)
+    {
+      if (currX === GS.gridSize -1 && currY === GS.gridSize -1)
+        target.classList = "gridBodyRightDown";
+        else
       target.classList = "gridBodyRightUp";
-    else target.classList = "gridBodyLeftUp";
+    }
+    else {
+      if (currY == GS.gridSize - 1 && nextY == 0)
+        target.classList = "gridBodyLeftDown";
+      else
+        target.classList = "gridBodyLeftUp";
+    }
   } else if (prevY > currY && currX < nextX) {
-    if (prevY == GS.gridSize - 1 && nextY == 0)
+    //
+    if (prevY == GS.gridSize - 1 && nextY == 0){
+      if (currX === 0 && currY ===0)
+        target.classList = "gridBodyLeftUp";
+        else
       target.classList = "gridBodyRightUp";
-    else target.classList = "gridBodyRightDown";
-  } else if (prevY < currY && currX < nextX) {
-    if (prevY == 0 && nextY == GS.gridSize - 1)
-      target.classList = "gridBodyRightDown";
-    else target.classList = "gridBodyRightUp";
-  } else if (prevY > currY && currX > nextX) {
-    if (prevY == GS.gridSize - 1 && nextY == 0)
-      target.classList = "gridBodyLeftUp";
-    else target.classList = "gridBodyLeftDown";
-  } else if (prevY < currY && currX > nextX) {
-    if (prevY == 0 && nextY == GS.gridSize - 1)
+    }
+    else{
+      if (currX === 0 && nextX === GS.gridSize - 1)
       target.classList = "gridBodyLeftDown";
-    else target.classList = "gridBodyLeftUp";
+    else
+      target.classList = "gridBodyRightDown";
+    } 
+  } else if (prevY < currY && currX < nextX) {
+    //
+    if (prevY == 0 && nextY == GS.gridSize - 1){
+      if (currX === 0 && currY === 9)
+        target.classList = "gridBodyLeftDown";
+        else
+      target.classList = "gridBodyRightDown";
+    }
+    else{
+      if (currX === 0 && nextX === GS.gridSize - 1)
+      target.classList = "gridBodyLeftUp";
+      else
+      target.classList = "gridBodyRightUp";
+
+    } 
+  } else if (prevY > currY && currX > nextX) {
+    //
+    if (prevY == GS.gridSize - 1 && nextY == 0){
+      if (currX === GS.gridSize - 1 && currY == 0)
+        target.classList = "gridBodyRightUp";
+        else
+      target.classList = "gridBodyLeftUp";
+
+    }
+    else{
+      if (currX === GS.gridSize - 1 && nextX === 0)
+        target.classList = "gridBodyRightDown";
+      else
+      target.classList = "gridBodyLeftDown";
+    } 
+  } else if (prevY < currY && currX > nextX) {
+    //
+    if (prevY == 0 && nextY == GS.gridSize - 1){
+      if (currX === GS.gridSize - 1 && currY === GS.gridSize -1)
+        target.classList = "gridBodyRightDown";
+        else
+      target.classList = "gridBodyLeftDown";
+    }
+    else{
+      if(currX === GS.gridSize -1 && nextX === 0)
+        target.classList = "gridBodyRightUp";
+      else
+        target.classList = "gridBodyLeftUp";
+    } 
   } else {
     target.classList = "gridCellGeneric";
   }
