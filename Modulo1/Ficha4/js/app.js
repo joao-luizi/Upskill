@@ -29,7 +29,7 @@ function ex04(n) {
   let arr = [];
   let i = 1;
   while (i < n) {
-    arr[i] = i;
+    arr[i - 1] = i;
     ++i;
   }
   return arr;
@@ -43,7 +43,8 @@ function isOrdered(x) {
   return true;
 }
 function inverted(arr) {
-  let inverted = arr.slice();
+  //let inverted = arr.slice();
+  const inverted = [...arr];
   return inverted.reverse();
 }
 class ex07 {
@@ -51,18 +52,18 @@ class ex07 {
     return arr.length == 0;
   }
   first(arr) {
-    if (isEmpty(arr)) return undefined;
+    if (this.isEmpty(arr)) return undefined;
     else return arr[0];
   }
   last(arr) {
-    if (isEmpty(arr)) return undefined;
+    if (this.isEmpty(arr)) return undefined;
     else return arr[arr.length - 1];
   }
   nextIndex(arr, index) {
-    return index == arr.length - 1 ? arr[0] : arr[index + 1];
+    return index == arr.length - 1? 0 : index + 1;
   }
   prevIndex(arr, index) {
-    return index == 0 ? arr[length - 1] : arr[index - 1];
+    return index == 0 ? arr.length - 1 : index - 1;
   }
   element(arr, index) {
     let i;
@@ -120,6 +121,23 @@ function isPalindrome(arr) {
   }
   return result;
 }
+
+class ex13{
+  static min(arr){
+    return Math.min(...arr);
+  }
+  static max(arr){
+    return Math.max(...arr);
+  }
+  static sum(arr){
+    return sum(arr);
+  }
+  static average(arr){
+    return this.sum(arr) / arr.length;
+  }
+
+}
+
 function areTheSame(arr1, arr2) {
   if (arr1.length != arr2.length) return false;
   let i = 0;
