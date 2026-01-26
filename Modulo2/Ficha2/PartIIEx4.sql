@@ -10,9 +10,8 @@
 -- the definition of the procedure.
 -- ================================================
 /*
-2. Criar uma função NomeFuncionario que receba o EmployeeID e devolva
-o nome completo do funcionário, no formato Título de cortesia +
-Primeiro Nome + Último Nome
+4. Criar uma função ClienteValorGasto que receba o CustomerID e devolva
+o valor total gasto por esse cliente em todas as suas encomendas.
 */
 SET ANSI_NULLS ON
 GO
@@ -23,10 +22,9 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE NomeFuncionario
+CREATE PROCEDURE ClienteValorGasto
 	-- Add the parameters for the stored procedure here
-	@EmployeeID INT 
-
+	@CustomerID NCHAR(5)
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
@@ -34,7 +32,7 @@ BEGIN
 	SET NOCOUNT ON;
 
     -- Insert statements for procedure here
-	SELECT TitleOfCourtesy + ' ' + FirstName + ' ' + LastName AS NomeCompleto FROM Employees
-	WHERE EmployeeID = @EmployeeID
+	SELECT SUM(Quantity * UnitPrice) FROM [Order Details] INNER JOIN Orders ON Orders.OrderID = [Order Details].OrderID
+	WHERE Orders.CustomerID = @CustomerID
 END
 GO
