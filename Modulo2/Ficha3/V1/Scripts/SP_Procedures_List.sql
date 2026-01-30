@@ -1,3 +1,8 @@
+
+-- Insert Cursos Sample
+
+EXEC CriarAmostraCursos
+
 -- Iniciar um novo Ano Letivo
 
 EXEC SetUpAnoLetivo @Year = 2001
