@@ -11,9 +11,9 @@ GO
 CREATE TABLE [dbo].[Professores](
 	[ProfessorID] [bigint] IDENTITY(1,1) NOT NULL,
 	[PessoaID] [bigint] NOT NULL,
+	[DataContratacao] [datetime] NOT NULL,
+	[DataCessacao] [datetime] NULL,
 	[Ativo] [bit] NOT NULL,
-	[DataDeContratacao] [datetime] NOT NULL,
-	[DataDeCessacao] [datetime] NULL,
  CONSTRAINT [PK_Professores] PRIMARY KEY CLUSTERED 
 (
 	[ProfessorID] ASC

@@ -1,14 +1,14 @@
-USE [Upskill_EscolaDelite]
+USE [UpSkill_EscolaDelite]
 GO
 
-/****** Object:  Table [dbo].[TiposdeRelacao]    Script Date: 30/01/2026 15:00:35 ******/
+/****** Object:  Table [dbo].[TiposRelacao]    Script Date: 30/01/2026 15:07:46 ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [dbo].[TiposdeRelacao](
+CREATE TABLE [dbo].[TiposRelacao](
 	[RelacaoID] [smallint] IDENTITY(1,1) NOT NULL,
 	[RelacaoNome] [nvarchar](50) NOT NULL,
  CONSTRAINT [PK_TipoRelacao] PRIMARY KEY CLUSTERED 

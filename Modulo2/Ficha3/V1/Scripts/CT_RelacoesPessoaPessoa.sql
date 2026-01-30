@@ -35,10 +35,10 @@ GO
 ALTER TABLE [dbo].[Relacoes] CHECK CONSTRAINT [FK_Relacoes_Pessoas1]
 GO
 
-ALTER TABLE [dbo].[Relacoes]  WITH CHECK ADD  CONSTRAINT [FK_Relacoes_TiposdeRelacao] FOREIGN KEY([Tipo])
-REFERENCES [dbo].[TiposdeRelacao] ([RelacaoID])
+ALTER TABLE [dbo].[Relacoes]  WITH CHECK ADD  CONSTRAINT [FK_Relacoes_TiposRelacao] FOREIGN KEY([Tipo])
+REFERENCES [dbo].[TiposRelacao] ([RelacaoID])
 GO
 
-ALTER TABLE [dbo].[Relacoes] CHECK CONSTRAINT [FK_Relacoes_TiposdeRelacao]
+ALTER TABLE [dbo].[Relacoes] CHECK CONSTRAINT [FK_Relacoes_TiposRelacao]
 GO
 

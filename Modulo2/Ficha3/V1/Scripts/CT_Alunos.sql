@@ -11,9 +11,9 @@ GO
 CREATE TABLE [dbo].[Alunos](
 	[AlunoID] [bigint] IDENTITY(1,1) NOT NULL,
 	[PessoaID] [bigint] NOT NULL,
-	[DatadeIngresso] [datetime] NOT NULL,
+	[DataRegisto] [datetime] NOT NULL,
+	[DataTransferencia] [datetime] NULL,
 	[Ativo] [bit] NOT NULL,
-	[DataDeTransferencia] [datetime] NULL,
  CONSTRAINT [PK_Alunos] PRIMARY KEY CLUSTERED 
 (
 	[AlunoID] ASC
