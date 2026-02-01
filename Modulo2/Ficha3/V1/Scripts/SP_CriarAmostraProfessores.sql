@@ -13,7 +13,7 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE [dbo].[SampleProfessors]
+CREATE PROCEDURE [dbo].[CriarAmostraProfessores]
 	-- Add the parameters for the stored procedure here
 	
 	
@@ -25,7 +25,7 @@ BEGIN
 
     -- Insert statements for procedure here
 	
-INSERT INTO Professores (PessoaID, Ativo, DataDeContratacao)
+INSERT INTO Professores (PessoaID, Ativo, DataContratacao)
 VALUES
 (1, 1, '2018-09-01'),   -- João Silva
 (2, 1, '2020-02-15'),   -- Ana Costa

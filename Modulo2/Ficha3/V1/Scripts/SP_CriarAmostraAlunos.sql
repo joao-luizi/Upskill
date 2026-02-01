@@ -13,7 +13,7 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE [dbo].[SampleAlunos]
+CREATE PROCEDURE [dbo].[CriarAmostraAlunos]
 	-- Add the parameters for the stored procedure here
 	
 	
@@ -24,21 +24,21 @@ BEGIN
 	SET NOCOUNT ON;
 
     -- Insert statements for procedure here
-	INSERT INTO Alunos (PessoaID, DatadeIngresso, Ativo)
+	INSERT INTO Alunos (PessoaID, DataRegisto, Ativo)
 VALUES
 (4,  '2023-09-15', 1),  -- Mariana Pereira
 (5,  '2022-09-01', 1),  -- Sofia Almeida
 (6,  '2021-09-01', 1),  -- Pedro Rocha
 (10, '2020-09-15', 1),  -- Tiago Sousa
 (11, '2024-09-01', 1),  -- Beatriz Gomes
-(14, '2021-09-15', 0),  -- Daniel Teixeira (inactive)
+(14, '2021-09-15', 1),  -- Daniel Teixeira 
 (15, '2019-09-01', 1),  -- Catarina Pinto
 (16, '2018-09-01', 1),  -- Miguel Azevedo
 (18, '2022-02-01', 1),  -- André Correia
 (21, '2023-09-01', 1),  -- Leonor Cunha
 (23, '2020-09-01', 1),  -- Sara Antunes
 (25, '2024-09-01', 1),  -- Matilde Oliveira
-(28, '2019-09-15', 0);  -- Gonçalo Serra (inactive)
+(28, '2019-09-15', 1);  -- Gonçalo Serra 
 
 
 END

@@ -6,7 +6,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE PROCEDURE LIstagemDeIrmaos
+CREATE PROCEDURE ListarIrmaos
 	-- Add the parameters for the stored procedure here
 
 AS
@@ -16,18 +16,22 @@ BEGIN
 	SET NOCOUNT ON;
 
     -- Insert statements for procedure here
-	SELECT DISTINCT [AlunoID]
-      ,FirstName
-      ,MiddleName
-      ,LastName
-      ,[DatadeIngresso]
-      ,[Ativo]
-      ,[TiposdeRelacao].RelacaoNome
-  FROM [Upskill_EscolaDelite].[dbo].[Alunos]
-  INNER JOIN Relacoes ON Relacoes.PessoaAID = Alunos.PessoaID OR
-  Relacoes.PessoaBID = Alunos.PessoaID
-  INNER JOIN Pessoas ON Pessoas.PessoaID = Alunos.PessoaID
-  INNER JOIN TiposdeRelacao ON Relacoes.Tipo = TiposdeRelacao.RelacaoID
-  WHERE Ativo = 1
+	SELECT
+    Alunos.AlunoID,
+    p.FirstName,
+    p.MiddleName,
+    p.LastName,
+    Alunos.DataRegisto,
+    Alunos.Ativo
+FROM Alunos 
+JOIN Pessoas
+    ON Pessoas.PessoaID = Alunos.PessoaID
+WHERE Alunos.Ativo = 1
+  AND EXISTS (
+      SELECT 1
+      FROM Relacoes 
+      WHERE Relacoes.Tipo = 1
+        AND (Relacoes.PessoaAID = Alunos.PessoaID OR Relacoes.PessoaBID = Alunos.PessoaID)
+  );
 END
 GO
