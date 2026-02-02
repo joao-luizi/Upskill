@@ -38,7 +38,7 @@ BEGIN
 	INSERT INTO Professores
 	(
 		PessoaID,
-		DataDeContratacao,
+		DataContratacao,
 		Ativo
 	)
 	VALUES

@@ -1,6 +1,13 @@
 USE [UpSkill_EscolaDelite]
 GO
-
+/*
+Esta função verifica um registo de contacto:
+Telefone: 
+- Precisa de ter exatamente 9 digitos
+- Não pode ter nenhuma Letra
+Email
+- tem de ter pelo menos um @
+*/
 /****** Object:  UserDefinedFunction [dbo].[ValidarContacto]    Script Date: 01/02/2026 14:58:02 ******/
 SET ANSI_NULLS ON
 GO

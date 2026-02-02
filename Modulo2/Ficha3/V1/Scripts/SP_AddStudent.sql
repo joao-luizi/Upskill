@@ -37,7 +37,7 @@ BEGIN
 	INSERT INTO Alunos
 	(
 		PessoaID,
-		DatadeIngresso,
+		DataRegisto,
 		Ativo
 	)
 	VALUES
