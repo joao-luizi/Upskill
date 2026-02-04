@@ -1,0 +1,42 @@
+select top 1 nome, datediff(year,DataNascimento,getdate()) from medicos where ativo = 1 order by DataNascimento desc
+union
+select top 1 nome, datediff(year,DataNascimento,getdate()) from medicos where ativo = 1 order by DataNascimento
+ 
+ 
+SELECT Nome, DATEDIFF(year, DataNascimento, GETDATE()) FROM Medicos 
+WHERE DataNascimento = (SELECT MIN(DataNascimento) FROM Medicos WHERE Medicos.Ativo = 1) 
+UNION
+SELECT Nome, DATEDIFF(year, DataNascimento, GETDATE()) FROM Medicos 
+WHERE DataNascimento = (SELECT MAX(DataNascimento) FROM Medicos WHERE Medicos.Ativo = 1)
+ 
+ 
+declare @Nome as varchar(max) = 'Joao Pedro'
+declare @ano as int = 2026
+select Month(Consultas.dataConsulta), count(*) from consultas inner join medicos on consultas.Id_Medico = Medicos.Id 
+where Medicos.nome = @Nome and year(Consultas.dataConsulta)=@Ano group by Month(Consultas.dataConsulta)
+ 
+ 
+SELECT Especialidades.Nome, Consultas.DataConsulta FROM Consultas INNER JOIN 
+Especialidades ON  Consultas.Id_Especialidade = Especialidades.Id 
+where day(DataConsulta) >= day(getdate()) and
+month(dataconsulta) = month(getdate()) and year(dataconsulta)=year(getdate()) order by dataconsulta
+ 
+ 
+select nome  from medicos where ativo<>0 and  id not  in
+(SELECT Id_Medico FROM Consultas WHERE DATEDIFF(month, Consultas.DataConsulta, GETDATE()) < 6)
+
+DECLARE @TmpMes DATETIME
+DECLARE @MinMes DATETIME
+DECLARE @MaxMes DATETIME
+ 
+SET @TmpMes = DATEADD(month, 1, GETDATE())
+SET @MinMes = DATEFROMPARTS(YEAR(@TmpMes), MONTH(@TmpMes), 1)
+ 
+SET @TmpMes = DATEADD(month, 2, GETDATE())
+SET @MaxMes = DATEFROMPARTS(YEAR(@TmpMes), MONTH(@TmpMes), 1)
+ 
+UPDATE Consultas SET IncluirTaxa = 0 WHERE Id_Paciente IN 
+(SELECT Id FROM Pacientes WHERE Pacientes.Beneficiario <> 0) AND DataConsulta >= @MinMes AND DataConsulta < @MaxMes
+
+select sum(t.valor) from (SELECT TOP 3 COUNT(*) AS Valor FROM Consultas WHERE  YEAR(DataConsulta) = 2026 
+GROUP BY Id_Especialidade ORDER BY COUNT(*) DESC) as t
