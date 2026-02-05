@@ -1,0 +1,15 @@
+C:\Users\Formando\Documents\Upskill\Modulo3\Aula1\Menu\obj\Debug\net8.0\Menu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Formando\Documents\Upskill\Modulo3\Aula1\Menu\obj\Debug\net8.0\Menu.AssemblyInfoInputs.cache
+C:\Users\Formando\Documents\Upskill\Modulo3\Aula1\Menu\obj\Debug\net8.0\Menu.AssemblyInfo.cs
+C:\Users\Formando\Documents\Upskill\Modulo3\Aula1\Menu\obj\Debug\net8.0\Menu.csproj.CoreCompileInputs.cache
+C:\Users\Formando\Documents\Upskill\Modulo3\Aula1\Menu\obj\Debug\net8.0\Menu.sourcelink.json
+C:\Users\Formando\Documents\Upskill\Modulo3\Aula1\Menu\bin\Debug\net8.0\Menu.exe
+C:\Users\Formando\Documents\Upskill\Modulo3\Aula1\Menu\bin\Debug\net8.0\Menu.deps.json
+C:\Users\Formando\Documents\Upskill\Modulo3\Aula1\Menu\bin\Debug\net8.0\Menu.runtimeconfig.json
+C:\Users\Formando\Documents\Upskill\Modulo3\Aula1\Menu\bin\Debug\net8.0\Menu.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\Aula1\Menu\bin\Debug\net8.0\Menu.pdb
+C:\Users\Formando\Documents\Upskill\Modulo3\Aula1\Menu\obj\Debug\net8.0\Menu.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\Aula1\Menu\obj\Debug\net8.0\refint\Menu.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\Aula1\Menu\obj\Debug\net8.0\Menu.pdb
+C:\Users\Formando\Documents\Upskill\Modulo3\Aula1\Menu\obj\Debug\net8.0\Menu.genruntimeconfig.cache
+C:\Users\Formando\Documents\Upskill\Modulo3\Aula1\Menu\obj\Debug\net8.0\ref\Menu.dll
