@@ -17,10 +17,12 @@
 	EXEC CriarAmostraProfessores
 -- Criar Amostras de Cursos
 	EXEC CriarAmostraCursos
+-- Criar Amostra Ano Letivo
+	EXEC CriarAmostraAnoLetivo
 -- Iniciar um novo Ano Letivo
-	EXEC SetUpAnoLetivo @Year = 2003
+	EXEC SetUpAnoLetivo 
 -- Inativar um Ano Letivo
-	EXEC UnsetAnoLetivo @Year = 2002
+	EXEC UnsetAnoLetivo 
 
 -- Funcções que respondem à Ficha Base de Dados Escola D’ELITE
 -- Ex.1 Obter uma listagem de alunos e professores com endereços de email e numeros de telefone incorretos
@@ -54,3 +56,4 @@ EXEC CessarFuncoesProfessor 2
 EXEC TransferirAluno 2
 
 -- Ex.11 Proceder ao registo automático dos dados para o novo ano escolar
+EXEC SetUpAnoLetivo @Year = 2003

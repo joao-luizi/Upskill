@@ -1,0 +1,30 @@
+USE [UpSkill_EscolaDelite]
+GO
+
+/****** Object:  Table [dbo].[AnoLetivo]    Script Date: 05/02/2026 11:52:12 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+IF NOT EXISTS (
+    SELECT 1
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = 'dbo'
+      AND TABLE_NAME = 'AnoLetivo'
+)
+BEGIN
+CREATE TABLE [dbo].[AnoLetivo](
+	[AnoLetivoID] [bigint] IDENTITY(1,1) NOT NULL,
+	[DataInicio] [datetime] NOT NULL,
+	[DataFim] [datetime] NOT NULL,
+	[Ativo] [bit] NOT NULL,
+ CONSTRAINT [PK_AnoLetivo] PRIMARY KEY CLUSTERED 
+(
+	[AnoLetivoID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+

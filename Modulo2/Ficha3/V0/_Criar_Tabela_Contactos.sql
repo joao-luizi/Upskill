@@ -1,0 +1,32 @@
+USE [UpSkill_EscolaDelite]
+GO
+
+/****** Object:  Table [dbo].[Contactos]    Script Date: 05/02/2026 11:52:31 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (
+    SELECT 1
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = 'dbo'
+      AND TABLE_NAME = 'Contactos'
+)
+BEGIN
+CREATE TABLE [dbo].[Contactos](
+	[PessoaID] [bigint] NOT NULL,
+	[Tipo] [smallint] NOT NULL,
+	[Valor] [nvarchar](50) NOT NULL,
+	[Ativo] [bit] NOT NULL,
+ CONSTRAINT [PK_Contactos_1] PRIMARY KEY CLUSTERED 
+(
+	[PessoaID] ASC,
+	[Tipo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+
+
+
