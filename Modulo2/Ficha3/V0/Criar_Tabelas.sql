@@ -1,0 +1,219 @@
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE Criar_Tabelas
+	
+AS
+BEGIN
+	-- Pessoa
+	IF NOT EXISTS (
+    SELECT 1
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = 'dbo'
+      AND TABLE_NAME = 'Pessoas'
+	)
+	BEGIN
+		CREATE TABLE [dbo].[Pessoas](
+			[PessoaID] [bigint] IDENTITY(1,1) NOT NULL,
+			[NIF] [nchar](9) NOT NULL,
+			[FirstName] [nvarchar](100) NOT NULL,
+			[LastName] [nvarchar](100) NOT NULL,
+			[MiddleName] [nvarchar](100) NULL,
+			[DOB] [datetime] NOT NULL,
+			[LastUpdate] [datetime] NOT NULL,
+		 CONSTRAINT [PK_Pessoas] PRIMARY KEY CLUSTERED 
+		(
+			[PessoaID] ASC
+		)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY],
+		 CONSTRAINT [Pessoas_NIF] UNIQUE NONCLUSTERED 
+		(
+			[NIF] ASC
+		)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+		) ON [PRIMARY]
+	END
+
+	-- TiposdeContactos
+	IF NOT EXISTS (
+    SELECT 1
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = 'dbo'
+      AND TABLE_NAME = 'TiposdeContactos'
+	)
+	BEGIN
+		CREATE TABLE [dbo].[TiposdeContactos](
+			[TipoID] [smallint] NOT NULL,
+			[NomeDoContacto] [nvarchar](50) NOT NULL,
+		 CONSTRAINT [PK_TiposdeContactos] PRIMARY KEY CLUSTERED 
+		(
+			[TipoID] ASC
+		)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+		) ON [PRIMARY]
+	END
+
+	-- Contactos
+	IF NOT EXISTS (
+    SELECT 1
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = 'dbo'
+      AND TABLE_NAME = 'Contactos'
+	)
+	BEGIN
+		CREATE TABLE [dbo].[Contactos](
+			[PessoaID] [bigint] NOT NULL,
+			[Tipo] [smallint] NOT NULL,
+			[Valor] [nvarchar](50) NOT NULL,
+			[Ativo] [bit] NOT NULL,
+		 CONSTRAINT [PK_Contactos_1] PRIMARY KEY CLUSTERED 
+		(
+			[PessoaID] ASC,
+			[Tipo] ASC
+		)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+		) ON [PRIMARY]
+	END
+
+	-- Alunos
+	IF NOT EXISTS (
+    SELECT 1
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = 'dbo'
+      AND TABLE_NAME = 'Alunos'
+	)
+	BEGIN
+		CREATE TABLE [dbo].[Alunos](
+			[AlunoID] [bigint] IDENTITY(1,1) NOT NULL,
+			[PessoaID] [bigint] NOT NULL,
+			[DataRegisto] [datetime] NOT NULL,
+			[DataTransferencia] [datetime] NULL,
+			[Ativo] [bit] NOT NULL,
+		 CONSTRAINT [PK_Alunos] PRIMARY KEY CLUSTERED 
+		(
+			[AlunoID] ASC
+		)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+		) ON [PRIMARY]
+	END
+
+	-- Professores
+	IF NOT EXISTS (
+    SELECT 1
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = 'dbo'
+      AND TABLE_NAME = 'Professores'
+	)
+	BEGIN
+		CREATE TABLE [dbo].[Professores](
+			[ProfessorID] [bigint] IDENTITY(1,1) NOT NULL,
+			[PessoaID] [bigint] NOT NULL,
+			[DataContratacao] [datetime] NOT NULL,
+			[DataCessacao] [datetime] NULL,
+			[Ativo] [bit] NOT NULL,
+		 CONSTRAINT [PK_Professores] PRIMARY KEY CLUSTERED 
+		(
+			[ProfessorID] ASC
+		)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+		) ON [PRIMARY]
+	END
+
+	-- Cursos
+	IF NOT EXISTS (
+    SELECT 1
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = 'dbo'
+      AND TABLE_NAME = 'Contactos'
+	)
+	BEGIN
+		CREATE TABLE [dbo].[Cursos](
+			[CursoID] [bigint] IDENTITY(1,1) NOT NULL,
+			[Nome] [nvarchar](50) NOT NULL,
+			[Duracao] [smallint] NOT NULL,
+			[Ativo] [bit] NOT NULL,
+		 CONSTRAINT [PK_Cursos] PRIMARY KEY CLUSTERED 
+		(
+			[CursoID] ASC
+		)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+		) ON [PRIMARY]
+	END
+	
+	-- AnoLetivo
+	IF NOT EXISTS (
+    SELECT 1
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = 'dbo'
+      AND TABLE_NAME = 'AnoLetivo'
+	)
+	BEGIN
+		CREATE TABLE [dbo].[AnoLetivo](
+			[AnoLetivoID] [bigint] IDENTITY(1,1) NOT NULL,
+			[DataInicio] [datetime] NOT NULL,
+			[DataFim] [datetime] NOT NULL,
+			[Ativo] [bit] NOT NULL,
+		 CONSTRAINT [PK_AnoLetivo] PRIMARY KEY CLUSTERED 
+		(
+			[AnoLetivoID] ASC
+		)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+		) ON [PRIMARY]
+	END
+
+	-- Turmas
+	IF NOT EXISTS (
+	SELECT 1
+	FROM INFORMATION_SCHEMA.TABLES
+	WHERE TABLE_SCHEMA = 'dbo'
+	  AND TABLE_NAME = 'Turmas'
+	)
+	BEGIN
+		CREATE TABLE [dbo].[Turmas](
+			[TurmaID] [bigint] IDENTITY(1,1) NOT NULL,
+			[AnoLetivoID] [bigint] NOT NULL,
+			[CursoID] [bigint] NOT NULL,
+			[AnoDoCurso] [smallint] NOT NULL,
+		 CONSTRAINT [PK_Turmas] PRIMARY KEY CLUSTERED 
+		(
+			[TurmaID] ASC
+		)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+		) ON [PRIMARY]
+	END
+
+	-- AlunosdaTurma
+	IF NOT EXISTS (
+    SELECT 1
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = 'dbo'
+      AND TABLE_NAME = 'AlunosdaTurma'
+	)
+	BEGIN
+		CREATE TABLE [dbo].[AlunosdaTurma](
+			[TurmaID] [bigint] NOT NULL,
+			[AlunoID] [bigint] NOT NULL,
+			[NotaFinal] [smallint] NULL,
+			[DataAvaliacao] [datetime] NULL,
+		 CONSTRAINT [PK_AlunosdaTurma] PRIMARY KEY CLUSTERED 
+		(
+			[TurmaID] ASC,
+			[AlunoID] ASC
+		)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+		) ON [PRIMARY]
+	END
+
+	-- ProfessoresdaTurma
+	IF NOT EXISTS (
+    SELECT 1
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = 'dbo'
+      AND TABLE_NAME = 'ProfessoresdaTurma'
+	)
+	BEGIN
+	CREATE TABLE [dbo].[ProfessoresdaTurma](
+		[TurmaID] [bigint] NOT NULL,
+		[ProfessorID] [bigint] NOT NULL,
+	 CONSTRAINT [PK_ProfessoresdaTurma] PRIMARY KEY CLUSTERED 
+	(
+		[TurmaID] ASC,
+		[ProfessorID] ASC
+	)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+	) ON [PRIMARY]
+	END
+END
+GO

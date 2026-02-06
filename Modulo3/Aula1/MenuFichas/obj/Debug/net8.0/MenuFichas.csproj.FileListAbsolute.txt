@@ -1,0 +1,15 @@
+E:\2025_repos\Upskill\Modulo3\Aula1\MenuFichas\obj\Debug\net8.0\MenuFichas.GeneratedMSBuildEditorConfig.editorconfig
+E:\2025_repos\Upskill\Modulo3\Aula1\MenuFichas\obj\Debug\net8.0\MenuFichas.AssemblyInfoInputs.cache
+E:\2025_repos\Upskill\Modulo3\Aula1\MenuFichas\obj\Debug\net8.0\MenuFichas.AssemblyInfo.cs
+E:\2025_repos\Upskill\Modulo3\Aula1\MenuFichas\obj\Debug\net8.0\MenuFichas.csproj.CoreCompileInputs.cache
+E:\2025_repos\Upskill\Modulo3\Aula1\MenuFichas\obj\Debug\net8.0\MenuFichas.sourcelink.json
+E:\2025_repos\Upskill\Modulo3\Aula1\MenuFichas\bin\Debug\net8.0\MenuFichas.exe
+E:\2025_repos\Upskill\Modulo3\Aula1\MenuFichas\bin\Debug\net8.0\MenuFichas.deps.json
+E:\2025_repos\Upskill\Modulo3\Aula1\MenuFichas\bin\Debug\net8.0\MenuFichas.runtimeconfig.json
+E:\2025_repos\Upskill\Modulo3\Aula1\MenuFichas\bin\Debug\net8.0\MenuFichas.dll
+E:\2025_repos\Upskill\Modulo3\Aula1\MenuFichas\bin\Debug\net8.0\MenuFichas.pdb
+E:\2025_repos\Upskill\Modulo3\Aula1\MenuFichas\obj\Debug\net8.0\MenuFichas.dll
+E:\2025_repos\Upskill\Modulo3\Aula1\MenuFichas\obj\Debug\net8.0\refint\MenuFichas.dll
+E:\2025_repos\Upskill\Modulo3\Aula1\MenuFichas\obj\Debug\net8.0\MenuFichas.pdb
+E:\2025_repos\Upskill\Modulo3\Aula1\MenuFichas\obj\Debug\net8.0\MenuFichas.genruntimeconfig.cache
+E:\2025_repos\Upskill\Modulo3\Aula1\MenuFichas\obj\Debug\net8.0\ref\MenuFichas.dll
