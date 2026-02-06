@@ -551,7 +551,7 @@ BEGIN
 	===============================================================================
 	*/
 	PRINT 'A criar tipos de relaçao...'
-	IF EXISTS (SELECT * FROM TiposRelacao
+	IF EXISTS (SELECT 1 FROM TiposRelacao
 	WHERE TiposRelacao.RelacaoID IN (1, 2, 3, 4))
 		BEGIN
 			PRINT 'As relacoes de Amostra já se encontram na base de dados. Nenhum Registo adicionado.'
