@@ -238,8 +238,21 @@ PRINT 'A criar relacoes entre as tabelas...';
 		ALTER TABLE [dbo].[Exemplares_Nucleo]  WITH CHECK ADD  CONSTRAINT [FK_Exemplares_Nucleo_Exemplares] FOREIGN KEY([ID_Exemplar])
 		REFERENCES [dbo].[Exemplares] ([ID_Exemplar])
 		ALTER TABLE [dbo].[Exemplares_Nucleo] CHECK CONSTRAINT [FK_Exemplares_Nucleo_Exemplares]
+
 	END
 
+	-- FK_Exemplares_Nucleo_Nucleos
+	IF NOT EXISTS (
+    SELECT 1
+    FROM sys.foreign_keys
+    WHERE name = 'FK_Exemplares_Nucleo_Nucleos'
+	)
+	BEGIN
+		ALTER TABLE [dbo].[Exemplares_Nucleo]  WITH CHECK ADD  CONSTRAINT [FK_Exemplares_Nucleo_Nucleos] FOREIGN KEY([ID_Nucleo])
+		REFERENCES [dbo].[Nucleos] ([ID_Nucleo])
+		ALTER TABLE [dbo].[Exemplares_Nucleo] CHECK CONSTRAINT [FK_Exemplares_Nucleo_Nucleos]
+	END
+	
 	-- FK_Nucleos_TipoNucleos
 	IF NOT EXISTS (
     SELECT 1
@@ -505,7 +518,7 @@ BEGIN
 END
 GO
 
-EXEC Amostra_Criar_Utilizadores
+EXEC Amostra_Criar_Infracoes
 GO
 
 CREATE OR ALTER PROCEDURE [dbo].[Amostra_Criar_Requisicoes]
@@ -613,11 +626,15 @@ Nota:
 */
     SET NOCOUNT ON;
 
+    DELETE FROM Infracoes
+    WHERE [ID_Utilizador] = @ID_Utilizador;
+    PRINT '@ID_Utilizador ' + CAST(@ID_Utilizador AS NVARCHAR(MAX)) + ' foi removido de Infracoes.'
     DELETE FROM Requisicoes
     WHERE [ID_Utilizador] = @ID_Utilizador;
-
+    PRINT '@ID_Utilizador ' + CAST(@ID_Utilizador AS NVARCHAR(MAX)) + ' foi removido de Requisiçoes.'
     DELETE FROM Utilizadores
     WHERE [ID_Utilizador] = @ID_Utilizador;
+    PRINT '@ID_Utilizador ' + CAST(@ID_Utilizador AS NVARCHAR(MAX)) + ' foi removido de Utilizadores.'
 END
 GO
 
@@ -634,21 +651,17 @@ momento
     DECLARE @ID_Utilizador BIGINT;
 
     DECLARE utilizador_cursor CURSOR FOR
-    SELECT Utilizadores.[ID_Utilizador]
-    FROM Utilizadores
-    WHERE 
-        NOT EXISTS (
-            SELECT 1 
-            FROM Requisicoes
-            WHERE Requisicoes.[ID_Utilizador] = Utilizadores.ID_Utilizador
-              AND Requisicoes.DataRequisicao >= DATEADD(YEAR,-1,GETDATE())
-        )
-        AND NOT EXISTS (
-            SELECT 1
-            FROM Requisicoes
-            WHERE Requisicoes.[ID_Utilizador] = Utilizadores.[ID_Utilizador]
-              AND Requisicoes.DataEntrega IS NULL
-        );
+        SELECT R.ID_Utilizador
+		FROM Requisicoes R
+		INNER JOIN Utilizadores U
+			ON R.ID_Utilizador = U.ID_Utilizador
+		WHERE U.ID_TipoUtilizador = 1
+		GROUP BY R.ID_Utilizador
+		HAVING 
+		-- No requisicoes in the last year
+		SUM(CASE WHEN R.DataRequisicao >= DATEADD(YEAR, -1, GETDATE()) THEN 1 ELSE 0 END) = 0
+		-- No requisicoes with DataEntrega IS NULL
+		AND SUM(CASE WHEN R.DataEntrega IS NULL THEN 1 ELSE 0 END) = 0;
 
     OPEN utilizador_cursor;
     FETCH NEXT FROM utilizador_cursor INTO @ID_Utilizador;
