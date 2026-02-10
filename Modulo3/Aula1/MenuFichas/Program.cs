@@ -13,91 +13,7 @@
             }
             Console.Write("]");
         }
-        static void TestarArrayfill()
-        {
-            //SetupTest
-            Console.WriteLine("TestarArrayreduce");
-            Console.WriteLine("Selecione um tamanho para o array entre 1 e 10");
-            int i = LerValorInteiro();
-            while (i < 1 || i > 10)
-                i = LerValorInteiro();
-            int[] array = new int[i];
-            int j = 0;
-            while (j < i)
-                array[j] = j++;
-            PrintArray(array);
-            Console.WriteLine();
-            Console.WriteLine("Pressione qualquer tecla para continuar");
-            Console.ReadLine();
-        }
-        static void TestarArraysum()
-        {
-            Console.WriteLine("TestarArraysum");
-            Console.WriteLine("Pressione qualquer tecla para continuar");
-            Console.ReadLine();
-        }
-        static void TestarArrayreduce()
-        {
-            Console.WriteLine("TestarArrayfill");
-            Console.WriteLine("Pressione qualquer tecla para continuar");
-            Console.ReadLine();
-        }
-        static void TestarrandomUntil()
-        {
-            Console.WriteLine("TestarrandomUntil");
-            Console.WriteLine("Pressione qualquer tecla para continuar");
-            Console.ReadLine();
-        }
-        static void TestarrandomWithin()
-        {
-            Console.WriteLine("TestarrandomWithin");
-            Console.WriteLine("Pressione qualquer tecla para continuar");
-            Console.ReadLine();
-        }
-        static void TestarrandomEven()
-        {
-            Console.WriteLine("TestarrandomEven");
-            Console.WriteLine("Pressione qualquer tecla para continuar");
-            Console.ReadLine();
-        }
-        static void TestarValorAbsoluto()
-        {
-            Console.WriteLine("TestarValorAbsoluto");
-            Console.WriteLine("Pressione qualquer tecla para continuar");
-            Console.ReadLine();
-        }
-        static void TestarMaximo()
-        {
-            Console.WriteLine("Testar Maximo");
-            Console.WriteLine("Pressione qualquer tecla para continuar");
-            Console.ReadLine();
-        }
-
-        static void TestarMinimo()
-        {
-            Console.WriteLine("TestarMinimo");
-            Console.WriteLine("Pressione qualquer tecla para continuar");
-            Console.ReadLine();
-        }
-        static void TestarisNegative()
-        {
-            Console.WriteLine("TestarisNegative");
-            Console.WriteLine("Pressione qualquer tecla para continuar");
-            Console.ReadLine();
-        }
-        static void TestarArredondar()
-        {
-            Console.WriteLine("TestarArredondar");
-            Console.WriteLine("Pressione qualquer tecla para continuar");
-            Console.ReadLine();
-        }
-
-        static void TestarMediadeDois()
-        {
-            Console.WriteLine("TestarMediadeDois");
-            Console.WriteLine("Pressione qualquer tecla para continuar");
-            Console.ReadLine();
-        }
+       
         static int SwitchState(int inputState)
         {
             int returnState = LerValorInteiro();
@@ -123,13 +39,13 @@
                         case 0: //Voltar ao Menu
                             return 0;
                         case 1: //MediaDeDois
-                            TestarMediadeDois();
+                            Ficha1.Exercicio1();
                             break;
                         case 2://Arredondar
-                            TestarArredondar();
+                            Ficha1.Exercicio2();
                             break;
                         case 3://isNegative
-                            TestarisNegative();
+                            Ficha1.Exercicio3();
                             break;
                         default:
                             return inputState;
@@ -141,13 +57,13 @@
                         case 0: //Voltar ao Menu
                             return 0;
                         case 1: //ValorAbsoluto
-                            TestarValorAbsoluto();
+                            Ficha2.Exercicio1();
                             break;
                         case 2://Maximo
-                            TestarMaximo();
+                            Ficha2.Exercicio2();
                             break;
                         case 3://Minimo
-                            TestarMinimo();
+                            Ficha2.Exercicio3();
                             break;
                         default:
                             return inputState;
@@ -159,13 +75,13 @@
                         case 0: //Voltar ao Menu
                             return 0;
                         case 1: //randomUntil
-                            TestarrandomUntil();
+                            Ficha3.Exercicio1();
                             break;
                         case 2://randomWithin
-                            TestarrandomWithin();
+                            Ficha3.Exercicio2();
                             break;
                         case 3://randomEven
-                            TestarrandomEven();
+                            Ficha3.Exercicio3();
                             break;
                         default:
                             return inputState;
@@ -177,17 +93,18 @@
                         case 0: //Voltar ao Menu
                             return 0;
                         case 1: //Arrayreduce
-                            TestarArrayreduce();
+                            Ficha4.Exercicio1();
                             break;
                         case 2://Arraysum
-                            TestarArraysum();
+                            Ficha4.Exercicio2();
                             break;
                         case 3://Arrayfill
-                            TestarArrayfill();
+                            Ficha4.Exercicio3();
                             break;
                         default:
                             return inputState;
                     }
+                    Console.ReadLine();
                     return inputState;
             }
             return 0;
@@ -263,6 +180,8 @@
         static void Main(string[] args)
         {
             Menu();
+           
+            
         }
     }
 }

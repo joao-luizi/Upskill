@@ -65,14 +65,56 @@ The `Procedures_List.sql` file demonstrates all example operations. Here are som
 
 ---
 
+## TODO / Planned Enhancements
+
+The following features were intentionally identified but not implemented, either to keep the project scope manageable or to allow future exploration of business rules and design decisions.
+
+### Teaching Assignment & Class Management
+- **Stored Procedure `Professor_AplicarATurma`**  
+  Assigns a teacher to a class (`Turma`) using the existing relationship table.  
+  This procedure would encapsulate validation rules such as:
+  - Teacher active status  
+  - Duplicate assignment prevention  
+  - Academic year consistency  
+
+- **`HorariosDaTurma` Table**  
+  Defines room and time-slot occupation for each class.  
+  Intended to support:
+  - Conflict detection (room or class overlap)  
+  - Scheduling and availability logic  
+  - Future integration with teacher workload rules  
+
+### Course and Curriculum Modularization
+- **Course decomposition into modules / subjects (`Cadeiras`)**  
+  Courses would be structured as a set of modules with defined duration and academic weight.
+
+- **Teacher assignment at module level**  
+  A teacher could be assigned:
+  - To an entire class, or  
+  - To one or more modules within a course,  
+  depending on the defined business rules.
+
+### Academic Coordination
+- **Course Coordinator role**
+  - Ability to assign one or more coordinators to a course  
+  - Supports shared coordination or responsibility per module  
+
+### Scope Note
+These items were left out deliberately to:
+- Keep the database focused on core academic operations  
+- Avoid over-engineering without clearly defined business rules  
+- Leave room for future iterations and architectural discussion  
+
 ## File Structure
 ```
 Project Files:
-├── EscolaDELITE.pdf        # Exercise Subject
-├── Setup_Database.sql      # Script to create DB, tables, constraints, keys, SPs, and functions
-├── Procedures_List.sql     # Example procedure calls
-├── upsk_joao_delite.bak    # Optional prebuilt backup
-└── README.md               # Project documentation
+├── EscolaDELITE.pdf             # Exercise Subject
+├── Setup_Database.sql           # Script to create DB, tables, constraints, keys, SPs, and functions
+├── Procedures_List.sql          # Example procedure calls
+├── upsk_joao_delite.bak         # Optional prebuilt backup
+├── DiagramaCompleto.png         # Diagrama Relacional da Base de Dados
+├── AutoAvaliacao_JoaoLuizi.xlsx # Ficha de AutoAvaliação
+└── README.md                    # Project documentation
 ```
 
 

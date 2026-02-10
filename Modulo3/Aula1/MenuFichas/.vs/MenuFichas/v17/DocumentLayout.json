@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula1\\MenuFichas\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{15F2153B-29ED-46BA-B427-0DA4ADB887D1}|MenuFichas.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\aula1\\menufichas\\ficha4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F2153B-29ED-46BA-B427-0DA4ADB887D1}|MenuFichas.csproj|solutionrelative:ficha4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{15F2153B-29ED-46BA-B427-0DA4ADB887D1}|MenuFichas.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\aula1\\menufichas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15F2153B-29ED-46BA-B427-0DA4ADB887D1}|MenuFichas.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F2153B-29ED-46BA-B427-0DA4ADB887D1}|MenuFichas.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\aula1\\menufichas\\ficha1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F2153B-29ED-46BA-B427-0DA4ADB887D1}|MenuFichas.csproj|solutionrelative:ficha1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F2153B-29ED-46BA-B427-0DA4ADB887D1}|MenuFichas.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\aula1\\menufichas\\ficha3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F2153B-29ED-46BA-B427-0DA4ADB887D1}|MenuFichas.csproj|solutionrelative:ficha3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F2153B-29ED-46BA-B427-0DA4ADB887D1}|MenuFichas.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\aula1\\menufichas\\ficha2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F2153B-29ED-46BA-B427-0DA4ADB887D1}|MenuFichas.csproj|solutionrelative:ficha2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15F2153B-29ED-46BA-B427-0DA4ADB887D1}|MenuFichas.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\aula1\\menufichas\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15F2153B-29ED-46BA-B427-0DA4ADB887D1}|MenuFichas.csproj|solutionrelative:utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +34,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Utils.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula1\\MenuFichas\\Utils.cs",
+              "RelativeDocumentMoniker": "Utils.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula1\\MenuFichas\\Utils.cs",
+              "RelativeToolTip": "Utils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T11:45:36.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ficha3.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula1\\MenuFichas\\Ficha3.cs",
+              "RelativeDocumentMoniker": "Ficha3.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula1\\MenuFichas\\Ficha3.cs",
+              "RelativeToolTip": "Ficha3.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T10:56:51.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ficha2.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula1\\MenuFichas\\Ficha2.cs",
+              "RelativeDocumentMoniker": "Ficha2.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula1\\MenuFichas\\Ficha2.cs",
+              "RelativeToolTip": "Ficha2.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA8wBIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T10:55:28.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ficha1.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula1\\MenuFichas\\Ficha1.cs",
+              "RelativeDocumentMoniker": "Ficha1.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula1\\MenuFichas\\Ficha1.cs",
+              "RelativeToolTip": "Ficha1.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T10:51:43.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Ficha4.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula1\\MenuFichas\\Ficha4.cs",
+              "RelativeDocumentMoniker": "Ficha4.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula1\\MenuFichas\\Ficha4.cs",
+              "RelativeToolTip": "Ficha4.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T10:38:36.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula1\\MenuFichas\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula1\\MenuFichas\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-05T15:50:26.299Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

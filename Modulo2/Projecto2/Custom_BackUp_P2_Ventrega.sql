@@ -926,6 +926,37 @@ WHERE Utilizadores.Ativo <> 0
 END
 GO
 
+CREATE OR ALTER PROCEDURE [dbo].[Utilizadores_Delete]
+    @ID_Utilizador BIGINT
+AS
+BEGIN
+/*
+Esta stored procedure realiza a eliminação de um leitor com base no @ID_Utilizador.
+
+Foi intencionalmente isolada como ponto central de DELETE para:
+- Garantir a ordem correta de eliminação entre tabelas relacionadas
+- Permitir reutilização por outras SPs
+- Criar um ponto único de manutenção para futuras extensões
+  (ex.: histórico, logging, estatísticas ou anonimização)
+
+Nota:
+- Esta SP executa apenas a eliminação física dos dados.
+- A validação de regras de negócio deve ser feita pela SP chamadora.
+*/
+    SET NOCOUNT ON;
+
+    DELETE FROM Infracoes
+    WHERE [ID_Utilizador] = @ID_Utilizador;
+    PRINT '@ID_Utilizador ' + CAST(@ID_Utilizador AS NVARCHAR(MAX)) + ' foi removido de Infracoes.'
+    DELETE FROM Requisicoes
+    WHERE [ID_Utilizador] = @ID_Utilizador;
+    PRINT '@ID_Utilizador ' + CAST(@ID_Utilizador AS NVARCHAR(MAX)) + ' foi removido de Requisiçoes.'
+    DELETE FROM Utilizadores
+    WHERE [ID_Utilizador] = @ID_Utilizador;
+    PRINT '@ID_Utilizador ' + CAST(@ID_Utilizador AS NVARCHAR(MAX)) + ' foi removido de Utilizadores.'
+END
+GO
+
 CREATE OR ALTER PROCEDURE [dbo].[Utilizador_ApagarInativos]
 AS
 BEGIN
@@ -962,37 +993,6 @@ momento
 
     CLOSE utilizador_cursor;
     DEALLOCATE utilizador_cursor;
-END
-GO
-
-CREATE OR ALTER PROCEDURE [dbo].[Utilizadores_Delete]
-    @ID_Utilizador BIGINT
-AS
-BEGIN
-/*
-Esta stored procedure realiza a eliminação de um leitor com base no @ID_Utilizador.
-
-Foi intencionalmente isolada como ponto central de DELETE para:
-- Garantir a ordem correta de eliminação entre tabelas relacionadas
-- Permitir reutilização por outras SPs
-- Criar um ponto único de manutenção para futuras extensões
-  (ex.: histórico, logging, estatísticas ou anonimização)
-
-Nota:
-- Esta SP executa apenas a eliminação física dos dados.
-- A validação de regras de negócio deve ser feita pela SP chamadora.
-*/
-    SET NOCOUNT ON;
-
-    DELETE FROM Infracoes
-    WHERE [ID_Utilizador] = @ID_Utilizador;
-    PRINT '@ID_Utilizador ' + CAST(@ID_Utilizador AS NVARCHAR(MAX)) + ' foi removido de Infracoes.'
-    DELETE FROM Requisicoes
-    WHERE [ID_Utilizador] = @ID_Utilizador;
-    PRINT '@ID_Utilizador ' + CAST(@ID_Utilizador AS NVARCHAR(MAX)) + ' foi removido de Requisiçoes.'
-    DELETE FROM Utilizadores
-    WHERE [ID_Utilizador] = @ID_Utilizador;
-    PRINT '@ID_Utilizador ' + CAST(@ID_Utilizador AS NVARCHAR(MAX)) + ' foi removido de Utilizadores.'
 END
 GO
 
