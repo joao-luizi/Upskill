@@ -1,0 +1,146 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\ClassesV2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{21FCAC7C-1E4B-4229-BF55-4679FE202660}|ClassesV2.csproj|e:\\2025_repos\\upskill\\modulo3\\aula4\\classesv2\\elipse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21FCAC7C-1E4B-4229-BF55-4679FE202660}|ClassesV2.csproj|solutionrelative:elipse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21FCAC7C-1E4B-4229-BF55-4679FE202660}|ClassesV2.csproj|e:\\2025_repos\\upskill\\modulo3\\aula4\\classesv2\\circulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21FCAC7C-1E4B-4229-BF55-4679FE202660}|ClassesV2.csproj|solutionrelative:circulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21FCAC7C-1E4B-4229-BF55-4679FE202660}|ClassesV2.csproj|e:\\2025_repos\\upskill\\modulo3\\aula4\\classesv2\\formageometrica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21FCAC7C-1E4B-4229-BF55-4679FE202660}|ClassesV2.csproj|solutionrelative:formageometrica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21FCAC7C-1E4B-4229-BF55-4679FE202660}|ClassesV2.csproj|e:\\2025_repos\\upskill\\modulo3\\aula4\\classesv2\\rectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21FCAC7C-1E4B-4229-BF55-4679FE202660}|ClassesV2.csproj|solutionrelative:rectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21FCAC7C-1E4B-4229-BF55-4679FE202660}|ClassesV2.csproj|e:\\2025_repos\\upskill\\modulo3\\aula4\\classesv2\\quadrado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21FCAC7C-1E4B-4229-BF55-4679FE202660}|ClassesV2.csproj|solutionrelative:quadrado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21FCAC7C-1E4B-4229-BF55-4679FE202660}|ClassesV2.csproj|e:\\2025_repos\\upskill\\modulo3\\aula4\\classesv2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21FCAC7C-1E4B-4229-BF55-4679FE202660}|ClassesV2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\Classes\\Elipse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Circulo.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\ClassesV2\\Circulo.cs",
+              "RelativeDocumentMoniker": "Circulo.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\ClassesV2\\Circulo.cs",
+              "RelativeToolTip": "Circulo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T10:17:53.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Elipse.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\Classes\\Elipse.cs",
+              "RelativeDocumentMoniker": "..\\Classes\\Elipse.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\Classes\\Elipse.cs",
+              "RelativeToolTip": "..\\Classes\\Elipse.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T10:16:46.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Elipse.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\ClassesV2\\Elipse.cs",
+              "RelativeDocumentMoniker": "Elipse.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\ClassesV2\\Elipse.cs",
+              "RelativeToolTip": "Elipse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T10:15:30.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Rectangulo.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\ClassesV2\\Rectangulo.cs",
+              "RelativeDocumentMoniker": "Rectangulo.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\ClassesV2\\Rectangulo.cs",
+              "RelativeToolTip": "Rectangulo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T10:13:30.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Quadrado.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\ClassesV2\\Quadrado.cs",
+              "RelativeDocumentMoniker": "Quadrado.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\ClassesV2\\Quadrado.cs",
+              "RelativeToolTip": "Quadrado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T10:07:11.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormaGeometrica.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\ClassesV2\\FormaGeometrica.cs",
+              "RelativeDocumentMoniker": "FormaGeometrica.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\ClassesV2\\FormaGeometrica.cs",
+              "RelativeToolTip": "FormaGeometrica.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T10:04:14.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\ClassesV2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Aula4\\ClassesV2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T10:04:00.402Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

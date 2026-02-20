@@ -1,0 +1,15 @@
+E:\2025_repos\Upskill\Modulo3\Aula4\Classes\bin\Debug\net8.0\Classes.exe
+E:\2025_repos\Upskill\Modulo3\Aula4\Classes\bin\Debug\net8.0\Classes.deps.json
+E:\2025_repos\Upskill\Modulo3\Aula4\Classes\bin\Debug\net8.0\Classes.runtimeconfig.json
+E:\2025_repos\Upskill\Modulo3\Aula4\Classes\bin\Debug\net8.0\Classes.dll
+E:\2025_repos\Upskill\Modulo3\Aula4\Classes\bin\Debug\net8.0\Classes.pdb
+E:\2025_repos\Upskill\Modulo3\Aula4\Classes\obj\Debug\net8.0\Classes.GeneratedMSBuildEditorConfig.editorconfig
+E:\2025_repos\Upskill\Modulo3\Aula4\Classes\obj\Debug\net8.0\Classes.AssemblyInfoInputs.cache
+E:\2025_repos\Upskill\Modulo3\Aula4\Classes\obj\Debug\net8.0\Classes.AssemblyInfo.cs
+E:\2025_repos\Upskill\Modulo3\Aula4\Classes\obj\Debug\net8.0\Classes.csproj.CoreCompileInputs.cache
+E:\2025_repos\Upskill\Modulo3\Aula4\Classes\obj\Debug\net8.0\Classes.sourcelink.json
+E:\2025_repos\Upskill\Modulo3\Aula4\Classes\obj\Debug\net8.0\Classes.dll
+E:\2025_repos\Upskill\Modulo3\Aula4\Classes\obj\Debug\net8.0\refint\Classes.dll
+E:\2025_repos\Upskill\Modulo3\Aula4\Classes\obj\Debug\net8.0\Classes.pdb
+E:\2025_repos\Upskill\Modulo3\Aula4\Classes\obj\Debug\net8.0\Classes.genruntimeconfig.cache
+E:\2025_repos\Upskill\Modulo3\Aula4\Classes\obj\Debug\net8.0\ref\Classes.dll

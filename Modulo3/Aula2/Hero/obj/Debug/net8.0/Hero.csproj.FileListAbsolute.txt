@@ -1,0 +1,15 @@
+E:\2025_repos\Upskill\Modulo3\Aula2\Hero\obj\Debug\net8.0\Hero.GeneratedMSBuildEditorConfig.editorconfig
+E:\2025_repos\Upskill\Modulo3\Aula2\Hero\obj\Debug\net8.0\Hero.AssemblyInfoInputs.cache
+E:\2025_repos\Upskill\Modulo3\Aula2\Hero\obj\Debug\net8.0\Hero.AssemblyInfo.cs
+E:\2025_repos\Upskill\Modulo3\Aula2\Hero\obj\Debug\net8.0\Hero.csproj.CoreCompileInputs.cache
+E:\2025_repos\Upskill\Modulo3\Aula2\Hero\obj\Debug\net8.0\Hero.sourcelink.json
+E:\2025_repos\Upskill\Modulo3\Aula2\Hero\bin\Debug\net8.0\Hero.exe
+E:\2025_repos\Upskill\Modulo3\Aula2\Hero\bin\Debug\net8.0\Hero.deps.json
+E:\2025_repos\Upskill\Modulo3\Aula2\Hero\bin\Debug\net8.0\Hero.runtimeconfig.json
+E:\2025_repos\Upskill\Modulo3\Aula2\Hero\bin\Debug\net8.0\Hero.dll
+E:\2025_repos\Upskill\Modulo3\Aula2\Hero\bin\Debug\net8.0\Hero.pdb
+E:\2025_repos\Upskill\Modulo3\Aula2\Hero\obj\Debug\net8.0\Hero.dll
+E:\2025_repos\Upskill\Modulo3\Aula2\Hero\obj\Debug\net8.0\refint\Hero.dll
+E:\2025_repos\Upskill\Modulo3\Aula2\Hero\obj\Debug\net8.0\Hero.pdb
+E:\2025_repos\Upskill\Modulo3\Aula2\Hero\obj\Debug\net8.0\Hero.genruntimeconfig.cache
+E:\2025_repos\Upskill\Modulo3\Aula2\Hero\obj\Debug\net8.0\ref\Hero.dll

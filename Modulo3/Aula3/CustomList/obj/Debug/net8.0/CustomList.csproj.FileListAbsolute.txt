@@ -1,0 +1,15 @@
+E:\2025_repos\Upskill\Modulo3\Aula3\CustomList\bin\Debug\net8.0\CustomList.exe
+E:\2025_repos\Upskill\Modulo3\Aula3\CustomList\bin\Debug\net8.0\CustomList.deps.json
+E:\2025_repos\Upskill\Modulo3\Aula3\CustomList\bin\Debug\net8.0\CustomList.runtimeconfig.json
+E:\2025_repos\Upskill\Modulo3\Aula3\CustomList\bin\Debug\net8.0\CustomList.dll
+E:\2025_repos\Upskill\Modulo3\Aula3\CustomList\bin\Debug\net8.0\CustomList.pdb
+E:\2025_repos\Upskill\Modulo3\Aula3\CustomList\obj\Debug\net8.0\CustomList.GeneratedMSBuildEditorConfig.editorconfig
+E:\2025_repos\Upskill\Modulo3\Aula3\CustomList\obj\Debug\net8.0\CustomList.AssemblyInfoInputs.cache
+E:\2025_repos\Upskill\Modulo3\Aula3\CustomList\obj\Debug\net8.0\CustomList.AssemblyInfo.cs
+E:\2025_repos\Upskill\Modulo3\Aula3\CustomList\obj\Debug\net8.0\CustomList.csproj.CoreCompileInputs.cache
+E:\2025_repos\Upskill\Modulo3\Aula3\CustomList\obj\Debug\net8.0\CustomList.sourcelink.json
+E:\2025_repos\Upskill\Modulo3\Aula3\CustomList\obj\Debug\net8.0\CustomList.dll
+E:\2025_repos\Upskill\Modulo3\Aula3\CustomList\obj\Debug\net8.0\refint\CustomList.dll
+E:\2025_repos\Upskill\Modulo3\Aula3\CustomList\obj\Debug\net8.0\CustomList.pdb
+E:\2025_repos\Upskill\Modulo3\Aula3\CustomList\obj\Debug\net8.0\CustomList.genruntimeconfig.cache
+E:\2025_repos\Upskill\Modulo3\Aula3\CustomList\obj\Debug\net8.0\ref\CustomList.dll

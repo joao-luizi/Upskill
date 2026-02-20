@@ -1,0 +1,82 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\2025_repos\\Upskill\\Modulo3\\Aula6\\Classes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1944DA-82F1-4780-848D-6409626DD9AF}|Classes.csproj|e:\\2025_repos\\upskill\\modulo3\\aula6\\classes\\liskovfixed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1944DA-82F1-4780-848D-6409626DD9AF}|Classes.csproj|solutionrelative:liskovfixed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1944DA-82F1-4780-848D-6409626DD9AF}|Classes.csproj|e:\\2025_repos\\upskill\\modulo3\\aula6\\classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1944DA-82F1-4780-848D-6409626DD9AF}|Classes.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1944DA-82F1-4780-848D-6409626DD9AF}|Classes.csproj|e:\\2025_repos\\upskill\\modulo3\\aula6\\classes\\liskovfail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1944DA-82F1-4780-848D-6409626DD9AF}|Classes.csproj|solutionrelative:liskovfail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LiskovFixed.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Aula6\\Classes\\LiskovFixed.cs",
+              "RelativeDocumentMoniker": "LiskovFixed.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Aula6\\Classes\\LiskovFixed.cs",
+              "RelativeToolTip": "LiskovFixed.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T10:05:16.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LiskovFail.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Aula6\\Classes\\LiskovFail.cs",
+              "RelativeDocumentMoniker": "LiskovFail.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Aula6\\Classes\\LiskovFail.cs",
+              "RelativeToolTip": "LiskovFail.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T09:37:05.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Aula6\\Classes\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Aula6\\Classes\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T09:36:39.536Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

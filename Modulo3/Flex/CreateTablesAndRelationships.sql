@@ -1,0 +1,96 @@
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+		IF NOT EXISTS ( SELECT 1
+		FROM INFORMATION_SCHEMA.TABLES
+		WHERE TABLE_SCHEMA = 'dbo'
+		  AND TABLE_NAME = 'Marcas'
+		)
+		BEGIN 
+		CREATE TABLE [dbo].[Marcas](
+			[IDMarca] [int] IDENTITY(1,1) NOT NULL,
+			[Nome] [nvarchar](50) NOT NULL,
+		 CONSTRAINT [PK_Marcas] PRIMARY KEY CLUSTERED 
+		(
+			[IDMarca] ASC
+		)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+		) ON [PRIMARY]
+		END
+		GO
+
+		IF NOT EXISTS ( SELECT 1
+		FROM INFORMATION_SCHEMA.TABLES
+		WHERE TABLE_SCHEMA = 'dbo'
+		  AND TABLE_NAME = 'Modelos'
+		)
+		CREATE TABLE [dbo].[Modelos](
+			[IDModelos] [int] IDENTITY(1,1) NOT NULL,
+			[Modelos] [nvarchar](50) NOT NULL,
+		 CONSTRAINT [PK_Modelos] PRIMARY KEY CLUSTERED 
+		(
+			[IDModelos] ASC
+		)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+		) ON [PRIMARY]
+		GO
+
+		IF NOT EXISTS ( SELECT 1
+		FROM INFORMATION_SCHEMA.TABLES
+		WHERE TABLE_SCHEMA = 'dbo'
+		  AND TABLE_NAME = 'Inspecoes'
+		)
+		BEGIN
+		CREATE TABLE [dbo].[Inspecoes](
+			[InspecoesID] [bigint] IDENTITY(1,1) NOT NULL,
+			[VeiculoID] [bigint] NOT NULL,
+			[DataDeInspecao] [datetime] NOT NULL,
+			[Resultado] [bit] NOT NULL,
+		 CONSTRAINT [PK_Inspecoes] PRIMARY KEY CLUSTERED 
+		(
+			[InspecoesID] ASC
+		)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+		) ON [PRIMARY]
+		END
+		GO
+
+		IF NOT EXISTS ( SELECT 1
+		FROM INFORMATION_SCHEMA.TABLES
+		WHERE TABLE_SCHEMA = 'dbo'
+		  AND TABLE_NAME = 'Veiculos'
+		)
+		BEGIN
+		CREATE TABLE [dbo].[Veiculos](
+			[VeiculoID] [bigint] IDENTITY(1,1) NOT NULL,
+			[MarcaID] [int] NOT NULL,
+			[ModeloID] [int] NOT NULL,
+			[Ano] [int] NOT NULL,
+			[InspecaoID] [bigint] NULL,
+			[Vendido] [bit] NOT NULL,
+		 CONSTRAINT [PK_Veiculos] PRIMARY KEY CLUSTERED 
+		(
+			[VeiculoID] ASC
+		)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+		) ON [PRIMARY]
+		END
+		GO
+
+		ALTER TABLE [dbo].[Veiculos] ADD  CONSTRAINT [DF_Veiculos_Vendido]  DEFAULT ((0)) FOR [Vendido]
+		GO
+		ALTER TABLE [dbo].[Inspecoes]  WITH CHECK ADD  CONSTRAINT [FK_Inspecoes_Veiculos] FOREIGN KEY([VeiculoID])
+		REFERENCES [dbo].[Veiculos] ([VeiculoID])
+		GO
+		ALTER TABLE [dbo].[Inspecoes] CHECK CONSTRAINT [FK_Inspecoes_Veiculos]
+		GO
+		ALTER TABLE [dbo].[Veiculos]  WITH CHECK ADD  CONSTRAINT [FK_Veiculos_Marcas] FOREIGN KEY([MarcaID])
+		REFERENCES [dbo].[Marcas] ([IDMarca])
+		GO
+		ALTER TABLE [dbo].[Veiculos] CHECK CONSTRAINT [FK_Veiculos_Marcas]
+		GO
+		ALTER TABLE [dbo].[Veiculos]  WITH CHECK ADD  CONSTRAINT [FK_Veiculos_Modelos] FOREIGN KEY([ModeloID])
+		REFERENCES [dbo].[Modelos] ([IDModelos])
+		GO
+		ALTER TABLE [dbo].[Veiculos] CHECK CONSTRAINT [FK_Veiculos_Modelos]
+		GO
+

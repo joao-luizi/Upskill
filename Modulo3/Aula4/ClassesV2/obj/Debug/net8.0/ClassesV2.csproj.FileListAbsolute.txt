@@ -1,0 +1,15 @@
+E:\2025_repos\Upskill\Modulo3\Aula4\ClassesV2\bin\Debug\net8.0\ClassesV2.exe
+E:\2025_repos\Upskill\Modulo3\Aula4\ClassesV2\bin\Debug\net8.0\ClassesV2.deps.json
+E:\2025_repos\Upskill\Modulo3\Aula4\ClassesV2\bin\Debug\net8.0\ClassesV2.runtimeconfig.json
+E:\2025_repos\Upskill\Modulo3\Aula4\ClassesV2\bin\Debug\net8.0\ClassesV2.dll
+E:\2025_repos\Upskill\Modulo3\Aula4\ClassesV2\bin\Debug\net8.0\ClassesV2.pdb
+E:\2025_repos\Upskill\Modulo3\Aula4\ClassesV2\obj\Debug\net8.0\ClassesV2.GeneratedMSBuildEditorConfig.editorconfig
+E:\2025_repos\Upskill\Modulo3\Aula4\ClassesV2\obj\Debug\net8.0\ClassesV2.AssemblyInfoInputs.cache
+E:\2025_repos\Upskill\Modulo3\Aula4\ClassesV2\obj\Debug\net8.0\ClassesV2.AssemblyInfo.cs
+E:\2025_repos\Upskill\Modulo3\Aula4\ClassesV2\obj\Debug\net8.0\ClassesV2.csproj.CoreCompileInputs.cache
+E:\2025_repos\Upskill\Modulo3\Aula4\ClassesV2\obj\Debug\net8.0\ClassesV2.sourcelink.json
+E:\2025_repos\Upskill\Modulo3\Aula4\ClassesV2\obj\Debug\net8.0\ClassesV2.dll
+E:\2025_repos\Upskill\Modulo3\Aula4\ClassesV2\obj\Debug\net8.0\refint\ClassesV2.dll
+E:\2025_repos\Upskill\Modulo3\Aula4\ClassesV2\obj\Debug\net8.0\ClassesV2.pdb
+E:\2025_repos\Upskill\Modulo3\Aula4\ClassesV2\obj\Debug\net8.0\ClassesV2.genruntimeconfig.cache
+E:\2025_repos\Upskill\Modulo3\Aula4\ClassesV2\obj\Debug\net8.0\ref\ClassesV2.dll

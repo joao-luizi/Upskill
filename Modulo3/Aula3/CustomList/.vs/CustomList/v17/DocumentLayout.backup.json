@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\2025_repos\\Upskill\\Modulo3\\Aula3\\CustomList\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC76780-9461-457D-97FF-59BE8FBCE371}|CustomList.csproj|e:\\2025_repos\\upskill\\modulo3\\aula3\\customlist\\customlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC76780-9461-457D-97FF-59BE8FBCE371}|CustomList.csproj|solutionrelative:customlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC76780-9461-457D-97FF-59BE8FBCE371}|CustomList.csproj|e:\\2025_repos\\upskill\\modulo3\\aula3\\customlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC76780-9461-457D-97FF-59BE8FBCE371}|CustomList.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomList.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Aula3\\CustomList\\CustomList.cs",
+              "RelativeDocumentMoniker": "CustomList.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Aula3\\CustomList\\CustomList.cs",
+              "RelativeToolTip": "CustomList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T11:27:42.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Aula3\\CustomList\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Aula3\\CustomList\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T10:43:11.984Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

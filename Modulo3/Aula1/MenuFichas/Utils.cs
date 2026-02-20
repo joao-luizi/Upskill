@@ -15,5 +15,11 @@ namespace MenuFichas
                 tot += v[i];
             return tot;
         }
+
+        public static double average(int i, int j)
+        {
+            double sum = 0;
+            return sum;
+        }
     }
 }
