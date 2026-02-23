@@ -1,0 +1,4 @@
+IF OBJECT_ID('Veiculos', 'U') IS NOT NULL DROP TABLE Veiculos;
+IF OBJECT_ID('Marcas', 'U') IS NOT NULL DROP TABLE Marcas;
+IF OBJECT_ID('Modelos', 'U') IS NOT NULL DROP TABLE Modelos;
+IF OBJECT_ID('Inspecoes', 'U') IS NOT NULL DROP TABLE Inspecoes;

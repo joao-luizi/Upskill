@@ -33,7 +33,6 @@ BEGIN
         [MarcaID] INT NOT NULL,
         [ModeloID] INT NOT NULL,
         [Ano] INT NOT NULL,
-        [InspecaoID] BIGINT NULL,
         [Vendido] BIT NOT NULL CONSTRAINT [DF_Veiculos_Vendido] DEFAULT ((0)),
         CONSTRAINT [PK_Veiculos] PRIMARY KEY CLUSTERED ([VeiculoID] ASC)
     );

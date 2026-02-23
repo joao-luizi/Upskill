@@ -11,10 +11,12 @@ namespace CarStand.Models
         public int ID { get; private set; }
         public DateTime dataInspecao { get; private set; }
 
-        public Inspecoes(int id, DateTime datainspecao)
+        public bool Resultado { get; private set; }
+        public Inspecoes(int id, DateTime datainspecao, bool resultado)
         {
             ID = id;
             dataInspecao = datainspecao;
+            Resultado = resultado;
         }
     }
 }

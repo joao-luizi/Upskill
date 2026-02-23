@@ -8,10 +8,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>icon.ico</ApplicationIcon>
     <Platforms>AnyCPU;x64</Platforms>
+	 <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="DataBase\Scripts\CreateTablesAndRelationships.sql" />
+    <None Remove="DataBase\Scripts\DropTables.sql" />
     <None Remove="DataBase\Scripts\SeedData.sql" />
     <None Remove="Resources\icon.ico" />
     <None Remove="Resources\LoadingSpinner.gif" />
@@ -29,6 +31,7 @@
     <EmbeddedResource Include="DataBase\Scripts\CreateTablesAndRelationships.sql">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\Scripts\DropTables.sql" />
     <EmbeddedResource Include="DataBase\Scripts\SeedData.sql" />
     <EmbeddedResource Include="Resources\icon.ico" />
     <EmbeddedResource Include="Resources\LoadingSpinner.gif" />

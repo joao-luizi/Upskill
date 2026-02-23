@@ -11,35 +11,52 @@ namespace CarStand.Models
     public  class Veiculos
     {
         public int ID { get; private set; }
-
         public string Marca { get; private set; }
         public string Modelo { get; private set; }
         public int Ano { get; private set; }
+
         private List<Inspecoes> _inspecoes;
 
         public bool Vendido { get; private set; }
         public string UltimaInspecao()
         {
-            if (_inspecoes == null)
+            string result = "";
+            if (_inspecoes == null || _inspecoes.Count == 0)
                 return "Nenhuma inspecção realizada";
-            else
-            {
-                DateTime inspecdate = _inspecoes[0].dataInspecao;
-                // Verificar differencia 
-                return inspecdate.ToString("dd-mm-yyyy");
-            }
+            //this list comes sorted from DataBase
+            result += _inspecoes[0].dataInspecao.ToString("dd-MM-yyyy");
+            int monthsDiff = Utilis.MonthDifference(_inspecoes[0].dataInspecao, DateTime.Now);
+                if (monthsDiff > 12)
+                {
+                    result += " (Expirada)";
+                }
+                else if (monthsDiff > 10)
+                {
+                    result += " (A Expirar)";
+                }
+           return result;
         }
-
-        public Veiculos(int id, string )
+        public string Estado()
+        {
+            if (Vendido)
+                return "Vendido";
+            return "Disponível";
+        }
+        public Veiculos(int id, string marca, string modelo, int anos, List<Inspecoes> inspecoes, bool estado)
         {
             ID = id;
-          
+          Marca = marca;
+            Modelo = modelo;
+            Ano = anos;
+            Vendido = estado;
+            _inspecoes = inspecoes;
+        }
+        public void AddInspecao(Inspecoes inspect)
+        {
+            _inspecoes.Add(inspect);
         }
     }
 }
-//[VeiculoID] BIGINT IDENTITY(1,1) NOT NULL,
-//[MarcaID] INT NOT NULL,
-//[ModeloID] INT NOT NULL,
-//[Ano] INT NOT NULL,
-//[InspecaoID] BIGINT NULL,
-//[Vendido] BIT NOT NULL CONSTRAINT [DF_Veiculos_Vendido] DEFAULT ((0)),
+
+
+

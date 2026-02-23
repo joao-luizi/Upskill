@@ -1,41 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\",
+  "WorkspaceRootPath": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|e:\\2025_repos\\upskill\\modulo3\\flex\\carstand\\carstand\\models\\veiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:models\\veiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\flex\\carstand\\carstand\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|e:\\2025_repos\\upskill\\modulo3\\flex\\carstand\\carstand\\database\\scripts\\createtablesandrelationships.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\flex\\carstand\\carstand\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\flex\\carstand\\carstand\\database\\scripts\\createtablesandrelationships.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
       "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:database\\scripts\\createtablesandrelationships.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|e:\\2025_repos\\upskill\\modulo3\\flex\\carstand\\carstand\\models\\inspecoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:models\\inspecoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\flex\\carstand\\carstand\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|e:\\2025_repos\\upskill\\modulo3\\flex\\carstand\\carstand\\models\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:models\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\flex\\carstand\\carstand\\models\\veiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:models\\veiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|e:\\2025_repos\\upskill\\modulo3\\flex\\carstand\\carstand\\models\\modelos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:models\\modelos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\flex\\carstand\\carstand\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|e:\\2025_repos\\upskill\\modulo3\\flex\\carstand\\carstand\\usercontrols\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:usercontrols\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\flex\\carstand\\carstand\\pagerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:pagerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|e:\\2025_repos\\upskill\\modulo3\\flex\\carstand\\carstand\\usercontrols\\mainview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:usercontrols\\mainview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\flex\\carstand\\carstand\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|e:\\2025_repos\\upskill\\modulo3\\flex\\carstand\\carstand\\usercontrols\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\flex\\carstand\\carstand\\carstand.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:carstand.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\flex\\carstand\\carstand\\pesquisaargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:pesquisaargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\flex\\carstand\\carstand\\usercontrols\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:usercontrols\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|e:\\2025_repos\\upskill\\modulo3\\flex\\carstand\\carstand\\database\\scripts\\createtablesandrelationships.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\flex\\carstand\\carstand\\utilis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:utilis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\flex\\carstand\\carstand\\models\\modelos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:models\\modelos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\flex\\carstand\\carstand\\models\\anos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:models\\anos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\flex\\carstand\\carstand\\database\\scripts\\createtablesandrelationships.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
       "RelativeMoniker": "D:0:0:{24C41230-6421-41B5-95BE-C476731F8784}|CarStand.csproj|solutionrelative:database\\scripts\\createtablesandrelationships.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
@@ -46,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,105 +86,179 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Veiculos.cs",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Models\\Veiculos.cs",
-              "RelativeDocumentMoniker": "Models\\Veiculos.cs",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Models\\Veiculos.cs",
-              "RelativeToolTip": "Models\\Veiculos.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T19:29:56.243Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Inspecoes.cs",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Models\\Inspecoes.cs",
-              "RelativeDocumentMoniker": "Models\\Inspecoes.cs",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Models\\Inspecoes.cs",
-              "RelativeToolTip": "Models\\Inspecoes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T19:28:45.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Marcas.cs",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Models\\Marcas.cs",
-              "RelativeDocumentMoniker": "Models\\Marcas.cs",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Models\\Marcas.cs",
-              "RelativeToolTip": "Models\\Marcas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T19:27:08.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainView.Designer.cs",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\UserControls\\MainView.Designer.cs",
-              "RelativeDocumentMoniker": "UserControls\\MainView.Designer.cs",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\UserControls\\MainView.Designer.cs",
-              "RelativeToolTip": "UserControls\\MainView.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T19:10:24.099Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreateTablesAndRelationships.sql ",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\DataBase\\Scripts\\CreateTablesAndRelationships.sql",
-              "RelativeDocumentMoniker": "DataBase\\Scripts\\CreateTablesAndRelationships.sql",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\DataBase\\Scripts\\CreateTablesAndRelationships.sql",
-              "RelativeToolTip": "DataBase\\Scripts\\CreateTablesAndRelationships.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-02-20T19:08:38.726Z",
+              "Title": "AppContext.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\AppContext.cs",
+              "RelativeDocumentMoniker": "AppContext.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\AppContext.cs",
+              "RelativeToolTip": "AppContext.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAjwD4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T21:09:54.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PagedResult.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\PagedResult.cs",
+              "RelativeDocumentMoniker": "PagedResult.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\PagedResult.cs",
+              "RelativeToolTip": "PagedResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T18:14:31.255Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Modelos.cs",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Models\\Modelos.cs",
-              "RelativeDocumentMoniker": "Models\\Modelos.cs",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Models\\Modelos.cs",
-              "RelativeToolTip": "Models\\Modelos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Title": "Veiculos.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Models\\Veiculos.cs",
+              "RelativeDocumentMoniker": "Models\\Veiculos.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Models\\Veiculos.cs",
+              "RelativeToolTip": "Models\\Veiculos.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAewDcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T19:07:56.824Z",
+              "WhenOpened": "2026-02-22T17:16:12.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateTablesAndRelationships.sql ",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\DataBase\\Scripts\\CreateTablesAndRelationships.sql",
+              "RelativeDocumentMoniker": "DataBase\\Scripts\\CreateTablesAndRelationships.sql",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\DataBase\\Scripts\\CreateTablesAndRelationships.sql",
+              "RelativeToolTip": "DataBase\\Scripts\\CreateTablesAndRelationships.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-02-22T12:51:05.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatabaseManager.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\DatabaseManager.cs",
+              "RelativeDocumentMoniker": "DatabaseManager.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\DatabaseManager.cs",
+              "RelativeToolTip": "DatabaseManager.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAKMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T19:19:46.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PageRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\PageRequest.cs",
+              "RelativeDocumentMoniker": "PageRequest.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\PageRequest.cs",
+              "RelativeToolTip": "PageRequest.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAC0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T12:01:48.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAjwFYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T18:24:33.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "MainView.cs [Design]",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\UserControls\\MainView.cs",
-              "RelativeDocumentMoniker": "UserControls\\MainView.cs",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\UserControls\\MainView.cs [Design]",
-              "RelativeToolTip": "UserControls\\MainView.cs [Design]",
+              "Title": "MainForm.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\MainForm.cs [Projeto]",
+              "RelativeToolTip": "MainForm.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T12:59:04.904Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-22T17:00:04.721Z",
+              "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainView.cs",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\UserControls\\MainView.cs",
-              "RelativeDocumentMoniker": "UserControls\\MainView.cs",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\UserControls\\MainView.cs",
-              "RelativeToolTip": "UserControls\\MainView.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAArwB8AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T12:31:58.547Z",
+              "DocumentIndex": 8,
+              "Title": "CarStand.csproj",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\CarStand.csproj",
+              "RelativeDocumentMoniker": "CarStand.csproj",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\CarStand.csproj",
+              "RelativeToolTip": "CarStand.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-22T11:30:49.78Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PesquisaArgs.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\PesquisaArgs.cs",
+              "RelativeDocumentMoniker": "PesquisaArgs.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\PesquisaArgs.cs",
+              "RelativeToolTip": "PesquisaArgs.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T18:20:21.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainView.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\UserControls\\MainView.cs",
+              "RelativeDocumentMoniker": "UserControls\\MainView.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\UserControls\\MainView.cs [Projeto]",
+              "RelativeToolTip": "UserControls\\MainView.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T11:32:14.409Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Utilis.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Utilis.cs",
+              "RelativeDocumentMoniker": "Utilis.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Utilis.cs",
+              "RelativeToolTip": "Utilis.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvxQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T21:20:29.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Modelos.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Models\\Modelos.cs",
+              "RelativeDocumentMoniker": "Models\\Modelos.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Models\\Modelos.cs",
+              "RelativeToolTip": "Models\\Modelos.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwBIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T17:08:25.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Anos.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Models\\Anos.cs",
+              "RelativeDocumentMoniker": "Models\\Anos.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Flex\\CarStand\\CarStand\\Models\\Anos.cs",
+              "RelativeToolTip": "Models\\Anos.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T17:03:58.873Z"
             }
           ]
         }
