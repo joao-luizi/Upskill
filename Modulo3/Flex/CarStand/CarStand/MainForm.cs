@@ -1,9 +1,12 @@
-﻿using System;
+﻿using CarStand.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,13 +26,13 @@ namespace CarStand
         {
             _loadingControl = new LoadingControl();
             _loadingControl.Dock = DockStyle.Fill;
-
+            _loadingControl.Visible = true;
             _mainView = new MainView();
             _mainView.pesquisaHandler += OnPesquisaRequested;
             _mainView.Dock = DockStyle.Fill;
-            
+            _mainView.Visible = false;
             this._databaseManager = _databaseManager;
-            this._pageRequest = new PageRequest(new PesquisaArgs(0, 0, "Todos os anos", "Todos os estados"),6);
+            this._pageRequest = new PageRequest(new PesquisaArgs(0, 0, "Todos os anos", "Todos os estados"), 6);
             InitializeComponent();
         }
 
@@ -40,52 +43,72 @@ namespace CarStand
 
         }
 
-        private void SwitchView(UserControl newView)
+        private void SwitchView()
         {
-            MainPanel.Controls.Clear();
-            MainPanel.Controls.Add(newView);
+            _loadingControl.Visible = !_loadingControl.Visible;
+            _mainView.Visible = !_mainView.Visible;
+     
         }
-        private void MainForm_Load(object sender, EventArgs e)
+        private async void MainForm_Load(object sender, EventArgs e)
         {
-            SwitchView(_loadingControl);
-            //Get the data required to Set MainView Properly. 
-            //MainView lives as reference in _mainView
-           
+            MainPanel.Controls.AddRange(new Control[] { _loadingControl, _mainView });
 
-        }
-
-        private async Task LoadDataAsync()
-        {
-           
-
-            var result = await _databaseManager.GetPagedResult(_pageRequest);
-
-            //_mainView.SetData(result.Items);
-            //UpdateStatusStrip(result.TotalCount);
-
-            
-        }
-        private async void LoadDefaults()
-        {
             try
             {
-                Task<List<Models.Modelos>> modelosTask = _databaseManager.GetModelosAsync();
-                Task<List<Models.Marcas>> marcasTask = _databaseManager.GetMarcasAsync();
-                Task<List<int>> anosTask = _databaseManager.GetAnosAsync();
-
-                // Wait for all three queries in parallel
-                await Task.WhenAll(modelosTask, marcasTask, anosTask);
-                _mainView.SetMarcas(marcasTask.Result);
-                _mainView.SetModelos(modelosTask.Result);
-                _mainView.SetAno(anosTask.Result);
-                _mainView.SetEstado();
-              
-                SwitchView(_mainView);
+                await LoadDefaults(); // <-- await the async Task properly
             }
             catch (Exception ex)
             {
+                // This is a safety net: any exception escaping LoadDefaults
+                MessageBox.Show($"Erro crítico ao carregar dados iniciais: {ex.Message}");
+            }
+        }
+
+
+        private async Task LoadDefaults()
+        {
+            try
+            {
+                // Start all async tasks in parallel
+                var modelosTask = _databaseManager.GetModelosAsync();
+                var marcasTask = _databaseManager.GetMarcasAsync();
+                var anosTask = _databaseManager.GetAnosAsync();
+                var veiculosTask = _databaseManager.GetPagedResult(_pageRequest);
+
+                // Await all tasks in parallel, exceptions propagate correctly
+                await Task.WhenAll(modelosTask, marcasTask, anosTask, veiculosTask);
+
+                // Access results safely after awaiting
+                _mainView.SetMarcas(await marcasTask);
+                _mainView.SetModelos(await modelosTask);
+                _mainView.SetAno(await anosTask);
+                _mainView.SetEstado();
+                _mainView.SetVeiculos(await veiculosTask);
+
+                SwitchView();
+            }
+            catch (Exception ex)
+            {
+                // This will now always be triggered if any task fails
                 MessageBox.Show($"Erro ao carregar dados iniciais: {ex.Message}");
-               
+            }
+        }
+        private async void CallRecreate()
+        {
+                SwitchView();
+                await Task.Run(() =>
+                    _databaseManager.RecreateDataBase()
+                );
+                SwitchView();
+
+        }
+        private void reInicializarBDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Tem a certeza que deseja (re)inicializar todos os veiculos?", 
+                "Reinicializar BD", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                CallRecreate();
             }
         }
     }

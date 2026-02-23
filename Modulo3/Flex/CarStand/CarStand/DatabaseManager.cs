@@ -3,6 +3,7 @@ using CarStand.Models;
 using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -122,9 +123,19 @@ namespace CarStand
 
         public async Task RecreateDataBase()
         {
-            await ExecuteSqlScriptAsync("CarStand.DataBase.Scripts.DropTables.sql");
-            await ExecuteSqlScriptAsync("CarStand.DataBase.Scripts.CreateTablesAndRelationships.sql");
-            await ExecuteSqlScriptAsync("CarStand.DataBase.Scripts.SeedData.sql");
+            try
+            {
+                // Run scripts sequentially (safe for dependencies)
+                await ExecuteSqlScriptAsync("CarStand.DataBase.Scripts.DropTables.sql");
+                await ExecuteSqlScriptAsync("CarStand.DataBase.Scripts.CreateTablesAndRelationships.sql");
+                await ExecuteSqlScriptAsync("CarStand.DataBase.Scripts.SeedData.sql");
+            }
+            catch (Exception ex)
+            {
+                // Exception is now caught and not swallowed
+                MessageBox.Show($"Erro ao recriar base de dados: {ex.Message}");
+                throw; // rethrow if you want upstream awareness
+            }
         }
 
         public async Task  ExecuteSqlAsync(string sql, string conn)
@@ -134,7 +145,7 @@ namespace CarStand
                 using SqlConnection connection = new(conn);
                 await connection.OpenAsync();
                 using SqlCommand command = new(sql, connection);
-                await command.ExecuteNonQuery();
+                await command.ExecuteNonQueryAsync();
                
             }
             catch (Exception)
@@ -144,23 +155,18 @@ namespace CarStand
         }
         public async Task ExecuteSqlScriptAsync(string resourceName)
         {
-            try
-            {
-                using Stream? stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName);
+           
+            using Stream? stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName);
 
-                if (stream == null)
-                {
-                    throw new Exception("Stream Null Exception");
-                }
-
-                using StreamReader reader = new(stream);
-                string script = reader.ReadToEnd();
-                await ExecuteSqlAsync(script, _config.ConnectionString);
-            }
-            catch (Exception)
+            if (stream == null)
             {
-                
+                throw new Exception("Stream Null Exception");
             }
+
+            using StreamReader reader = new(stream);
+            string script = reader.ReadToEnd();
+            await ExecuteSqlAsync(script, _config.ConnectionString);
+           
         }
         public async Task<List<Modelos>> GetModelosAsync()
         {
@@ -169,8 +175,7 @@ namespace CarStand
             using (var conn = new SqlConnection(_config.ConnectionString))
             {
                 await conn.OpenAsync(); // Async open
-                //[IDModelos] INT IDENTITY(1,1) NOT NULL,
-                //[NomeModelo] NVARCHAR(50) NOT NULL,
+                
                 using (var cmd = new SqlCommand("SELECT IDModelos, NomeModelo FROM Modelos", conn))
                 using (var reader = await cmd.ExecuteReaderAsync()) // Async query execution
                 {
@@ -194,8 +199,6 @@ namespace CarStand
             using (var conn = new SqlConnection(_config.ConnectionString))
             {
                 await conn.OpenAsync(); // Async open
-                // [IDMarca] INT IDENTITY(1,1) NOT NULL,
-                //[Nome] NVARCHAR(50) NOT NULL,
                 using (var cmd = new SqlCommand("SELECT IDMarca, Nome FROM Marcas", conn))
                 using (var reader = await cmd.ExecuteReaderAsync()) // Async query execution
                 {
@@ -275,81 +278,135 @@ namespace CarStand
             return (whereClause, parameters);
         }
 
-        public  async Task<PagedResult<Veiculos>> GetPagedResult(PageRequest request)
+        public async Task<PagedResult<Veiculos>> GetPagedResult(PageRequest request)
         {
-            
+            try
+            {
+                // Build WHERE clause and parameters
+                var (whereClause, parameters) = BuildWhereClause(request.ActiveFilters);
+
+                // 1️⃣ Get total count (each method uses its own connection safely)
+                int totalCount = await GetVehicleCountAsync(whereClause, parameters);
+
+                // 2️⃣ Get paged vehicles
+                Dictionary<long, Veiculos> vehicles = await MapVehicles(whereClause, parameters, request);
+
+                await AddInspecoesToVehicles(vehicles);
+                // 3️⃣ Return result
+                return new PagedResult<Veiculos>(vehicles.Values.ToList(), totalCount);
+            }
+            catch (Exception)
+            {
+                // Optional: log exception here
+                throw; // rethrow so it bubbles up to LoadDefaults
+            }
+        }
+        private async Task<int> GetVehicleCountAsync(string whereClause, List<SqlParameter>? parameters)
+        {
+            const string sqlTemplate = @"
+        SELECT COUNT(*)
+        FROM Veiculos
+        {0}";
+
             using var conn = new SqlConnection(_config.ConnectionString);
             await conn.OpenAsync();
 
-            var (whereClause, parameters) = BuildWhereClause(request.ActiveFilters);
-            int totalCount =  await GetVehicleCountAsync(whereClause, parameters, conn);
-            Dictionary<int, Veiculos> lstVeiculos = await MapVehicles(whereClause, parameters, request, conn);
+            using var cmd = new SqlCommand(string.Format(sqlTemplate, whereClause), conn);
+            if (parameters?.Count > 0)
+                cmd.Parameters.AddRange(parameters.ToArray());
 
-            return new PagedResult<Veiculos>(new List<Veiculos>(), totalCount);
+            object? result = await cmd.ExecuteScalarAsync();
+            return Convert.ToInt32(result);
         }
-        private async Task<int> GetVehicleCountAsync(string whereClause, 
-            List<SqlParameter>? parameters, SqlConnection conn)
-        {
-           
-            // 1️⃣ Get total count
-            string countSql = $@"
-            SELECT COUNT(*)
-            FROM Veiculos
-            {whereClause}";
 
-            int totalCount;
-            using (var countCmd = new SqlCommand(countSql, conn))
+
+        private async Task<Dictionary<long, Veiculos>> MapVehicles(string whereClause, List<SqlParameter>? parameters, PageRequest request)
+        {
+            string sql = $@"
+        SELECT 
+            Veiculos.VeiculoID,
+            Marcas.Nome AS MarcaNome,
+            Modelos.NomeModelo AS ModeloNome,
+            Veiculos.Ano,
+            Veiculos.Vendido
+        FROM Veiculos
+        INNER JOIN Marcas ON Marcas.IDMarca = Veiculos.MarcaID
+        INNER JOIN Modelos ON Modelos.IDModelos = Veiculos.ModeloID
+        {whereClause}
+        ORDER BY VeiculoID
+        OFFSET @Offset ROWS
+        FETCH NEXT @PageSize ROWS ONLY";
+
+            var vehicles = new Dictionary<long, Veiculos>();
+
+            using var conn = new SqlConnection(_config.ConnectionString);
+            await conn.OpenAsync();
+
+            using var cmd = new SqlCommand(sql, conn);
+
+            if (parameters?.Count > 0)
+                cmd.Parameters.AddRange(parameters.ToArray());
+
+            cmd.Parameters.AddWithValue("@Offset", request.OffSet());
+            cmd.Parameters.AddWithValue("@PageSize", request.ResultsPerPage);
+
+            using var reader = await cmd.ExecuteReaderAsync();
+            while (await reader.ReadAsync())
             {
-                if (parameters != null && parameters.Count > 0)
-                    countCmd.Parameters.AddRange(parameters.ToArray());
-                object? result = await countCmd.ExecuteScalarAsync();
-                totalCount = Convert.ToInt32(result);
+                long id = reader.GetInt64(reader.GetOrdinal("VeiculoID"));
+                string a = reader.GetString(reader.GetOrdinal("MarcaNome"));
+                string b = reader.GetString(reader.GetOrdinal("ModeloNome"));
+                int c = reader.GetInt32(reader.GetOrdinal("Ano"));
+                bool d = reader.GetBoolean(reader.GetOrdinal("Vendido"));
+                vehicles.Add(id, new Veiculos(
+                    id,
+                   a,
+                    b,
+                    c,
+                    new List<Inspecoes>(),           // empty for now
+                   d)
+                );
             }
-            return totalCount;
+
+            return vehicles;
         }
 
-
-        private async Task<Dictionary<int, Veiculos>> MapVehicles(string whereClause, 
-            List<SqlParameter>? parameters, PageRequest request, SqlConnection conn)
+        private async Task AddInspecoesToVehicles(Dictionary<long, Veiculos> vehicles)
         {
-          
-            // 2️ Get paged data
-            string dataSql = $@"SELECT VeiculoID,
-            MarcaID,
-            ModeloID,
-            Ano,
-            Vendido
-            FROM Veiculos
-            {whereClause}
-            ORDER BY VeiculoID
-            OFFSET @Offset ROWS
-            FETCH NEXT @PageSize ROWS ONLY";
+            if (vehicles == null || vehicles.Count == 0)
+                return;
 
-            var items = new Dictionary<int, Veiculos>();
+            // Build a comma-separated list of vehicle IDs for SQL IN clause
+            var ids = string.Join(",", vehicles.Keys);
 
-            using (var dataCmd = new SqlCommand(dataSql, conn))
+            string sql = $@"
+        SELECT InspecoesID, VeiculoID, DataDeInspecao, Resultado
+        FROM Inspecoes
+        WHERE VeiculoID IN ({ids})
+        ORDER BY DataDeInspecao DESC"; // Optional: order by date
+
+            using var conn = new SqlConnection(_config.ConnectionString);
+            await conn.OpenAsync();
+
+            using var cmd = new SqlCommand(sql, conn);
+            using var reader = await cmd.ExecuteReaderAsync();
+
+            while (await reader.ReadAsync())
             {
-                if (parameters != null )
-                    dataCmd.Parameters.AddRange(parameters.ToArray());
-                dataCmd.Parameters.AddWithValue("@Offset", request.OffSet());
-                dataCmd.Parameters.AddWithValue("@PageSize", request.ResultsPerPage);
+                long inspecaoId = reader.GetInt64(reader.GetOrdinal("InspecoesID"));
+                long veiculoId = reader.GetInt64(reader.GetOrdinal("VeiculoID"));
+                DateTime data = reader.GetDateTime(reader.GetOrdinal("DataDeInspecao"));
+                bool resultado = reader.GetBoolean(reader.GetOrdinal("Resultado"));
 
-                using var reader = await dataCmd.ExecuteReaderAsync();
+                var inspecao = new Inspecoes(inspecaoId, data, resultado);
 
-                while (await reader.ReadAsync())
+                // Add to the right vehicle
+                if (vehicles.TryGetValue(veiculoId, out Veiculos vehicle))
                 {
-                    items.Add(reader.GetInt32(0), new Veiculos(
-                        reader.GetInt32(0),
-                        reader.GetString(1),
-                        reader.GetString(2),
-                        reader.GetInt32(3),
-                        new List<Inspecoes>(),
-                         reader.GetBoolean(4)));
+                    vehicle.AddInspecao(inspecao);
                 }
             }
-
-            return items;
         }
-       
+
     }
 }

@@ -10,39 +10,54 @@ namespace CarStand.Models
 {
     public  class Veiculos
     {
-        public int ID { get; private set; }
+        public long ID { get; private set; }
         public string Marca { get; private set; }
         public string Modelo { get; private set; }
         public int Ano { get; private set; }
 
+        public string UltimaInspecao { get; private set; }
+        
         private List<Inspecoes> _inspecoes;
 
         public bool Vendido { get; private set; }
-        public string UltimaInspecao()
+
+        public string Estado
         {
-            string result = "";
+            get
+            {
+                if (Vendido)
+                    return "Vendido";
+                return "Disponível";
+            }
+        }
+        private void SetUltimaInspecao()
+        {
             if (_inspecoes == null || _inspecoes.Count == 0)
-                return "Nenhuma inspecção realizada";
-            //this list comes sorted from DataBase
-            result += _inspecoes[0].dataInspecao.ToString("dd-MM-yyyy");
-            int monthsDiff = Utilis.MonthDifference(_inspecoes[0].dataInspecao, DateTime.Now);
-                if (monthsDiff > 12)
-                {
-                    result += " (Expirada)";
-                }
-                else if (monthsDiff > 10)
-                {
-                    result += " (A Expirar)";
-                }
-           return result;
+            {
+                UltimaInspecao = "Nenhuma inspecção realizada";
+                return;
+            }
+
+            // Get the latest inspection date
+            DateTime lastDate = _inspecoes.Max(i => i.dataInspecao);
+
+            string result = lastDate.ToString("dd-MM-yyyy");
+
+            int monthsDiff = Utilis.MonthDifference(lastDate, DateTime.Now);
+
+            if (monthsDiff > 12)
+            {
+                result += " (Expirada)";
+            }
+            else if (monthsDiff > 10)
+            {
+                result += " (A Expirar)";
+            }
+
+            UltimaInspecao = result;
         }
-        public string Estado()
-        {
-            if (Vendido)
-                return "Vendido";
-            return "Disponível";
-        }
-        public Veiculos(int id, string marca, string modelo, int anos, List<Inspecoes> inspecoes, bool estado)
+
+        public Veiculos(long id, string marca, string modelo, int anos, List<Inspecoes> inspecoes, bool estado)
         {
             ID = id;
           Marca = marca;
@@ -50,10 +65,12 @@ namespace CarStand.Models
             Ano = anos;
             Vendido = estado;
             _inspecoes = inspecoes;
+             SetUltimaInspecao();
         }
         public void AddInspecao(Inspecoes inspect)
         {
             _inspecoes.Add(inspect);
+            SetUltimaInspecao();
         }
     }
 }

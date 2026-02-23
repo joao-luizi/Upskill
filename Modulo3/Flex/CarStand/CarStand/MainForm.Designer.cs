@@ -46,8 +46,7 @@
             MenuStrip.Items.AddRange(new ToolStripItem[] { exitToolStripMenuItem, gestãoDeVeiculosToolStripMenuItem });
             MenuStrip.Location = new Point(0, 0);
             MenuStrip.Name = "MenuStrip";
-            MenuStrip.Padding = new Padding(9, 3, 0, 3);
-            MenuStrip.Size = new Size(1143, 35);
+            MenuStrip.Size = new Size(800, 24);
             MenuStrip.TabIndex = 0;
             MenuStrip.Text = "menuStrip1";
             // 
@@ -55,65 +54,63 @@
             // 
             exitToolStripMenuItem.Alignment = ToolStripItemAlignment.Right;
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(55, 29);
+            exitToolStripMenuItem.Size = new Size(38, 20);
             exitToolStripMenuItem.Text = "Exit";
             // 
             // gestãoDeVeiculosToolStripMenuItem
             // 
             gestãoDeVeiculosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { reInicializarBDToolStripMenuItem, limparBDToolStripMenuItem });
             gestãoDeVeiculosToolStripMenuItem.Name = "gestãoDeVeiculosToolStripMenuItem";
-            gestãoDeVeiculosToolStripMenuItem.Size = new Size(177, 29);
+            gestãoDeVeiculosToolStripMenuItem.Size = new Size(117, 20);
             gestãoDeVeiculosToolStripMenuItem.Text = "Gestão de Veiculos";
             // 
             // reInicializarBDToolStripMenuItem
             // 
             reInicializarBDToolStripMenuItem.Name = "reInicializarBDToolStripMenuItem";
-            reInicializarBDToolStripMenuItem.Size = new Size(232, 34);
+            reInicializarBDToolStripMenuItem.Size = new Size(180, 22);
             reInicializarBDToolStripMenuItem.Text = "ReInicializar BD";
+            reInicializarBDToolStripMenuItem.Click += reInicializarBDToolStripMenuItem_Click;
             // 
             // limparBDToolStripMenuItem
             // 
             limparBDToolStripMenuItem.Name = "limparBDToolStripMenuItem";
-            limparBDToolStripMenuItem.Size = new Size(232, 34);
+            limparBDToolStripMenuItem.Size = new Size(180, 22);
             limparBDToolStripMenuItem.Text = "Limpar BD";
             // 
             // StatusStrip
             // 
             StatusStrip.ImageScalingSize = new Size(24, 24);
             StatusStrip.Items.AddRange(new ToolStripItem[] { ToolStripStatusLabel });
-            StatusStrip.Location = new Point(0, 718);
+            StatusStrip.Location = new Point(0, 428);
             StatusStrip.Name = "StatusStrip";
-            StatusStrip.Padding = new Padding(1, 0, 20, 0);
-            StatusStrip.Size = new Size(1143, 32);
+            StatusStrip.Size = new Size(800, 22);
             StatusStrip.TabIndex = 1;
             StatusStrip.Text = "statusStrip1";
             // 
             // ToolStripStatusLabel
             // 
             ToolStripStatusLabel.Name = "ToolStripStatusLabel";
-            ToolStripStatusLabel.Size = new Size(179, 25);
+            ToolStripStatusLabel.Size = new Size(118, 17);
             ToolStripStatusLabel.Text = "toolStripStatusLabel1";
             // 
             // MainPanel
             // 
             MainPanel.Dock = DockStyle.Fill;
-            MainPanel.Location = new Point(0, 35);
-            MainPanel.Margin = new Padding(4, 5, 4, 5);
+            MainPanel.Location = new Point(0, 24);
             MainPanel.Name = "MainPanel";
-            MainPanel.Size = new Size(1143, 683);
+            MainPanel.Size = new Size(800, 404);
             MainPanel.TabIndex = 2;
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1143, 750);
+            ClientSize = new Size(800, 450);
             Controls.Add(MainPanel);
             Controls.Add(StatusStrip);
             Controls.Add(MenuStrip);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MainMenuStrip = MenuStrip;
-            Margin = new Padding(4, 5, 4, 5);
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MainForm";

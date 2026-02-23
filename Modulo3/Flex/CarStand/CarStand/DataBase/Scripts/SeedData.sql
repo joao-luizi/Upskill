@@ -25,17 +25,18 @@ INSERT INTO dbo.Modelos (NomeModelo) VALUES
 (N'Rio');
 
 -- Seed Veiculos
-INSERT INTO dbo.Veiculos (MarcaID, ModeloID, Ano, InspecaoID, Vendido) VALUES
-(1, 1, 2020, NULL, 1),
-(2, 2, 2019, NULL, 1),
-(3, 3, 2021, NULL, 1),
-(4, 4, 2018, NULL, 1),
-(5, 5, 2020, NULL, 1),
-(6, 6, 2017, NULL, 1),
-(7, 7, 2022, NULL, 1),
-(8, 8, 2021, NULL, 1),
-(9, 9, 2019, NULL, 1),
-(10, 10, 2020, NULL, 1);
+
+INSERT INTO dbo.Veiculos (MarcaID, ModeloID, Ano, Vendido) VALUES
+(1, 1, 2020, 1),
+(2, 2, 2019, 1),
+(3, 3, 2021, 1),
+(4, 4, 2018, 1),
+(5, 5, 2020, 1),
+(6, 6, 2017, 1),
+(7, 7, 2022, 1),
+(8, 8, 2021, 1),
+(9, 9, 2019, 1),
+(10, 10, 2020, 1);
 
 -- Seed Inspecoes
 INSERT INTO dbo.Inspecoes (VeiculoID, DataDeInspecao, Resultado) VALUES

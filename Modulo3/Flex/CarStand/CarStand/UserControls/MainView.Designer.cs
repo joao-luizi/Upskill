@@ -365,7 +365,6 @@
         private Label SortOrderEstado;
         private Label lblEstado;
         private ComboBox cbEstado;
-        private Panel panelInsertBt;
         private Button btAddNew;
         private Panel panelDgv;
         private DataGridView dgvMain;

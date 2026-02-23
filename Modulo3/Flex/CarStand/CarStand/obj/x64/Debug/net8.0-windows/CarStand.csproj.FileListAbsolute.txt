@@ -1,5 +1,4 @@
 E:\2025_repos\Upskill\Modulo3\Flex\CarStand\CarStand\obj\x64\Debug\net8.0-windows\CarStand.csproj.AssemblyReference.cache
-E:\2025_repos\Upskill\Modulo3\Flex\CarStand\CarStand\obj\x64\Debug\net8.0-windows\CarStand.Form1.resources
 E:\2025_repos\Upskill\Modulo3\Flex\CarStand\CarStand\obj\x64\Debug\net8.0-windows\CarStand.MainForm.resources
 E:\2025_repos\Upskill\Modulo3\Flex\CarStand\CarStand\obj\x64\Debug\net8.0-windows\CarStand.Properties.Resources.resources
 E:\2025_repos\Upskill\Modulo3\Flex\CarStand\CarStand\obj\x64\Debug\net8.0-windows\CarStand.SplashForm.resources
