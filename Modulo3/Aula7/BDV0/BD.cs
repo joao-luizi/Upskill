@@ -20,8 +20,8 @@ namespace BDV0
 
             string qry = "SELECT TOP 10 * FROM Customers";
             SqlCommand cmd = new SqlCommand(qry, connection);
-           
-            SqlDataReader reader = cmd.ExecuteReader();
+
+            cmd.ExecuteNonQuery();
             connection.Close();
         }
         
