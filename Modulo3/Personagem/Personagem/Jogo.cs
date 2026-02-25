@@ -11,14 +11,14 @@ namespace Personagem
         public abstract class Item
         {
             public string Nome { get; private set; }
-
-          
+  
             public Item(string _nome)
             {
                 Nome = _nome;
             }
             public abstract void Usar(Entidade alvo);
         }
+
         public class Pocao : Item
         {
             public int Cura { get; set; }
@@ -50,8 +50,10 @@ namespace Personagem
             public override void Usar(Entidade alvo)
             {
                 if (alvo is Personagem personagem)
+                {
                     personagem.Ataque += this.Dano;
-                Console.WriteLine($"{alvo.Nome} equipa {this.Nome}");
+                    Console.WriteLine($"{alvo.Nome} equipa {this.Nome}");
+                }
             }
         }
 
