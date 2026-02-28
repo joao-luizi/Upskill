@@ -1452,23 +1452,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\joaol\\.nuget\\packages\\": {},
+    "C:\\Users\\Formando\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\2025_repos\\Upskill\\Modulo3\\Aula8\\BDv1\\BDv1.csproj",
+      "projectUniqueName": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula8\\BDv1\\BDv1.csproj",
       "projectName": "BDv1",
-      "projectPath": "E:\\2025_repos\\Upskill\\Modulo3\\Aula8\\BDv1\\BDv1.csproj",
-      "packagesPath": "C:\\Users\\joaol\\.nuget\\packages\\",
-      "outputPath": "E:\\2025_repos\\Upskill\\Modulo3\\Aula8\\BDv1\\obj\\",
+      "projectPath": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula8\\BDv1\\BDv1.csproj",
+      "packagesPath": "C:\\Users\\Formando\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Aula8\\BDv1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\joaol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Formando\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1477,7 +1477,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1523,7 +1522,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
