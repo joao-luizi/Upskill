@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ValidarPassword")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f31460738b4e40cc406aaad639b0efea0b77de9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2baba59551cfa556101f91dd169e0dad8031841d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ValidarPassword")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ValidarPassword")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

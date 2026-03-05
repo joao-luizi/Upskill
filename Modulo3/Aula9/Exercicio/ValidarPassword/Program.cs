@@ -19,7 +19,9 @@ namespace ValidarPassword
                 string user = Utils.GetInput();
                 Console.WriteLine("Introduza a Password:");
                 string pass = Utils.GetInput();
-                userId = BaseDados.VerificarPass(user, pass);
+                //userId = BaseDados.VerificarPass(user, pass);
+                userId = BaseDados.VerificarPassBySP(user, pass);
+                //userId = 0;
                 if (userId == null)
                 {
                     Console.WriteLine("Utilizador não encontrado ou password errada.");
@@ -33,8 +35,8 @@ namespace ValidarPassword
                     userId = null;
                     continue;
                 }
-                DataTable obras = BaseDados.GetFullTable("Obras");
-                if (obras.Rows.Count == 0)
+                DataTable? obras = BaseDados.GetFullTable("Obras");
+                if (obras== null || obras.Rows.Count == 0)
                 {
                     Console.WriteLine("Não existem obras a mostrar");
                     break;
