@@ -1,0 +1,234 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\dalpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:dalpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\apputils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:apputils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\testbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:testbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\jogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:jogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\figurasgeometricas4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:figurasgeometricas4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\figurasgeometricas3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:figurasgeometricas3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\figurasgeometricas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:figurasgeometricas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\figurasgeometricas2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:figurasgeometricas2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ecb7191a-597b-41f5-9843-03a4cf275dde}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0504ff91-9d61-11d0-a794-00a0c9110051}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{be4d7042-ba3f-11d2-840e-00c04f9902c1}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{605322a2-17ae-43f4-b60f-766556e46c87}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{28836128-fc2c-11d2-a433-00c04f72d18a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DALPro.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\DALPro.cs",
+              "RelativeDocumentMoniker": "DALPro.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\DALPro.cs",
+              "RelativeToolTip": "DALPro.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAtwCYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T15:03:06.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppUtils.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\AppUtils.cs",
+              "RelativeDocumentMoniker": "AppUtils.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\AppUtils.cs",
+              "RelativeToolTip": "AppUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T17:24:51.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Utils.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Utils.cs",
+              "RelativeDocumentMoniker": "Utils.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Utils.cs",
+              "RelativeToolTip": "Utils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T17:50:51.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Core.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Core.cs",
+              "RelativeDocumentMoniker": "Core.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Core.cs",
+              "RelativeToolTip": "Core.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAtwEwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T12:06:20.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestBD.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\TestBD.cs",
+              "RelativeDocumentMoniker": "TestBD.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\TestBD.cs",
+              "RelativeToolTip": "TestBD.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T17:03:23.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FigurasGeometricas4.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas4.cs",
+              "RelativeDocumentMoniker": "FigurasGeometricas4.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas4.cs",
+              "RelativeToolTip": "FigurasGeometricas4.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAABBwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T09:38:42.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Jogo.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Jogo.cs",
+              "RelativeDocumentMoniker": "Jogo.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Jogo.cs",
+              "RelativeToolTip": "Jogo.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAQwJUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T02:07:18.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FigurasGeometricas3.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas3.cs",
+              "RelativeDocumentMoniker": "FigurasGeometricas3.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas3.cs",
+              "RelativeToolTip": "FigurasGeometricas3.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAABBwDQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T09:49:00.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FigurasGeometricas2.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas2.cs",
+              "RelativeDocumentMoniker": "FigurasGeometricas2.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas2.cs",
+              "RelativeToolTip": "FigurasGeometricas2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T11:18:32.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FigurasGeometricas.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas.cs",
+              "RelativeDocumentMoniker": "FigurasGeometricas.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas.cs",
+              "RelativeToolTip": "FigurasGeometricas.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAABBwC0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T10:14:59.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T09:37:06.881Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
