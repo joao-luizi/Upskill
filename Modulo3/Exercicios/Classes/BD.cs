@@ -17,7 +17,7 @@ namespace Classes
 
         public override string ToString()
         {
-            return X + " " + Y;
+            return this.X + " " + this.Y;
         }
     }
     internal class BD
@@ -178,8 +178,8 @@ namespace Classes
         public static void TesteDummy()
         {
             Ponto p = new Ponto();
-            p.X = 9;
-            p.Y = 5;
+           // p.X = 9;
+            //p.Y = 5;
 
             object[] v = new object[5];
 

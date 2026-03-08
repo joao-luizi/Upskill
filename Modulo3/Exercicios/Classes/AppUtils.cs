@@ -1,4 +1,5 @@
-﻿using Northwind;
+﻿using Classes.ModelView;
+using Northwind;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,8 +24,9 @@ namespace AppUtils
         {
             foreach (var t in territories.lista)
             {
-                Console.WriteLine($"{t.Id}\t{t.Nome}");
+                Console.WriteLine($"{t.TerritoryDescription}");
             }
         }
+       
     }
 }

@@ -10,16 +10,7 @@ using System.Transactions;
 
 namespace Classes
 {
-    public class Ponto : Object
-    {
-        public int X;
-        public int Y;
-
-        public override string ToString()
-        {
-            return X + " " + Y;
-        }
-    }
+    
     public class TestBD
     {
         #region Duas funcões

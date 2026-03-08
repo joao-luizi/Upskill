@@ -1,49 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\",
+  "WorkspaceRootPath": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\exercicios\\classes\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\dalpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:dalpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\exercicios\\classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\exercicios\\classes\\bd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:bd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\apputils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\exercicios\\classes\\apputils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:apputils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\testbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\exercicios\\classes\\modelview\\employeeterritories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:modelview\\employeeterritories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\exercicios\\classes\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\exercicios\\classes\\testbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:testbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\jogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\exercicios\\classes\\modelview\\employeelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:modelview\\employeelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\exercicios\\classes\\dalpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:dalpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\exercicios\\classes\\jogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:jogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\figurasgeometricas4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\exercicios\\classes\\figurasgeometricas4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:figurasgeometricas4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\figurasgeometricas3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\exercicios\\classes\\figurasgeometricas3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:figurasgeometricas3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\figurasgeometricas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\exercicios\\classes\\figurasgeometricas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:figurasgeometricas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\tmp\\classes\\figurasgeometricas2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\exercicios\\classes\\figurasgeometricas2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFF1A550-0305-4E9E-A405-67788BFACA31}|Classes.csproj|solutionrelative:figurasgeometricas2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,8 +66,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 12,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -90,76 +114,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DALPro.cs",
-              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\DALPro.cs",
-              "RelativeDocumentMoniker": "DALPro.cs",
-              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\DALPro.cs",
-              "RelativeToolTip": "DALPro.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAtwCYAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-05T15:03:06.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AppUtils.cs",
-              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\AppUtils.cs",
-              "RelativeDocumentMoniker": "AppUtils.cs",
-              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\AppUtils.cs",
-              "RelativeToolTip": "AppUtils.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Title": "EmployeeTerritories.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\ModelView\\EmployeeTerritories.cs",
+              "RelativeDocumentMoniker": "ModelView\\EmployeeTerritories.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\ModelView\\EmployeeTerritories.cs",
+              "RelativeToolTip": "ModelView\\EmployeeTerritories.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-04T17:24:51.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Utils.cs",
-              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Utils.cs",
-              "RelativeDocumentMoniker": "Utils.cs",
-              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Utils.cs",
-              "RelativeToolTip": "Utils.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T17:50:51.612Z",
+              "WhenOpened": "2026-03-06T12:02:28.399Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Core.cs",
-              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Core.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\Core.cs",
               "RelativeDocumentMoniker": "Core.cs",
-              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Core.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\Core.cs",
               "RelativeToolTip": "Core.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAtwEwAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAGoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-27T12:06:20.753Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TestBD.cs",
-              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\TestBD.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\TestBD.cs",
               "RelativeDocumentMoniker": "TestBD.cs",
-              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\TestBD.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\TestBD.cs",
               "RelativeToolTip": "TestBD.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwAwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T17:03:23.091Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "FigurasGeometricas4.cs",
-              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas4.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\FigurasGeometricas4.cs",
               "RelativeDocumentMoniker": "FigurasGeometricas4.cs",
-              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas4.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\FigurasGeometricas4.cs",
               "RelativeToolTip": "FigurasGeometricas4.cs",
               "ViewState": "AgIAACgAAAAAAAAAAABBwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -167,11 +165,89 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAH0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T09:37:06.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppUtils.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\AppUtils.cs",
+              "RelativeDocumentMoniker": "AppUtils.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\AppUtils.cs",
+              "RelativeToolTip": "AppUtils.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T17:24:51.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BD.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\BD.cs",
+              "RelativeDocumentMoniker": "BD.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\BD.cs",
+              "RelativeToolTip": "BD.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAQwBsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T09:57:35.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Utils.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\Utils.cs",
+              "RelativeDocumentMoniker": "Utils.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\Utils.cs",
+              "RelativeToolTip": "Utils.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T17:50:51.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DALPro.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\DALPro.cs",
+              "RelativeDocumentMoniker": "DALPro.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\DALPro.cs",
+              "RelativeToolTip": "DALPro.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAswF0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T15:03:06.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmployeeLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\ModelView\\EmployeeLogin.cs",
+              "RelativeDocumentMoniker": "ModelView\\EmployeeLogin.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\ModelView\\EmployeeLogin.cs",
+              "RelativeToolTip": "ModelView\\EmployeeLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T10:10:31.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Jogo.cs",
-              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Jogo.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\Jogo.cs",
               "RelativeDocumentMoniker": "Jogo.cs",
-              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Jogo.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\Jogo.cs",
               "RelativeToolTip": "Jogo.cs",
               "ViewState": "AgIAAI4AAAAAAAAAAAAQwJUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -179,11 +255,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "FigurasGeometricas3.cs",
-              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas3.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\FigurasGeometricas3.cs",
               "RelativeDocumentMoniker": "FigurasGeometricas3.cs",
-              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas3.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\FigurasGeometricas3.cs",
               "RelativeToolTip": "FigurasGeometricas3.cs",
               "ViewState": "AgIAABYAAAAAAAAAAABBwDQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -191,11 +267,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "FigurasGeometricas2.cs",
-              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas2.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\FigurasGeometricas2.cs",
               "RelativeDocumentMoniker": "FigurasGeometricas2.cs",
-              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas2.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\FigurasGeometricas2.cs",
               "RelativeToolTip": "FigurasGeometricas2.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -203,28 +279,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "FigurasGeometricas.cs",
-              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\FigurasGeometricas.cs",
               "RelativeDocumentMoniker": "FigurasGeometricas.cs",
-              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\FigurasGeometricas.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\Classes\\FigurasGeometricas.cs",
               "RelativeToolTip": "FigurasGeometricas.cs",
               "ViewState": "AgIAACIAAAAAAAAAAABBwC0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-18T10:14:59.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\Tmp\\Classes\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T09:37:06.881Z",
-              "EditorCaption": ""
             }
           ]
         }

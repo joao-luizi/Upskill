@@ -15,7 +15,7 @@ namespace LibUtils
 
             //TODO
 
-            return resultado;
+            return "'" + resultado + "'";
         }
     }
 

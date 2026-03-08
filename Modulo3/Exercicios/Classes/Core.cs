@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using Classes.ModelView;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -16,7 +17,7 @@ namespace Northwind
 
     public class Core
     {
-        private string connectionString = "Server=localhost;Database=Northwind;Trusted_Connection=True;TrustServerCertificate=True;";
+        public const string connectionString = "Server=localhost;Database=Northwind;Trusted_Connection=True;TrustServerCertificate=True;";
 
         private string _user { get; set; }
         private string _pwd { get; set; }
@@ -43,7 +44,7 @@ namespace Northwind
                 SqlDataAdapter adapter = new SqlDataAdapter(qry, connection);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
-
+           
                 if (dt.Rows.Count != 1)
                 {
                     idUser = -1;
@@ -68,18 +69,19 @@ namespace Northwind
         }
 
         // Login DALPro
-        public class EmployeeLogin
-        {
-            public int EmployeeId { get; set; }
-        }
+
         public int Login2()
         {
+            int iduser = -1;
             try
             {
                 LibDB.DALPro.ConnectionString = connectionString;
                 string qry = $"SELECT EmployeeId FROM Employees WHERE LastName={LibUtils.Core.DuplicaPlicas(_user)} AND Password={LibUtils.Core.DuplicaPlicas(_pwd)}";
                 var users = LibDB.DALPro.Query<EmployeeLogin>(qry);
-
+                if (users.Count != 0)
+                {
+                    
+                }
             }
             catch
             {
@@ -89,8 +91,44 @@ namespace Northwind
             {
 
             }
+            return iduser;
         }
+
+        public int Login3()
+        {
+            int idUser = -1;
+            try
+            {
+                LibDB.DALPro.ConnectionString = Core.connectionString;
+               string qry = $"SELECT EmployeeId FROM Employees WHERE LastName={LibUtils.Core.DuplicaPlicas(_user)} AND Password={LibUtils.Core.DuplicaPlicas(_pwd)}";
+                //string qry = $"SELECT EmployeeId FROM Employees";
+                object result = LibDB.DALPro.ExecuteScalar(qry);
+                List<EmployeeLogin> results = LibDB.DALPro.Query<EmployeeLogin>(qry);
+
+                if (result == null)
+                {
+                    throw new InvalidOperationException("User/password incorretos!");
+                }
+                idUser = Convert.ToInt32(result);
+            }
+            catch (InvalidOperationException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+            }
+
+            return idUser;
+        }
+
         #endregion
+
+
 
         public static List<Territory> DataTableToEmployeeList(DataTable table)
         {
@@ -109,13 +147,15 @@ namespace Northwind
         }
     }
 
+
     public class Territories
     {
-        public List<Territory> lista {  get; set; }
+        public List<EmployeeTerritories> lista {  get; set; }
 
+        
         public Territories(int employeeId)
         {
-            lista = Obter(employeeId);
+            lista = Obter2(employeeId);
         }
         public List<Territory> Obter(int userId)
         {
@@ -148,5 +188,20 @@ namespace Northwind
 
             return lst;
         }
+    
+        public List<EmployeeTerritories> Obter2(int userId)
+        {
+            LibDB.DALPro.ConnectionString = Core.connectionString;
+            string qry = $"SELECT EmployeeTerritories.EmployeeID, EmployeeTerritories.TerritoryID, TerritoryDescription " +
+                    $"FROM EmployeeTerritories INNER JOIN Territories ON EmployeeTerritories.TerritoryID = Territories.TerritoryID " +
+                    $"WHERE EmployeeId ='{userId}'";
+            var result = LibDB.DALPro.Query<EmployeeTerritories>(qry);
+
+            return result;
+
+           
+        }
     }
+
+
 }
