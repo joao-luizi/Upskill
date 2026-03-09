@@ -1,8 +1,8 @@
-﻿using AppUtils;
+﻿using Classes.ModelView;
+using AppUtils;
 using Northwind;
 using System.Text;
 using LibUtils;
-using Classes.ModelView;
 
 namespace Classes
 {
@@ -17,7 +17,7 @@ namespace Classes
 
             //ClassesLiskov.Teste.Testar();
 
-            TestarNorthwind4();
+            TestarNorthwind2();
         }
 
         static public void Teste1()
@@ -77,12 +77,12 @@ namespace Classes
                 string pwd = Console.ReadLine();
 
                 Northwind.Core obj = new Northwind.Core(nome, pwd);
-                int userId = obj.Login();
+                int userId = obj.Login3();
 
                 Console.WriteLine($"Obtendo territórios de {nome}...");
                 Territories objT = new Territories(userId);
 
-                //AppUtils.Core.Listar(objT.lista);
+                AppUtils.Core.Listar(objT.lista);
             }
             catch (Exception ex)
             {
@@ -113,42 +113,18 @@ namespace Classes
             }
         }
 
-        static public void TestarNorthwind4()
-        {
-            try
-            {
-                Console.Write("User: ");
-                string nome = Console.ReadLine();
-                Console.Write("Password: ");
-                string pwd = Console.ReadLine();
-
-                Northwind.Core obj = new Northwind.Core(nome, pwd);
-                int userId = obj.Login3();
-
-                Territories t = new Territories(userId);
-                Console.WriteLine($"Obtendo territórios de {nome}...");
-               
-                t.Listar();
-
-                   
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
         public class TerritoriesExt : Territories
         {
             public TerritoriesExt(int id) : base(id) { }
 
-            //public void Listar()
-            //{
-            //    Console.WriteLine("-".Repeat(80));
-            //    foreach (var item in lista)
-            //    {
-            //        Console.WriteLine(item.Nome);
-            //    }
-            //}
+            public void Listar()
+            {
+                Console.WriteLine("-".Repeat(80));
+                foreach (var item in lista)
+                {
+                    Console.WriteLine(item.Nome);
+                }
+            }
         }
     }
 }

@@ -10,5 +10,4 @@ namespace Classes.ModelView
     {
         public int EmployeeId { get; set; }
     }
-
 }

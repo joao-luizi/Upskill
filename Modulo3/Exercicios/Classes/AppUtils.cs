@@ -24,9 +24,8 @@ namespace AppUtils
         {
             foreach (var t in territories.lista)
             {
-                Console.WriteLine($"{t.TerritoryDescription}");
+                Console.WriteLine($"{t.Id}\t{t.Nome}");
             }
         }
-       
     }
 }

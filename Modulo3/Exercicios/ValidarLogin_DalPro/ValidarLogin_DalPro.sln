@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36930.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidarLogin_DalPro", "ValidarLogin_DalPro.csproj", "{EBF10A45-7013-433F-99E5-426D8A143576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DalPro", "..\DalPro\DalPro.csproj", "{190077DE-E2D0-1424-E9A0-84C62B5EACA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBF10A45-7013-433F-99E5-426D8A143576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBF10A45-7013-433F-99E5-426D8A143576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBF10A45-7013-433F-99E5-426D8A143576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBF10A45-7013-433F-99E5-426D8A143576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{190077DE-E2D0-1424-E9A0-84C62B5EACA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{190077DE-E2D0-1424-E9A0-84C62B5EACA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{190077DE-E2D0-1424-E9A0-84C62B5EACA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{190077DE-E2D0-1424-E9A0-84C62B5EACA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E11626C6-1BC8-4994-BE2F-608CCC1D0BA7}
+	EndGlobalSection
+EndGlobal
