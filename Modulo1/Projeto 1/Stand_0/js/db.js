@@ -161,6 +161,21 @@ function cleanLS(storageKey) {
  * Em caso de erro, solicita reinicialização.
  */
 function carregar() {
+  let innerresponse;
+fetch("https://localhost:44311/Modelos")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+    alert(JSON.stringify(data));
+  })
+  .catch((error) => {
+    console.error(error);
+  });
   let veiculosDB = localStorage.getItem("veiculos");
   let dataObj;
   if (veiculosDB && veiculosDB != "") {

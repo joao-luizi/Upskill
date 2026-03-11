@@ -1,3 +1,5 @@
+using DalPro;
+
 namespace CarstandWebApi
 {
     public class Program
@@ -8,30 +10,26 @@ namespace CarstandWebApi
 
             // Add services to the container.
             builder.Services.AddAuthorization();
+            builder.Services.AddCors();
 
 
+            builder.Services.AddScoped<CarStandServices>();
             var app = builder.Build();
+            app.UseCors(policy =>
+                policy.AllowAnyOrigin()
+                      .AllowAnyHeader()
+                      .AllowAnyMethod());
 
             // Configure the HTTP request pipeline.
 
             app.UseAuthorization();
 
-            var summaries = new[]
-            {
-                "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-            };
 
-            app.MapGet("/weatherforecast", (HttpContext httpContext) =>
+            DALPro.ConnectionString = "Server=localhost;Database=Upskill_Project1;Trusted_Connection=True;TrustServerCertificate=True";
+
+            app.MapGet("/Modelos", (CarStandServices service) =>
             {
-                var forecast = Enumerable.Range(1, 5).Select(index =>
-                    new WeatherForecast
-                    {
-                        Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                        TemperatureC = Random.Shared.Next(-20, 55),
-                        Summary = summaries[Random.Shared.Next(summaries.Length)]
-                    })
-                    .ToArray();
-                return forecast;
+                return service.GetAllModels();
             });
 
             app.Run();
