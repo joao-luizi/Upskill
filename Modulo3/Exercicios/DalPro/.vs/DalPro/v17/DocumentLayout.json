@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\2025_repos\\Upskill\\Modulo3\\Exercicios\\DalPro\\",
+  "WorkspaceRootPath": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\DalPro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1CE1247D-F310-45E1-8FE7-A23E728A3455}|DalPro.csproj|e:\\2025_repos\\upskill\\modulo3\\exercicios\\dalpro\\dalpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1CE1247D-F310-45E1-8FE7-A23E728A3455}|DalPro.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\exercicios\\dalpro\\dalpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CE1247D-F310-45E1-8FE7-A23E728A3455}|DalPro.csproj|solutionrelative:dalpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -68,23 +68,20 @@
               "DocumentIndex": 1,
               "Title": "DALPro.cs",
               "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Exercicios\\Classes\\DALPro.cs",
-              "RelativeDocumentMoniker": "..\\Classes\\DALPro.cs",
               "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Exercicios\\Classes\\DALPro.cs",
-              "RelativeToolTip": "..\\Classes\\DALPro.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAPEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T14:39:41.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T14:39:41.4Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DALPro.cs",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Exercicios\\DalPro\\DALPro.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\DalPro\\DALPro.cs",
               "RelativeDocumentMoniker": "DALPro.cs",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Exercicios\\DalPro\\DALPro.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Exercicios\\DalPro\\DALPro.cs",
               "RelativeToolTip": "DALPro.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswCgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-08T14:39:20.86Z",
               "EditorCaption": ""
