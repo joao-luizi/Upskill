@@ -178,7 +178,7 @@ function cleanLS(storageKey) {
  * Em caso de erro, solicita reinicialização.
  */
 async function carregar() {
-
+  veiculos = [];
   let ModelosDb = await getData("/modelos");
   //console.log(ModelosDb);
   let MarcasDb = await getData("/marcas");
@@ -191,32 +191,21 @@ async function carregar() {
   console.error("VeiculosDB failed to load");
   return;
 }
- console.log(MarcasDb);
+
  
 let index = 0;
 VeiculosDB.forEach(veiculo => {
-  console.log(veiculo);
+  
   veiculos[index] = {};
   veiculos[index]["data-index"] = veiculo["veiculoID"];
   veiculos[index]["marca"] = MarcasDb.find(element => element.idMarca == veiculo.marcaID).nome;
   veiculos[index]["modelo"] = ModelosDb.find(element => element.idModelos == veiculo.modeloID).modelo;
   veiculos[index]["ano"] = veiculo.ano;
-  veiculos[index]["ultimaInspecao"] = InspecoesDB.find(element => element.veiculoID == veiculo.veiculoID).datadeinspecao;
-  console.log(veiculos[index]);
+  veiculos[index]["ultimaInspecao"] = InspecoesDB.find(element => element.veiculoID == veiculo.veiculoID)?.dataDeInspecao ?? null;
+  
   index++;
 });
-console.log(veiculos);
-  //let dataObj;
-  /* if (veiculosDB && veiculosDB != "") {
-    try {
-      dataObj = JSON.parse(veiculosDB);
-      getDataWithIndex(dataObj);
-    } catch {
-      reInicializar(
-        "Ocorreu um erro ao aceder à base de dados local.\nDeseja (re)inicializar?"
-      );
-    }
-  } */
+
 }
 
 /**

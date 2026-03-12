@@ -75,6 +75,7 @@ function render() {
  * evitando duplicação de código em vários event listeners.
  */
 function refreshUI() {
+  
   preencherFiltros(veiculos, "marca");
   preencherFiltros(veiculos, "ano");
   render();
@@ -89,7 +90,7 @@ function refreshUI() {
  * - carregar dados de local storage,
  * - e realizar o primeiro render da UI.
  */
-function Init() {
+async function Init() {
   [fMarca, fAno, fVendido].forEach((f) => f.addEventListener("change", render));
   sortController.marca.sortEl.addEventListener("click", function () {
     let sortObj = sortController["marca"];
@@ -123,9 +124,12 @@ function Init() {
     carregar();
     refreshUI();
   });
+
   updateSortElement(sortController.marca.sortEl, sortController.marca.sortAsc);
   updateSortElement(sortController.ano.sortEl, sortController.ano.sortAsc);
   resetForm();
-  carregar();
+  await carregar();
+  console.log("After carregar");
+  console.log(veiculos);
   refreshUI();
 }
