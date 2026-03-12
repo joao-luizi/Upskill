@@ -2,7 +2,61 @@
   {
     "ContainingType": "CarstandWebApi.Program\u002B\u003C\u003Ec",
     "Method": "\u003CMain\u003Eb__0_1",
-    "RelativePath": "Modelos",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarstandWebApi.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__0_4",
+    "RelativePath": "inspecoes",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CarstandWebApi.Models.Inspecoes, CarstandWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarstandWebApi.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__0_3",
+    "RelativePath": "marcas",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CarstandWebApi.Models.Marcas, CarstandWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarstandWebApi.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__0_2",
+    "RelativePath": "modelos",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -10,6 +64,24 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[CarstandWebApi.Models.Modelos, CarstandWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarstandWebApi.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__0_5",
+    "RelativePath": "veiculos",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CarstandWebApi.Models.Veiculos, CarstandWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],

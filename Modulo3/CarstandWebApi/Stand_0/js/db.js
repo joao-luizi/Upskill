@@ -81,6 +81,8 @@ const db = [
   },
 ];
 
+const localhost = "https://localhost:44311";
+
 let veiculos = [];
 
 /**
@@ -143,7 +145,7 @@ function guardar(storageKey, source) {
   localStorage.setItem(storageKey, JSON.stringify(dataObj));
 }
 
-/**
+/**display
  * Remove os dados persistidos no localStorage e limpa o array local.
  *
  * @param {string} storageKey - Chave a remover do localStorage.
@@ -156,14 +158,56 @@ function cleanLS(storageKey) {
   }
 }
 
+  async function getData(endpoint) {
+  const url = localhost + endpoint;
+  let result;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+    result = await response.json();
+  } catch (error) {
+    console.error(error.message);
+  }
+  return result;
+}
+
 /**
  * Carrega os dados dos veículos a partir do localStorage.
  * Em caso de erro, solicita reinicialização.
  */
-function carregar() {
-  let veiculosDB = localStorage.getItem("veiculos");
-  let dataObj;
-  if (veiculosDB && veiculosDB != "") {
+async function carregar() {
+
+  let ModelosDb = await getData("/modelos");
+  //console.log(ModelosDb);
+  let MarcasDb = await getData("/marcas");
+  //console.log(MarcasDb);
+  let InspecoesDB = await getData("/inspecoes");
+  //console.log(InspecoesDB);
+  let VeiculosDB = await getData("/veiculos")
+  
+  if (!VeiculosDB) {
+  console.error("VeiculosDB failed to load");
+  return;
+}
+ console.log(MarcasDb);
+ 
+let index = 0;
+VeiculosDB.forEach(veiculo => {
+  console.log(veiculo);
+  veiculos[index] = {};
+  veiculos[index]["data-index"] = veiculo["veiculoID"];
+  veiculos[index]["marca"] = MarcasDb.find(element => element.idMarca == veiculo.marcaID).nome;
+  veiculos[index]["modelo"] = ModelosDb.find(element => element.idModelos == veiculo.modeloID).modelo;
+  veiculos[index]["ano"] = veiculo.ano;
+  veiculos[index]["ultimaInspecao"] = InspecoesDB.find(element => element.veiculoID == veiculo.veiculoID).datadeinspecao;
+  console.log(veiculos[index]);
+  index++;
+});
+console.log(veiculos);
+  //let dataObj;
+  /* if (veiculosDB && veiculosDB != "") {
     try {
       dataObj = JSON.parse(veiculosDB);
       getDataWithIndex(dataObj);
@@ -172,7 +216,7 @@ function carregar() {
         "Ocorreu um erro ao aceder à base de dados local.\nDeseja (re)inicializar?"
       );
     }
-  }
+  } */
 }
 
 /**
