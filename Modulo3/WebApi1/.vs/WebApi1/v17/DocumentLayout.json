@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\2025_repos\\Upskill\\Modulo3\\WebApi1\\",
+  "WorkspaceRootPath": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebApi1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{636CA655-5C41-4F11-90B7-6F2FE36210C0}|WebApi1.csproj|e:\\2025_repos\\upskill\\modulo3\\webapi1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{636CA655-5C41-4F11-90B7-6F2FE36210C0}|WebApi1.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{636CA655-5C41-4F11-90B7-6F2FE36210C0}|WebApi1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{636CA655-5C41-4F11-90B7-6F2FE36210C0}|WebApi1.csproj|e:\\2025_repos\\upskill\\modulo3\\webapi1\\webapi1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{636CA655-5C41-4F11-90B7-6F2FE36210C0}|WebApi1.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi1\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{636CA655-5C41-4F11-90B7-6F2FE36210C0}|WebApi1.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{636CA655-5C41-4F11-90B7-6F2FE36210C0}|WebApi1.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi1\\webapi1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{636CA655-5C41-4F11-90B7-6F2FE36210C0}|WebApi1.csproj|solutionrelative:webapi1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{636CA655-5C41-4F11-90B7-6F2FE36210C0}|WebApi1.csproj|e:\\2025_repos\\upskill\\modulo3\\webapi1\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{636CA655-5C41-4F11-90B7-6F2FE36210C0}|WebApi1.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi1\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{636CA655-5C41-4F11-90B7-6F2FE36210C0}|WebApi1.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{636CA655-5C41-4F11-90B7-6F2FE36210C0}|WebApi1.csproj|e:\\2025_repos\\upskill\\modulo3\\webapi1\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{636CA655-5C41-4F11-90B7-6F2FE36210C0}|WebApi1.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,11 +74,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Product.cs",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\WebApi1\\Models\\Product.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebApi1\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\WebApi1\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebApi1\\Models\\Product.cs",
               "RelativeToolTip": "Models\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -86,11 +86,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "WebApi1.csproj",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\WebApi1\\WebApi1.csproj",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebApi1\\WebApi1.csproj",
               "RelativeDocumentMoniker": "WebApi1.csproj",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\WebApi1\\WebApi1.csproj",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebApi1\\WebApi1.csproj",
               "RelativeToolTip": "WebApi1.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -98,13 +98,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ProductService.cs",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\WebApi1\\Services\\ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebApi1\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "Services\\ProductService.cs",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\WebApi1\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebApi1\\Services\\ProductService.cs",
               "RelativeToolTip": "Services\\ProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-10T15:42:41.048Z"
             },
@@ -112,11 +112,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\WebApi1\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebApi1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\WebApi1\\Program.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebApi1\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAwwF8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-10T10:20:19.087Z",
               "EditorCaption": ""

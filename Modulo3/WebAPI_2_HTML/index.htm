@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRUD Produtos</title>
+</head>
+
+<body>
+
+<h2>Produtos</h2>
+
+<button onclick="carregarProdutos()">Mostrar produtos</button>
+
+<br><br>
+
+<form onsubmit="salvarProduto(event)">
+    <input type="hidden" id="productID">
+
+    <input type="text" id="productName" placeholder="Nome do produto" required>
+
+    <input type="number" id="unitPrice" placeholder="Preço">
+
+    <button type="submit">Guardar</button>
+</form>
+
+<br>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody id="tabelaProdutos"></tbody>
+</table>
+
+<script src="app.js"></script>
+
+</body>
+</html>
