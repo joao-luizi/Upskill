@@ -1,0 +1,47 @@
+2026-03-18 11:08:49.731 +00:00 [INF] User profile is available. Using 'C:\Users\Formando\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-18 11:08:50.370 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-18 11:08:50.401 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/ - null null
+2026-03-18 11:08:50.466 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-18 11:08:50.466 +00:00 [INF] Hosting environment: Development
+2026-03-18 11:08:50.467 +00:00 [INF] Content root path: C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2
+2026-03-18 11:08:50.733 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-18 11:08:50.769 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-18 11:08:50.780 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/ - 200 null text/plain; charset=utf-8 392.2162ms
+2026-03-18 11:09:04.388 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/login - null null
+2026-03-18 11:09:04.429 +00:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-03-18 11:09:04.429 +00:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-03-18 11:09:04.433 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/login - 405 null null 45.5402ms
+2026-03-18 11:09:07.700 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/login - null null
+2026-03-18 11:09:07.708 +00:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-03-18 11:09:07.708 +00:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-03-18 11:09:07.709 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/login - 405 null null 9.4186ms
+2026-03-18 11:09:14.752 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger - null null
+2026-03-18 11:09:14.758 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger - 301 null null 6.7363ms
+2026-03-18 11:09:14.763 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.html - null null
+2026-03-18 11:09:14.880 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.html - 200 null text/html;charset=utf-8 116.9572ms
+2026-03-18 11:09:14.939 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.css - null null
+2026-03-18 11:09:14.939 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/swagger-ui.css - null null
+2026-03-18 11:09:14.939 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/swagger-ui-bundle.js - null null
+2026-03-18 11:09:14.969 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.js - null null
+2026-03-18 11:09:14.970 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-18 11:09:15.038 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-18 11:09:15.114 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - null null
+2026-03-18 11:09:15.116 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.js - 200 null application/javascript;charset=utf-8 146.6743ms
+2026-03-18 11:09:15.146 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 174.8726ms
+2026-03-18 11:09:15.214 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/swagger-ui.css - 200 26388 text/css 312.6257ms
+2026-03-18 11:09:15.214 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.css - 200 152 text/css 312.5412ms
+2026-03-18 11:09:15.218 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/swagger-ui-standalone-preset.js - 200 76581 text/javascript 181.1293ms
+2026-03-18 11:09:15.221 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/swagger-ui-bundle.js - 200 417806 text/javascript 320.5672ms
+2026-03-18 11:09:15.301 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - 200 null text/javascript; charset=UTF-8 187.9718ms
+2026-03-18 11:09:15.484 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - null null
+2026-03-18 11:09:15.500 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/favicon-32x32.png - null null
+2026-03-18 11:09:15.503 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/favicon-32x32.png - 200 628 image/png 2.1263ms
+2026-03-18 11:09:15.503 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.4846ms
+2026-03-18 11:09:47.754 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44366/login - application/json 46
+2026-03-18 11:09:47.756 +00:00 [INF] CORS policy execution successful.
+2026-03-18 11:09:47.758 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-18 11:09:55.550 +00:00 [INF] Endpoint /login : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJleHAiOjE3NzM4MzkzOTUsImlzcyI6Im5vcnRod2luZCIsImF1ZCI6Im5vcnRod2luZCJ9.1NfD-Kgg9LyDsDEViAU7Q-bkGTvHBvUMFH-0N4P1w0Y
+2026-03-18 11:09:55.554 +00:00 [INF] Setting HTTP status code 200.
+2026-03-18 11:09:55.557 +00:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2026-03-18 11:09:55.559 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-18 11:09:55.559 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44366/login - 200 null application/json; charset=utf-8 7804.9222ms

@@ -8,12 +8,54 @@
 */
 
 using DalPro;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using Serilog;
+using System.Text;
 using WebAPI_1.DTOs;
 using WebAPI_1.Repositories;
 using WebAPI_1.Services;
+using WebAPI_3.DTOs;
+using WebAPI_3.Services;
 
+Log.Logger = new LoggerConfiguration()
+.WriteTo.Console()
+.WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
+.CreateLogger();
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("cors",
+        policy =>
+        {
+            policy
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+        });
+});
+
+var key = Encoding.UTF8.GetBytes("UPSKILL_SUPER_SECRET_KEY_123456789");
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+
+        ValidIssuer = "northwind",
+        ValidAudience = "northwind",
+
+        IssuerSigningKey = new SymmetricSecurityKey(key)
+    };
+});
 
 DALPro.ConnectionString = builder.Configuration.GetConnectionString("Northwind");
 if (string.IsNullOrEmpty(DALPro.ConnectionString))
@@ -23,32 +65,54 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("frontend",
-        policy =>
-        {
-            policy
-                  .AllowAnyHeader()
-                  .AllowAnyMethod()
-                  .AllowAnyOrigin();
-        });
-});
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
+app.UseCors("cors");
+
 app.UseSwagger();
 app.UseSwaggerUI();
-app.UseCors("frontend");
+
+app.UseAuthentication();
+app.UseAuthorization();
+
 app.MapGet("/", () => "Northwind Minimal API");
+
+app.MapPost("/login", (LoginDTO login, AuthService auth, ILogger<Program> logger) =>
+{
+    if (login.Username == "admin" && login.Password == "123")
+    {
+        var token = auth.GenerateToken(login.Username);
+        logger.LogInformation($"Endpoint /login : { token }");
+        return Results.Ok(new { token });
+    }
+
+    return Results.Unauthorized();
+
+});
+
+#if DEV_MODE
+app.MapGet("/getModel", (string? models) =>
+{
+    List<string>? list = models?
+    .Split(',', StringSplitOptions.RemoveEmptyEntries)
+    .Select(m => m.Trim())
+    .ToList();
+
+    return DevService.GetModel(list);
+});
+#endif
 
 app.MapGet("/products", (IProductService service) =>
 {
     return service.GetAll();
-});
+})
+.RequireAuthorization();
 
 app.MapGet("/products/{id}", (int id, IProductService service) =>
 {

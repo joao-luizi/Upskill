@@ -81,6 +81,90 @@ C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\Tmp\WebAPI_3\b
 C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\Tmp\WebAPI_3\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\Tmp\WebAPI_3\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\Tmp\WebAPI_3\obj\Debug\net9.0\WebAPI_3.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\appsettings.json
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\WebAPI_3.staticwebassets.endpoints.json
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\WebAPI_3.exe
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\WebAPI_3.deps.json
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\WebAPI_3.runtimeconfig.json
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\WebAPI_3.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\WebAPI_3.pdb
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\System.Diagnostics.EventLog.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\LibDB.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\LibDB.pdb
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\WebAPI_3.csproj.AssemblyReference.cache
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\WebAPI_3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\WebAPI_3.AssemblyInfoInputs.cache
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\WebAPI_3.AssemblyInfo.cs
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\WebAPI_3.csproj.CoreCompileInputs.cache
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\WebAPI_3.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\WebAPI_3.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\scopedcss\bundle\WebAPI_3.styles.css
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\WebAPI_3.csproj.Up2Date
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\WebAPI_3.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\refint\WebAPI_3.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\WebAPI_3.pdb
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\WebAPI_3.genruntimeconfig.cache
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\obj\Debug\net9.0\ref\WebAPI_3.dll
+C:\Users\jopa_\OneDrive - ISCTE-IUL\_Drive\ISCTE\Upskills\2025\M3\_Work\WebAPI2\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\obj\Debug\net9.0\WebAPI_3.csproj.AssemblyReference.cache
 C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\obj\Debug\net9.0\rpswa.dswa.cache.json
 C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\obj\Debug\net9.0\WebAPI_3.GeneratedMSBuildEditorConfig.editorconfig
@@ -103,6 +187,7 @@ C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\WebAPI_3.dl
 C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\WebAPI_3.pdb
 C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
 C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
@@ -165,3 +250,13 @@ C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\obj\Debug\net9.0\staticwebas
 C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\obj\Debug\net9.0\WebAPI_3.csproj.Up2Date
 C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\obj\Debug\net9.0\WebAPI_3.genruntimeconfig.cache
 C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\obj\Debug\net9.0\ref\WebAPI_3.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Serilog.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Serilog.AspNetCore.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Serilog.Extensions.Hosting.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Serilog.Extensions.Logging.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Serilog.Formatting.Compact.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Serilog.Settings.Configuration.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Serilog.Sinks.Console.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2\bin\Debug\net9.0\Serilog.Sinks.File.dll

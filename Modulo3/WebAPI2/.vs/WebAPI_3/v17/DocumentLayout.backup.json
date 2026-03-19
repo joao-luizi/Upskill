@@ -7,40 +7,19 @@
       "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\services\\devservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:services\\devservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\dtos\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:dtos\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Formando\\.nuget\\packages\\serilog.sinks.file\\7.0.0\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\webapi_3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:webapi_3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 845,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -99,52 +78,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "Repositories\\ProductRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T23:13:06.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Repositories\\IProductRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\IProductRepository.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Repositories\\IProductRepository.cs",
-              "RelativeToolTip": "Repositories\\IProductRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T23:04:33.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProductDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\DTOs\\ProductDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\ProductDTO.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\DTOs\\ProductDTO.cs",
-              "RelativeToolTip": "DTOs\\ProductDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T23:00:44.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "WebAPI_3.csproj",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\WebAPI_3.csproj",
-              "RelativeDocumentMoniker": "WebAPI_3.csproj",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\WebAPI_3.csproj",
-              "RelativeToolTip": "WebAPI_3.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-12T22:56:55.774Z"
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\Formando\\.nuget\\packages\\serilog.sinks.file\\7.0.0\\README.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\.nuget\\packages\\serilog.sinks.file\\7.0.0\\README.md",
+              "ToolTip": "C:\\Users\\Formando\\.nuget\\packages\\serilog.sinks.file\\7.0.0\\README.md [Somente Leitura]",
+              "RelativeToolTip": "..\\..\\..\\..\\.nuget\\packages\\serilog.sinks.file\\7.0.0\\README.md [Somente Leitura]",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADUAAAAAAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-03-18T10:57:38.774Z",
+              "EditorCaption": " [Somente Leitura]"
             },
             {
               "$type": "Document",
@@ -152,9 +94,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAwwFoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-08T12:59:47.438Z",
               "EditorCaption": ""
@@ -162,39 +104,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "Services\\ProductService.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\ProductService.cs",
-              "RelativeToolTip": "Services\\ProductService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBkAAAAIAAAAAAAAAA==",
+              "Title": "DevService.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\DevService.cs",
+              "RelativeDocumentMoniker": "Services\\DevService.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\DevService.cs",
+              "RelativeToolTip": "Services\\DevService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T13:10:34.818Z",
+              "WhenOpened": "2026-03-17T10:16:32.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductCreateDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\DTOs\\ProductCreateDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\ProductCreateDTO.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\DTOs\\ProductCreateDTO.cs",
-              "RelativeToolTip": "DTOs\\ProductCreateDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\DTOs\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\ProductDTO.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\DTOs\\ProductDTO.cs",
+              "RelativeToolTip": "DTOs\\ProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T23:01:26.408Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\IProductService.cs",
-              "RelativeDocumentMoniker": "Services\\IProductService.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\IProductService.cs",
-              "RelativeToolTip": "Services\\IProductService.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAwwA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T23:18:51.8Z"
+              "WhenOpened": "2026-03-12T23:00:44.128Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -204,21 +135,10 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-08T18:57:39.804Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Models\\Product.cs",
-              "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAcwAoAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T13:09:10.251Z"
+              "WhenOpened": "2026-03-08T18:57:39.804Z",
+              "EditorCaption": ""
             }
           ]
         }
