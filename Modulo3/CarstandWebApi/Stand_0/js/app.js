@@ -1,3 +1,12 @@
+const localhost = "https://localhost:44305/";
+
+//Login
+const formLogin = document.getElementById("formLogin");
+const loginMessage = document.getElementById("loginMsg");
+const profileimg = document.getElementById("profile-img");
+const btlogout = document.getElementById("btlogout");
+//End Login
+
 const fMarca = document.getElementById("fMarca");
 const fAno = document.getElementById("fAno");
 const fVendido = document.getElementById("fVendido");
@@ -5,6 +14,7 @@ const form = document.getElementById("formVeiculo");
 const carregarLS = document.getElementById("carregarLS");
 const limparLS = document.getElementById("limparLS");
 const tabela = document.getElementById("tabela");
+let usertoken = null;
 const sortController = {
   marca: {
     selectEl: fMarca,
@@ -92,6 +102,13 @@ function refreshUI() {
  */
 async function Init() {
   [fMarca, fAno, fVendido].forEach((f) => f.addEventListener("change", render));
+  btLogHandle.addEventListener("click", function(){
+    if (token == null)
+    {
+      formLogin.classList.add("hidden");
+      btLogHandle 
+    }
+  });
   sortController.marca.sortEl.addEventListener("click", function () {
     let sortObj = sortController["marca"];
     sortObj.sortAsc = !sortObj.sortAsc;

@@ -81,9 +81,13 @@ const db = [
   },
 ];
 
-const localhost = "https://localhost:44311";
+
 
 let veiculos = [];
+
+
+//get token from local storage
+//check token
 
 /**
  * Insere um novo veículo ou atualiza um existente com base no formulário.

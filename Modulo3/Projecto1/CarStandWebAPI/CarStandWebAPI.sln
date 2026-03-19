@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36930.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarStandWebAPI", "CarStandWebAPI.csproj", "{D2147138-33A0-47F3-855A-488CC0E020FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DalPro", "..\..\Exercicios\DalPro\DalPro.csproj", "{B278C29A-F837-D3C9-FFA0-852088243FBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2147138-33A0-47F3-855A-488CC0E020FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2147138-33A0-47F3-855A-488CC0E020FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2147138-33A0-47F3-855A-488CC0E020FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2147138-33A0-47F3-855A-488CC0E020FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B278C29A-F837-D3C9-FFA0-852088243FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B278C29A-F837-D3C9-FFA0-852088243FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B278C29A-F837-D3C9-FFA0-852088243FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B278C29A-F837-D3C9-FFA0-852088243FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE077AE3-1782-463F-A1E6-F04B20215FD7}
+	EndGlobalSection
+EndGlobal

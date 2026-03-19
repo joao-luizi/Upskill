@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "WebAPI_3",
-    "version": "1.0"
+    "title": "jwtToken",
+    "version": "v1"
   },
   "paths": {
     "/": {
@@ -252,11 +252,18 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Enter: Bearer {your JWT token}",
+        "scheme": "bearer"
+      }
     }
   },
-  "tags": [
+  "security": [
     {
-      "name": "WebAPI_3"
+      "Bearer": [ ]
     }
   ]
 }

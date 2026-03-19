@@ -1,21 +1,25 @@
-﻿using DalPro;
+﻿
 using WebAPI_1.DTOs;
-using WebAPI_1.Models;
-using WebAPI_1.Repositories;
+using LibNorthWind.Models;
+using LibNorthWind.Repositories;
 
 namespace WebAPI_1.Services
 {
     public class ProductService : IProductService
     {
         private readonly IProductRepository _repo;
+        private readonly ILogger _logger;
 
-        public ProductService(IProductRepository repo)
+        public ProductService(ILogger<ProductService> logger, IProductRepository repo)
         {
             _repo = repo;
+            _logger = logger;
         }
 
         public List<ProductDTO> GetAll()
         {
+            _logger.LogInformation("Repo ProductService: calling GetAll()");
+
             return _repo.GetAll()
                 .Select(p => new ProductDTO
                 {
@@ -42,7 +46,7 @@ namespace WebAPI_1.Services
 
         public int Create(ProductCreateDTO dto)
         {
-            var trans = DALPro.BeginTransaction();
+           
 
             try
             {
@@ -54,22 +58,21 @@ namespace WebAPI_1.Services
                     UnitPrice = dto.UnitPrice
                 };
 
-                int id = _repo.Insert(p, trans);
+                int id = _repo.Insert(p);
 
-                DALPro.Commit(trans);
+                
 
                 return id;
             }
             catch
             {
-                DALPro.Rollback(trans);
                 throw;
             }
         }
 
         public void Update(int id, ProductCreateDTO dto)
         {
-            var trans = DALPro.BeginTransaction();
+            
 
             try
             {
@@ -80,30 +83,30 @@ namespace WebAPI_1.Services
                     UnitPrice = dto.UnitPrice
                 };
 
-                _repo.Update(p, trans);
+                _repo.Update(p);
 
-                DALPro.Commit(trans);
+               
             }
             catch
             {
-                DALPro.Rollback(trans);
+               
                 throw;
             }
         }
 
         public void Delete(int id)
         {
-            var trans = DALPro.BeginTransaction();
+            
 
             try
             {
-                _repo.Delete(id, trans);
+                _repo.Delete(id);
 
-                DALPro.Commit(trans);
+               
             }
             catch
             {
-                DALPro.Rollback(trans);
+               
                 throw;
             }
         }

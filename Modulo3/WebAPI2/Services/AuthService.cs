@@ -7,12 +7,12 @@ namespace WebAPI_3.Services
 {
     public class AuthService
     {
-        public string GenerateToken(string username)
+        public string GenerateToken(string username, string JWTKey)
         {
             try
             {
                 var key = new SymmetricSecurityKey(
-                    Encoding.UTF8.GetBytes("UPSKILL_SUPER_SECRET_KEY_123456789"));
+                    Encoding.UTF8.GetBytes(JWTKey));
 
                 var creds = new SigningCredentials(
                     key,

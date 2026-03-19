@@ -1,0 +1,16 @@
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\bin\Debug\net9.0\LibNorthWind.deps.json
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\bin\Debug\net9.0\LibNorthWind.dll
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\bin\Debug\net9.0\LibNorthWind.pdb
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\bin\Debug\net9.0\DalPro.dll
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\bin\Debug\net9.0\DalPro.pdb
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\obj\Debug\net9.0\LibNorthWind.csproj.AssemblyReference.cache
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\obj\Debug\net9.0\LibNorthWind.GeneratedMSBuildEditorConfig.editorconfig
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\obj\Debug\net9.0\LibNorthWind.AssemblyInfoInputs.cache
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\obj\Debug\net9.0\LibNorthWind.AssemblyInfo.cs
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\obj\Debug\net9.0\LibNorthWind.csproj.CoreCompileInputs.cache
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\obj\Debug\net9.0\LibNorthWind.sourcelink.json
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\obj\Debug\net9.0\LibNorth.21E494CC.Up2Date
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\obj\Debug\net9.0\LibNorthWind.dll
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\obj\Debug\net9.0\refint\LibNorthWind.dll
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\obj\Debug\net9.0\LibNorthWind.pdb
+E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\obj\Debug\net9.0\ref\LibNorthWind.dll

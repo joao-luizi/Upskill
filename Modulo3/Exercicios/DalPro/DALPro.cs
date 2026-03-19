@@ -6,7 +6,7 @@ namespace DalPro
 {
     public static class DALPro
     {
-        public static string ConnectionString;
+        public static string ConnectionString = null!;
 
         private static readonly Dictionary<Type, PropertyInfo[]> _cacheProps =
             new Dictionary<Type, PropertyInfo[]>();
@@ -21,8 +21,8 @@ namespace DalPro
         // --------------------------------------------------
         private static SqlCommand CreateCommand(
             string sql,
-            SqlTransaction trans = null,
-            Dictionary<string, object> parameters = null)
+            SqlTransaction? trans = null,
+            Dictionary<string, object>? parameters = null)
         {
             SqlCommand cmd;
 
@@ -49,8 +49,8 @@ namespace DalPro
         // --------------------------------------------------
         public static int Execute(
             string sql,
-            Dictionary<string, object> parameters = null,
-            SqlTransaction trans = null)
+            Dictionary<string, object>? parameters = null,
+            SqlTransaction? trans = null)
         {
             using SqlCommand cmd = CreateCommand(sql, trans, parameters);
 
@@ -67,8 +67,8 @@ namespace DalPro
         // --------------------------------------------------
         public static object ExecuteScalar(
             string sql,
-            Dictionary<string, object> parameters = null,
-            SqlTransaction trans = null)
+            Dictionary<string, object>? parameters = null,
+            SqlTransaction? trans = null)
         {
             using SqlCommand cmd = CreateCommand(sql, trans, parameters);
 
@@ -85,15 +85,15 @@ namespace DalPro
         // --------------------------------------------------
         public static List<T> Query<T>(
             string sql,
-            Dictionary<string, object> parameters = null,
-            SqlTransaction trans = null) where T : new()
+            Dictionary<string, object>? parameters = null,
+            SqlTransaction? trans = null) where T : new()
         {
             List<T> list = new();
 
             using SqlCommand cmd = CreateCommand(sql, trans, parameters);
             using SqlDataReader dr = cmd.ExecuteReader();
 
-            PropertyInfo[] props;
+            PropertyInfo[]? props;
 
             if (!_cacheProps.TryGetValue(typeof(T), out props))
             {
@@ -132,7 +132,7 @@ namespace DalPro
         public static DataTable DataTableForUpdate(
             string sql,
             ref SqlDataAdapter da,
-            SqlTransaction trans = null)
+            SqlTransaction? trans = null)
         {
             SqlConnection cn;
 
@@ -169,8 +169,8 @@ namespace DalPro
         // --------------------------------------------------
         public static DataTable ExecuteSP(
             string spName,
-            Dictionary<string, object> parameters = null,
-            SqlTransaction trans = null)
+            Dictionary<string, object>? parameters = null,
+            SqlTransaction? trans = null)
         {
             SqlConnection cn;
 

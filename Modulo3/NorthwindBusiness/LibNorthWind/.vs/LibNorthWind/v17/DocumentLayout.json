@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\2025_repos\\Upskill\\Modulo3\\NorthwindBusiness\\LibNorthWind\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5F34AE69-6F8B-4F10-80D2-F1C0A6474564}|LibNorthWind.csproj|e:\\2025_repos\\upskill\\modulo3\\northwindbusiness\\libnorthwind\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F34AE69-6F8B-4F10-80D2-F1C0A6474564}|LibNorthWind.csproj|solutionrelative:repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F34AE69-6F8B-4F10-80D2-F1C0A6474564}|LibNorthWind.csproj|e:\\2025_repos\\upskill\\modulo3\\northwindbusiness\\libnorthwind\\repositories\\devrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F34AE69-6F8B-4F10-80D2-F1C0A6474564}|LibNorthWind.csproj|solutionrelative:repositories\\devrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F34AE69-6F8B-4F10-80D2-F1C0A6474564}|LibNorthWind.csproj|e:\\2025_repos\\upskill\\modulo3\\northwindbusiness\\libnorthwind\\models\\devclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F34AE69-6F8B-4F10-80D2-F1C0A6474564}|LibNorthWind.csproj|solutionrelative:models\\devclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F34AE69-6F8B-4F10-80D2-F1C0A6474564}|LibNorthWind.csproj|e:\\2025_repos\\upskill\\modulo3\\northwindbusiness\\libnorthwind\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F34AE69-6F8B-4F10-80D2-F1C0A6474564}|LibNorthWind.csproj|solutionrelative:repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F34AE69-6F8B-4F10-80D2-F1C0A6474564}|LibNorthWind.csproj|e:\\2025_repos\\upskill\\modulo3\\northwindbusiness\\libnorthwind\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F34AE69-6F8B-4F10-80D2-F1C0A6474564}|LibNorthWind.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ecb7191a-597b-41f5-9843-03a4cf275dde}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0504ff91-9d61-11d0-a794-00a0c9110051}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{be4d7042-ba3f-11d2-840e-00c04f9902c1}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{605322a2-17ae-43f4-b60f-766556e46c87}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{28836128-fc2c-11d2-a433-00c04f72d18a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DevClass.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\NorthwindBusiness\\LibNorthWind\\Models\\DevClass.cs",
+              "RelativeDocumentMoniker": "Models\\DevClass.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\NorthwindBusiness\\LibNorthWind\\Models\\DevClass.cs",
+              "RelativeToolTip": "Models\\DevClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T16:01:35.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DevRepository.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\NorthwindBusiness\\LibNorthWind\\Repositories\\DevRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\DevRepository.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\NorthwindBusiness\\LibNorthWind\\Repositories\\DevRepository.cs",
+              "RelativeToolTip": "Repositories\\DevRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T15:59:52.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\NorthwindBusiness\\LibNorthWind\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ProductRepository.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\NorthwindBusiness\\LibNorthWind\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAcwFYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T14:45:45.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\NorthwindBusiness\\LibNorthWind\\Repositories\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IProductRepository.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\NorthwindBusiness\\LibNorthWind\\Repositories\\IProductRepository.cs",
+              "RelativeToolTip": "Repositories\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T14:45:30.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\NorthwindBusiness\\LibNorthWind\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\NorthwindBusiness\\LibNorthWind\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T14:45:04.65Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

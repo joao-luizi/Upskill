@@ -1,0 +1,289 @@
+2026-03-19 14:54:10.547 +00:00 [INF] User profile is available. Using 'C:\Users\joaol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 14:54:11.202 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-19 14:54:11.238 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/ - null null
+2026-03-19 14:54:11.326 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 14:54:11.326 +00:00 [INF] Hosting environment: Development
+2026-03-19 14:54:11.326 +00:00 [INF] Content root path: E:\2025_repos\Upskill\Modulo3\WebAPI2
+2026-03-19 14:54:14.142 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-19 14:54:14.182 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-19 14:54:14.195 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/ - 200 null text/plain; charset=utf-8 2977.354ms
+2026-03-19 14:54:14.288 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/favicon.ico - null null
+2026-03-19 14:54:14.298 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/favicon.ico - 404 null null 10.8179ms
+2026-03-19 14:54:14.299 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44366/favicon.ico, Response status code: 404
+2026-03-19 14:54:24.362 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger - null null
+2026-03-19 14:54:24.370 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger - 301 null null 8.0397ms
+2026-03-19 14:54:24.375 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.html - null null
+2026-03-19 14:54:24.466 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.html - 200 null text/html;charset=utf-8 90.5533ms
+2026-03-19 14:54:24.496 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/swagger-ui.css - null null
+2026-03-19 14:54:24.502 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/swagger-ui-bundle.js - null null
+2026-03-19 14:54:24.502 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-19 14:54:24.502 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.css - null null
+2026-03-19 14:54:24.502 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.js - null null
+2026-03-19 14:54:24.534 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 14:54:24.535 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - null null
+2026-03-19 14:54:24.597 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.js - 200 null application/javascript;charset=utf-8 94.5618ms
+2026-03-19 14:54:24.602 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 98.5152ms
+2026-03-19 14:54:24.613 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/swagger-ui.css - 200 26388 text/css 117.1429ms
+2026-03-19 14:54:24.613 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.css - 200 152 text/css 111.1004ms
+2026-03-19 14:54:24.615 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/swagger-ui-standalone-preset.js - 200 76581 text/javascript 112.9867ms
+2026-03-19 14:54:24.629 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/swagger-ui-bundle.js - 200 417806 text/javascript 127.4327ms
+2026-03-19 14:54:24.731 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - 200 null text/javascript; charset=UTF-8 196.1686ms
+2026-03-19 14:54:24.962 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - null null
+2026-03-19 14:54:24.974 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.9656ms
+2026-03-19 14:54:25.001 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/favicon-32x32.png - null null
+2026-03-19 14:54:25.005 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/favicon-32x32.png - 200 628 image/png 3.8719ms
+2026-03-19 14:54:32.984 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/products - null null
+2026-03-19 14:54:32.997 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-19 14:54:33.002 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-19 14:54:33.003 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/products - 401 null null 19.5963ms
+2026-03-19 14:55:15.388 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44366/products - application/json 85
+2026-03-19 14:55:15.390 +00:00 [INF] CORS policy execution successful.
+2026-03-19 14:55:15.392 +00:00 [INF] Executing endpoint 'HTTP: POST /products'
+2026-03-19 14:57:03.103 +00:00 [INF] User profile is available. Using 'C:\Users\joaol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 14:57:03.638 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-19 14:57:03.680 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/ - null null
+2026-03-19 14:57:03.845 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 14:57:03.845 +00:00 [INF] Hosting environment: Development
+2026-03-19 14:57:03.845 +00:00 [INF] Content root path: E:\2025_repos\Upskill\Modulo3\WebAPI2
+2026-03-19 14:57:04.134 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-19 14:57:04.175 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-19 14:57:04.184 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/ - 200 null text/plain; charset=utf-8 528.9321ms
+2026-03-19 14:57:17.739 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.html - null null
+2026-03-19 14:57:17.828 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.html - 304 null null 90.1907ms
+2026-03-19 14:57:17.868 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/swagger-ui.css - null null
+2026-03-19 14:57:17.870 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 14:57:17.870 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.css - null null
+2026-03-19 14:57:17.915 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-19 14:57:17.921 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/swagger-ui-bundle.js - null null
+2026-03-19 14:57:17.960 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.js - null null
+2026-03-19 14:57:17.996 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - null null
+2026-03-19 14:57:18.025 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.js - 304 null null 62.0445ms
+2026-03-19 14:57:18.028 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 157.7782ms
+2026-03-19 14:57:18.041 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/swagger-ui-standalone-preset.js - 304 null null 163.8723ms
+2026-03-19 14:57:18.041 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.css - 304 null null 170.7378ms
+2026-03-19 14:57:18.041 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/swagger-ui.css - 304 null null 175.3308ms
+2026-03-19 14:57:18.042 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/swagger-ui-bundle.js - 304 null null 123.4249ms
+2026-03-19 14:57:18.097 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - 200 null text/javascript; charset=UTF-8 102.8293ms
+2026-03-19 14:57:18.428 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - null null
+2026-03-19 14:57:18.446 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.6182ms
+2026-03-19 14:57:33.628 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44366/login - application/json 46
+2026-03-19 14:57:33.630 +00:00 [INF] CORS policy execution successful.
+2026-03-19 14:57:33.632 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-19 14:57:33.757 +00:00 [INF] Endpoint /login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJleHAiOjE3NzM5Mzk0NTMsImlzcyI6Im5vcnRod2luZCIsImF1ZCI6Im5vcnRod2luZCJ9.7skqktoSV6XDFx_-hUJR-Wh2-KkPihA2K-xKPr_TfHg
+2026-03-19 14:57:33.763 +00:00 [INF] Setting HTTP status code 200.
+2026-03-19 14:57:33.767 +00:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2026-03-19 14:57:33.770 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-19 14:57:33.770 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44366/login - 200 null application/json; charset=utf-8 142.1162ms
+2026-03-19 14:57:46.177 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44366/products - application/json 85
+2026-03-19 14:57:46.178 +00:00 [INF] CORS policy execution successful.
+2026-03-19 14:57:46.180 +00:00 [INF] Executing endpoint 'HTTP: POST /products'
+2026-03-19 14:57:59.665 +00:00 [INF] Executed endpoint 'HTTP: POST /products'
+2026-03-19 14:57:59.667 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Products_Categories". The conflict occurred in database "Northwind", table "dbo.Categories", column 'CategoryID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean isRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& executeTask, Boolean& usedCache, Boolean asyncWrite, Boolean isRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at DalPro.DALPro.ExecuteScalar(String sql, Dictionary`2 parameters, SqlTransaction trans) in E:\2025_repos\Upskill\Modulo3\Exercicios\DalPro\DALPro.cs:line 75
+   at LibNorthWind.Repositories.ProductRepository.Insert(Product p, SqlTransaction trans) in E:\2025_repos\Upskill\Modulo3\NorthwindBusiness\LibNorthWind\Repositories\ProductRepository.cs:line 46
+   at WebAPI_1.Services.ProductService.Create(ProductCreateDTO dto) in E:\2025_repos\Upskill\Modulo3\WebAPI2\Services\ProductService.cs:line 61
+   at Program.<>c.<<Main>$>b__0_7(ProductCreateDTO dto, IProductService service) in E:\2025_repos\Upskill\Modulo3\WebAPI2\Program.cs:line 132
+   at lambda_method16(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:c7b4c2f6-5fa0-4b46-a42b-12f3908776de
+Error Number:547,State:0,Class:16
+2026-03-19 14:57:59.770 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44366/products - 500 null text/plain; charset=utf-8 13593.5469ms
+2026-03-19 14:58:19.762 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/products - null null
+2026-03-19 14:58:19.770 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-19 14:58:19.778 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-19 14:58:19.779 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/products - 401 null null 17.4302ms
+2026-03-19 14:59:40.056 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/products - null null
+2026-03-19 14:59:40.057 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-19 14:59:40.059 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-19 14:59:40.066 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/products - 401 null null 62.6325ms
+2026-03-19 14:59:52.260 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/products - null null
+2026-03-19 14:59:52.264 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-19 14:59:52.264 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-19 14:59:52.265 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/products - 401 null null 5.0513ms
+2026-03-19 15:24:37.408 +00:00 [INF] User profile is available. Using 'C:\Users\joaol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 15:24:37.960 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-19 15:24:37.995 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/ - null null
+2026-03-19 15:24:38.058 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 15:24:38.058 +00:00 [INF] Hosting environment: Development
+2026-03-19 15:24:38.058 +00:00 [INF] Content root path: E:\2025_repos\Upskill\Modulo3\WebAPI2
+2026-03-19 15:24:38.467 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-19 15:24:38.505 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-19 15:24:38.514 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/ - 200 null text/plain; charset=utf-8 538.4781ms
+2026-03-19 15:24:40.086 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.html - null null
+2026-03-19 15:24:40.187 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.html - 200 null text/html;charset=utf-8 102.2868ms
+2026-03-19 15:24:40.225 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/swagger-ui.css - null null
+2026-03-19 15:24:40.228 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 15:24:40.229 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.css - null null
+2026-03-19 15:24:40.230 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.js - null null
+2026-03-19 15:24:40.297 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - null null
+2026-03-19 15:24:40.329 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/swagger-ui-bundle.js - null null
+2026-03-19 15:24:40.391 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-19 15:24:40.391 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.js - 200 null application/javascript;charset=utf-8 162.654ms
+2026-03-19 15:24:40.399 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 169.3967ms
+2026-03-19 15:24:40.413 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.css - 304 null null 184.8116ms
+2026-03-19 15:24:40.419 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/swagger-ui.css - 200 23647 text/css 194.6855ms
+2026-03-19 15:24:40.427 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/swagger-ui-standalone-preset.js - 200 77352 text/javascript 64.3777ms
+2026-03-19 15:24:40.447 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/swagger-ui-bundle.js - 200 424767 text/javascript 119.3897ms
+2026-03-19 15:24:40.466 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - 200 null text/javascript; charset=UTF-8 198.2034ms
+2026-03-19 15:24:40.800 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - null null
+2026-03-19 15:24:40.811 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.3449ms
+2026-03-19 15:24:53.484 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44366/login - application/json 46
+2026-03-19 15:24:53.487 +00:00 [INF] CORS policy execution successful.
+2026-03-19 15:24:53.489 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-19 15:24:53.548 +00:00 [INF] Endpoint /login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJleHAiOjE3NzM5NDEwOTMsImlzcyI6Im5vcnRod2luZCIsImF1ZCI6Im5vcnRod2luZCJ9.WtqApw00VkG0MAmDSqtvaUQ0ooJGotFFl02zua-ZZw0
+2026-03-19 15:24:53.553 +00:00 [INF] Setting HTTP status code 200.
+2026-03-19 15:24:53.556 +00:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2026-03-19 15:24:53.558 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-19 15:24:53.559 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44366/login - 200 null application/json; charset=utf-8 74.3317ms
+2026-03-19 15:27:40.448 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/products - null null
+2026-03-19 15:27:40.489 +00:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-03-19 15:27:40.518 +00:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-03-19 15:27:40.525 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-19 15:27:40.531 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-19 15:27:40.532 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/products - 401 null null 124.0328ms
+2026-03-19 15:28:19.966 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/products - null null
+2026-03-19 15:28:19.967 +00:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-03-19 15:28:19.968 +00:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-03-19 15:28:19.968 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-19 15:28:19.997 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-19 15:28:20.010 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/products - 401 null null 103.1423ms
+2026-03-19 15:28:36.667 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44366/login - application/json 50
+2026-03-19 15:28:36.668 +00:00 [INF] CORS policy execution successful.
+2026-03-19 15:28:36.668 +00:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-03-19 15:28:36.669 +00:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-03-19 15:28:36.669 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-19 15:28:36.670 +00:00 [INF] Setting HTTP status code 401.
+2026-03-19 15:28:36.670 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-19 15:28:36.671 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44366/login - 401 null null 4.8119ms
+2026-03-19 15:28:51.213 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44366/login - application/json 46
+2026-03-19 15:28:51.214 +00:00 [INF] CORS policy execution successful.
+2026-03-19 15:28:51.215 +00:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-03-19 15:28:51.216 +00:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-03-19 15:28:51.216 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-19 15:28:51.218 +00:00 [INF] Endpoint /login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJleHAiOjE3NzM5NDEzMzEsImlzcyI6Im5vcnRod2luZCIsImF1ZCI6Im5vcnRod2luZCJ9.q3LPHLPV7v55_4BHQ7PgYVLkuJi2BSq951sPYrdpaIM
+2026-03-19 15:28:51.219 +00:00 [INF] Setting HTTP status code 200.
+2026-03-19 15:28:51.219 +00:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2026-03-19 15:28:51.220 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-19 15:28:51.220 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44366/login - 200 null application/json; charset=utf-8 7.2266ms
+2026-03-19 15:30:49.963 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.html - null null
+2026-03-19 15:30:49.981 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.html - 200 null text/html;charset=utf-8 23.2359ms
+2026-03-19 15:30:50.029 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 15:30:50.030 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.css - null null
+2026-03-19 15:30:50.031 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.css - 304 null null 0.6926ms
+2026-03-19 15:30:50.031 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 2.016ms
+2026-03-19 15:30:50.041 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - null null
+2026-03-19 15:30:50.141 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - 200 null text/javascript; charset=UTF-8 100.3246ms
+2026-03-19 15:30:50.393 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - null null
+2026-03-19 15:30:50.404 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.231ms
+2026-03-19 15:30:50.410 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/favicon-32x32.png - null null
+2026-03-19 15:30:50.411 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/favicon-32x32.png - 304 null null 1.2079ms
+2026-03-19 15:31:02.120 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/products - null null
+2026-03-19 15:31:02.127 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-19 15:31:02.127 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-19 15:31:02.128 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/products - 401 null null 8.3785ms
+2026-03-19 15:31:22.655 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44366/login - application/json 46
+2026-03-19 15:31:22.655 +00:00 [INF] CORS policy execution successful.
+2026-03-19 15:31:22.656 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-19 15:31:22.656 +00:00 [INF] Endpoint /login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJleHAiOjE3NzM5NDE0ODIsImlzcyI6Im5vcnRod2luZCIsImF1ZCI6Im5vcnRod2luZCJ9.lLGctE4fAUXF2yfbwyvt0PosUe9lO_H22eBNCQId62I
+2026-03-19 15:31:22.657 +00:00 [INF] Setting HTTP status code 200.
+2026-03-19 15:31:22.657 +00:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2026-03-19 15:31:22.659 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-19 15:31:22.660 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44366/login - 200 null application/json; charset=utf-8 5.1543ms
+2026-03-19 15:31:59.050 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/products - null null
+2026-03-19 15:31:59.147 +00:00 [INF] Executing endpoint 'HTTP: GET /products'
+2026-03-19 15:31:59.150 +00:00 [INF] Repo ProductService: calling GetAll()
+2026-03-19 15:31:59.573 +00:00 [INF] Executed endpoint 'HTTP: GET /products'
+2026-03-19 15:31:59.573 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/products - 200 null application/json; charset=utf-8 523.5451ms
+2026-03-19 16:13:41.535 +00:00 [INF] User profile is available. Using 'C:\Users\joaol\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 16:13:42.257 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-19 16:13:42.288 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/ - null null
+2026-03-19 16:13:42.349 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 16:13:42.349 +00:00 [INF] Hosting environment: Development
+2026-03-19 16:13:42.349 +00:00 [INF] Content root path: E:\2025_repos\Upskill\Modulo3\WebAPI2
+2026-03-19 16:13:45.689 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-19 16:13:45.724 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-19 16:13:45.732 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/ - 200 null text/plain; charset=utf-8 3462.0162ms
+2026-03-19 16:13:49.218 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 16:13:49.218 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - null null
+2026-03-19 16:13:49.218 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.css - null null
+2026-03-19 16:13:49.272 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 54.9399ms
+2026-03-19 16:13:49.292 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.css - 304 null null 75.3686ms
+2026-03-19 16:13:49.320 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - 200 null text/javascript; charset=UTF-8 103.4107ms
+2026-03-19 16:13:49.428 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - null null
+2026-03-19 16:13:49.445 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.0344ms
+2026-03-19 16:14:02.528 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44366/login - application/json 46
+2026-03-19 16:14:02.530 +00:00 [INF] CORS policy execution successful.
+2026-03-19 16:14:02.532 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-19 16:14:02.647 +00:00 [INF] Endpoint /login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJleHAiOjE3NzM5NDQwNDIsImlzcyI6Im5vcnRod2luZCIsImF1ZCI6Im5vcnRod2luZCJ9.g21kE0m08cFB_PGWE4rSKZ_QpcFvHKWhe3Whi8iAu_k
+2026-03-19 16:14:02.652 +00:00 [INF] Setting HTTP status code 200.
+2026-03-19 16:14:02.656 +00:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2026-03-19 16:14:02.659 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-19 16:14:02.659 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44366/login - 200 null application/json; charset=utf-8 131.5664ms
+2026-03-19 16:14:25.601 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/products - null null
+2026-03-19 16:14:25.680 +00:00 [INF] Executing endpoint 'HTTP: GET /products'
+2026-03-19 16:14:25.768 +00:00 [INF] Repo ProductService: calling GetAll()
+2026-03-19 16:14:27.557 +00:00 [INF] Executed endpoint 'HTTP: GET /products'
+2026-03-19 16:14:27.557 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/products - 200 null application/json; charset=utf-8 1956.3949ms

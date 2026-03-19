@@ -64,3 +64,33 @@
         z-index: 200;
         border-bottom: 2px solid #ccc;
     }
+    #profile-container{
+        margin-top: 0;
+        margin-bottom: 0;
+        border: red, 1px, solid;
+        align-items: center;
+        display: flex;
+
+
+    }
+    #loginMsg
+    {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #profile-img{
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 4%;
+        height: 4%;
+    }
+    .loginElement
+    {
+         cursor: pointer;
+    }
+    .hidden{
+        display: none;
+    }
+    .visible{
+        display: block;
+    }

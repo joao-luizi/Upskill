@@ -7,22 +7,30 @@
 ✔ Separação de responsabilidades
 */
 
-using DalPro;
+
+using LibNorthWind.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi;
+using Microsoft.OpenApi.Models;
 using Serilog;
 using System.Text;
 using WebAPI_1.DTOs;
-using WebAPI_1.Repositories;
 using WebAPI_1.Services;
 using WebAPI_3.DTOs;
 using WebAPI_3.Services;
 
 Log.Logger = new LoggerConfiguration()
-.WriteTo.Console()
-.WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
-.CreateLogger();
+    .WriteTo.Console()
+    .WriteTo.File("logs/log.txt",
+        rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Host.UseSerilog();
@@ -39,7 +47,8 @@ builder.Services.AddCors(options =>
         });
 });
 
-var key = Encoding.UTF8.GetBytes("UPSKILL_SUPER_SECRET_KEY_123456789");
+var secret_key = builder.Configuration["App:JWT:SECRET_KEY"];
+var key = Encoding.UTF8.GetBytes(secret_key);
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 .AddJwtBearer(options =>
 {
@@ -57,12 +66,44 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     };
 });
 
-DALPro.ConnectionString = builder.Configuration.GetConnectionString("Northwind");
-if (string.IsNullOrEmpty(DALPro.ConnectionString))
+//DALPro.ConnectionString = builder.Configuration["ConnectionStrings:Northwind"];
+string? conn = builder.Configuration.GetConnectionString("Northwind");
+if (conn == null)
     throw new Exception("Connection string Northwind não definida");
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "jwtToken",
+        Version = "v1"
+    });
+
+    options.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+    {
+        Description = "Enter: Bearer {your JWT token}",
+        Name = "Authorization",
+        In = Microsoft.OpenApi.Models.ParameterLocation.Header,
+        Type = Microsoft.OpenApi.Models.SecuritySchemeType.Http,
+        Scheme = "bearer"
+    });
+
+    options.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
+    {
+        {
+            new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+            {
+                Reference = new Microsoft.OpenApi.Models.OpenApiReference
+                {
+                    Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+});
 
 //builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<AuthService>();
@@ -70,6 +111,7 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
 
 builder.Services.AddAuthorization();
+
 
 var app = builder.Build();
 
@@ -87,8 +129,9 @@ app.MapPost("/login", (LoginDTO login, AuthService auth, ILogger<Program> logger
 {
     if (login.Username == "admin" && login.Password == "123")
     {
-        var token = auth.GenerateToken(login.Username);
-        logger.LogInformation($"Endpoint /login : { token }");
+        var token = auth.GenerateToken(login.Username, secret_key);
+        logger.LogInformation($"Endpoint /login token: {token}");
+
         return Results.Ok(new { token });
     }
 
