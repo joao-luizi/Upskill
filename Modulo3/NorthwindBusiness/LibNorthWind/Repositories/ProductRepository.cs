@@ -8,32 +8,41 @@ namespace LibNorthWind.Repositories
 {
     public class ProductRepository : IProductRepository
     {
+        private readonly IConfiguration _configuration;
         public ProductRepository(IConfiguration config) 
         {
-            var connectionString = config.GetConnectionString("Northwind");
-            DalPro.DALPro.ConnectionString = connectionString;
+            _configuration = config;
         }
-        public List<Product> GetAll()
+
+        private string GetConnectionsString(string tag)
         {
+            var connectionString = _configuration.GetConnectionString(tag) ?? throw new Exception($"Connection string for tag: {tag} not found!");
+            return connectionString;
+        }
+        public List<Product> GetAll(string tag)
+        {
+            DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
             string sql = "SELECT * FROM Products";
 
             return DALPro.Query<Product>(sql);
         }
 
-        public Product GetById(int id)
+        public Product GetById(int id, string tag)
         {
+            DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
             string sql = "SELECT * FROM Products WHERE ProductID=@id";
 
             var param = new Dictionary<string, object>
         {
             {"@id", id}
         };
-
+        
             return DALPro.Query<Product>(sql, param).FirstOrDefault();
         }
 
-        public int Insert(Product p)
+        public int Insert(Product p, string tag)
         {
+            DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
             SqlTransaction? trans = null;
             try
             {
@@ -66,8 +75,9 @@ namespace LibNorthWind.Repositories
            
         }
 
-        public void Update(Product p)
+        public void Update(Product p, string tag)
         {
+            DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
             SqlTransaction? trans = null;
             try
             {
@@ -94,8 +104,9 @@ namespace LibNorthWind.Repositories
             }
         }
 
-        public void Delete(int id)
+        public void Delete(int id, string tag)
         {
+            DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
             SqlTransaction? trans = null;
             try
             {

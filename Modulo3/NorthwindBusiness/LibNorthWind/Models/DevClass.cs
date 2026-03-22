@@ -8,10 +8,10 @@ namespace LibNorthWind.Models
 {
     public class DevClass
     {
-        public string TABLE_NAME { get; set; }
+        public string TABLE_NAME { get; set; } = null!;
 
-        public string COLUMN_NAME { get; set; }
+        public string COLUMN_NAME { get; set; } = null!;
 
-        public string DATA_TYPE { get; set; }
+        public string DATA_TYPE { get; set; } = null!;
     }
 }

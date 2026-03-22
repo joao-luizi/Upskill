@@ -1,5 +1,5 @@
 ﻿
-using WebAPI_1.DTOs;
+using LibNorthWind.DTOs;
 using LibNorthWind.Models;
 using LibNorthWind.Repositories;
 
@@ -19,8 +19,21 @@ namespace WebAPI_1.Services
         public List<ProductDTO> GetAll()
         {
             _logger.LogInformation("Repo ProductService: calling GetAll()");
+            
+            return _repo.GetAll("Northwind")
+                .Select(p => new ProductDTO
+                {
+                    ProductID = p.ProductID,
+                    ProductName = p.ProductName,
+                    UnitPrice = p.UnitPrice
+                }).ToList();
+        }
 
-            return _repo.GetAll()
+        public List<ProductDTO> GetAllFilter(ProductFilterDTO dto)
+        {
+            _logger.LogInformation("Repo ProductService: calling GetAllFilter()");
+
+            return _repo.GetAll("Northwind")
                 .Select(p => new ProductDTO
                 {
                     ProductID = p.ProductID,
@@ -31,7 +44,7 @@ namespace WebAPI_1.Services
 
         public ProductDTO GetById(int id)
         {
-            var p = _repo.GetById(id);
+            var p = _repo.GetById(id, "Northwind");
 
             if (p == null)
                 return null;
@@ -58,7 +71,7 @@ namespace WebAPI_1.Services
                     UnitPrice = dto.UnitPrice
                 };
 
-                int id = _repo.Insert(p);
+                int id = _repo.Insert(p, "Northwind");
 
                 
 
@@ -83,7 +96,7 @@ namespace WebAPI_1.Services
                     UnitPrice = dto.UnitPrice
                 };
 
-                _repo.Update(p);
+                _repo.Update(p, "Northwind");
 
                
             }
@@ -100,7 +113,7 @@ namespace WebAPI_1.Services
 
             try
             {
-                _repo.Delete(id);
+                _repo.Delete(id, "Northwind");
 
                
             }

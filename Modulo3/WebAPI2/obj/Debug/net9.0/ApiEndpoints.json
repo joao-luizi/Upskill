@@ -51,7 +51,7 @@
     "Parameters": [
       {
         "Name": "login",
-        "Type": "WebAPI_3.DTOs.LoginDTO",
+        "Type": "LibNorthWind.DTOs.LoginDTO",
         "IsRequired": true
       }
     ],
@@ -59,6 +59,30 @@
       {
         "Type": "System.Void",
         "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Program\u002B\u003C\u003Ec",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_8",
+    "RelativePath": "productFilter",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "LibNorthWind.DTOs.ProductFilterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[LibNorthWind.DTOs.ProductDTO, LibNorthWind, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
         "StatusCode": 200
       }
     ]
@@ -73,7 +97,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[WebAPI_1.DTOs.ProductDTO, WebAPI_3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[LibNorthWind.DTOs.ProductDTO, LibNorthWind, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],
@@ -83,7 +107,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_8",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_9",
     "RelativePath": "products",
     "HttpMethod": "POST",
     "IsController": false,
@@ -91,7 +115,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "WebAPI_1.DTOs.ProductCreateDTO",
+        "Type": "LibNorthWind.DTOs.ProductCreateDTO",
         "IsRequired": true
       }
     ],
@@ -127,7 +151,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_9",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_10",
     "RelativePath": "products/{id}",
     "HttpMethod": "PUT",
     "IsController": false,
@@ -140,7 +164,7 @@
       },
       {
         "Name": "dto",
-        "Type": "WebAPI_1.DTOs.ProductCreateDTO",
+        "Type": "LibNorthWind.DTOs.ProductCreateDTO",
         "IsRequired": true
       }
     ],
@@ -154,7 +178,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_10",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_11",
     "RelativePath": "products/{id}",
     "HttpMethod": "DELETE",
     "IsController": false,

@@ -1,10 +1,12 @@
-﻿using WebAPI_1.DTOs;
+﻿using LibNorthWind.DTOs;
 
 namespace WebAPI_1.Services
 {
     public interface IProductService
     {
         List<ProductDTO> GetAll();
+
+        List<ProductDTO> GetAllFilter(ProductFilterDTO dto);
 
         ProductDTO GetById(int id);
 

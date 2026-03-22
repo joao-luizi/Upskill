@@ -36,8 +36,6 @@ namespace WebAPI_3.Services
             {
                 throw new Exception(ex.StackTrace);
             }
-
-            return null;
         }
     }
 }

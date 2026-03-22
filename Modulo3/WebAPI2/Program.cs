@@ -8,6 +8,7 @@
 */
 
 
+using LibNorthWind.DTOs;
 using LibNorthWind.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -19,9 +20,7 @@ using Microsoft.OpenApi;
 using Microsoft.OpenApi.Models;
 using Serilog;
 using System.Text;
-using WebAPI_1.DTOs;
 using WebAPI_1.Services;
-using WebAPI_3.DTOs;
 using WebAPI_3.Services;
 
 Log.Logger = new LoggerConfiguration()
@@ -67,9 +66,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 });
 
 //DALPro.ConnectionString = builder.Configuration["ConnectionStrings:Northwind"];
-string? conn = builder.Configuration.GetConnectionString("Northwind");
-if (conn == null)
-    throw new Exception("Connection string Northwind não definida");
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
@@ -109,17 +106,14 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
-
 builder.Services.AddAuthorization();
 
 
 var app = builder.Build();
 
 app.UseCors("cors");
-
 app.UseSwagger();
 app.UseSwaggerUI();
-
 app.UseAuthentication();
 app.UseAuthorization();
 
@@ -162,6 +156,11 @@ app.MapGet("/products/{id}", (int id, IProductService service) =>
     var p = service.GetById(id);
 
     return p == null ? Results.NotFound() : Results.Ok(p);
+});
+
+app.MapPost("/productFilter", ([FromBody] ProductFilterDTO dto, IProductService service) =>
+{
+    return service.GetAllFilter(dto);
 });
 
 app.MapPost("/products", (ProductCreateDTO dto, IProductService service) =>

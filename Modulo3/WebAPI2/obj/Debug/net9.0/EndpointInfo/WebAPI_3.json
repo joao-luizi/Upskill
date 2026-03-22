@@ -190,6 +190,38 @@
           }
         }
       }
+    },
+    "/productFilter": {
+      "post": {
+        "tags": [
+          "WebAPI_3"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProductFilterDTO"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProductDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -250,6 +282,10 @@
             "nullable": true
           }
         },
+        "additionalProperties": false
+      },
+      "ProductFilterDTO": {
+        "type": "object",
         "additionalProperties": false
       }
     },

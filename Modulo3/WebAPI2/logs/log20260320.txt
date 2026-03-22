@@ -1,0 +1,385 @@
+2026-03-20 10:07:54.247 +00:00 [INF] User profile is available. Using 'C:\Users\Formando\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-20 10:07:54.992 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-20 10:07:55.034 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/ - null null
+2026-03-20 10:07:55.737 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-20 10:07:55.738 +00:00 [INF] Hosting environment: Development
+2026-03-20 10:07:55.739 +00:00 [INF] Content root path: C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2
+2026-03-20 10:07:56.471 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-20 10:07:56.512 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-20 10:07:56.520 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/ - 200 null text/plain; charset=utf-8 1504.845ms
+2026-03-20 10:07:56.662 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/favicon.ico - null null
+2026-03-20 10:07:56.670 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/favicon.ico - 404 null null 10.5887ms
+2026-03-20 10:07:56.672 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44366/favicon.ico, Response status code: 404
+2026-03-20 10:08:08.654 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.html - null null
+2026-03-20 10:08:08.744 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.html - 200 null text/html;charset=utf-8 91.5605ms
+2026-03-20 10:08:08.767 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/swagger-ui.css - null null
+2026-03-20 10:08:08.767 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-20 10:08:08.838 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.css - null null
+2026-03-20 10:08:08.839 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - null null
+2026-03-20 10:08:08.881 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.js - null null
+2026-03-20 10:08:08.896 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-20 10:08:08.931 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/swagger-ui-bundle.js - null null
+2026-03-20 10:08:08.933 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.js - 200 null application/javascript;charset=utf-8 84.0811ms
+2026-03-20 10:08:08.950 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 53.0381ms
+2026-03-20 10:08:08.962 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.css - 304 null null 194.7018ms
+2026-03-20 10:08:08.965 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/swagger-ui.css - 200 23647 text/css 197.9733ms
+2026-03-20 10:08:08.967 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/swagger-ui-standalone-preset.js - 200 77352 text/javascript 199.7956ms
+2026-03-20 10:08:08.987 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/swagger-ui-bundle.js - 200 424767 text/javascript 56.235ms
+2026-03-20 10:08:09.039 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - 200 null text/javascript; charset=UTF-8 200.9787ms
+2026-03-20 10:08:09.275 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - null null
+2026-03-20 10:08:09.297 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.4002ms
+2026-03-20 10:08:45.585 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44366/login - application/json 46
+2026-03-20 10:08:45.589 +00:00 [INF] CORS policy execution successful.
+2026-03-20 10:08:45.595 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-20 10:08:45.667 +00:00 [INF] Endpoint /login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJleHAiOjE3NzQwMDg1MjUsImlzcyI6Im5vcnRod2luZCIsImF1ZCI6Im5vcnRod2luZCJ9.cH8Eorwn7ZmeElwmgs4hfWqcK6XZjPfYn0FSmna_vlQ
+2026-03-20 10:08:45.671 +00:00 [INF] Setting HTTP status code 200.
+2026-03-20 10:08:45.674 +00:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2026-03-20 10:08:45.678 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-20 10:08:45.678 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44366/login - 200 null application/json; charset=utf-8 93.0771ms
+2026-03-20 10:09:18.196 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/products - null null
+2026-03-20 10:09:18.211 +00:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-03-20 10:09:18.256 +00:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-03-20 10:09:18.267 +00:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-20 10:09:18.274 +00:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-20 10:09:18.276 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/products - 401 null null 80.4222ms
+2026-03-20 10:10:20.651 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/products - null null
+2026-03-20 10:10:20.722 +00:00 [INF] Executing endpoint 'HTTP: GET /products'
+2026-03-20 10:10:20.754 +00:00 [INF] Repo ProductService: calling GetAll()
+2026-03-20 10:10:21.192 +00:00 [INF] Executed endpoint 'HTTP: GET /products'
+2026-03-20 10:10:21.192 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/products - 200 null application/json; charset=utf-8 541.4744ms
+2026-03-20 10:21:41.964 +00:00 [INF] User profile is available. Using 'C:\Users\Formando\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-20 10:21:42.485 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-20 10:21:42.520 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/ - null null
+2026-03-20 10:21:42.908 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-20 10:21:42.908 +00:00 [INF] Hosting environment: Development
+2026-03-20 10:21:42.908 +00:00 [INF] Content root path: C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2
+2026-03-20 10:21:42.921 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-20 10:21:42.948 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-20 10:21:42.957 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/ - 200 null text/plain; charset=utf-8 447.5955ms
+2026-03-20 10:21:53.110 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.css - null null
+2026-03-20 10:21:53.110 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-20 10:21:53.114 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - null null
+2026-03-20 10:21:53.138 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 28.0553ms
+2026-03-20 10:21:53.225 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.css - 304 null null 116.0757ms
+2026-03-20 10:21:53.237 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - 200 null text/javascript; charset=UTF-8 123.0478ms
+2026-03-20 10:21:53.449 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - null null
+2026-03-20 10:21:53.467 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.4478ms
+2026-03-20 10:22:13.368 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44366/login - application/json 46
+2026-03-20 10:22:13.370 +00:00 [INF] CORS policy execution successful.
+2026-03-20 10:22:13.403 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-20 10:22:13.544 +00:00 [INF] Endpoint /login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJleHAiOjE3NzQwMDkzMzMsImlzcyI6Im5vcnRod2luZCIsImF1ZCI6Im5vcnRod2luZCJ9.ydRojukE2-ypsk7XJ3QnGQUneoCXXaPJp7pSPMBn87c
+2026-03-20 10:22:13.550 +00:00 [INF] Setting HTTP status code 200.
+2026-03-20 10:22:13.553 +00:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2026-03-20 10:22:13.557 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-20 10:22:13.557 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44366/login - 200 null application/json; charset=utf-8 189.7418ms
+2026-03-20 10:22:52.998 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/products - null null
+2026-03-20 10:22:53.067 +00:00 [INF] Executing endpoint 'HTTP: GET /products'
+2026-03-20 10:22:53.083 +00:00 [INF] Repo ProductService: calling GetAll()
+2026-03-20 10:22:53.513 +00:00 [INF] Executed endpoint 'HTTP: GET /products'
+2026-03-20 10:22:53.514 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/products - 200 null application/json; charset=utf-8 515.9041ms
+2026-03-20 12:24:42.904 +00:00 [INF] User profile is available. Using 'C:\Users\Formando\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-20 12:24:43.495 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-20 12:24:43.682 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/ - null null
+2026-03-20 12:24:44.051 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-20 12:24:44.052 +00:00 [INF] Hosting environment: Development
+2026-03-20 12:24:44.052 +00:00 [INF] Content root path: C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2
+2026-03-20 12:24:44.060 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-20 12:24:44.111 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-20 12:24:44.122 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/ - 200 null text/plain; charset=utf-8 454.2407ms
+2026-03-20 12:24:48.722 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.css - null null
+2026-03-20 12:24:48.722 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - null null
+2026-03-20 12:24:48.722 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-20 12:24:48.741 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 18.8221ms
+2026-03-20 12:24:48.822 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.css - 304 null null 101.4572ms
+2026-03-20 12:24:48.828 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - 200 null text/javascript; charset=UTF-8 107.0289ms
+2026-03-20 12:24:49.002 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - null null
+2026-03-20 12:24:49.027 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.2951ms
+2026-03-20 12:25:07.900 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44366/login - application/json 46
+2026-03-20 12:25:07.904 +00:00 [INF] CORS policy execution successful.
+2026-03-20 12:25:07.906 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-20 12:25:07.978 +00:00 [INF] Endpoint /login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJleHAiOjE3NzQwMTY3MDcsImlzcyI6Im5vcnRod2luZCIsImF1ZCI6Im5vcnRod2luZCJ9.7dKaQIhCmCbZgjZAAyOP3xR2cFjZGeMoUv9yaElFSgA
+2026-03-20 12:25:07.983 +00:00 [INF] Setting HTTP status code 200.
+2026-03-20 12:25:07.988 +00:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2026-03-20 12:25:07.992 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-20 12:25:07.992 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44366/login - 200 null application/json; charset=utf-8 91.9898ms
+2026-03-20 12:25:50.102 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44366/products - application/json 85
+2026-03-20 12:25:50.103 +00:00 [INF] CORS policy execution successful.
+2026-03-20 12:25:50.195 +00:00 [INF] Executing endpoint 'HTTP: POST /products'
+2026-03-20 12:26:36.095 +00:00 [INF] User profile is available. Using 'C:\Users\Formando\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-20 12:26:36.588 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-20 12:26:36.649 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/ - null null
+2026-03-20 12:26:36.983 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-20 12:26:36.983 +00:00 [INF] Hosting environment: Development
+2026-03-20 12:26:36.983 +00:00 [INF] Content root path: C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2
+2026-03-20 12:26:36.990 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-20 12:26:37.023 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-20 12:26:37.060 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/ - 200 null text/plain; charset=utf-8 417.6515ms
+2026-03-20 12:26:41.342 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-20 12:26:41.342 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.css - null null
+2026-03-20 12:26:41.342 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - null null
+2026-03-20 12:26:41.381 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 26.933ms
+2026-03-20 12:26:41.444 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.css - 304 null null 103.3799ms
+2026-03-20 12:26:41.467 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - 200 null text/javascript; charset=UTF-8 125.5748ms
+2026-03-20 12:26:41.675 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - null null
+2026-03-20 12:26:41.710 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.6272ms
+2026-03-20 12:27:04.866 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44366/login - application/json 46
+2026-03-20 12:27:04.869 +00:00 [INF] CORS policy execution successful.
+2026-03-20 12:27:04.901 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-20 12:27:04.975 +00:00 [INF] Endpoint /login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJleHAiOjE3NzQwMTY4MjQsImlzcyI6Im5vcnRod2luZCIsImF1ZCI6Im5vcnRod2luZCJ9.AkIhfy6SP7DRQ6bRkXvWBdwMOxWQlpsvzyIceJsitsc
+2026-03-20 12:27:04.982 +00:00 [INF] Setting HTTP status code 200.
+2026-03-20 12:27:04.987 +00:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2026-03-20 12:27:04.991 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-20 12:27:04.991 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44366/login - 200 null application/json; charset=utf-8 125.5438ms
+2026-03-20 12:27:35.293 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/products - null null
+2026-03-20 12:27:35.381 +00:00 [INF] Executing endpoint 'HTTP: GET /products'
+2026-03-20 12:27:35.383 +00:00 [INF] Repo ProductService: calling GetAll()
+2026-03-20 12:27:35.797 +00:00 [INF] Executed endpoint 'HTTP: GET /products'
+2026-03-20 12:27:35.798 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/products - 200 null application/json; charset=utf-8 504.8173ms
+2026-03-20 12:36:52.309 +00:00 [INF] User profile is available. Using 'C:\Users\Formando\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-20 12:36:52.713 +00:00 [FTL] Application startup exception
+System.InvalidOperationException: Body was inferred but the method does not allow inferred body parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+dto                 | Body (Inferred)
+service             | Services (Inferred)
+
+
+Did you mean to register the "Body (Inferred)" parameter(s) as a Service or apply the [FromServices] or [FromBody] attribute?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at InvokeStub_AuthorizationPolicyCache..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at InvokeStub_AuthorizationMiddlewareInternal..ctor(Object, Object, Object, Object, Object)
+   at System.Reflection.ConstructorInvoker.InvokeImpl(Object arg1, Object arg2, Object arg3, Object arg4)
+   at System.Reflection.ConstructorInvoker.Invoke(Span`1 arguments)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2026-03-20 12:36:52.754 +00:00 [ERR] Hosting failed to start
+System.InvalidOperationException: Body was inferred but the method does not allow inferred body parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+dto                 | Body (Inferred)
+service             | Services (Inferred)
+
+
+Did you mean to register the "Body (Inferred)" parameter(s) as a Service or apply the [FromServices] or [FromBody] attribute?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at InvokeStub_AuthorizationPolicyCache..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at InvokeStub_AuthorizationMiddlewareInternal..ctor(Object, Object, Object, Object, Object)
+   at System.Reflection.ConstructorInvoker.InvokeImpl(Object arg1, Object arg2, Object arg3, Object arg4)
+   at System.Reflection.ConstructorInvoker.Invoke(Span`1 arguments)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-03-20 12:37:39.421 +00:00 [INF] User profile is available. Using 'C:\Users\Formando\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-20 12:37:39.838 +00:00 [FTL] Application startup exception
+System.InvalidOperationException: Body was inferred but the method does not allow inferred body parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+dto                 | Body (Inferred)
+service             | Services (Inferred)
+
+
+Did you mean to register the "Body (Inferred)" parameter(s) as a Service or apply the [FromServices] or [FromBody] attribute?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at InvokeStub_AuthorizationPolicyCache..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at InvokeStub_AuthorizationMiddlewareInternal..ctor(Object, Object, Object, Object, Object)
+   at System.Reflection.ConstructorInvoker.InvokeImpl(Object arg1, Object arg2, Object arg3, Object arg4)
+   at System.Reflection.ConstructorInvoker.Invoke(Span`1 arguments)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2026-03-20 12:37:39.885 +00:00 [ERR] Hosting failed to start
+System.InvalidOperationException: Body was inferred but the method does not allow inferred body parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+dto                 | Body (Inferred)
+service             | Services (Inferred)
+
+
+Did you mean to register the "Body (Inferred)" parameter(s) as a Service or apply the [FromServices] or [FromBody] attribute?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at InvokeStub_AuthorizationPolicyCache..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at InvokeStub_AuthorizationMiddlewareInternal..ctor(Object, Object, Object, Object, Object)
+   at System.Reflection.ConstructorInvoker.InvokeImpl(Object arg1, Object arg2, Object arg3, Object arg4)
+   at System.Reflection.ConstructorInvoker.Invoke(Span`1 arguments)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-03-20 12:41:37.021 +00:00 [INF] User profile is available. Using 'C:\Users\Formando\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-20 12:41:37.420 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-20 12:41:37.454 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/ - null null
+2026-03-20 12:41:37.756 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-20 12:41:37.756 +00:00 [INF] Hosting environment: Development
+2026-03-20 12:41:37.756 +00:00 [INF] Content root path: C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2
+2026-03-20 12:41:37.769 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-20 12:41:37.806 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-20 12:41:37.817 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/ - 200 null text/plain; charset=utf-8 370.1917ms
+2026-03-20 12:42:49.387 +00:00 [INF] User profile is available. Using 'C:\Users\Formando\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-20 12:42:49.774 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-20 12:42:49.820 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/ - null null
+2026-03-20 12:42:50.065 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-20 12:42:50.071 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-20 12:42:50.072 +00:00 [INF] Hosting environment: Development
+2026-03-20 12:42:50.072 +00:00 [INF] Content root path: C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2
+2026-03-20 12:42:50.094 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-20 12:42:50.105 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/ - 200 null text/plain; charset=utf-8 319.9032ms
+2026-03-20 12:42:57.661 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-20 12:42:57.661 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.css - null null
+2026-03-20 12:42:57.661 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - null null
+2026-03-20 12:42:57.706 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 40.6102ms
+2026-03-20 12:42:57.739 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.css - 304 null null 79.2704ms
+2026-03-20 12:42:57.784 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - 200 null text/javascript; charset=UTF-8 124.4664ms
+2026-03-20 12:42:57.868 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - null null
+2026-03-20 12:42:57.890 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.6513ms
+2026-03-20 12:46:52.234 +00:00 [INF] User profile is available. Using 'C:\Users\Formando\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-20 12:46:52.616 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-20 12:46:52.639 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/ - null null
+2026-03-20 12:46:52.900 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-20 12:46:52.917 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-20 12:46:52.918 +00:00 [INF] Hosting environment: Development
+2026-03-20 12:46:52.918 +00:00 [INF] Content root path: C:\Users\Formando\Documents\Upskill\Modulo3\WebAPI2
+2026-03-20 12:46:52.929 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-20 12:46:52.941 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/ - 200 null text/plain; charset=utf-8 314.7656ms
+2026-03-20 12:47:00.660 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/index.css - null null
+2026-03-20 12:47:00.660 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-20 12:47:00.737 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/_vs/browserLink - null null
+2026-03-20 12:47:00.767 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 79.3498ms
+2026-03-20 12:47:00.795 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/index.css - 304 null null 136.9479ms
+2026-03-20 12:47:00.832 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.1081ms
+2026-03-20 12:47:00.918 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - null null
+2026-03-20 12:47:00.935 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44366/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.3791ms
+2026-03-20 12:47:19.908 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44366/login - application/json 46
+2026-03-20 12:47:19.910 +00:00 [INF] CORS policy execution successful.
+2026-03-20 12:47:19.913 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-20 12:47:19.979 +00:00 [INF] Endpoint /login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJleHAiOjE3NzQwMTgwMzksImlzcyI6Im5vcnRod2luZCIsImF1ZCI6Im5vcnRod2luZCJ9.HM0p0o7EHW42XPRHpubaDThhYC0iDCVODscLpEzZ6BA
+2026-03-20 12:47:19.985 +00:00 [INF] Setting HTTP status code 200.
+2026-03-20 12:47:19.990 +00:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2026-03-20 12:47:19.993 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-20 12:47:19.993 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44366/login - 200 null application/json; charset=utf-8 85.5516ms

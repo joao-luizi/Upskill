@@ -5,14 +5,14 @@ namespace LibNorthWind.Repositories
 {
     public interface IProductRepository
     {
-        List<Product> GetAll();
+        List<Product> GetAll(string tag);
 
-        Product GetById(int id);
+        Product GetById(int id, string tag);
 
-        int Insert(Product product);
+        int Insert(Product product, string tag);
 
-        void Update(Product product);
+        void Update(Product product, string tag);
 
-        void Delete(int id);
+        void Delete(int id, string tag);
     }
 }

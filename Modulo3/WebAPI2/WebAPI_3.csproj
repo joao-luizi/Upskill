@@ -11,18 +11,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DTOs\**" />
     <Compile Remove="Models\**" />
     <Compile Remove="Repositories\**" />
+    <Content Remove="DTOs\**" />
     <Content Remove="Models\**" />
     <Content Remove="Repositories\**" />
+    <EmbeddedResource Remove="DTOs\**" />
     <EmbeddedResource Remove="Models\**" />
     <EmbeddedResource Remove="Repositories\**" />
+    <None Remove="DTOs\**" />
     <None Remove="Models\**" />
     <None Remove="Repositories\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="DTOs\DevClassDTO.cs" />
   </ItemGroup>
 
   <ItemGroup>

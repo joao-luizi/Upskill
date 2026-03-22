@@ -1,22 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\2025_repos\\Upskill\\Modulo3\\WebAPI2\\",
+  "WorkspaceRootPath": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|e:\\2025_repos\\upskill\\modulo3\\webapi2\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|e:\\2025_repos\\upskill\\modulo3\\webapi2\\services\\devservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:services\\devservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|e:\\2025_repos\\upskill\\modulo3\\webapi2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|e:\\2025_repos\\upskill\\modulo3\\webapi2\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\services\\devservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:services\\devservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\services\\clogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:services\\clogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\2025_repos\\Upskill\\Modulo3\\Exercicios\\DalPro\\DALPro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -29,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 845,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -77,24 +85,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "CLogService.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\CLogService.cs",
+              "RelativeDocumentMoniker": "Services\\CLogService.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\CLogService.cs",
+              "RelativeToolTip": "Services\\CLogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T10:19:52.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AuthService.cs",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\WebAPI2\\Services\\AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Services\\AuthService.cs",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\WebAPI2\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\AuthService.cs",
               "RelativeToolTip": "Services\\AuthService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T16:23:25.748Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "DevService.cs",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\WebAPI2\\Services\\DevService.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\DevService.cs",
               "RelativeDocumentMoniker": "Services\\DevService.cs",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\WebAPI2\\Services\\DevService.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\DevService.cs",
               "RelativeToolTip": "Services\\DevService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -103,41 +124,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ProductService.cs",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\WebAPI2\\Services\\ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "Services\\ProductService.cs",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\WebAPI2\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\ProductService.cs",
               "RelativeToolTip": "Services\\ProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wCEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T15:33:07.065Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DALPro.cs",
               "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Exercicios\\DalPro\\DALPro.cs",
-              "RelativeDocumentMoniker": "..\\Exercicios\\DalPro\\DALPro.cs",
               "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Exercicios\\DalPro\\DALPro.cs",
-              "RelativeToolTip": "..\\Exercicios\\DalPro\\DALPro.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAQwEoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T14:57:46.812Z",
+              "WhenOpened": "2026-03-19T14:57:46.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAAAKMAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T14:56:16.479Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\WebAPI2\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\WebAPI2\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAABQAAAASAAAAAAAAAA==",
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\IProductService.cs",
+              "RelativeDocumentMoniker": "Services\\IProductService.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\IProductService.cs",
+              "RelativeToolTip": "Services\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T14:56:16.479Z",
+              "WhenOpened": "2026-03-20T10:20:07.168Z",
               "EditorCaption": ""
             }
           ]
