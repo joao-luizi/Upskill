@@ -6,6 +6,7 @@ using DalPro;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
+using System.Security.Claims;
 using System.Text;
 
 namespace CarStandWebAPI
@@ -50,7 +51,10 @@ namespace CarStandWebAPI
                     ValidateIssuerSigningKey = true,
                     ValidIssuer = "CarStand",
                     ValidAudience = "CarStand",
-                    IssuerSigningKey = new SymmetricSecurityKey(key)
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+
+                    RoleClaimType = ClaimTypes.Role,
+                    NameClaimType = ClaimTypes.Name
                 };
             });
             builder.Services.AddEndpointsApiExplorer();
@@ -75,6 +79,15 @@ namespace CarStandWebAPI
             // Configure the HTTP request pipeline.
 
             app.MapGet("/", () => "Carstand Minimal API");
+
+            app.MapGet("/me", (ClaimsPrincipal user) =>
+            {
+                return Results.Ok(new
+                {
+                    username = user.Identity?.Name,
+                    role = user.FindFirst(ClaimTypes.Role)?.Value
+                });
+            }).RequireAuthorization();
 
             #if MockLogin
             app.MapPost("/login", (LoginDTO login, AuthService auth, ILogger<Program> logger) =>

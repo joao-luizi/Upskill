@@ -19,7 +19,7 @@
   },
   {
     "ContainingType": "CarstandWebApi.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_4",
+    "Method": "\u003CMain\u003Eb__0_5",
     "RelativePath": "inspecoes",
     "HttpMethod": "GET",
     "IsController": false,
@@ -37,7 +37,31 @@
   },
   {
     "ContainingType": "CarstandWebApi.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_3",
+    "Method": "\u003CMain\u003Eb__0_2",
+    "RelativePath": "login",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "CarstandWebApi.DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarstandWebApi.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__0_4",
     "RelativePath": "marcas",
     "HttpMethod": "GET",
     "IsController": false,
@@ -55,7 +79,7 @@
   },
   {
     "ContainingType": "CarstandWebApi.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_2",
+    "Method": "\u003CMain\u003Eb__0_3",
     "RelativePath": "modelos",
     "HttpMethod": "GET",
     "IsController": false,
@@ -73,7 +97,7 @@
   },
   {
     "ContainingType": "CarstandWebApi.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_5",
+    "Method": "\u003CMain\u003Eb__0_6",
     "RelativePath": "veiculos",
     "HttpMethod": "GET",
     "IsController": false,

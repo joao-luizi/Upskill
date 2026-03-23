@@ -1,3 +1,4 @@
+using CarstandWebApi.DTO;
 using DalPro;
 
 namespace CarstandWebApi
@@ -14,10 +15,7 @@ namespace CarstandWebApi
 
 
             builder.Services.AddScoped<CarStandServices>();
-            //app.UseCors(policy =>
-            //    policy.AllowAnyOrigin()
-            //          .AllowAnyHeader()
-            //          .AllowAnyMethod());
+
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("frontend", policy =>
@@ -36,6 +34,9 @@ namespace CarstandWebApi
 
             app.MapGet("/", () => "CarStand");
 
+            app.MapPost("/login", (LoginDTO login, CarStandServices service) => {
+                return "TODO HERE";
+            });
             app.MapGet("/modelos", (CarStandServices service) =>
             {
                 return service.GetAllModels();

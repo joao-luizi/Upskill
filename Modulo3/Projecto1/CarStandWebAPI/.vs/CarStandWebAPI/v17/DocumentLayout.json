@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandwebapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandwebapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,12 +15,16 @@
       "RelativeMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|solutionrelative:services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandwebapi\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|solutionrelative:repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandwebapi\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|solutionrelative:dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandwebapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandwebapi\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|solutionrelative:repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandwebapi\\carstandwebapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandwebapi\\services\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|solutionrelative:services\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandwebapi\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|solutionrelative:dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Repositories\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\IUserRepository.cs",
@@ -98,24 +98,22 @@
               "RelativeToolTip": "Repositories\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T17:11:57.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T17:11:57.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CarStandWebAPI",
               "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\CarStandWebAPI.csproj",
               "RelativeDocumentMoniker": "CarStandWebAPI.csproj",
               "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\CarStandWebAPI.csproj",
               "RelativeToolTip": "CarStandWebAPI.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-19T17:02:50.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T17:02:50.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
@@ -134,7 +132,7 @@
               "RelativeDocumentMoniker": "Services\\AuthService.cs",
               "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Services\\AuthService.cs",
               "RelativeToolTip": "Services\\AuthService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowDIAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwDMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T16:38:05.1Z",
               "EditorCaption": ""
@@ -147,14 +145,14 @@
               "RelativeDocumentMoniker": "Services\\LoginService.cs",
               "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Services\\LoginService.cs",
               "RelativeToolTip": "Services\\LoginService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T16:35:29.94Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ILoginService.cs",
               "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Services\\ILoginService.cs",
               "RelativeDocumentMoniker": "Services\\ILoginService.cs",
@@ -162,31 +160,30 @@
               "RelativeToolTip": "Services\\ILoginService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T16:35:14.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T16:35:14.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\DTO\\LoginDTO.cs",
               "RelativeDocumentMoniker": "DTO\\LoginDTO.cs",
               "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\DTO\\LoginDTO.cs",
               "RelativeToolTip": "DTO\\LoginDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T16:30:37.037Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAhwCUAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAhwFcAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T09:20:09.04Z",
               "EditorCaption": ""

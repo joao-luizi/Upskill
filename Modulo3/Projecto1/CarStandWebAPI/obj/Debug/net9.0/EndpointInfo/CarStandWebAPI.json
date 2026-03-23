@@ -24,6 +24,18 @@
         }
       }
     },
+    "/me": {
+      "get": {
+        "tags": [
+          "CarStandWebAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/login": {
       "post": {
         "tags": [

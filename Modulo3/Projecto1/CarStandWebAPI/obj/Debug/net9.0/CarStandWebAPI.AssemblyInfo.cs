@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CarStandWebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0891b492d0a8c861bf36860320d0900c6df5f075")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c3c5c55d12546a83fd4add498da791365459df0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CarStandWebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CarStandWebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
