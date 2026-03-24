@@ -1,6 +1,4 @@
 
-
-
 function SetEventListeners()
 {
     [profileimg, loginMessage].forEach(e => e.addEventListener("click", () =>{
@@ -22,6 +20,5 @@ function SetEventListeners()
 function Init()
 {
     SetEventListeners();
-    checkUserToken();
-   
+    checkUserToken();   
 }

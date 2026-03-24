@@ -71,7 +71,6 @@ async function getUserToken(user, pass, endpoint)
         console.log(userObject);
     }
     handleLogin();
-    // continue setting up the UI with the token variable 
 }
 
 function saveToken()
@@ -104,5 +103,4 @@ function loadToken()
         userObject.username = null;
         userObject.userToken = null;
     }
-   
 }

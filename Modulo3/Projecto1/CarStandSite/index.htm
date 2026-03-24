@@ -39,16 +39,24 @@
         <h2>Filtros</h2>
         <div class="display-flex">            
             <div class="display-flex">
-                <select id="fMarca">
-                    <option value="">Todas as marcas</option>
+                <select id="fMarca"  multiple = "true", size = "1">
+                    <option value="0">Todas as marcas</option>
                 </select>
                 <button sortKey ="marca" class ="orderButton" id="fMarcaSortOrder">
                 ↑
                 </button>
             </div>
             <div class="display-flex">
-                <select id="fAno">
-                    <option value="">Todos os anos</option>
+                <select id="fModelo" multiple = "true", size = "1">
+                    <option value="0">Todas os modelos</option>
+                </select>
+                <button sortKey ="modelo" class ="orderButton" id="fModeloSortOrder">
+                ↑
+                </button>
+            </div>
+            <div class="display-flex">
+                <select id="fAno"  multiple = "true", size = "1">
+                    <option value="0">Todos os anos</option>
                 </select>
                 <button sortKey ="ano" class ="orderButton" id="fAnoSortOrder">
                 ↑

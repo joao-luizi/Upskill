@@ -80,6 +80,10 @@ namespace CarStandWebAPI
 
             app.MapGet("/", () => "Carstand Minimal API");
 
+            app.MapGet("/filterMarca", () => { 
+                
+            });
+
             app.MapGet("/me", (ClaimsPrincipal user) =>
             {
                 return Results.Ok(new

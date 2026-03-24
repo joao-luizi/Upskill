@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{528E2F3B-343B-4B70-891D-293525318867}|WebAPI_3.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\webapi2\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 845,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -93,8 +93,7 @@
               "RelativeToolTip": "Services\\CLogService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T10:19:52.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T10:19:52.643Z"
             },
             {
               "$type": "Document",
@@ -106,8 +105,7 @@
               "RelativeToolTip": "Services\\AuthService.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAgwCUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T16:23:25.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T16:23:25.748Z"
             },
             {
               "$type": "Document",
@@ -119,18 +117,17 @@
               "RelativeToolTip": "Services\\DevService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T15:34:29.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T15:34:29.421Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "Services\\ProductService.cs",
               "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\ProductService.cs",
               "RelativeToolTip": "Services\\ProductService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA1wCEAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwBYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T15:33:07.065Z",
               "EditorCaption": ""
@@ -146,13 +143,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAAAKMAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T14:56:16.479Z",
               "EditorCaption": ""
@@ -167,8 +164,7 @@
               "RelativeToolTip": "Services\\IProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T10:20:07.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T10:20:07.168Z"
             }
           ]
         }

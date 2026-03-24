@@ -67,7 +67,7 @@
     #profile-container{
         margin-top: 0;
         margin-bottom: 0;
-        border: red, 1px, solid;
+        /* border: red, 1px, solid; */
         align-items: center;
         display: flex;
 
@@ -94,3 +94,5 @@
     .visible{
         display: block;
     }
+
+   
