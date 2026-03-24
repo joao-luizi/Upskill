@@ -1,0 +1,141 @@
+2026-03-24 10:10:59.763 +00:00 [INF] User profile is available. Using 'C:\Users\Formando\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-24 10:11:00.547 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-24 10:11:00.613 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/ - null null
+2026-03-24 10:11:01.095 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-24 10:11:01.095 +00:00 [INF] Hosting environment: Development
+2026-03-24 10:11:01.096 +00:00 [INF] Content root path: C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandWebAPI
+2026-03-24 10:11:02.102 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-24 10:11:02.163 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-24 10:11:02.175 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/ - 200 null text/plain; charset=utf-8 1598.6059ms
+2026-03-24 10:11:02.275 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/favicon.ico - null null
+2026-03-24 10:11:02.325 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/favicon.ico - 404 null null 51.1105ms
+2026-03-24 10:11:02.326 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44305/favicon.ico, Response status code: 404
+2026-03-24 10:11:29.598 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44305/login - null null
+2026-03-24 10:11:29.602 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:11:29.606 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44305/login - 204 null null 8.1286ms
+2026-03-24 10:11:29.612 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44305/login - application/json 37
+2026-03-24 10:11:29.613 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:11:29.618 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-24 10:11:29.731 +00:00 [INF] Mock Endpoint /login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImV4cCI6MTc3NDM1NDI4OSwiaXNzIjoiQ2FyU3RhbmQiLCJhdWQiOiJDYXJTdGFuZCJ9.Q5ZcWtKxC1xlqS41yJYVeGRu_9dcmSp99xYT1hTxKUQ
+2026-03-24 10:11:29.737 +00:00 [INF] Setting HTTP status code 200.
+2026-03-24 10:11:29.743 +00:00 [INF] Writing value of type '<>f__AnonymousType1`1' as Json.
+2026-03-24 10:11:29.749 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-24 10:11:29.750 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44305/login - 200 null application/json; charset=utf-8 138.5876ms
+2026-03-24 10:11:38.583 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44305/me - null null
+2026-03-24 10:11:38.584 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:11:38.585 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44305/me - 204 null null 2.5564ms
+2026-03-24 10:11:38.588 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/me - null null
+2026-03-24 10:11:38.589 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:11:38.682 +00:00 [INF] Executing endpoint 'HTTP: GET /me'
+2026-03-24 10:11:38.683 +00:00 [INF] Setting HTTP status code 200.
+2026-03-24 10:11:38.685 +00:00 [INF] Writing value of type '<>f__AnonymousType0`2' as Json.
+2026-03-24 10:11:38.687 +00:00 [INF] Executed endpoint 'HTTP: GET /me'
+2026-03-24 10:11:38.687 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/me - 200 null application/json; charset=utf-8 99.5355ms
+2026-03-24 10:12:09.399 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44305/login - null null
+2026-03-24 10:12:09.400 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:12:09.401 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44305/login - 204 null null 2.2096ms
+2026-03-24 10:12:09.415 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44305/login - application/json 37
+2026-03-24 10:12:09.416 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:12:09.416 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-24 10:12:09.436 +00:00 [INF] Mock Endpoint /login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImV4cCI6MTc3NDM1NDMyOSwiaXNzIjoiQ2FyU3RhbmQiLCJhdWQiOiJDYXJTdGFuZCJ9.oRnSaOXje3KnoxBK84alLabM2MmwF85GPsujY5Ws7X8
+2026-03-24 10:12:09.437 +00:00 [INF] Setting HTTP status code 200.
+2026-03-24 10:12:09.437 +00:00 [INF] Writing value of type '<>f__AnonymousType1`1' as Json.
+2026-03-24 10:12:09.439 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-24 10:12:09.440 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44305/login - 200 null application/json; charset=utf-8 25.1335ms
+2026-03-24 10:20:40.113 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44305/login - null null
+2026-03-24 10:20:40.113 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:20:40.114 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44305/login - 204 null null 1.1268ms
+2026-03-24 10:20:40.116 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44305/login - application/json 36
+2026-03-24 10:20:40.116 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:20:40.116 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-24 10:20:40.118 +00:00 [INF] Setting HTTP status code 401.
+2026-03-24 10:20:40.118 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-24 10:20:40.119 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44305/login - 401 null null 3.2767ms
+2026-03-24 10:22:39.061 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44305/login - null null
+2026-03-24 10:22:39.062 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:22:39.063 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44305/login - 204 null null 1.5257ms
+2026-03-24 10:22:39.071 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44305/login - application/json 37
+2026-03-24 10:22:39.071 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:22:39.071 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-24 10:22:39.072 +00:00 [INF] Mock Endpoint /login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImV4cCI6MTc3NDM1NDk1OSwiaXNzIjoiQ2FyU3RhbmQiLCJhdWQiOiJDYXJTdGFuZCJ9.fnnFprOVcCtP8kwpnIdr312cmI7mwfhU7NUYhPFgMMo
+2026-03-24 10:22:39.072 +00:00 [INF] Setting HTTP status code 200.
+2026-03-24 10:22:39.072 +00:00 [INF] Writing value of type '<>f__AnonymousType1`1' as Json.
+2026-03-24 10:22:39.073 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-24 10:22:39.073 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44305/login - 200 null application/json; charset=utf-8 2.7353ms
+2026-03-24 10:40:11.094 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44305/me - null null
+2026-03-24 10:40:11.094 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:40:11.095 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44305/me - 204 null null 1.3201ms
+2026-03-24 10:40:11.097 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/me - null null
+2026-03-24 10:40:11.098 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:40:11.146 +00:00 [INF] Executing endpoint 'HTTP: GET /me'
+2026-03-24 10:40:11.147 +00:00 [INF] Setting HTTP status code 200.
+2026-03-24 10:40:11.152 +00:00 [INF] Writing value of type '<>f__AnonymousType0`2' as Json.
+2026-03-24 10:40:11.178 +00:00 [INF] Executed endpoint 'HTTP: GET /me'
+2026-03-24 10:40:11.178 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/me - 200 null application/json; charset=utf-8 80.8076ms
+2026-03-24 10:40:11.180 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/me - null null
+2026-03-24 10:40:11.180 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:40:11.184 +00:00 [INF] Executing endpoint 'HTTP: GET /me'
+2026-03-24 10:40:11.185 +00:00 [INF] Setting HTTP status code 200.
+2026-03-24 10:40:11.185 +00:00 [INF] Writing value of type '<>f__AnonymousType0`2' as Json.
+2026-03-24 10:40:11.185 +00:00 [INF] Executed endpoint 'HTTP: GET /me'
+2026-03-24 10:40:11.186 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/me - 200 null application/json; charset=utf-8 5.8459ms
+2026-03-24 10:40:22.971 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44305/me - null null
+2026-03-24 10:40:22.973 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44305/me - null null
+2026-03-24 10:40:22.973 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:40:22.973 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:40:22.974 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44305/me - 204 null null 0.8951ms
+2026-03-24 10:40:22.974 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44305/me - 204 null null 3.8916ms
+2026-03-24 10:40:22.978 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/me - null null
+2026-03-24 10:40:22.978 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:40:22.980 +00:00 [INF] Executing endpoint 'HTTP: GET /me'
+2026-03-24 10:40:22.980 +00:00 [INF] Setting HTTP status code 200.
+2026-03-24 10:40:22.980 +00:00 [INF] Writing value of type '<>f__AnonymousType0`2' as Json.
+2026-03-24 10:40:22.980 +00:00 [INF] Executed endpoint 'HTTP: GET /me'
+2026-03-24 10:40:22.981 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/me - 200 null application/json; charset=utf-8 2.6052ms
+2026-03-24 10:40:22.983 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/me - null null
+2026-03-24 10:40:22.983 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:40:22.984 +00:00 [INF] Executing endpoint 'HTTP: GET /me'
+2026-03-24 10:40:22.984 +00:00 [INF] Setting HTTP status code 200.
+2026-03-24 10:40:22.984 +00:00 [INF] Writing value of type '<>f__AnonymousType0`2' as Json.
+2026-03-24 10:40:22.985 +00:00 [INF] Executed endpoint 'HTTP: GET /me'
+2026-03-24 10:40:22.985 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/me - 200 null application/json; charset=utf-8 2.4524ms
+2026-03-24 10:41:55.379 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44305/me - null null
+2026-03-24 10:41:55.384 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:41:55.384 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44305/me - null null
+2026-03-24 10:41:55.384 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44305/me - 204 null null 40.7699ms
+2026-03-24 10:41:55.385 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:41:55.385 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44305/me - 204 null null 1.4181ms
+2026-03-24 10:41:55.388 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/me - null null
+2026-03-24 10:41:55.388 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:41:55.389 +00:00 [INF] Executing endpoint 'HTTP: GET /me'
+2026-03-24 10:41:55.389 +00:00 [INF] Setting HTTP status code 200.
+2026-03-24 10:41:55.389 +00:00 [INF] Writing value of type '<>f__AnonymousType0`2' as Json.
+2026-03-24 10:41:55.389 +00:00 [INF] Executed endpoint 'HTTP: GET /me'
+2026-03-24 10:41:55.389 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/me - 200 null application/json; charset=utf-8 1.8452ms
+2026-03-24 10:41:55.391 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/me - null null
+2026-03-24 10:41:55.391 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:41:55.392 +00:00 [INF] Executing endpoint 'HTTP: GET /me'
+2026-03-24 10:41:55.392 +00:00 [INF] Setting HTTP status code 200.
+2026-03-24 10:41:55.392 +00:00 [INF] Writing value of type '<>f__AnonymousType0`2' as Json.
+2026-03-24 10:41:55.392 +00:00 [INF] Executed endpoint 'HTTP: GET /me'
+2026-03-24 10:41:55.393 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/me - 200 null application/json; charset=utf-8 1.5286ms
+2026-03-24 10:42:07.404 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44305/me - null null
+2026-03-24 10:42:07.404 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:42:07.444 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44305/me - null null
+2026-03-24 10:42:07.444 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44305/me - 204 null null 40.7259ms
+2026-03-24 10:42:07.445 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:42:07.445 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44305/me - 204 null null 0.9672ms
+2026-03-24 10:42:07.447 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/me - null null
+2026-03-24 10:42:07.448 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:42:07.448 +00:00 [INF] Executing endpoint 'HTTP: GET /me'
+2026-03-24 10:42:07.448 +00:00 [INF] Setting HTTP status code 200.
+2026-03-24 10:42:07.449 +00:00 [INF] Writing value of type '<>f__AnonymousType0`2' as Json.
+2026-03-24 10:42:07.449 +00:00 [INF] Executed endpoint 'HTTP: GET /me'
+2026-03-24 10:42:07.450 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/me - 200 null application/json; charset=utf-8 2.3976ms
+2026-03-24 10:42:07.451 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/me - null null
+2026-03-24 10:42:07.451 +00:00 [INF] CORS policy execution successful.
+2026-03-24 10:42:07.452 +00:00 [INF] Executing endpoint 'HTTP: GET /me'
+2026-03-24 10:42:07.452 +00:00 [INF] Setting HTTP status code 200.
+2026-03-24 10:42:07.452 +00:00 [INF] Writing value of type '<>f__AnonymousType0`2' as Json.
+2026-03-24 10:42:07.453 +00:00 [INF] Executed endpoint 'HTTP: GET /me'
+2026-03-24 10:42:07.453 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/me - 200 null application/json; charset=utf-8 1.5639ms
