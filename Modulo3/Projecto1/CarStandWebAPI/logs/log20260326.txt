@@ -1,0 +1,100 @@
+2026-03-26 11:35:30.184 +00:00 [INF] User profile is available. Using 'C:\Users\Formando\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-26 11:35:30.835 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-26 11:35:30.890 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/ - null null
+2026-03-26 11:35:30.994 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-26 11:35:30.995 +00:00 [INF] Hosting environment: Development
+2026-03-26 11:35:30.995 +00:00 [INF] Content root path: C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandWebAPI
+2026-03-26 11:35:32.948 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-26 11:35:33.007 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-26 11:35:33.019 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/ - 200 null text/plain; charset=utf-8 2161.5583ms
+2026-03-26 11:35:33.249 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/favicon.ico - null null
+2026-03-26 11:35:33.363 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/favicon.ico - 404 null null 115.4865ms
+2026-03-26 11:35:33.365 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44305/favicon.ico, Response status code: 404
+2026-03-26 11:36:17.923 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44305/login - null null
+2026-03-26 11:36:17.928 +00:00 [INF] CORS policy execution successful.
+2026-03-26 11:36:17.931 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44305/login - 204 null null 7.6195ms
+2026-03-26 11:36:17.939 +00:00 [INF] Request starting HTTP/2 POST https://localhost:44305/login - application/json 37
+2026-03-26 11:36:17.940 +00:00 [INF] CORS policy execution successful.
+2026-03-26 11:36:17.944 +00:00 [INF] Executing endpoint 'HTTP: POST /login'
+2026-03-26 11:36:18.063 +00:00 [INF] Mock Endpoint /login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImV4cCI6MTc3NDUzMjE3OCwiaXNzIjoiQ2FyU3RhbmQiLCJhdWQiOiJDYXJTdGFuZCJ9.58YoPb8IixLuI5ev6V5LXwXcxAwL8eKidOmvFosXdbc
+2026-03-26 11:36:18.067 +00:00 [INF] Setting HTTP status code 200.
+2026-03-26 11:36:18.071 +00:00 [INF] Writing value of type '<>f__AnonymousType1`1' as Json.
+2026-03-26 11:36:18.076 +00:00 [INF] Executed endpoint 'HTTP: POST /login'
+2026-03-26 11:36:18.077 +00:00 [INF] Request finished HTTP/2 POST https://localhost:44305/login - 200 null application/json; charset=utf-8 137.9491ms
+2026-03-26 11:40:20.879 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/swagger - null null
+2026-03-26 11:40:20.905 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/swagger - 301 null null 25.9262ms
+2026-03-26 11:40:20.911 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/swagger/index.html - null null
+2026-03-26 11:40:20.994 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/swagger/index.html - 200 null text/html;charset=utf-8 82.4638ms
+2026-03-26 11:40:21.008 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/swagger/swagger-ui.css - null null
+2026-03-26 11:40:21.044 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/swagger/index.css - null null
+2026-03-26 11:40:21.073 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/swagger/swagger-ui-bundle.js - null null
+2026-03-26 11:40:21.110 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/swagger/index.js - null null
+2026-03-26 11:40:21.116 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-26 11:40:21.182 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/swagger/index.js - 200 null application/javascript;charset=utf-8 74.0263ms
+2026-03-26 11:40:21.214 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - null null
+2026-03-26 11:40:21.244 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-26 11:40:21.247 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 131.6747ms
+2026-03-26 11:40:21.249 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/swagger/index.css - 200 152 text/css 236.1108ms
+2026-03-26 11:40:21.249 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/swagger/swagger-ui.css - 200 23647 text/css 241.2414ms
+2026-03-26 11:40:21.261 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/swagger/swagger-ui-standalone-preset.js - 200 77352 text/javascript 46.808ms
+2026-03-26 11:40:21.266 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/swagger/swagger-ui-bundle.js - 200 424767 text/javascript 218.693ms
+2026-03-26 11:40:21.453 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - 200 null text/javascript; charset=UTF-8 270.3015ms
+2026-03-26 11:40:21.563 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/swagger/v1/swagger.json - null null
+2026-03-26 11:40:21.576 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.8278ms
+2026-03-26 11:40:21.594 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/swagger/favicon-32x32.png - null null
+2026-03-26 11:40:21.596 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/swagger/favicon-32x32.png - 200 628 image/png 2.2825ms
+2026-03-26 11:40:30.671 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/filterMarca - null null
+2026-03-26 11:40:30.672 +00:00 [INF] Executing endpoint 'HTTP: GET /filterMarca'
+2026-03-26 11:40:30.675 +00:00 [INF] Called GetUniqueMarcas()
+2026-03-26 11:40:31.178 +00:00 [INF] Executed endpoint 'HTTP: GET /filterMarca'
+2026-03-26 11:40:31.179 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/filterMarca - 200 null application/json; charset=utf-8 507.9774ms
+2026-03-26 11:41:50.670 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/filterModelos - null null
+2026-03-26 11:41:50.672 +00:00 [INF] Executing endpoint 'HTTP: GET /filterModelos'
+2026-03-26 11:41:50.685 +00:00 [INF] Called GetUniqueModelos()
+2026-03-26 11:41:50.707 +00:00 [INF] Executed endpoint 'HTTP: GET /filterModelos'
+2026-03-26 11:41:50.707 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/filterModelos - 200 null application/json; charset=utf-8 37.2098ms
+2026-03-26 11:42:01.844 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/filterYears - null null
+2026-03-26 11:42:01.844 +00:00 [INF] Executing endpoint 'HTTP: GET /filterYears'
+2026-03-26 11:42:01.846 +00:00 [INF] Called GetUniqueModelos()
+2026-03-26 11:42:01.877 +00:00 [INF] Executed endpoint 'HTTP: GET /filterYears'
+2026-03-26 11:42:01.877 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/filterYears - 200 null application/json; charset=utf-8 33.4142ms
+2026-03-26 11:45:06.714 +00:00 [INF] User profile is available. Using 'C:\Users\Formando\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-26 11:45:07.248 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-26 11:45:07.281 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/ - null null
+2026-03-26 11:45:07.724 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-26 11:45:07.800 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-26 11:45:07.801 +00:00 [INF] Hosting environment: Development
+2026-03-26 11:45:07.801 +00:00 [INF] Content root path: C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandWebAPI
+2026-03-26 11:45:07.824 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-26 11:45:07.836 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/ - 200 null text/plain; charset=utf-8 571.7175ms
+2026-03-26 11:45:11.668 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - null null
+2026-03-26 11:45:11.669 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-26 11:45:11.680 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 10.8002ms
+2026-03-26 11:45:11.763 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.6457ms
+2026-03-26 11:45:12.004 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/swagger/v1/swagger.json - null null
+2026-03-26 11:45:12.029 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.5385ms
+2026-03-26 11:45:47.182 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/filterYears - null null
+2026-03-26 11:45:47.223 +00:00 [INF] Executing endpoint 'HTTP: GET /filterYears'
+2026-03-26 11:45:47.243 +00:00 [INF] Called GetUniqueModelos()
+2026-03-26 11:45:47.683 +00:00 [INF] Executed endpoint 'HTTP: GET /filterYears'
+2026-03-26 11:45:47.683 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/filterYears - 200 null application/json; charset=utf-8 501.5308ms
+2026-03-26 12:14:24.443 +00:00 [INF] User profile is available. Using 'C:\Users\Formando\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-26 12:14:25.009 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-26 12:14:25.055 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/ - null null
+2026-03-26 12:14:25.130 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-26 12:14:25.131 +00:00 [INF] Hosting environment: Development
+2026-03-26 12:14:25.131 +00:00 [INF] Content root path: C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandWebAPI
+2026-03-26 12:14:25.481 +00:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-03-26 12:14:25.532 +00:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-03-26 12:14:25.540 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/ - 200 null text/plain; charset=utf-8 505.5924ms
+2026-03-26 12:14:26.193 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - null null
+2026-03-26 12:14:26.193 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-26 12:14:26.205 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 11.7501ms
+2026-03-26 12:14:26.261 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.4916ms
+2026-03-26 12:14:26.347 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/swagger/v1/swagger.json - null null
+2026-03-26 12:14:26.367 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.543ms
+2026-03-26 12:14:35.051 +00:00 [INF] Request starting HTTP/2 GET https://localhost:44305/filterYears - null null
+2026-03-26 12:14:35.065 +00:00 [INF] Executing endpoint 'HTTP: GET /filterYears'
+2026-03-26 12:14:35.070 +00:00 [INF] Called GetUniqueModelos()
+2026-03-26 12:14:36.503 +00:00 [INF] Executed endpoint 'HTTP: GET /filterYears'
+2026-03-26 12:14:36.503 +00:00 [INF] Request finished HTTP/2 GET https://localhost:44305/filterYears - 200 null application/json; charset=utf-8 1452.1632ms

@@ -37,11 +37,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 845,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -84,6 +84,14 @@
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "CLogService.cs",
@@ -93,8 +101,7 @@
               "RelativeToolTip": "Services\\CLogService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T10:19:52.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T10:19:52.643Z"
             },
             {
               "$type": "Document",
@@ -106,8 +113,7 @@
               "RelativeToolTip": "Services\\AuthService.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAgwCUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T16:23:25.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T16:23:25.748Z"
             },
             {
               "$type": "Document",
@@ -119,8 +125,7 @@
               "RelativeToolTip": "Services\\DevService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T15:34:29.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T15:34:29.421Z"
             },
             {
               "$type": "Document",
@@ -130,7 +135,7 @@
               "RelativeDocumentMoniker": "Services\\ProductService.cs",
               "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Services\\ProductService.cs",
               "RelativeToolTip": "Services\\ProductService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA1wCEAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T15:33:07.065Z",
               "EditorCaption": ""
@@ -152,7 +157,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\WebAPI2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAAAKMAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAIcAAAAAAAAAAADwv6kAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T14:56:16.479Z",
               "EditorCaption": ""
@@ -167,8 +172,7 @@
               "RelativeToolTip": "Services\\IProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T10:20:07.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T10:20:07.168Z"
             }
           ]
         }

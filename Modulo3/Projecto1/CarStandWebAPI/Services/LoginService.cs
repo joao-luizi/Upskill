@@ -1,6 +1,6 @@
-﻿using CarStandWebAPI.DTO;
-using CarStandWebAPI.Models;
-using CarStandWebAPI.Repositories;
+﻿using CarStandBusiness.DTO;
+using CarStandBusiness.Models;
+using CarStandBusiness.Repositories;
 
 namespace CarStandWebAPI.Services
 {
@@ -18,9 +18,9 @@ namespace CarStandWebAPI.Services
             _auth = auth;
         }
 
-        public string? GetToken(LoginDTO loginDTO)
+        public string? GetToken(LoginDTO loginDTO, string tag)
         {
-            var user = _repo.GetByLogin(loginDTO.UserName, loginDTO.Password);
+            var user = _repo.GetByLogin(loginDTO.UserName, loginDTO.Password, tag);
 
             if (user == null)
                 return null;

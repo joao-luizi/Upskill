@@ -1,8 +1,7 @@
-using CarStandWebAPI.DTO;
-using CarStandWebAPI.Models;
-using CarStandWebAPI.Repositories;
+
+using CarStandBusiness.DTO;
+using CarStandBusiness.Repositories;
 using CarStandWebAPI.Services;
-using DalPro;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
@@ -36,9 +35,9 @@ namespace CarStandWebAPI
                             .AllowAnyHeader();
                     });
             });
-            string? conn = builder.Configuration.GetConnectionString("CarStand") ?? throw new Exception("Connection string for CarStand não definida"); 
+           
             string? secret_key = builder.Configuration["App:JWT:SECRET_KEY"] ?? throw new Exception("secret_key string não definida");
-            DALPro.ConnectionString = conn;
+          
             var key = Encoding.UTF8.GetBytes(secret_key);
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>
@@ -58,10 +57,43 @@ namespace CarStandWebAPI
                 };
             });
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+                {
+                    Title = "jwtToken",
+                    Version = "v1"
+                });
+
+                options.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+                {
+                    Description = "Enter: Bearer {your JWT token}",
+                    Name = "Authorization",
+                    In = Microsoft.OpenApi.Models.ParameterLocation.Header,
+                    Type = Microsoft.OpenApi.Models.SecuritySchemeType.Http,
+                    Scheme = "bearer"
+                });
+
+                options.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
+    {
+        {
+            new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+            {
+                Reference = new Microsoft.OpenApi.Models.OpenApiReference
+                {
+                    Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+            });
             builder.Services.AddAuthorization();
             builder.Services.AddScoped<AuthService>();
+            builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<IVehicleService, VehicleService>();
             builder.Services.AddScoped<ILoginService, LoginService>();
 
             var app = builder.Build();
@@ -80,9 +112,18 @@ namespace CarStandWebAPI
 
             app.MapGet("/", () => "Carstand Minimal API");
 
-            app.MapGet("/filterMarca", () => { 
-                
+            app.MapGet("/filterMarca", (ILogger<VehicleService> Logger,  IVehicleService service) => {
+                return service.GetUniqueMarcas(); 
             });
+
+            app.MapGet("/filterModelos", (ILogger<VehicleService> Logger, IVehicleService service) => {
+                return service.GetUniqueModelos();
+            });
+
+            app.MapGet("/filterYears", (ILogger<VehicleService> Logger, IVehicleService service) => {
+                return service.GetUniqueYears();
+            });
+
 
             app.MapGet("/me", (ClaimsPrincipal user) =>
             {
@@ -110,7 +151,7 @@ namespace CarStandWebAPI
             #else
             app.MapPost("/login", (LoginDTO login, ILoginService service, ILogger<Program> logger) =>
             {
-                var token = service.GetToken(login);
+                var token = service.GetToken(login, "CarStand");
                 if (token == null)
                     return Results.Unauthorized();
                 logger.LogInformation($"Endpoint /login token: {token}");

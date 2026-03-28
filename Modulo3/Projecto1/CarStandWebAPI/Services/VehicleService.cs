@@ -1,9 +1,9 @@
-﻿using CarStandWebAPI.DTO;
-using CarStandWebAPI.Repositories;
+﻿using CarStandBusiness.DTO;
+using CarStandBusiness.Repositories;
 
 namespace CarStandWebAPI.Services
 {
-    public class VehicleService
+    public class VehicleService : IVehicleService
     {
         private readonly IVehicleRepository _repo;
         private readonly ILogger _logger;
@@ -36,10 +36,14 @@ namespace CarStandWebAPI.Services
                 })];
         }
 
-        public List<int> GetUniqueYears()
+        public List<AnoDTO> GetUniqueYears()
         {
             _logger.LogInformation("Called GetUniqueModelos()");
-            return [.. _repo.GetUniqueYears("CarStand")];
+            return [.. _repo.GetUniqueYears("CarStand")
+                .Select(p => new AnoDTO
+                {
+                    Ano = p.Ano
+                })];
         }
     }
 }

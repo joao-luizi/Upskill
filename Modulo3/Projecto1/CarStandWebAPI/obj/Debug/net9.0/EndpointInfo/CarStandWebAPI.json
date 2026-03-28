@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "CarStandWebAPI",
-    "version": "1.0"
+    "title": "jwtToken",
+    "version": "v1"
   },
   "paths": {
     "/": {
@@ -17,6 +17,72 @@
               "text/plain": {
                 "schema": {
                   "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/filterMarca": {
+      "get": {
+        "tags": [
+          "CarStandWebAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MarcasDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/filterModelos": {
+      "get": {
+        "tags": [
+          "CarStandWebAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ModelosDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/filterYears": {
+      "get": {
+        "tags": [
+          "CarStandWebAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AnoDTO"
+                  }
                 }
               }
             }
@@ -61,6 +127,16 @@
   },
   "components": {
     "schemas": {
+      "AnoDTO": {
+        "type": "object",
+        "properties": {
+          "ano": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginDTO": {
         "type": "object",
         "properties": {
@@ -74,12 +150,47 @@
           }
         },
         "additionalProperties": false
+      },
+      "MarcasDTO": {
+        "type": "object",
+        "properties": {
+          "idMarca": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModelosDTO": {
+        "type": "object",
+        "properties": {
+          "idModelos": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "modelo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Enter: Bearer {your JWT token}",
+        "scheme": "bearer"
       }
     }
   },
-  "tags": [
+  "security": [
     {
-      "name": "CarStandWebAPI"
+      "Bearer": [ ]
     }
   ]
 }

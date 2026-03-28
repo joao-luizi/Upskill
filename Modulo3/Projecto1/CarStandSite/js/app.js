@@ -17,8 +17,10 @@ function SetEventListeners()
 }
 
 
-function Init()
+async function Init()
 {
     SetEventListeners();
-    checkUserToken();   
+    await checkUserToken();
+    preencherFiltros()
+    alert("aqui")
 }

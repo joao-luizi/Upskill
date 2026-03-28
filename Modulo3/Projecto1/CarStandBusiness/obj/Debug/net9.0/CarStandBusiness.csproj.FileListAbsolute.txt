@@ -1,0 +1,16 @@
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\obj\Debug\net9.0\CarStandBusiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\obj\Debug\net9.0\CarStandBusiness.AssemblyInfoInputs.cache
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\obj\Debug\net9.0\CarStandBusiness.AssemblyInfo.cs
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\obj\Debug\net9.0\CarStandBusiness.csproj.CoreCompileInputs.cache
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\obj\Debug\net9.0\CarStandBusiness.sourcelink.json
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\bin\Debug\net9.0\CarStandBusiness.deps.json
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\bin\Debug\net9.0\CarStandBusiness.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\bin\Debug\net9.0\CarStandBusiness.pdb
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\bin\Debug\net9.0\DalPro.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\bin\Debug\net9.0\DalPro.pdb
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\obj\Debug\net9.0\CarStandBusiness.csproj.AssemblyReference.cache
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\obj\Debug\net9.0\CarStand.0E4B0991.Up2Date
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\obj\Debug\net9.0\CarStandBusiness.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\obj\Debug\net9.0\refint\CarStandBusiness.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\obj\Debug\net9.0\CarStandBusiness.pdb
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandBusiness\obj\Debug\net9.0\ref\CarStandBusiness.dll

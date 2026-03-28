@@ -216,3 +216,5 @@ C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandWebAPI\obj\Debug\n
 C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandWebAPI\obj\Debug\net9.0\CarStandWebAPI.pdb
 C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandWebAPI\obj\Debug\net9.0\CarStandWebAPI.genruntimeconfig.cache
 C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandWebAPI\obj\Debug\net9.0\ref\CarStandWebAPI.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandWebAPI\bin\Debug\net9.0\CarStandBusiness.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandWebAPI\bin\Debug\net9.0\CarStandBusiness.pdb

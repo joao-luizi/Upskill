@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "CarStandWebAPI.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_2",
+    "Method": "\u003CMain\u003Eb__0_3",
     "RelativePath": "",
     "HttpMethod": "GET",
     "IsController": false,
@@ -20,6 +20,60 @@
   {
     "ContainingType": "CarStandWebAPI.Program\u002B\u003C\u003Ec",
     "Method": "\u003CMain\u003Eb__0_4",
+    "RelativePath": "filterMarca",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CarStandBusiness.DTO.MarcasDTO, CarStandBusiness, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarStandWebAPI.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__0_5",
+    "RelativePath": "filterModelos",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CarStandBusiness.DTO.ModelosDTO, CarStandBusiness, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarStandWebAPI.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__0_6",
+    "RelativePath": "filterYears",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CarStandBusiness.DTO.AnoDTO, CarStandBusiness, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CarStandWebAPI.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__0_8",
     "RelativePath": "login",
     "HttpMethod": "POST",
     "IsController": false,
@@ -27,7 +81,7 @@
     "Parameters": [
       {
         "Name": "login",
-        "Type": "CarStandWebAPI.DTO.LoginDTO",
+        "Type": "CarStandBusiness.DTO.LoginDTO",
         "IsRequired": true
       }
     ],
@@ -41,7 +95,7 @@
   },
   {
     "ContainingType": "CarStandWebAPI.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_3",
+    "Method": "\u003CMain\u003Eb__0_7",
     "RelativePath": "me",
     "HttpMethod": "GET",
     "IsController": false,
