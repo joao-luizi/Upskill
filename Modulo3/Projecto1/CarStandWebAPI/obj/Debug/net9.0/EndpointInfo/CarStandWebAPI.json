@@ -123,6 +123,38 @@
           }
         }
       }
+    },
+    "/search": {
+      "post": {
+        "tags": [
+          "CarStandWebAPI"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilterDTO"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VeiculosDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -133,6 +165,40 @@
           "ano": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FilterDTO": {
+        "type": "object",
+        "properties": {
+          "marcas": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "modelos": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "anos": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "vendido": {
+            "type": "boolean",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -174,6 +240,40 @@
           },
           "modelo": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VeiculosDTO": {
+        "type": "object",
+        "properties": {
+          "veiculoID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "modelo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "ano": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vendido": {
+            "type": "boolean"
+          },
+          "dataDeInspecao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "resultado": {
+            "type": "boolean",
             "nullable": true
           }
         },

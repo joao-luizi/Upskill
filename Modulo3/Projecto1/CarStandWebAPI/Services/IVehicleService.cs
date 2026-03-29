@@ -10,7 +10,7 @@ namespace CarStandWebAPI.Services
 
         public List<AnoDTO> GetUniqueYears();
 
-
+        public List<VeiculosDTO> SearchResult(FilterDTO filter, string tag);
 
     }
 }

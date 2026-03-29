@@ -218,3 +218,5 @@ C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandWebAPI\obj\Debug\n
 C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandWebAPI\obj\Debug\net9.0\ref\CarStandWebAPI.dll
 C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandWebAPI\bin\Debug\net9.0\CarStandBusiness.dll
 C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\CarStandWebAPI\bin\Debug\net9.0\CarStandBusiness.pdb
+E:\2025_repos\Upskill\Modulo3\Projecto1\CarStandWebAPI\bin\Debug\net9.0\CarStandBusiness.dll
+E:\2025_repos\Upskill\Modulo3\Projecto1\CarStandWebAPI\bin\Debug\net9.0\CarStandBusiness.pdb

@@ -45,5 +45,10 @@ namespace CarStandWebAPI.Services
                     Ano = p.Ano
                 })];
         }
+        public List<VeiculosDTO> SearchResult(FilterDTO filter, string tag)
+        {
+            _logger.LogInformation("Called SearchResult()");
+            return _repo.SearchResult(filter, tag);
+        }
     }
 }

@@ -1,37 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\",
+  "WorkspaceRootPath": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D61A37E-84F3-4F51-B888-C90E1451B1D7}|..\\CarStandBusiness\\CarStandBusiness.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\projecto1\\carstandbusiness\\repositories\\ivehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D61A37E-84F3-4F51-B888-C90E1451B1D7}|..\\CarStandBusiness\\CarStandBusiness.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandbusiness\\repositories\\vehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D61A37E-84F3-4F51-B888-C90E1451B1D7}|..\\CarStandBusiness\\CarStandBusiness.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\projecto1\\carstandbusiness\\repositories\\vehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D61A37E-84F3-4F51-B888-C90E1451B1D7}|..\\CarStandBusiness\\CarStandBusiness.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandbusiness\\repositories\\ivehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\projecto1\\carstandwebapi\\services\\ivehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|solutionrelative:services\\ivehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\projecto1\\carstandwebapi\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandwebapi\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|solutionrelative:services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D61A37E-84F3-4F51-B888-C90E1451B1D7}|..\\CarStandBusiness\\CarStandBusiness.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\projecto1\\carstandbusiness\\models\\veiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{190077DE-E2D0-1424-E9A0-84C62B5EACA2}|..\\DalPro\\DalPro.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\dalpro\\dalpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{190077DE-E2D0-1424-E9A0-84C62B5EACA2}|..\\DalPro\\DalPro.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\projecto1\\dalpro\\dalpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D61A37E-84F3-4F51-B888-C90E1451B1D7}|..\\CarStandBusiness\\CarStandBusiness.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandbusiness\\dto\\veiculosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\projecto1\\carstandwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6D61A37E-84F3-4F51-B888-C90E1451B1D7}|..\\CarStandBusiness\\CarStandBusiness.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandbusiness\\dto\\filterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D61A37E-84F3-4F51-B888-C90E1451B1D7}|..\\CarStandBusiness\\CarStandBusiness.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\projecto1\\carstandbusiness\\dto\\anodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandwebapi\\services\\ivehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|solutionrelative:services\\ivehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\projecto1\\carstandwebapi\\logs\\log20260326.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{D2147138-33A0-47F3-855A-488CC0E020FB}|CarStandWebAPI.csproj|solutionrelative:logs\\log20260326.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{6D61A37E-84F3-4F51-B888-C90E1451B1D7}|..\\CarStandBusiness\\CarStandBusiness.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandbusiness\\dto\\anodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D61A37E-84F3-4F51-B888-C90E1451B1D7}|..\\CarStandBusiness\\CarStandBusiness.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandbusiness\\dto\\marcasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D61A37E-84F3-4F51-B888-C90E1451B1D7}|..\\CarStandBusiness\\CarStandBusiness.csproj|e:\\2025_repos\\upskill\\modulo3\\projecto1\\carstandbusiness\\dto\\modelosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -88,128 +93,146 @@
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Veiculos.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\Models\\Veiculos.cs",
-              "RelativeDocumentMoniker": "..\\CarStandBusiness\\Models\\Veiculos.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\Models\\Veiculos.cs",
-              "RelativeToolTip": "..\\CarStandBusiness\\Models\\Veiculos.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAIwBUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "DALPro.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\DalPro\\DALPro.cs",
+              "RelativeDocumentMoniker": "..\\DalPro\\DALPro.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\DalPro\\DALPro.cs",
+              "RelativeToolTip": "..\\DalPro\\DALPro.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAwwFkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T12:08:29.576Z",
+              "WhenOpened": "2026-03-29T16:23:15.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "DALPro.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\DalPro\\DALPro.cs",
-              "RelativeDocumentMoniker": "..\\DalPro\\DALPro.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\DalPro\\DALPro.cs",
-              "RelativeToolTip": "..\\DalPro\\DALPro.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAD4AAAAJAAAAAAAAAA==",
+              "Title": "FilterDTO.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\DTO\\FilterDTO.cs",
+              "RelativeDocumentMoniker": "..\\CarStandBusiness\\DTO\\FilterDTO.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\DTO\\FilterDTO.cs",
+              "RelativeToolTip": "..\\CarStandBusiness\\DTO\\FilterDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T11:55:23.777Z",
+              "WhenOpened": "2026-03-29T16:02:30.406Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IVehicleRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\Repositories\\IVehicleRepository.cs",
-              "RelativeDocumentMoniker": "..\\CarStandBusiness\\Repositories\\IVehicleRepository.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\Repositories\\IVehicleRepository.cs",
-              "RelativeToolTip": "..\\CarStandBusiness\\Repositories\\IVehicleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "MarcasDTO.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\DTO\\MarcasDTO.cs",
+              "RelativeDocumentMoniker": "..\\CarStandBusiness\\DTO\\MarcasDTO.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\DTO\\MarcasDTO.cs",
+              "RelativeToolTip": "..\\CarStandBusiness\\DTO\\MarcasDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T11:54:10.08Z",
+              "WhenOpened": "2026-03-29T12:02:01.93Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IVehicleService.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Services\\IVehicleService.cs",
-              "RelativeDocumentMoniker": "Services\\IVehicleService.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Services\\IVehicleService.cs",
-              "RelativeToolTip": "Services\\IVehicleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "VeiculosDTO.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\DTO\\VeiculosDTO.cs",
+              "RelativeDocumentMoniker": "..\\CarStandBusiness\\DTO\\VeiculosDTO.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\DTO\\VeiculosDTO.cs",
+              "RelativeToolTip": "..\\CarStandBusiness\\DTO\\VeiculosDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T11:53:55.121Z",
+              "WhenOpened": "2026-03-29T11:50:05.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Program.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Program.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAAHsAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAhwJcAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T11:47:37.074Z",
+              "WhenOpened": "2026-03-28T18:00:37.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ModelosDTO.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\DTO\\ModelosDTO.cs",
+              "RelativeDocumentMoniker": "..\\CarStandBusiness\\DTO\\ModelosDTO.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\DTO\\ModelosDTO.cs",
+              "RelativeToolTip": "..\\CarStandBusiness\\DTO\\ModelosDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T12:01:52.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VehicleRepository.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\Repositories\\VehicleRepository.cs",
+              "RelativeDocumentMoniker": "..\\CarStandBusiness\\Repositories\\VehicleRepository.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\Repositories\\VehicleRepository.cs",
+              "RelativeToolTip": "..\\CarStandBusiness\\Repositories\\VehicleRepository.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAGQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T11:48:36.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VehicleService.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Services\\VehicleService.cs",
+              "RelativeDocumentMoniker": "Services\\VehicleService.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Services\\VehicleService.cs",
+              "RelativeToolTip": "Services\\VehicleService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwDIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T16:17:26.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "VehicleRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\Repositories\\VehicleRepository.cs",
-              "RelativeDocumentMoniker": "..\\CarStandBusiness\\Repositories\\VehicleRepository.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\Repositories\\VehicleRepository.cs",
-              "RelativeToolTip": "..\\CarStandBusiness\\Repositories\\VehicleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAAAAAAAAAAAA==",
+              "Title": "IVehicleRepository.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\Repositories\\IVehicleRepository.cs",
+              "RelativeDocumentMoniker": "..\\CarStandBusiness\\Repositories\\IVehicleRepository.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\Repositories\\IVehicleRepository.cs",
+              "RelativeToolTip": "..\\CarStandBusiness\\Repositories\\IVehicleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T10:29:25.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VehicleService.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Services\\VehicleService.cs",
-              "RelativeDocumentMoniker": "Services\\VehicleService.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Services\\VehicleService.cs",
-              "RelativeToolTip": "Services\\VehicleService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAqwCgAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T11:44:00.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AnoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\DTO\\AnoDTO.cs",
-              "RelativeDocumentMoniker": "..\\CarStandBusiness\\DTO\\AnoDTO.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\DTO\\AnoDTO.cs",
-              "RelativeToolTip": "..\\CarStandBusiness\\DTO\\AnoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T11:52:55.242Z",
+              "WhenOpened": "2026-03-29T16:16:01.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "log20260326.txt",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\logs\\log20260326.txt",
-              "RelativeDocumentMoniker": "logs\\log20260326.txt",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\logs\\log20260326.txt",
-              "RelativeToolTip": "logs\\log20260326.txt",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-03-26T11:46:24.048Z",
+              "Title": "AnoDTO.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\DTO\\AnoDTO.cs",
+              "RelativeDocumentMoniker": "..\\CarStandBusiness\\DTO\\AnoDTO.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandBusiness\\DTO\\AnoDTO.cs",
+              "RelativeToolTip": "..\\CarStandBusiness\\DTO\\AnoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T12:02:13.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IVehicleService.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Services\\IVehicleService.cs",
+              "RelativeDocumentMoniker": "Services\\IVehicleService.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\Projecto1\\CarStandWebAPI\\Services\\IVehicleService.cs",
+              "RelativeToolTip": "Services\\IVehicleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T16:17:12.935Z",
               "EditorCaption": ""
             }
           ]

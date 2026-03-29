@@ -75,19 +75,19 @@ namespace CarStandWebAPI
                 });
 
                 options.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
-    {
-        {
-            new Microsoft.OpenApi.Models.OpenApiSecurityScheme
-            {
-                Reference = new Microsoft.OpenApi.Models.OpenApiReference
                 {
-                    Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            Array.Empty<string>()
-        }
-    });
+                    {
+                        new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+                        {
+                            Reference = new Microsoft.OpenApi.Models.OpenApiReference
+                            {
+                                Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+                        },
+                        Array.Empty<string>()
+                    }
+                });
             });
             builder.Services.AddAuthorization();
             builder.Services.AddScoped<AuthService>();
@@ -148,7 +148,15 @@ namespace CarStandWebAPI
                 return Results.Unauthorized();
 
             });
-            #else
+
+            app.MapPost("/search", (FilterDTO filter, IVehicleService service, ILogger<Program> logger) =>
+            {
+                return service.SearchResult(filter, "CarStand");
+
+            });
+
+
+#else
             app.MapPost("/login", (LoginDTO login, ILoginService service, ILogger<Program> logger) =>
             {
                 var token = service.GetToken(login, "CarStand");
@@ -157,7 +165,7 @@ namespace CarStandWebAPI
                 logger.LogInformation($"Endpoint /login token: {token}");
                 return Results.Ok(new { token });
             });
-            #endif
+#endif
             app.Run();
         }
     }

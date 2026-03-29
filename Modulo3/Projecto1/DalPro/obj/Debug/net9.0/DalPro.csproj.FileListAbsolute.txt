@@ -37,3 +37,16 @@ C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\DalPro\obj\Debug\net9.0\Da
 C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\DalPro\obj\Debug\net9.0\refint\DalPro.dll
 C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\DalPro\obj\Debug\net9.0\DalPro.pdb
 C:\Users\Formando\Documents\Upskill\Modulo3\Projecto1\DalPro\obj\Debug\net9.0\ref\DalPro.dll
+E:\2025_repos\Upskill\Modulo3\Projecto1\DalPro\bin\Debug\net9.0\DalPro.deps.json
+E:\2025_repos\Upskill\Modulo3\Projecto1\DalPro\bin\Debug\net9.0\DalPro.dll
+E:\2025_repos\Upskill\Modulo3\Projecto1\DalPro\bin\Debug\net9.0\DalPro.pdb
+E:\2025_repos\Upskill\Modulo3\Projecto1\DalPro\obj\Debug\net9.0\DalPro.csproj.AssemblyReference.cache
+E:\2025_repos\Upskill\Modulo3\Projecto1\DalPro\obj\Debug\net9.0\DalPro.GeneratedMSBuildEditorConfig.editorconfig
+E:\2025_repos\Upskill\Modulo3\Projecto1\DalPro\obj\Debug\net9.0\DalPro.AssemblyInfoInputs.cache
+E:\2025_repos\Upskill\Modulo3\Projecto1\DalPro\obj\Debug\net9.0\DalPro.AssemblyInfo.cs
+E:\2025_repos\Upskill\Modulo3\Projecto1\DalPro\obj\Debug\net9.0\DalPro.csproj.CoreCompileInputs.cache
+E:\2025_repos\Upskill\Modulo3\Projecto1\DalPro\obj\Debug\net9.0\DalPro.sourcelink.json
+E:\2025_repos\Upskill\Modulo3\Projecto1\DalPro\obj\Debug\net9.0\DalPro.dll
+E:\2025_repos\Upskill\Modulo3\Projecto1\DalPro\obj\Debug\net9.0\refint\DalPro.dll
+E:\2025_repos\Upskill\Modulo3\Projecto1\DalPro\obj\Debug\net9.0\DalPro.pdb
+E:\2025_repos\Upskill\Modulo3\Projecto1\DalPro\obj\Debug\net9.0\ref\DalPro.dll

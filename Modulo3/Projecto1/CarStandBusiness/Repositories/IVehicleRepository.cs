@@ -8,5 +8,6 @@ namespace CarStandBusiness.Repositories
         public List<Marcas> GetUniqueMarcas(string tag);
         public List<Modelos> GetUniqueModelos(string tag);
         public List<Veiculos> GetUniqueYears(string tag);
+        public List<VeiculosDTO> SearchResult(FilterDTO filter, string tag);
     }
 }

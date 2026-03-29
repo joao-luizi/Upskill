@@ -1,6 +1,8 @@
-﻿using CarStandBusiness.Models;
+﻿using CarStandBusiness.DTO;
+using CarStandBusiness.Models;
 using DalPro;
 using Microsoft.Extensions.Configuration;
+using System.Text;
 
 namespace CarStandBusiness.Repositories
 {
@@ -42,11 +44,61 @@ namespace CarStandBusiness.Repositories
             return DALPro.Query<Veiculos>(sql);
         }
 
+        void AddInClause<T>(StringBuilder sql, Dictionary<string, object> parameters,
+                    string columnName, string paramBaseName, List<T> values)
+        {
+            if (values == null || values.Count == 0)
+                return;
 
+            var paramNames = new List<string>();
 
+            for (int i = 0; i < values.Count; i++)
+            {
+                string paramName = $"@{paramBaseName}{i}";
+                paramNames.Add(paramName);
+                parameters.Add(paramName, values[i]);
+            }
 
+            sql.Append($" AND {columnName} IN ({string.Join(",", paramNames)})");
+        }
 
+        public List<VeiculosDTO> SearchResult(FilterDTO filter, string tag)
+        {
+            DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
+            var sql = new StringBuilder();
+            var parameters = new Dictionary<string, object>();
 
+            sql.Append(@"
+            SELECT Veiculos.VeiculoID, Nome, Modelo, Ano, Vendido, DataDeInspecao, Resultado
+            FROM Veiculos
+            LEFT JOIN Marcas ON Marcas.IDMarca = Veiculos.MarcaID
+            LEFT JOIN Modelos ON Modelos.IDModelos = Veiculos.ModeloID
+            LEFT JOIN (
+                SELECT Inspecoes.*
+                FROM Inspecoes
+                INNER JOIN (
+                    SELECT VeiculoID, MAX(DataDeInspecao) AS MaxData
+                    FROM Inspecoes
+                    GROUP BY VeiculoID
+                ) latest 
+                ON Inspecoes.VeiculoID = latest.VeiculoID 
+                AND Inspecoes.DataDeInspecao = latest.MaxData
+            ) AS UltimaInspecao
+            ON UltimaInspecao.VeiculoID = Veiculos.VeiculoID
+            WHERE 1 = 1
+            ");
 
+            AddInClause(sql, parameters, "Ano", "Ano", filter.Anos);
+            AddInClause(sql, parameters, "MarcaID", "Marca", filter.Marcas);
+            AddInClause(sql, parameters, "ModeloID", "Modelo", filter.Modelos);
+
+            if (filter.Vendido.HasValue)
+            {
+                sql.Append(" AND Vendido = @Vendido");
+                parameters.Add("Vendido", filter.Vendido.Value);
+            }
+
+            return DALPro.Query<VeiculosDTO>(sql.ToString(), parameters);
+        }
     }
 }

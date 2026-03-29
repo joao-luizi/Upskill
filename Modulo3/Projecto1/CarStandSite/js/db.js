@@ -11,6 +11,140 @@ const profileimg = document.getElementById("profile-img");
 const btlogout = document.getElementById("btlogout");
 //End Login
 
+//filters
+const sortController = {
+  marca: {
+    selectEl: document.getElementById("fMarca"),
+    sortEl: document.getElementById("fMarcaSortOrder"),
+    sortAsc: true,
+    stringAll: "Todas as marcas",
+  },
+  modelo: {
+    selectEl: document.getElementById("fModelo"),
+    sortEl: document.getElementById("fModeloSortOrder"),
+    sortAsc: true,
+    stringAll: "Todas as marcas",
+  },
+  ano: {
+    selectEl: document.getElementById("fAno"),
+    sortEl: document.getElementById("fAnoSortOrder"),
+    sortAsc: true,
+    stringAll: "Todos os anos",
+  },
+};
+const fVendido = document.getElementById("fVendido");
+//filters
+
+async function GetFilter(endpoint)
+{
+    const response = fetch(localhost + endpoint, {
+             method: "GET"
+         });
+    return response;
+}
+
+function syncOptions(selectElement, data)
+{
+    const existing = new Map(
+        Array.from(selectElement.options).map(opt => [opt.value, opt])
+    );
+
+    Array.from(selectElement.options).forEach(option => {
+        if (option.value !== "0" && !data.some(d => d.value === option.value))
+        {
+            option.remove();
+        }
+    });
+
+    data.forEach(d => {
+        if (!existing.has(d.value))
+        {
+            const opt = document.createElement("option");
+            opt.value = d.value;
+            opt.text = d.text;
+            selectElement.appendChild(opt);
+        }
+    });
+}
+
+function sortSelect(selectElement, { ascending = true, numeric = false } = {})
+{
+    const options = Array.from(selectElement.options);
+
+    const defaultOption = options.find(o => o.value === "0");
+    const rest = options.filter(o => o.value !== "0");
+
+    rest.sort((a, b) => {
+        let valA = a.text;
+        let valB = b.text;
+
+        if (numeric)
+        {
+            return ascending
+                ? Number(valA) - Number(valB)
+                : Number(valB) - Number(valA);
+        }
+
+        return ascending
+            ? valA.localeCompare(valB)
+            : valB.localeCompare(valA);
+    });
+
+    selectElement.innerHTML = "";
+
+    if (defaultOption)
+        selectElement.appendChild(defaultOption);
+
+    rest.forEach(o => selectElement.appendChild(o));
+}
+
+
+function fillFilter(filtersElement, uniqueFilters)
+{
+    const selectElement = filtersElement.selectEl;
+
+    syncOptions(selectElement, uniqueFilters);
+
+    sortSelect(selectElement, {
+        ascending: filtersElement.sortAsc,
+        numeric: false
+    });
+}
+
+function nomalize(toMap, value, text)
+{
+    return toMap.map(f => ({
+        value: String(f[value]),
+        text: f[text]
+    }));
+}
+async function preencherFiltros()
+{
+    const [resMarca, resModelo, resYears] = await Promise.all([
+        GetFilter("\\filterMarca"),
+        GetFilter("\\filterModelos"),
+        GetFilter("\\filterYears")
+    ]);
+
+    if (!resMarca.ok) throw new Error("Promise Marca Return Error");
+    if (!resModelo.ok) throw new Error("Promise Modelo Return Error");
+    if (!resYears.ok) throw new Error("Promise Years Return Error");
+
+    const [marcaData, modeloData, yearsData] = await Promise.all([
+        resMarca.json(),
+        resModelo.json(),
+        resYears.json()
+    ]);
+
+    const normalizedMarca = nomalize(marcaData, "idMarca", "nome");
+    const normalizedModelo = nomalize(modeloData, "idModelos", "modelo");
+    const normalizedYears = nomalize(yearsData, "ano", "ano");
+
+    fillFilter(sortController.marca, normalizedMarca);
+    fillFilter(sortController.modelo, normalizedModelo);
+    fillFilter(sortController.ano, normalizedYears);
+}
+
 async function checkUserToken()
 {
     loadToken();
