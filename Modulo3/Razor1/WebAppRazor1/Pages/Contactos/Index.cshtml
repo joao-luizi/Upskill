@@ -1,0 +1,46 @@
+﻿@page
+@model WebAppRazor1.Pages.Contactos.IndexModel
+@{
+    ViewData["Title"] = "Contactos";
+   
+}
+<h1>@Model.texto</h1>
+<div class="text-center">
+    <h1 class="display-4">Contactos</h1>
+    <form method="POST">
+        <div class="mb-3">
+            <label asp-for="Formulario.Nome" class="form-label"></label>
+            <input asp-for="Formulario.Nome" />
+            <span asp-validation-for="Formulario.Nome" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <div>
+            <label asp-for="Formulario.Email" class="form-label"></label>
+            <input asp-for="Formulario.Email" />
+            </div>
+            <span asp-validation-for="Formulario.Email" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <div>
+            <label asp-for="Formulario.Assunto" class="form-label"></label>
+            <input asp-for="Formulario.Assunto" />
+            </div>
+            <span asp-validation-for="Formulario.Assunto" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <div>
+            <label asp-for="Formulario.Mensagem" class="form-label"></label>
+            <input asp-for="Formulario.Mensagem" />
+            </div>
+            <span asp-validation-for="Formulario.Mensagem" class="text-danger"></span>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+</div>
+    @section Scripts {
+
+        @* Activa a validação client-side (jQuery Validation) *@
+        <partial name="_ValidationScriptsPartial" />
+
+    }
