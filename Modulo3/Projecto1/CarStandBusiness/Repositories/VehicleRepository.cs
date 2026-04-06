@@ -1,7 +1,9 @@
 ﻿using CarStandBusiness.DTO;
 using CarStandBusiness.Models;
 using DalPro;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
+using System.Net;
 using System.Text;
 
 namespace CarStandBusiness.Repositories
@@ -18,6 +20,23 @@ namespace CarStandBusiness.Repositories
         {
             var connectionString = _configuration.GetConnectionString(tag) ?? throw new Exception($"Connection string for tag: {tag} not found!");
             return connectionString;
+        }
+
+        public Veiculos GetById(long id, string tag)
+        {
+            DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
+
+            var sql = @"
+            SELECT VeiculoID, MarcaID, ModeloID, Ano, Vendido
+            FROM Veiculos
+            WHERE VeiculoID = @Id";
+
+            var parameters = new Dictionary<string, object>
+                {
+                    { "Id", id }
+                };
+
+            return DALPro.Query<Veiculos>(sql, parameters).FirstOrDefault();
         }
 
         public List<Marcas> GetUniqueMarcas(string tag)
@@ -44,7 +63,7 @@ namespace CarStandBusiness.Repositories
             return DALPro.Query<Veiculos>(sql);
         }
 
-        void AddInClause<T>(StringBuilder sql, Dictionary<string, object> parameters,
+        private void AddInClause<T>(StringBuilder sql, Dictionary<string, object> parameters,
                     string columnName, string paramBaseName, List<T> values)
         {
             if (values == null || values.Count == 0)
@@ -69,23 +88,31 @@ namespace CarStandBusiness.Repositories
             var parameters = new Dictionary<string, object>();
 
             sql.Append(@"
-            SELECT Veiculos.VeiculoID, Nome, Modelo, Ano, Vendido, DataDeInspecao, Resultado
-            FROM Veiculos
-            LEFT JOIN Marcas ON Marcas.IDMarca = Veiculos.MarcaID
-            LEFT JOIN Modelos ON Modelos.IDModelos = Veiculos.ModeloID
-            LEFT JOIN (
-                SELECT Inspecoes.*
-                FROM Inspecoes
-                INNER JOIN (
-                    SELECT VeiculoID, MAX(DataDeInspecao) AS MaxData
-                    FROM Inspecoes
-                    GROUP BY VeiculoID
-                ) latest 
-                ON Inspecoes.VeiculoID = latest.VeiculoID 
-                AND Inspecoes.DataDeInspecao = latest.MaxData
-            ) AS UltimaInspecao
-            ON UltimaInspecao.VeiculoID = Veiculos.VeiculoID
-            WHERE 1 = 1
+            SELECT 
+        v.VeiculoID,  
+        m.Nome,
+        mo.Modelo, 
+        v.Ano, 
+        v.Vendido, 
+        i.DataDeInspecao, 
+        i.Resultado
+    FROM Veiculos v
+    LEFT JOIN Marcas m ON m.IDMarca = v.MarcaID
+    LEFT JOIN Modelos mo ON mo.IDModelos = v.ModeloID
+    LEFT JOIN (
+        SELECT *
+        FROM (
+            SELECT 
+                Inspecoes.*,
+                ROW_NUMBER() OVER (
+                    PARTITION BY VeiculoID
+                    ORDER BY DataDeInspecao DESC, InspecoesID DESC
+                ) AS rn
+            FROM Inspecoes
+        ) x
+        WHERE rn = 1
+    ) i ON i.VeiculoID = v.VeiculoID
+    WHERE 1 = 1
             ");
 
             AddInClause(sql, parameters, "Ano", "Ano", filter.Anos);
@@ -100,5 +127,125 @@ namespace CarStandBusiness.Repositories
 
             return DALPro.Query<VeiculosDTO>(sql.ToString(), parameters);
         }
+
+        public VeiculosDTO SearchById(long id, string tag)
+        {
+            DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
+            var sql = new StringBuilder();
+           
+
+            sql.Append(@"
+            SELECT 
+                v.VeiculoID,
+                m.Nome,
+                mo.Modelo,
+                v.Ano,
+                v.Vendido,
+                i.DataDeInspecao,
+                i.Resultado
+            FROM Veiculos v
+            LEFT JOIN Marcas m 
+                ON m.IDMarca = v.MarcaID
+            LEFT JOIN Modelos mo 
+                ON mo.IDModelos = v.ModeloID
+            LEFT JOIN (
+                SELECT *
+                FROM (
+                    SELECT 
+                        Inspecoes.*,
+                        ROW_NUMBER() OVER (
+                            PARTITION BY VeiculoID
+                            ORDER BY DataDeInspecao DESC, InspecoesID DESC
+                        ) AS rn
+                    FROM Inspecoes
+                ) x
+                WHERE rn = 1
+            ) i
+                ON i.VeiculoID = v.VeiculoID
+            WHERE v.VeiculoID = @id;
+            ");
+
+            var parameters = new Dictionary<string, object>
+                {
+                    { "id", id }
+                };
+
+
+            return DALPro.Query<VeiculosDTO>(sql.ToString(), parameters).FirstOrDefault();
+        }
+
+        public void Update(Veiculos veiculo, string tag)
+        {
+            DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
+
+            string sql = @"
+        UPDATE Veiculos
+        SET 
+            MarcaID = @MarcaID,
+            ModeloID = @ModeloID,
+            Ano = @Ano,
+            Vendido = @Vendido
+        WHERE VeiculoID = @VeiculoID;
+    ";
+
+            var parameters = new Dictionary<string, object>
+    {
+        { "@VeiculoID", veiculo.VeiculoID },
+        { "@MarcaID", veiculo.MarcaID },
+        { "@ModeloID", veiculo.ModeloID },
+        { "@Ano", veiculo.Ano },
+        { "@Vendido", veiculo.Vendido }
+    };
+
+            DALPro.Execute(sql, parameters);
+        }
+
+        public Veiculos Insert(Veiculos veiculo, string tag)
+        {
+            DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
+
+            string sql = @"
+            INSERT INTO Veiculos (MarcaID, ModeloID, Ano, Vendido)
+            VALUES (@MarcaID, @ModeloID, @Ano, @Vendido);
+
+            SELECT CAST(SCOPE_IDENTITY() AS BIGINT);
+            ";
+
+                    var parameters = new Dictionary<string, object>
+            {
+                { "@MarcaID", veiculo.MarcaID },
+                { "@ModeloID", veiculo.ModeloID },
+                { "@Ano", veiculo.Ano },
+                { "@Vendido", veiculo.Vendido }
+            };
+
+            veiculo.VeiculoID = Convert.ToInt64(DALPro.ExecuteScalar(sql, parameters));
+
+            return veiculo;
+        }
+
+        public void Delete(long id, string tag)
+        {
+            DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
+
+            string sql = @"
+            DELETE FROM Inspecoes WHERE VeiculoID = @VeiculoID; 
+            ";
+
+            var parameters = new Dictionary<string, object>
+            {
+                { "@VeiculoID", id }
+            };
+
+            DALPro.Execute(sql, parameters);
+
+            sql = @"
+            DELETE FROM Veiculos WHERE VeiculoID = @VeiculoID; 
+            ";
+
+            DALPro.Execute(sql, parameters);
+
+        }
+
     }
 }

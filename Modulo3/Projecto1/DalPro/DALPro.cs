@@ -210,9 +210,10 @@ namespace DalPro
         // --------------------------------------------------
         // TRANSACTIONS
         // --------------------------------------------------
-        public static SqlTransaction BeginTransaction()
+        public static SqlTransaction BeginTransaction(string? connectionString = null)
         {
-            SqlConnection cn = GetConnection();
+
+            SqlConnection cn = (connectionString == null) ? GetConnection() : new SqlConnection(connectionString);
             cn.Open();
             return cn.BeginTransaction();
         }

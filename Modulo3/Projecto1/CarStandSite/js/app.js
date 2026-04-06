@@ -1,10 +1,9 @@
 
-function triggerSearch()
+async function triggerSearch()
 {
-    //collect all selected sortController.marca.selectEl select options
-    //collect all selected sortController.ano.selectEl select options
-    //collect all selected sortController.modelo.selectEl select options
-    //collect 
+    const filters = await getFilters();
+    const results = await GetSearch(filters);
+    fillTable(tabela, results);
 }
 function handleSelectLogic(e) {
     const select = e.target;
@@ -25,10 +24,16 @@ function handleFilterChange(e) {
     triggerSearch();
 }
 
+
 function SetEventListeners()
 {
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        upsertVeiculos();
+    });
     [profileimg, loginMessage].forEach(e => e.addEventListener("click", () =>{
-        formLogin.classList.toggle("hidden");
+        if (userObject.username == null)
+            formLogin.classList.toggle("hidden");
     }));
     formLogin.addEventListener("submit", (e) =>{
         e.preventDefault();
@@ -43,7 +48,8 @@ function SetEventListeners()
     [
         sortController.marca.selectEl, 
         sortController.ano.selectEl, 
-        sortController.modelo.selectEl
+        sortController.modelo.selectEl,
+        fVendido
     ].forEach(e => e.addEventListener("change", handleFilterChange));
    
 }

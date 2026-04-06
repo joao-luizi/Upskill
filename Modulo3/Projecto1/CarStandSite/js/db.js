@@ -11,6 +11,11 @@ const profileimg = document.getElementById("profile-img");
 const btlogout = document.getElementById("btlogout");
 //End Login
 
+const form = document.getElementById("formVeiculo");
+
+
+const tabela = document.getElementById("tabela");
+
 //filters
 const sortController = {
   marca: {
@@ -35,6 +40,34 @@ const sortController = {
 const fVendido = document.getElementById("fVendido");
 //filters
 
+async function GetVeiculoById(veiculoID) {
+    const response = await fetch(localhost +"/veiculos/" + veiculoID, 
+        {
+            method: "GET",
+        }
+    );
+
+    if (!response.ok) throw new Error("GetVeiculoById Return Error");
+    const data = await response.json();
+    return data;
+}
+async function GetSearch(filters)
+{
+   
+    const response = await fetch(localhost +"/search", 
+        {
+            method: "POST",
+             headers: {
+            "Content-Type": "application/json"
+            },
+            body: JSON.stringify(filters)
+        }
+    );
+    //console.log(JSON.stringify(filters));
+    if (!response.ok) throw new Error("GetSearch Return Error");
+    const data = await response.json();
+    return data;
+}
 async function GetFilter(endpoint)
 {
     const response = fetch(localhost + endpoint, {
@@ -111,7 +144,7 @@ function fillFilter(filtersElement, uniqueFilters)
     });
 }
 
-function nomalize(toMap, value, text)
+function normalize(toMap, value, text)
 {
     return toMap.map(f => ({
         value: String(f[value]),
@@ -136,9 +169,9 @@ async function preencherFiltros()
         resYears.json()
     ]);
 
-    const normalizedMarca = nomalize(marcaData, "idMarca", "nome");
-    const normalizedModelo = nomalize(modeloData, "idModelos", "modelo");
-    const normalizedYears = nomalize(yearsData, "ano", "ano");
+    const normalizedMarca = normalize(marcaData, "idMarca", "nome");
+    const normalizedModelo = normalize(modeloData, "idModelos", "modelo");
+    const normalizedYears = normalize(yearsData, "ano", "ano");
 
     fillFilter(sortController.marca, normalizedMarca);
     fillFilter(sortController.modelo, normalizedModelo);
@@ -238,3 +271,50 @@ function loadToken()
         userObject.userToken = null;
     }
 }
+
+async function upsertVeiculos()
+{
+    const upsertDTO = {
+        VeiculoID: form.VeiculoID.value === "" ? null : Number(form.VeiculoID.value),
+        ModeloNome: form.modelo.value,
+        MarcaNome: form.marca.value,
+        Ano: Number(form.ano.value),
+        DataDeInspecao: inspecao.value === "" ? null : new Date(inspecao.value).toISOString(),
+        Vendido: form.vendido.checked
+    };
+    const response = await fetch(localhost +"/veiculos", 
+        {
+            method: "POST",
+             headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer " + userObject.userToken
+            },
+
+            body: JSON.stringify(upsertDTO)
+        }
+    );
+
+    if (!response.ok) throw new Error("upsertVeiculos Return Error");
+    clearVehicleForm();
+    await preencherFiltros(); 
+    await triggerSearch();
+}
+
+async function deleteVeiculos(veiculoID)
+{
+    
+    const response = await fetch(localhost +"/veiculos/" + veiculoID, 
+        {
+            method: "DELETE",
+             headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer " + userObject.userToken
+            }
+        }
+    );
+
+    if (!response.ok) throw new Error("deleteVeiculos Return Error");
+    await preencherFiltros(); 
+    await triggerSearch();
+}
+

@@ -151,3 +151,27 @@ function sortNumberArray(arr, isAscending) {
     });
   return result;
 }
+
+/**
+ *  Determina o estado da inspeção com base na data fornecida.
+ *
+ * Calcula a diferença aproximada em meses entre a data atual
+ * e a data da última inspeção, retornando o HTML correspondente
+ * ao estado da inspeção.
+ *
+ * @param {Date} data - Data da última inspeção.
+ * @returns {string} HTML a inserir na célula da tabela,
+ *                   contendo o estado da inspeção.
+ *
+ * @note O cálculo de meses é aproximado (30 dias por mês)
+ */
+function inspecaoEstado(data) {
+  const agora = new Date();
+  const diffMeses = (agora - data) / (1000 * 60 * 60 * 24 * 30);
+  // Mais de 12 meses → inspeção expirada
+  if (diffMeses > 12) return '<span class="vendido">Expirada</span>';
+  // Entre 10 e 12 meses → aviso de expiração iminente
+  if (diffMeses > 10) return '<span class="aviso">A expirar</span>';
+  // Caso contrário → inspeção válida
+  return '<span class="ok">Válida</span>';
+}

@@ -91,6 +91,9 @@ namespace CarStandWebAPI
             });
             builder.Services.AddAuthorization();
             builder.Services.AddScoped<AuthService>();
+            builder.Services.AddScoped<IInspecoesRepository, InspecoesRepository>();
+            builder.Services.AddScoped<IMarcasRepository, MarcasRepository>();
+            builder.Services.AddScoped<IModelosRepository, ModelosRepository>();
             builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<IVehicleService, VehicleService>();
@@ -124,6 +127,15 @@ namespace CarStandWebAPI
                 return service.GetUniqueYears();
             });
 
+            app.MapGet("/veiculos/{id}", (long id, ILogger<VehicleService> Logger, IVehicleService service) => {
+                return service.GetById(id, "CarStand");
+            });
+
+            app.MapDelete("/veiculos/{id}", (long id, ILogger<VehicleService> logger, IVehicleService service) =>
+            {
+                service.Delete(id, "CarStand");
+            }).RequireAuthorization(policy => policy.RequireRole("admin"));
+
 
             app.MapGet("/me", (ClaimsPrincipal user) =>
             {
@@ -148,14 +160,6 @@ namespace CarStandWebAPI
                 return Results.Unauthorized();
 
             });
-
-            app.MapPost("/search", (FilterDTO filter, IVehicleService service, ILogger<Program> logger) =>
-            {
-                return service.SearchResult(filter, "CarStand");
-
-            });
-
-
 #else
             app.MapPost("/login", (LoginDTO login, ILoginService service, ILogger<Program> logger) =>
             {
@@ -166,6 +170,17 @@ namespace CarStandWebAPI
                 return Results.Ok(new { token });
             });
 #endif
+            app.MapPost("/search", (FilterDTO filter, IVehicleService service, ILogger<Program> logger) =>
+            {
+                return service.SearchResult(filter, "CarStand");
+
+            });
+
+            app.MapPost("/veiculos", (VeiculoUpsertDTO upsertDTO, IVehicleService service, ILogger<Program> logger) =>
+            {
+                return service.Upsert(upsertDTO, "CarStand");
+
+            }).RequireAuthorization();
             app.Run();
         }
     }

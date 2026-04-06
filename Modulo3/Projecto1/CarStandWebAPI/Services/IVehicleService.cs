@@ -12,5 +12,11 @@ namespace CarStandWebAPI.Services
 
         public List<VeiculosDTO> SearchResult(FilterDTO filter, string tag);
 
+        public VeiculosDTO Upsert(VeiculoUpsertDTO dto, string tag);
+
+        public VeiculosDTO GetById(long id, string tag);
+
+        public void Delete(long id, string tag);
+
     }
 }

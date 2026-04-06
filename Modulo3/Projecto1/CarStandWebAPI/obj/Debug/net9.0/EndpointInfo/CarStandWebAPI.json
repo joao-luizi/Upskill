@@ -90,6 +90,57 @@
         }
       }
     },
+    "/veiculos/{id}": {
+      "get": {
+        "tags": [
+          "CarStandWebAPI"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VeiculosDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "CarStandWebAPI"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/me": {
       "get": {
         "tags": [
@@ -149,6 +200,35 @@
                   "items": {
                     "$ref": "#/components/schemas/VeiculosDTO"
                   }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/veiculos": {
+      "post": {
+        "tags": [
+          "CarStandWebAPI"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VeiculoUpsertDTO"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VeiculosDTO"
                 }
               }
             }
@@ -222,7 +302,7 @@
         "properties": {
           "idMarca": {
             "type": "integer",
-            "format": "int64"
+            "format": "int32"
           },
           "nome": {
             "type": "string",
@@ -240,6 +320,37 @@
           },
           "modelo": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VeiculoUpsertDTO": {
+        "type": "object",
+        "properties": {
+          "veiculoID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "modeloNome": {
+            "type": "string",
+            "nullable": true
+          },
+          "marcaNome": {
+            "type": "string",
+            "nullable": true
+          },
+          "ano": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vendido": {
+            "type": "boolean"
+          },
+          "dataDeInspecao": {
+            "type": "string",
+            "format": "date-time",
             "nullable": true
           }
         },
