@@ -19,5 +19,7 @@ namespace CarStandBusiness.Repositories
         public void Update(Inspecoes ins, string tag);
 
         public void Delete(long id, string tag);
+
+        public void DeleteAll(string tag);
     }
 }

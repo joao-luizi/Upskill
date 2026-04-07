@@ -120,5 +120,13 @@ namespace CarStandBusiness.Repositories
 
             DALPro.Execute(sql, parameters);
         }
+
+        public void DeleteAll(string tag)
+        {
+            DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
+
+            var sql = "DELETE FROM [Modelos]";
+            DALPro.Execute(sql);
+        }
     }
 }

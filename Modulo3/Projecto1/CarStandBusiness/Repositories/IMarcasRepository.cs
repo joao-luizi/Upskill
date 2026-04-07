@@ -22,5 +22,7 @@ namespace CarStandBusiness.Repositories
         public void Update(MarcasDTO ins, string tag, SqlTransaction? trans = null);
 
         public void Delete(long id, string tag);
+
+        public void DeleteAll(string tag);
     }
 }

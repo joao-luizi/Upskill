@@ -20,5 +20,7 @@ namespace CarStandBusiness.Repositories
         public VeiculosDTO SearchById(long id, string tag);
 
         public void Delete(long id, string tag);
+
+        public void DeleteAll(string tag);
     }
 }
