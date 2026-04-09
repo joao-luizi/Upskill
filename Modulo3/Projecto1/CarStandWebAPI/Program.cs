@@ -91,6 +91,8 @@ namespace CarStandWebAPI
             });
             builder.Services.AddAuthorization();
             builder.Services.AddScoped<AuthService>();
+            builder.Services.AddScoped<IDatabaseRepository, DatabaseRepository>();
+            builder.Services.AddScoped<IDatabaseService, DatabaseService>();
             builder.Services.AddScoped<IInspecoesRepository, InspecoesRepository>();
             builder.Services.AddScoped<IMarcasRepository, MarcasRepository>();
             builder.Services.AddScoped<IModelosRepository, ModelosRepository>();
@@ -181,6 +183,17 @@ namespace CarStandWebAPI
                 return service.Upsert(upsertDTO, "CarStand");
 
             }).RequireAuthorization();
+
+            app.MapDelete("/veiculos/all", (ILogger<VehicleService> logger, IVehicleService VehicleService, 
+                ILoginService LoginService) =>
+            {
+                VehicleService.DeleteAll("CarStand");
+            }).RequireAuthorization(policy => policy.RequireRole("admin"));
+
+            app.MapPost("/veiculos/rebuild", (ILogger<Program> logger, IDatabaseService service) =>
+            {
+                service.SeedData("CarStand");
+            }).RequireAuthorization(policy => policy.RequireRole("admin"));
             app.Run();
         }
     }

@@ -235,6 +235,30 @@
           }
         }
       }
+    },
+    "/veiculos/all": {
+      "delete": {
+        "tags": [
+          "CarStandWebAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/veiculos/rebuild": {
+      "post": {
+        "tags": [
+          "CarStandWebAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

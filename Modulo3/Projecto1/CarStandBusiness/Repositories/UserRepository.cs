@@ -107,7 +107,7 @@ namespace CarStandBusiness.Repositories
             }
         }
 
-        public void Delete(int id, string tag)
+        public void Delete(long id, string tag)
         {
             DALPro.ConnectionString = GetConnectionsString(tag);
             SqlTransaction? trans = null;
@@ -146,6 +146,33 @@ namespace CarStandBusiness.Repositories
             };
 
             return DALPro.Query<Users>(sql, param).FirstOrDefault();
+        }
+
+        public void DeleteAll(long id, string tag)
+        {
+            DALPro.ConnectionString = GetConnectionsString(tag);
+            SqlTransaction? trans = null;
+
+            try
+            {
+                trans = DALPro.BeginTransaction();
+                string sql = "DELETE FROM Users WHERE ID_User !=@id";
+
+                var param = new Dictionary<string, object>
+                {
+                    {"@id", id}
+                };
+
+                DALPro.Execute(sql, param, trans);
+                DALPro.Commit(trans);
+            }
+            catch (Exception ex)
+            {
+                if (trans != null)
+                    DALPro.Rollback(trans);
+                _logger.LogError(ex, "Error on Delete User");
+                throw;
+            }
         }
     }
 }

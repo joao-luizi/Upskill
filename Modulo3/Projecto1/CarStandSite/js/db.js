@@ -12,8 +12,6 @@ const btlogout = document.getElementById("btlogout");
 //End Login
 
 const form = document.getElementById("formVeiculo");
-
-
 const tabela = document.getElementById("tabela");
 
 //filters
@@ -40,6 +38,9 @@ const sortController = {
 const fVendido = document.getElementById("fVendido");
 //filters
 
+//reinicializar e limpar
+const resetButton = document.getElementById("carregarLS");
+const cleanButton = document.getElementById("limparLS");
 async function GetVeiculoById(veiculoID) {
     const response = await fetch(localhost +"/veiculos/" + veiculoID, 
         {
@@ -51,6 +52,37 @@ async function GetVeiculoById(veiculoID) {
     const data = await response.json();
     return data;
 }
+
+async function rebuildDB() {
+    const response = await fetch(localhost + "/veiculos/rebuild",
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer " + userObject.userToken
+            }
+        }
+    );
+    if (!response.ok) throw new Error("rebuildDB Return Error");
+    await preencherFiltros();
+    await triggerSearch();
+}
+
+async function deleteDB() {
+    const response = await fetch(localhost + "/veiculos/all",
+        {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer " + userObject.userToken
+            }
+        }
+    );
+    if (!response.ok) throw new Error("deleteDB Return Error");
+    await preencherFiltros();
+    await triggerSearch();
+}
+
 async function GetSearch(filters)
 {
    

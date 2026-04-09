@@ -27,6 +27,12 @@ function handleFilterChange(e) {
 
 function SetEventListeners()
 {
+    resetButton.addEventListener("click", () => { 
+         rebuildDB();
+    });
+    cleanButton.addEventListener("click", () => { 
+         deleteDB();
+    });
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         upsertVeiculos();

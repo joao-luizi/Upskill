@@ -15,8 +15,8 @@ namespace CarStandBusiness.Repositories
 
         void Update(Users user, string tag);
 
-        void Delete(int id, string tag);
+        void Delete(long id, string tag);
 
-        public void DeleteAll(string tag);
+        public void DeleteAll(long id, string tag);
     }
 }

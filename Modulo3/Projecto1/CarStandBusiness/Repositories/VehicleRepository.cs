@@ -3,6 +3,7 @@ using CarStandBusiness.Models;
 using DalPro;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using System.Net;
 using System.Text;
 
@@ -86,33 +87,27 @@ namespace CarStandBusiness.Repositories
             DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
             var sql = new StringBuilder();
             var parameters = new Dictionary<string, object>();
-
             sql.Append(@"
             SELECT 
-        v.VeiculoID,  
-        m.Nome,
-        mo.Modelo, 
-        v.Ano, 
-        v.Vendido, 
-        i.DataDeInspecao, 
-        i.Resultado
-    FROM Veiculos v
-    LEFT JOIN Marcas m ON m.IDMarca = v.MarcaID
-    LEFT JOIN Modelos mo ON mo.IDModelos = v.ModeloID
-    LEFT JOIN (
-        SELECT *
-        FROM (
-            SELECT 
-                Inspecoes.*,
-                ROW_NUMBER() OVER (
-                    PARTITION BY VeiculoID
-                    ORDER BY DataDeInspecao DESC, InspecoesID DESC
-                ) AS rn
-            FROM Inspecoes
-        ) x
-        WHERE rn = 1
-    ) i ON i.VeiculoID = v.VeiculoID
-    WHERE 1 = 1
+                v.VeiculoID, m.Nome, mo.Modelo, v.Ano, 
+                v.Vendido, i.DataDeInspecao, i.Resultado
+            FROM Veiculos v
+            LEFT JOIN Marcas m ON m.IDMarca = v.MarcaID
+            LEFT JOIN Modelos mo ON mo.IDModelos = v.ModeloID
+            LEFT JOIN (
+                SELECT *
+                FROM (
+                    SELECT 
+                        Inspecoes.*,
+                        ROW_NUMBER() OVER (
+                            PARTITION BY VeiculoID
+                            ORDER BY DataDeInspecao DESC, InspecoesID DESC
+                        ) AS rn
+                    FROM Inspecoes
+                ) x
+                WHERE rn = 1
+            ) i ON i.VeiculoID = v.VeiculoID
+            WHERE 1 = 1
             ");
 
             AddInClause(sql, parameters, "Ano", "Ano", filter.Anos);
@@ -125,6 +120,7 @@ namespace CarStandBusiness.Repositories
                 parameters.Add("Vendido", filter.Vendido.Value);
             }
 
+            
             return DALPro.Query<VeiculosDTO>(sql.ToString(), parameters);
         }
 
@@ -179,23 +175,23 @@ namespace CarStandBusiness.Repositories
             DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
 
             string sql = @"
-        UPDATE Veiculos
-        SET 
-            MarcaID = @MarcaID,
-            ModeloID = @ModeloID,
-            Ano = @Ano,
-            Vendido = @Vendido
-        WHERE VeiculoID = @VeiculoID;
-    ";
+            UPDATE Veiculos
+            SET 
+                MarcaID = @MarcaID,
+                ModeloID = @ModeloID,
+                Ano = @Ano,
+                Vendido = @Vendido
+            WHERE VeiculoID = @VeiculoID;
+            ";
 
             var parameters = new Dictionary<string, object>
-    {
-        { "@VeiculoID", veiculo.VeiculoID },
-        { "@MarcaID", veiculo.MarcaID },
-        { "@ModeloID", veiculo.ModeloID },
-        { "@Ano", veiculo.Ano },
-        { "@Vendido", veiculo.Vendido }
-    };
+            {
+                { "@VeiculoID", veiculo.VeiculoID },
+                { "@MarcaID", veiculo.MarcaID },
+                { "@ModeloID", veiculo.ModeloID },
+                { "@Ano", veiculo.Ano },
+                { "@Vendido", veiculo.Vendido }
+            };
 
             DALPro.Execute(sql, parameters);
         }
@@ -229,19 +225,13 @@ namespace CarStandBusiness.Repositories
             DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
 
             string sql = @"
-            DELETE FROM Inspecoes WHERE VeiculoID = @VeiculoID; 
+            DELETE FROM Veiculos WHERE VeiculoID = @VeiculoID; 
             ";
 
             var parameters = new Dictionary<string, object>
             {
                 { "@VeiculoID", id }
             };
-
-            DALPro.Execute(sql, parameters);
-
-            sql = @"
-            DELETE FROM Veiculos WHERE VeiculoID = @VeiculoID; 
-            ";
 
             DALPro.Execute(sql, parameters);
 

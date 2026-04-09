@@ -113,5 +113,29 @@ namespace CarStandBusiness.Repositories
 
             DALPro.Execute(sql, parameters);
         }
+
+        public void DeleteAll(string tag)
+        {
+            DalPro.DALPro.ConnectionString = GetConnectionsString(tag);
+
+            var sql = "DELETE FROM Inspecoes";
+
+            
+            DALPro.Execute(sql);
+        }
+
+        public void DeleteByVehicleId(long id, string tag)
+        {
+            string sql = @"
+            DELETE FROM Inspecoes WHERE VeiculoID = @VeiculoID; 
+            ";
+
+            var parameters = new Dictionary<string, object>
+            {
+                { "@VeiculoID", id }
+            };
+
+            DALPro.Execute(sql, parameters);
+        }
     }
 }

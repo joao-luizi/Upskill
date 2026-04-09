@@ -18,5 +18,7 @@ namespace CarStandWebAPI.Services
 
         public void Delete(long id, string tag);
 
+        public void DeleteAll(string tag);
+
     }
 }

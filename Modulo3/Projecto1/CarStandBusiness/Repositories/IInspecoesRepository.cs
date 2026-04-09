@@ -20,6 +20,8 @@ namespace CarStandBusiness.Repositories
 
         public void Delete(long id, string tag);
 
+        public void DeleteByVehicleId(long id, string tag);
+
         public void DeleteAll(string tag);
     }
 }

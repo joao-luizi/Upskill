@@ -33,7 +33,7 @@ namespace CarStandBusiness.Repositories
 
             var sql = @"
             [IDModelos] ,[Modelo]
-            FROM [Modelos];";
+            FROM [Modelos]";
 
             return DALPro.Query<Modelos>(sql);
         }
