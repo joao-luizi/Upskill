@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Tarefas</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+
+            <!-- Logo -->
+            <div class="logo">
+                <span>TaskFlow</span>
+            </div>
+
+            <!-- Navegação -->
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Tarefas</a>
+                <button class="btn-primary">Nova Tarefa</button>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- Dashboard (AGORA EM CIMA) -->
+        <section class="dashboard">
+            <h2>Dashboard</h2>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <p>Total</p>
+                    <span>12</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>Concluídas</p>
+                    <span>5</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>Pendentes</p>
+                    <span>4</span>
+                </div>
+
+                <div class="stat-card">
+                    <p>Em atraso</p>
+                    <span>3</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lista de Tarefas (EM BAIXO) -->
+
+<section class="task-list">
+    <h2>Tarefas</h2>
+
+    <div class="tasks-container">
+
+        <div class="task-card">
+            <!-- Botão concluir -->
+            <button class="complete-btn">✔</button>
+            <!-- Conteúdo -->
+            <div class="task-content">
+                <h3>Implementar autenticação</h3>
+                <p>Criar sistema de login com validação e gestão de sessões.</p>
+                <!-- PRIORIDADE -->
+                <div class="priority-badge high">High</div>
+            </div>
+            <!-- Ações -->
+            <div class="task-actions">
+                <button class="edit-btn">Editar</button>
+                <button class="delete-btn">Apagar</button>
+            </div>
+        </div>
+
+        <div class="task-card">
+                <!-- Botão concluir -->
+                <button class="complete-btn">✔</button>
+                <!-- Conteúdo -->
+                <div class="task-content">
+                    <h3>Fazer o comentário do seminário</h3>
+                    <p>Introduzir citações nas ideias principais na resposta do seminário.</p>
+                    <!-- PRIORIDADE -->
+                    <div class="priority-badge medium">Medio</div>
+                </div>
+                <!-- Ações -->
+                <div class="task-actions">
+                    <button class="edit-btn">Editar</button>
+                    <button class="delete-btn">Apagar</button>
+                </div>
+        </div>
+
+        <div class="task-card">
+            <!-- Botão concluir -->
+            <button class="complete-btn">✔</button>
+            <!-- Conteúdo -->
+            <div class="task-content">
+                <h3>Estudo Documentação</h3>
+                <p>Estudar razor pages e permanencia de variáveis.</p>
+                <!-- PRIORIDADE -->
+                <div class="priority-badge low">Low</div>
+            </div>
+            <!-- Ações -->
+            <div class="task-actions">
+                <button class="edit-btn">Editar</button>
+                <button class="delete-btn">Apagar</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+            
+            
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Contactos</a>
+            <a href="#">Termos de Utilização</a>
+        </div>
+        <p>© 2026 - Gestor de Tarefas</p>
+    </footer>
+
+</body>
+</html>

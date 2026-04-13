@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    @*Todo Dash Board*@
+<section class="dashboard">
+    <h2>Tarefas Recentes</h2>
+    @if(Model.Recenttasks.Any())
+    {
+        <div class="empty-list">
+
+        </div>
+    
+    }
+    else
+    {
+
+    }
+        
+</section>
+
+
+
+
