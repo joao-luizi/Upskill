@@ -1,0 +1,50 @@
+
+
+Setor: Tecnologias de Informação e Telecomunicações
+Empresa: Nokia
+Motivo: 
+A Nokia está hoje envolvida, em parceria com a NVIDIA no desenvolvimento de telecomunicaçõe baseadas e que integram IA na cloud.
+Este desenvolvimento irá enventualmente contribuir para a formação da proxima geração de internet e telecomunicações.
+
+Tem equipas de desenvolvimento a trabalhar na "transcrição" de algoritmos matemáticos para codigo 
+com uma forte componente de analise de algoritmos em termos de complexidade espacial e temporal assegurando a sua otimização.
+
+Estas técnologias precisaram de individuos com boa competencia em linguagens de programação de baixo nível (C/C++) 
+para desenvolverem as soluções futuras. 
+O seu  grau de precisão, exigencia e desafio são elementos que me atraem especificamente.
+
+
+2:
+https://www.linkedin.com/jobs/view/4386601690/?alternateChannel=search&trk=d_flagship3_search_srp_jobs&refId=0u7k3N9i%2FwDvqGwT8w37rQ%3D%3D&trackingId=cdbiXdnmyswoAzkJH6xNhw%3D%3D
+A vaga identifica as seguintes competencias:
+1. Strong expertise in C++ development and testing
+2. Excellent communication skills and fluency in English
+3. Solid understanding of software engineering best practices for delivering high-quality solutions
+Nice to have:
+Experience with GPU programming and CUDA development, would be a great plus* 
+Knowledge in Python
+Experience in Linux OS
+Understanding of LTE/ 5G system
+
+2.1 Conpetencias detidas:
+- programação em C++ (desenvolvimento) basico
+- comunicação fluente em ingles
+- bom entendimento da boas práticas em desenvolvimento de software
+- experiencia Python
+- optimização de código
+- Docker
+
+2.2 Conpetencias a adquirir:
+2.2.1 programação em GPU e CUDA
+2.2.2 Compreensão de sistema LTE e 5G
+
+Estratégia de aquisição de competências:
+1 - Programação em GPU e CUDA.
+Terminar tutoriais "hands-on" em programação em open-GL e shaders. 
+Leitura de guias de programação oficiais da NVIDIA (https://docs.nvidia.com/cuda/cuda-programming-guide/index.html)
+Realização de projectos.
+
+2 - Compreensão de sistema LTE e 5G
+Leitura de analises historica LTE (4G) e 5G. Que problemas técnicos procuraram resolver, que barreiras encontraram no seu desenvolvimento.
+Cursos online sobre fundamentos de networking, protocolos e outros aspectos necessários ao desenvolvimento de protocolos em 4G e 5G
+Projectos individuais de baixo scope para entendimento hand-on de principios inerentes a LTE (4g ou 5G)
