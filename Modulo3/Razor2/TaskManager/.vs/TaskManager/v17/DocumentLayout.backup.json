@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\razor2\\taskmanager\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|solutionrelative:pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\razor2\\taskmanager\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\razor2\\taskmanager\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\razor2\\taskmanager\\service\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|solutionrelative:service\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\razor2\\taskmanager\\taskmanager.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|solutionrelative:taskmanager.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\razor2\\taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\razor2\\taskmanager\\models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\razor2\\taskmanager\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|solutionrelative:pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\razor2\\taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10335DDF-03C4-4D97-A1B3-ED4C69BFE293}|TaskManager.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +50,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\Pages\\Error.cshtml",
+              "RelativeToolTip": "Pages\\Error.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-13T16:07:28.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ITaskService.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\Service\\ITaskService.cs",
+              "RelativeDocumentMoniker": "Service\\ITaskService.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\Service\\ITaskService.cs",
+              "RelativeToolTip": "Service\\ITaskService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T13:41:09.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TaskManager",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\TaskManager.csproj",
+              "RelativeDocumentMoniker": "TaskManager.csproj",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\TaskManager.csproj",
+              "RelativeToolTip": "TaskManager.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-13T13:40:41.348Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -91,19 +146,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAPYAAAAAAAAAAAAAAAUBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-04-13T13:29:36.013Z",
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T13:36:31.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\Pages\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
@@ -116,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
@@ -129,15 +184,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\Pages\\Index.cshtml*",
-              "RelativeToolTip": "Pages\\Index.cshtml*",
-              "ViewState": "AgIAABAAAAAAAAAAAAAYwB4AAAAKAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-04-13T11:47:59.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAAAAUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-13T13:29:36.013Z",
               "EditorCaption": ""
             },
             {
@@ -148,13 +216,14 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T11:04:25.29Z"
+              "WhenOpened": "2026-04-13T11:04:25.29Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "TaskItem.cs",
               "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\Razor2\\TaskManager\\Models\\TaskItem.cs",
               "RelativeDocumentMoniker": "Models\\TaskItem.cs",

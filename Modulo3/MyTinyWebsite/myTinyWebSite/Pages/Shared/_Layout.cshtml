@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - myTinyWebSite</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/myTinyWebSite.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+    <div id="topo"> </div>
+    <nav align="center">
+        <a class="navbar-brand" asp-area="" asp-page="/Index">Home |</a>
+        <a class="navbar-brand" asp-area="" asp-page="/Blog/Index">Blog |</a>
+        <a class="navbar-brand" asp-area="" asp-page="/Gallery/Index">Gallery |</a>
+        <a class="navbar-brand" asp-area="" asp-page="/Students/Index">Students Data |</a>
+        <a class="navbar-brand" asp-area="" asp-page="/Application/Index">Application Form |</a>
+        <a class="navbar-brand" asp-area="" asp-page="/Contact/Index">Contact |</a>
+        <a class="navbar-brand" asp-area="" asp-page="/Resources/Index">Resources |</a>
+    </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <hr>
+        <p align="center">&copy; Copyright @DateTime.Now.Year www.&ltabc&gt.com</p>
+        <p align="center"><a href="#topo">Topo</a></p>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

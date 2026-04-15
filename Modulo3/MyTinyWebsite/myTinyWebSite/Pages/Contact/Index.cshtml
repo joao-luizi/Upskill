@@ -1,0 +1,48 @@
+﻿@page
+@model myTinyWebSite.Pages.Contact.IndexModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<h1 align="center">Contact Us / Address Information</h1>
+
+<form method="post">
+    <table style="border:5px dotted" align="center">
+        <tr>
+            <td>Your Name: <input id="Nome" placeholder ="Nome" type="text" ></td>
+        </tr>
+        <tr>
+            <td>Your Email: <input id="Email" placeholder="Email" type="email"></td>
+        </tr>
+        <tr>
+            <td>Subject: <input id="Subject" placeholder="Assunto"  type="text" name="subject"></td>
+        </tr>
+        <tr>
+            <td>Comments: <br><textarea id="Comment" cols="50" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="submit"> <input type="reset"></td>
+        </tr>
+    </table>
+</form>
+
+<table align="center">
+    <tr>
+        <td>
+            <p>Our postal address in Lisbon is:</p>
+
+            <p style="color:blue;font-size:20px">
+                <b>
+                    BC2 A1, Broadcast Centre<br>
+                    Rua das Flores<br>
+                    Lisbon
+                </b>
+            </p>
+
+            <p>Email <a href="mailto:editorial.policy.adviser@bbc.co.uk">editorial.policy.adviser@bbc.co.uk</a></p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.380674161149!2d-9.145790749083766!3d38.70906826552796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19347e69b37c71%3A0xa2005f8dd29eda4c!2sRua%20das%20Flores%2C%20Lisboa!5e0!3m2!1sen!2spt!4v1604574213423!5m2!1sen!2spt" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </td>
+    </tr>
+</table>
