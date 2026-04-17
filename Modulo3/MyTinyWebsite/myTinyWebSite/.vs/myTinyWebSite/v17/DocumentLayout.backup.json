@@ -1,36 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\mytinywebsite\\mytinywebsite\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\mytinywebsite\\mytinywebsite\\pages\\resources\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|solutionrelative:pages\\resources\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\mytinywebsite\\mytinywebsite\\pages\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|solutionrelative:pages\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\mytinywebsite\\mytinywebsite\\pages\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|solutionrelative:pages\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\mytinywebsite\\mytinywebsite\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|solutionrelative:pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\mytinywebsite\\mytinywebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|c:\\users\\formando\\documents\\upskill\\modulo3\\mytinywebsite\\mytinywebsite\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -38,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -91,97 +62,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\Resources\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Resources\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\Resources\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Resources\\Index.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAwBwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-14T11:41:26.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\Contact\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Contact\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\Contact\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Contact\\Index.cshtml",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAwC8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-14T11:39:43.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:29:48.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\Blog\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Blog\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\Blog\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Blog\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-14T11:25:23.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-14T11:23:56.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAABUAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-14T11:15:16.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\_ViewImports.cshtml",
-              "RelativeToolTip": "Pages\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-14T11:15:09.852Z",
-              "EditorCaption": ""
             }
           ]
         }

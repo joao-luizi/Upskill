@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = "Início";
+    //var stats = (TaskStats)ViewBag.Stats;
+    var recentTasks = (List<TaskItem>)ViewBag.RecentTasks;
+}
+
+<div class="hero">
+    <div class="hero-text">
+        <h1 class="hero-title">Gestor de Tarefas</h1>
+        <p class="hero-subtitle">ASP.NET Core MVC</p>
+    </div>
+</div>
+
+@* <section class="stats-grid">
+    <div class="stat-card stat-card--total">
+        <span class="stat-number">@stats.Total</span>
+        <span class="stat-label">Total</span>
+    </div>
+    <div class="stat-card stat-card--done">
+        <span class="stat-number">@stats.Completed</span>
+        <span class="stat-label">Concluídas</span>
+    </div>
+    <div class="stat-card stat-card--pending">
+        <span class="stat-number">@stats.Pending</span>
+        <span class="stat-label">Pendentes</span>
+    </div>
+    <div class="stat-card stat-card--overdue">
+        <span class="stat-number">@stats.Overdue</span>
+        <span class="stat-label">Em Atraso</span>
+    </div>
+</section>
+ *@
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Tarefas Recentes</h2>
+        <a asp-controller="Tasks" asp-action="Index" class="link-all">Ver todas →</a>
+    </div>
+
+    @if (!recentTasks.Any())
+    {
+        <div class="empty-state">
+            <p>Ainda não há tarefas. <a asp-controller="Tasks" asp-action="Create">Cria a primeira!</a></p>
+        </div>
+    }
+    else
+    {
+        <div class="task-list">
+            @foreach (var task in recentTasks)
+            {
+                <div class="task-card @(task.IsCompleted ? "task-card--done" : "") priority-@task.Priority.ToString().ToLower()">
+                    <div class="task-card__status">
+                        @if (task.IsCompleted)
+                        {
+                            <span class="badge badge--done">✓</span>
+                        }
+                        else
+                        {
+                            <span class="badge badge--@task.Priority.ToString().ToLower()">@task.Priority</span>
+                        }
+                    </div>
+                    <div class="task-card__body">
+                        <h3 class="task-card__title">@task.Title</h3>
+                        @if (!string.IsNullOrEmpty(task.Description))
+                        {
+                            <p class="task-card__desc">@task.Description</p>
+                        }
+                        @if (task.DueDate.HasValue)
+                        {
+                            var isOverdue = !task.IsCompleted && task.DueDate < DateTime.Today;
+                            <span class="task-card__date @(isOverdue ? "overdue" : "")">
+                                📅 @task.DueDate.Value.ToString("dd MMM yyyy")
+                                @if (isOverdue)
+                                {
+                                    <span>(em atraso)</span>
+                                }
+                            </span>
+                        }
+                    </div>
+                    <div class="task-card__actions">
+                        <a asp-controller="Tasks" asp-action="Edit" asp-route-id="@task.Id"
+                           class="btn btn--sm btn--ghost">Editar</a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</section>

@@ -1,3 +1,5 @@
+using myTinyWebSite.Service;
+
 namespace myTinyWebSite
 {
     public class Program
@@ -8,7 +10,8 @@ namespace myTinyWebSite
 
             // Add services to the container.
             builder.Services.AddRazorPages();
-
+           
+            builder.Services.AddScoped<IContactService, ContactService>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

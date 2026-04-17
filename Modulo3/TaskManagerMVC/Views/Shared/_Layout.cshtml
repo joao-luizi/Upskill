@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="nav-icon">✦</span>
+            <span>@ViewData["AppName"]</span>
+        </div>
+        <div class="nav-links">
+            <a asp-controller="Home" asp-action="Index" class="nav-link">Início</a>
+            <a asp-controller="Tasks" asp-action="Index" class="nav-link">Tarefas</a>
+            <a asp-controller="Tasks" asp-action="Create" class="nav-link nav-link--cta">+ Nova Tarefa</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        @RenderBody()
+    </main>
+
+    <footer class="footer">
+        <p>Gestor de Tarefas — ASP.NET Core MVC</p>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

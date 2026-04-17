@@ -5,7 +5,10 @@
 }
 
 <h1 align="center">Contact Us / Address Information</h1>
-
+@if (TempData["Message"] is string msg)
+{
+    <div class="alert alert--success">@msg</div>
+}
 <form method="post">
     <table style="border:5px dotted" align="center">
         <tr>

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.VisualBasic;
+using myTinyWebSite.Service;
 using System.ComponentModel.DataAnnotations;
 
 namespace myTinyWebSite.Pages.Contact
@@ -39,6 +40,7 @@ namespace myTinyWebSite.Pages.Contact
         public string Comment { get; set; } = string.Empty;
         public void OnGet()
         {
+           
         }
 
         public IActionResult OnPost() 
@@ -47,13 +49,8 @@ namespace myTinyWebSite.Pages.Contact
             {
                 return Page();
             }
-
-            _taskService.Create(Title, Description, Priority, DueDate);
-
-            TempData["Message"] = $"Tarefa \"{Title}\" criada com sucesso!";
-
-            // PRG Pattern: Post → Redirect → Get
-            // Evita submissão duplicada ao recarregar a página
+            _contactService.CreateContact(Nome, Email, Assunto, Comment);
+            TempData["Message"] = $"Contacto \"{Assunto}\" criado com sucesso!";
             return RedirectToPage("Index");
 
         }

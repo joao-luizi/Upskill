@@ -1,0 +1,182 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\_final\\2_mvc\\_work\\taskmanagermvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\_final\\2_mvc\\_work\\taskmanagermvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\_final\\2_mvc\\_work\\taskmanagermvc\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\_final\\2_mvc\\_work\\taskmanagermvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\_final\\2_mvc\\_work\\taskmanagermvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\_final\\2_mvc\\_work\\taskmanagermvc\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|solutionrelative:services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\_final\\2_mvc\\_work\\taskmanagermvc\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|c:\\users\\jopa_\\onedrive - iscte-iul\\_drive\\iscte\\upskills\\2025\\m3\\_final\\2_mvc\\_work\\taskmanagermvc\\models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AB015D6-CEBE-46E8-B156-5E80748DE318}|TaskManagerMVC.csproj|solutionrelative:models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0504ff91-9d61-11d0-a794-00a0c9110051}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TasksController.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\Controllers\\TasksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\Controllers\\TasksController.cs",
+              "RelativeToolTip": "Controllers\\TasksController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:16:28.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T10:27:10.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TaskService.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\Services\\TaskService.cs",
+              "RelativeDocumentMoniker": "Services\\TaskService.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\Services\\TaskService.cs",
+              "RelativeToolTip": "Services\\TaskService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T10:12:13.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T10:05:34.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-16T10:05:12.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAJYCAAAAAAAAAAAQwOYCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-16T10:04:22.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-16T10:02:41.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TaskItem.cs",
+              "DocumentMoniker": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\Models\\TaskItem.cs",
+              "RelativeDocumentMoniker": "Models\\TaskItem.cs",
+              "ToolTip": "C:\\Users\\jopa_\\OneDrive - ISCTE-IUL\\_Drive\\ISCTE\\Upskills\\2025\\M3\\_Final\\2_MVC\\_work\\TaskManagerMVC\\Models\\TaskItem.cs",
+              "RelativeToolTip": "Models\\TaskItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T09:53:33.371Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1324,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

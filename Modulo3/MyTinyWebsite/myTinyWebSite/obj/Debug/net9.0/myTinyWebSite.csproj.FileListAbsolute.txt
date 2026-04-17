@@ -22,7 +22,6 @@ C:\Users\Formando\Documents\Upskill\Modulo3\MyTinyWebsite\myTinyWebSite\obj\Debu
 C:\Users\Formando\Documents\Upskill\Modulo3\MyTinyWebsite\myTinyWebSite\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Formando\Documents\Upskill\Modulo3\MyTinyWebsite\myTinyWebSite\obj\Debug\net9.0\scopedcss\bundle\myTinyWebSite.styles.css
 C:\Users\Formando\Documents\Upskill\Modulo3\MyTinyWebsite\myTinyWebSite\obj\Debug\net9.0\scopedcss\projectbundle\myTinyWebSite.bundle.scp.css
-C:\Users\Formando\Documents\Upskill\Modulo3\MyTinyWebsite\myTinyWebSite\obj\Debug\net9.0\compressed\jx2raxcxsh-b9sayid5wm.gz
 C:\Users\Formando\Documents\Upskill\Modulo3\MyTinyWebsite\myTinyWebSite\obj\Debug\net9.0\compressed\5z7nouhewi-61n19gt1b8.gz
 C:\Users\Formando\Documents\Upskill\Modulo3\MyTinyWebsite\myTinyWebSite\obj\Debug\net9.0\compressed\p3rige8831-xtxxf3hu2r.gz
 C:\Users\Formando\Documents\Upskill\Modulo3\MyTinyWebsite\myTinyWebSite\obj\Debug\net9.0\compressed\henv16uifo-bqjiyaj88i.gz
@@ -96,3 +95,4 @@ C:\Users\Formando\Documents\Upskill\Modulo3\MyTinyWebsite\myTinyWebSite\obj\Debu
 C:\Users\Formando\Documents\Upskill\Modulo3\MyTinyWebsite\myTinyWebSite\obj\Debug\net9.0\myTinyWebSite.pdb
 C:\Users\Formando\Documents\Upskill\Modulo3\MyTinyWebsite\myTinyWebSite\obj\Debug\net9.0\myTinyWebSite.genruntimeconfig.cache
 C:\Users\Formando\Documents\Upskill\Modulo3\MyTinyWebsite\myTinyWebSite\obj\Debug\net9.0\ref\myTinyWebSite.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\MyTinyWebsite\myTinyWebSite\obj\Debug\net9.0\compressed\jx2raxcxsh-vdva5l3fvp.gz
