@@ -1,0 +1,57 @@
+1. Fale-me sobre si.
+2. O que menos gostou na sua última experiência de trabalho?
+3. Quais os seus pontos fortes e fracos?
+4. Uma situação em que falhou?
+5. Porque motivo quer mudar de trabalho?
+6. Porque motivo o devemos contratar?
+7. Tem alguma questão que nos queira colocar?
+
+1. Fale-me sobre si.
+Iniciei a minha carreira na área da saúde, como técnico de Cardiopneumologia, e mais tarde integrei uma equipa de gestão num projeto social numa Santa Casa.
+Estas experiências deram-me muita responsabilidade e ensinaram-me bastante sobre organização de trabalho, gestão de tempo, trabalho em equipa.
+
+A programação não é algo novo para mim — já tinha esse interesse antes de começar a trabalhar, e ao longo do meu percurso fui identificando oportunidades para criar pequenas soluções que melhoravam processos internos e facilitavam o trabalho das equipas.
+Ver pessoas a usar algo que eu tinha criado sempre me trouxe muita satisfação, e foi isso que me levou a querer explorar esta área de forma mais séria.
+
+Com isso, decidi fazer uma transição para a área de tecnologia e tenho estado focado na minha formação, nomeadamente através da escola 42 e de outros projetos complementares, como o Upskill.
+
+Neste momento, procuro a minha primeira oportunidade profissional na área, onde possa aplicar o que tenho vindo a aprender e continuar a evoluir, trazendo também a experiência que adquiri ao longo do meu percurso anterior.
+
+
+2. O que menos gostou na sua última experiência de trabalho?
+Diria que o aspeto menos positivo da minha última experiência profissional esteve relacionado com a organização dos processos de trabalho. Em alguns momentos, a estrutura era bastante informal, o que tornava mais difícil a definição clara de responsabilidades e a implementação consistente de práticas de qualidade, algo que também fazia parte dos objetivos da equipa de gestão em que integrei.
+
+Essa experiência permitiu-me perceber a importância de processos bem definidos, da comunicação clara e da organização dentro das equipas. Quando esses elementos não estão bem estabelecidos, podem surgir dificuldades na coordenação do trabalho e no alinhamento entre colegas.
+
+3. Quais os seus pontos fortes e fracos?
+Os meus principais pontos fortes são a responsabilidade, a capacidade de aprendizagem e a curiosidade. Tenho uma forte tendência para querer compreender bem os problemas e estou constantemente motivado para aprender e evoluir, algo que se refletiu ao longo do meu percurso.
+
+Relativamente aos pontos a melhorar, destaco sobretudo três aspetos que fui trabalhando ao longo do tempo.
+
+O primeiro é a dificuldade em delegar. Durante algum tempo, associava responsabilidade a ter de garantir pessoalmente a execução das tarefas. No entanto, aprendi, sobretudo na minha última experiência, que delegar é essencial não só para uma melhor gestão do trabalho, mas também para promover a autonomia e o envolvimento da equipa.
+
+O segundo é a tendência para um excesso de confiança na solução inicial quando analiso um problema. Em alguns casos, avanço rapidamente para uma abordagem sem procurar ativamente referências externas ou soluções já existentes, o que pode levar a investir mais tempo do que o necessário numa primeira direção. Tenho vindo a corrigir este aspeto através do hábito de pesquisar soluções semelhantes mais cedo e validar hipóteses antes de avançar.
+
+Por fim, tenho vindo a reforçar a importância de ouvir mais do que falar. Muitas vezes, as melhores soluções surgem ao compreender melhor quem está a lidar diretamente com os problemas, em vez de tentar resolvê-los de forma imediata.
+
+
+4. Uma situação em que falhou?
+Uma situação em que considero ter falhado aconteceu durante o projeto push_swap na 42.
+
+Este projeto consiste em ordenar um conjunto de números inteiros utilizando duas stacks, com um conjunto limitado de operações.
+
+Na fase inicial, optei por explorar uma abordagem baseada em breadth-first search, com o objetivo de encontrar a solução ótima em termos do menor número de movimentos.
+
+No entanto, à medida que a complexidade do problema aumentava, percebi que esta abordagem não escalava bem em termos de performance e tornava o processo demasiado lento e computacionalmente pesado.
+
+O principal erro não foi a escolha técnica em si, mas o facto de não ter procurado de forma suficientemente ativa soluções já exploradas por outros projetos semelhantes antes de avançar tão profundamente nessa direção.
+
+Acabei por ter de reformular a abordagem a meio do desenvolvimento, o que resultou em perda de tempo e trabalho já realizado.
+
+No entanto, esta experiência foi importante porque reforçou exatamente um dos pontos que hoje identifico como melhoria pessoal: a tendência para avançar rapidamente com uma solução sem validar previamente alternativas ou referências existentes.
+
+Desde então, tenho vindo a mudar esse comportamento, procurando validar mais cedo abordagens possíveis antes de investir demasiado numa única direção.
+
+
+
+
