@@ -19,20 +19,26 @@ Neste momento, procuro a minha primeira oportunidade profissional na área, onde
 
 
 2. O que menos gostou na sua última experiência de trabalho?
-Diria que o aspeto menos positivo da minha última experiência profissional esteve relacionado com a organização dos processos de trabalho. Em alguns momentos, a estrutura era bastante informal, o que tornava mais difícil a definição clara de responsabilidades e a implementação consistente de práticas de qualidade, algo que também fazia parte dos objetivos da equipa de gestão em que integrei.
+O aspeto menos positivo do meu ultimo trabalho está relacionado relacionado com a organização e clareza dos processos. A estrutura informal, tornava difícil uma definição clara de responsabilidades e a permite uma consistencia de práticas que potenciam a qualidade, algo que também fazia parte dos objetivos da equipa de gestão em que integrei.
 
-Essa experiência permitiu-me perceber a importância de processos bem definidos, da comunicação clara e da organização dentro das equipas. Quando esses elementos não estão bem estabelecidos, podem surgir dificuldades na coordenação do trabalho e no alinhamento entre colegas.
+Esta experiência permitiu-me perceber a importância de processos bem definidos, de comunicação clara e do trabalho das equipas. Dificuldades na coordenação do trabalho e no alinhamento entre colegas surgem mais facilmente nestes cenários.
 
 3. Quais os seus pontos fortes e fracos?
-Os meus principais pontos fortes são a responsabilidade, a capacidade de aprendizagem e a curiosidade. Tenho uma forte tendência para querer compreender bem os problemas e estou constantemente motivado para aprender e evoluir, algo que se refletiu ao longo do meu percurso.
+Como pontos fortes, destacaria a responsabilidade, a capacidade de aprendizagem e a autorreflexão.
 
-Relativamente aos pontos a melhorar, destaco sobretudo três aspetos que fui trabalhando ao longo do tempo.
+Em termos de responsabilidade, procuro cumprir aquilo a que me proponho e, em contexto de equipa, comunicar atempadamente quando identifico risco de não conseguir entregar algo, permitindo reajustar prioridades.
 
-O primeiro é a dificuldade em delegar. Durante algum tempo, associava responsabilidade a ter de garantir pessoalmente a execução das tarefas. No entanto, aprendi, sobretudo na minha última experiência, que delegar é essencial não só para uma melhor gestão do trabalho, mas também para promover a autonomia e o envolvimento da equipa.
+Na capacidade de aprendizagem, o meu percurso reflete isso — fiz a transição de carreira e tenho vindo a adquirir competências de forma consistente, tanto em contexto académico como em projetos práticos.
 
-O segundo é a tendência para um excesso de confiança na solução inicial quando analiso um problema. Em alguns casos, avanço rapidamente para uma abordagem sem procurar ativamente referências externas ou soluções já existentes, o que pode levar a investir mais tempo do que o necessário numa primeira direção. Tenho vindo a corrigir este aspeto através do hábito de pesquisar soluções semelhantes mais cedo e validar hipóteses antes de avançar.
+Relativamente à autorreflexão, tenho o hábito de rever decisões e integrar feedback, ajustando progressivamente a forma como abordo problemas para ser mais eficiente e estruturado.
 
-Por fim, tenho vindo a reforçar a importância de ouvir mais do que falar. Muitas vezes, as melhores soluções surgem ao compreender melhor quem está a lidar diretamente com os problemas, em vez de tentar resolvê-los de forma imediata.
+Relativamente aos pontos a melhorar, destaco sobretudo três aspetos que tenho vindo a trabalhar.
+
+O primeiro é a dificuldade em delegar. Durante algum tempo, associava responsabilidade a garantir pessoalmente a execução das tarefas. No entanto, aprendi, sobretudo na minha última experiência, que delegar é essencial para uma melhor gestão do trabalho e para promover a autonomia da equipa.
+
+O segundo é a tendência inicial para confiar demasiado na primeira abordagem a um problema. Em alguns casos, avançava rapidamente sem validar alternativas, o que podia levar a investir mais tempo do que o necessário. Tenho vindo a corrigir isso através do hábito de pesquisar soluções semelhantes mais cedo e validar hipóteses antes de avançar.
+
+Por fim, tenho vindo a reforçar a importância de ouvir mais antes de agir. Muitas vezes, as melhores soluções surgem ao compreender melhor quem está mais próximo dos problemas, em vez de tentar resolvê-los de forma imediata.
 
 
 4. Uma situação em que falhou?
@@ -53,5 +59,27 @@ No entanto, esta experiência foi importante porque reforçou exatamente um dos 
 Desde então, tenho vindo a mudar esse comportamento, procurando validar mais cedo abordagens possíveis antes de investir demasiado numa única direção.
 
 
+5. Porque motivo quer mudar de trabalho?
+O principal motivo está mesmo ligado à motivação que encontrei na programação. Começou como um interesse paralelo, mas ao longo do tempo foi ganhando cada vez mais peso até se tornar central para mim.
 
+A decisão de mudar de área veio dessa vontade de investir de forma mais séria e perceber até onde consigo evoluir quando me dedico a tempo inteiro.
+
+Neste momento, procuro um contexto profissional onde possa continuar a aprender, enfrentar desafios técnicos e crescer de forma estruturada, contribuindo também para a equipa.
+
+
+6. Porque motivo o devemos contratar?
+Devem considerar contratar-me porque junto três aspetos: responsabilidade, capacidade de aprendizagem e uma abordagem prática à resolução de problemas.
+
+Venho de uma carreira na área da saúde, onde tive funções técnicas e de coordenação, o que me deu organização, sentido de responsabilidade e experiência a trabalhar em equipa e sob pressão.
+
+A transição para a tecnologia foi uma decisão estruturada — investi em formação e prática consistente, incluindo na Escola 42.
+
+Neste momento, estou a consolidar a parte técnica, mas com uma curva de aprendizagem forte, e acredito que posso acrescentar valor pela forma como evoluo rapidamente e contribuo de forma focada para os objetivos da equipa.
+
+7. Tem alguma questão que nos queira colocar?
+Gostava de perceber melhor como estão organizadas as equipas de desenvolvimento, nomeadamente como definem objetivos e gerem prazos no dia a dia.
+
+E também como funciona o onboarding de novos colaboradores — ou seja, como é feita a integração inicial na equipa e nos projetos.
+
+Por fim, se puderem partilhar, como é que acompanham a evolução dos colaboradores ao longo do tempo, em termos de aprendizagem e desenvolvimento.
 
