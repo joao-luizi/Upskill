@@ -1,0 +1,15 @@
+C:\Users\Formando\Documents\Upskill\Modulo3\Enumteste\bin\Debug\net9.0\Enumteste.exe
+C:\Users\Formando\Documents\Upskill\Modulo3\Enumteste\bin\Debug\net9.0\Enumteste.deps.json
+C:\Users\Formando\Documents\Upskill\Modulo3\Enumteste\bin\Debug\net9.0\Enumteste.runtimeconfig.json
+C:\Users\Formando\Documents\Upskill\Modulo3\Enumteste\bin\Debug\net9.0\Enumteste.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\Enumteste\bin\Debug\net9.0\Enumteste.pdb
+C:\Users\Formando\Documents\Upskill\Modulo3\Enumteste\obj\Debug\net9.0\Enumteste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Formando\Documents\Upskill\Modulo3\Enumteste\obj\Debug\net9.0\Enumteste.AssemblyInfoInputs.cache
+C:\Users\Formando\Documents\Upskill\Modulo3\Enumteste\obj\Debug\net9.0\Enumteste.AssemblyInfo.cs
+C:\Users\Formando\Documents\Upskill\Modulo3\Enumteste\obj\Debug\net9.0\Enumteste.csproj.CoreCompileInputs.cache
+C:\Users\Formando\Documents\Upskill\Modulo3\Enumteste\obj\Debug\net9.0\Enumteste.sourcelink.json
+C:\Users\Formando\Documents\Upskill\Modulo3\Enumteste\obj\Debug\net9.0\Enumteste.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\Enumteste\obj\Debug\net9.0\refint\Enumteste.dll
+C:\Users\Formando\Documents\Upskill\Modulo3\Enumteste\obj\Debug\net9.0\Enumteste.pdb
+C:\Users\Formando\Documents\Upskill\Modulo3\Enumteste\obj\Debug\net9.0\Enumteste.genruntimeconfig.cache
+C:\Users\Formando\Documents\Upskill\Modulo3\Enumteste\obj\Debug\net9.0\ref\Enumteste.dll

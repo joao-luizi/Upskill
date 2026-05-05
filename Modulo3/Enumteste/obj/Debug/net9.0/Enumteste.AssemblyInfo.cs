@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("DalPro")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Enumteste")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5cf3767c3049693f01b9e3321548e0224d97480c")]
-[assembly: System.Reflection.AssemblyProductAttribute("DalPro")]
-[assembly: System.Reflection.AssemblyTitleAttribute("DalPro")]
+[assembly: System.Reflection.AssemblyProductAttribute("Enumteste")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Enumteste")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

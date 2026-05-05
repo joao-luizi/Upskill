@@ -1,7 +1,29 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\Formando\\Documents\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\",
   "Documents": [],
+=======
+  "WorkspaceRootPath": "E:\\2025_repos\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|e:\\2025_repos\\upskill\\modulo3\\mytinywebsite\\mytinywebsite\\services\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|solutionrelative:services\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|e:\\2025_repos\\upskill\\modulo3\\mytinywebsite\\mytinywebsite\\pages\\contact\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|solutionrelative:pages\\contact\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|e:\\2025_repos\\upskill\\modulo3\\mytinywebsite\\mytinywebsite\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|solutionrelative:models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|e:\\2025_repos\\upskill\\modulo3\\mytinywebsite\\mytinywebsite\\pages\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{375B0F43-544F-485D-85A8-2E5A063CF607}|myTinyWebSite.csproj|solutionrelative:pages\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+>>>>>>> 4eec8230894f4d3eff44974852f91fd988518259
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +31,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": -1,
+=======
+          "SelectedChildIndex": 15,
+>>>>>>> 4eec8230894f4d3eff44974852f91fd988518259
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -57,11 +83,79 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+<<<<<<< HEAD
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContactService.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Services\\ContactService.cs",
+              "RelativeDocumentMoniker": "Services\\ContactService.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Services\\ContactService.cs",
+              "RelativeToolTip": "Services\\ContactService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T14:19:43.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Contact\\Index.cshtml",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\Contact\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Contact\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-14T11:48:05.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\Contact\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Contact\\Index.cshtml.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Pages\\Contact\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Contact\\Index.cshtml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:45:50.813Z",
+              "EditorCaption": ""
+>>>>>>> 4eec8230894f4d3eff44974852f91fd988518259
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "E:\\2025_repos\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "Models\\Contact.cs",
+              "ToolTip": "E:\\2025_repos\\Upskill\\Modulo3\\MyTinyWebsite\\myTinyWebSite\\Models\\Contact.cs",
+              "RelativeToolTip": "Models\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T14:18:30.5Z",
+              "EditorCaption": ""
             }
           ]
         }
